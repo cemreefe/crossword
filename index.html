@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYT Mini Clone</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 1rem;
+    }
+    .grid {
+      display: grid;
+      gap: 2px;
+      column-gap: 4px;
+    }
+    .cell {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #aaa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      cursor: pointer;
+      background: white;
+    }
+    .cell.black {
+      background: black;
+    }
+    .cell.selected {
+      background: #facc15 !important; /* yellow-400 */
+    }
+    .cell.highlighted-word {
+      background: #93c5fd; /* blue-300 */
+    }
+    .cell.error {
+      background: #f87171 !important; /* red-400 */
+      color: white;
+    }
+    .clues {
+      margin-top: 1rem;
+    }
+    .clues h3 {
+      margin-bottom: 0.5rem;
+    }
+    .clues li:not(.highlighted-clue) {
+      display: none; /* Hide clues that are NOT highlighted */
+    }
+    .clues li.highlighted-clue {
+      background: #bfdbfe; /* blue-200 */
+      font-weight: bold;
+      display: list-item; /* Ensure highlighted clue is visible */
+    }
+    #timeDiv {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      backdrop-filter: blur(7px);
+    }
+    .modal-content {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    #clue {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #1e40af; /* blue-800 */
+    }
+  </style>
+</head>
+<body>
+  <div id="startModal" class="modal">
+    <div class="modal-content">
+      <h2>Ready to play?</h2>
+      <button id="startButton" onclick="startGame()">Start Crossword</button>
+    </div>
+  </div>
+
+  <div id="successModal" class="modal" style="display:none">
+    <div class="modal-content">
+      <h2 id="congrats">🎉 Crossword Solved!</h2>
+      <p><span id="youFinishedIn">You finished in</span> <span id="finalTime"></span>!</p>
+      <!-- <button id="playAgainButton" onclick="location.reload()">Play Again</button> -->
+      <!-- Add share button instead -->
+       <!-- Add button to close modal -->
+      <button id="successOk" onclick="document.getElementById('successModal').style.display = 'none'">Close</button>
+    </div>
+  </div>
+
+  <div id="errorModal" class="modal" style="display:none">
+    <div class="modal-content">
+      <h2 id="oops">Oops! Keep Trying!</h2>
+      <p id="dontWorry">It looks like there are still some mistakes. Don't worry, you'll get it!</p>
+      <button id="keepGoing" onclick="document.getElementById('errorModal').style.display = 'none'">Keep Going</button>
+    </div>
+  </div>
+
+  <h1 id="title">Mini Crossword</h1>
+  <p><span id="today"></span></p>
+  <div id="timeDiv"><span id="timerName">Time</span>: <span id="timer">00:00</span></div>
+  <div style="gap: 2rem">
+    <div id="grid"></div>
+  </div>
+  <div id="clue"></div>
+  <p><span id="by">prepared by</span> <span id="author"></span></p>
+  <script>
+    const today = new Date().toISOString().slice(0, 10);
+    document.getElementById("today").textContent = today;
+
+    // Get lang attribute from from url
+    const lang = new URLSearchParams(window.location.search).get('lang') || 'tr';
+
+    // Get localization json
+    fetch(`localization/${lang}.json`)
+      .then(res => res.json())
+      .then(data => {
+        document.title = data.title;
+        // format today in human readable format in lang
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = new Date(today).toLocaleDateString(lang, options);
+        document.getElementById("title").textContent = `${data.title}` ;
+        document.getElementById("today").textContent = formattedDate;
+        document.getElementById("startModal").querySelector("h2").textContent = data.readyToPlay;
+        document.getElementById("successModal").querySelector("h2").textContent = data.successTitle;
+        document.getElementById("errorModal").querySelector("h2").textContent = data.errorTitle;
+        document.getElementById("errorModal").querySelector("p").textContent = data.errorMessage;
+        document.getElementById("startButton").textContent = data.startGame;
+        // document.getElementById("playAgainButton").textContent = data.playAgain;
+        document.getElementById("by").textContent = data.by;
+        document.getElementById("timerName").textContent = data.time;
+        document.getElementById("oops").textContent = data.oopsKeepTrying;
+        document.getElementById("dontWorry").textContent = data.stillMistakes;
+        document.getElementById("keepGoing").textContent = data.keepGoing;
+        document.getElementById("congrats").textContent = data.crosswordSolved;
+        document.getElementById("youFinishedIn").textContent = data.youFinishedIn;
+        document.getElementById("successOk").textContent = data.successOk;
+        console.log("Localization loaded:", data);
+      })
+      .catch(error => {
+        console.error("Error loading localization:", error);
+      });
+
+    let selected = { row: 0, col: 0 };
+    let currentDirection = 'across'; // 'across' or 'down'
+    let answers = [];
+    let gridSize = 0;
+    let grid = [];
+    let cluesData = { H: {}, V: {} }; // Stores original clue data from file (e.g., {H: {1: "Clue 1"}, V: {2: "Clue 2"}})
+    let cluePositions = { // Stores mapping from grid start cell to clue ID (e.g., {across: {"0,0": "1"}, down: {"1,0": "2"}})
+      across: {},
+      down: {}
+    };
+    let timerInterval;
+    let startTime;
+
+    console.log("Script loaded.");
+
+    function startTimer() {
+      startTime = Date.now();
+      timerInterval = setInterval(() => {
+        const now = Date.now();
+        const diff = Math.floor((now - startTime) / 1000);
+        const min = String(Math.floor(diff / 60)).padStart(2, '0');
+        const sec = String(diff % 60).padStart(2, '0');
+        document.getElementById("timer").textContent = `${min}:${sec}`;
+      }, 1000);
+      console.log("Timer started.");
+    }
+
+    function stopTimer() {
+      clearInterval(timerInterval);
+      console.log("Timer stopped.");
+    }
+
+    function showSuccessModal() {
+      stopTimer();
+      const diff = Math.floor((Date.now() - startTime) / 1000);
+      const min = String(Math.floor(diff / 60)).padStart(2, '0');
+      const sec = String(diff % 60).padStart(2, '0');
+      document.getElementById("finalTime").textContent = `${min}:${sec}`;
+      document.getElementById("successModal").style.display = 'flex';
+      console.log(`Success modal shown. Final time: ${min}:${sec}`);
+    }
+
+    function showErrorModal() {
+      document.getElementById("errorModal").style.display = 'flex';
+      console.log("Error modal shown.");
+    }
+
+    function startGame() {
+      document.getElementById("startModal").style.display = 'none';
+      startTimer();
+      console.log("Game started.");
+    }
+
+    // Function to map clue numbers to grid positions (based on standard crossword numbering)
+    function mapCluePositions() {
+      let currentAcrossClueNum = 1;
+      let currentDownClueNum = 1;
+
+      for (let r = 0; r < gridSize; r++) {
+        for (let c = 0; c < gridSize; c++) {
+          if (grid[r][c] !== '-') { // If it's a white cell
+            let isStartOfAcrossWord = (c === 0 || grid[r][c - 1] === '-');
+            if (isStartOfAcrossWord) {
+              cluePositions.across[`${r},${c}`] = String(currentAcrossClueNum);
+              currentAcrossClueNum++;
+            }
+          }
+        }
+      }
+      for (let c = 0; c < gridSize; c++) {
+        for (let r = 0; r < gridSize; r++) {
+          if (grid[r][c] !== '-') { // If it's a white cell
+            let isStartOfDownWord = (r === 0 || grid[r - 1][c] === '-');
+            if (isStartOfDownWord) {
+              cluePositions.down[`${r},${c}`] = String(currentDownClueNum);
+              currentDownClueNum++;
+            }
+          }
+        }
+      }
+      console.log("Clue positions mapped:", { across: cluePositions.across, down: cluePositions.down });
+    }
+
+    fetch(`${lang}/${today}.txt`)
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.text();
+      })
+      .then(text => {
+        console.log("Fetched puzzle data:", text);
+        const lines = text.trim().split("\n");
+        const author = lines[0].split(": ")[1];
+        document.getElementById("author").textContent = author;
+
+        gridSize = parseInt(lines[1].split(": ")[1]);
+        const gridLines = lines.slice(2, 2 + gridSize);
+        if (gridLines.length !== gridSize || gridLines.some(l => l.length !== gridSize)) {
+          console.error("Grid size mismatch!", { expected: gridSize, actualRows: gridLines.length, actualCols: gridLines.map(l=>l.length) });
+          alert("Grid size mismatch");
+          throw new Error("Grid size mismatch");
+        }
+
+        grid = gridLines.map(l => l.split(""));
+        answers = Array(gridSize).fill(null).map(() => Array(gridSize).fill(""));
+        console.log("Initial grid loaded:", grid);
+        console.log("Initial answers array:", answers);
+
+        // If 0,0 is a black cell, set selected to the first white cell
+        while (grid[selected.row][selected.col] === '-') {
+          selected.col++;
+          if (selected.col >= gridSize) {
+            selected.col = 0;
+            selected.row++;
+          }
+          if (selected.row >= gridSize) {
+            console.error("No valid starting cell found in the grid.");
+            alert("No valid starting cell found in the grid.");
+            return;
+          }
+        }
+
+        // Populate original clues data from the file
+        lines.slice(2 + gridSize).forEach(line => {
+          if (!line.includes(": ")) return;
+          const [pos, clue] = line.split(": ");
+          const dir = pos.startsWith("H") ? "H" : "V";
+          const id = pos.slice(1);
+          cluesData[dir][id] = clue;
+        });
+        console.log("Raw clues data loaded:", cluesData);
+
+        mapCluePositions(); // Map clue numbers to grid positions after grid is loaded
+        // renderClues(cluesData); // Render all clue LI elements (hidden by CSS initially)
+        renderGrid(); // Render grid and manage clue visibility
+      })
+      .catch(error => {
+        console.error("Error loading crossword data:", error);
+        alert("Failed to load crossword puzzle. Make sure the puzzle file exists and is correctly formatted.");
+      });
+
+    function getWordInfo(row, col, direction) {
+      console.log(`getWordInfo called for (${row}, ${col}) direction: ${direction}`);
+      let startRow = row;
+      let startCol = col;
+      let endRow = row;
+      let endCol = col;
+
+      if (direction === 'across') {
+        // Find start of the word
+        while (startCol > 0 && grid[row][startCol - 1] !== '-') {
+          startCol--;
+        }
+        // Find end of the word
+        while (endCol < gridSize - 1 && grid[row][endCol + 1] !== '-') {
+          endCol++;
+        }
+      } else { // 'down'
+        // Find start of the word
+        while (startRow > 0 && grid[startRow - 1][col] !== '-') {
+          startRow--;
+        }
+        // Find end of the word
+        while (endRow < gridSize - 1 && grid[endRow + 1][col] !== '-') {
+          endRow++;
+        }
+      }
+
+      let wordCells = [];
+      let clueId = null;
+
+      if (direction === 'across') {
+        for (let c = startCol; c <= endCol; c++) {
+          wordCells.push({ r: row, c: c });
+        }
+        // Use the pre-calculated cluePositions for across
+        clueId = cluePositions.across[`${startRow},${startCol}`] || null;
+
+      } else { // 'down'
+        for (let r_word = startRow; r_word <= endRow; r_word++) {
+          wordCells.push({ r: r_word, c: col });
+        }
+        // Use the pre-calculated cluePositions for down
+        clueId = cluePositions.down[`${startRow},${startCol}`] || null;
+      }
+      console.log(`Word info for (${row}, ${col}) ${direction}: Start(${startRow},${startCol}), End(${endRow},${endCol}), Clue ID: ${clueId}`);
+      return { wordCells, clueId };
+    }
+
+
+    function renderGrid() {
+      console.log(`renderGrid called. Selected: (${selected.row}, ${selected.col}), Direction: ${currentDirection}`);
+      const gridEl = document.getElementById("grid");
+      gridEl.style.gridTemplateColumns = `repeat(${gridSize}, 40px)`;
+      gridEl.className = "grid";
+      gridEl.innerHTML = "";
+
+      // Hide all clues and remove highlighting before re-evaluating
+      document.querySelectorAll('.clues li').forEach(el => {
+        el.classList.remove('highlighted-clue');
+        el.style.display = 'none'; // Ensure they are hidden by inline style
+        // console.log(`Hidden clue: ${el.textContent}`); // Too verbose, disable for general use
+      });
+
+      const { wordCells: highlightedWordCells, clueId: activeClueId } = getWordInfo(selected.row, selected.col, currentDirection);
+      console.log("Highlighted word cells:", highlightedWordCells);
+      console.log("Active clue ID from getWordInfo:", activeClueId);
+
+
+      grid.forEach((row, r) => {
+        row.forEach((cell, c) => {
+          const div = document.createElement("div");
+          let classList = ["cell"];
+          if (cell === "-") classList.push("black");
+
+          const isHighlightedWordCell = highlightedWordCells.some(wc => wc.r === r && wc.c === c);
+          if (isHighlightedWordCell) {
+            classList.push("highlighted-word");
+          }
+
+          if (r === selected.row && c === selected.col) {
+            classList.push("selected");
+          }
+          div.className = classList.join(" ");
+
+          div.dataset.row = r;
+          div.dataset.col = c;
+          div.textContent = answers[r][c]; // Display user's answer
+
+          div.onclick = () => {
+            console.log(`Cell clicked: (${r}, ${c}). Current selected: (${selected.row}, ${selected.col})`);
+            if (grid[r][c] === "-") {
+              console.log("Clicked black cell, ignored.");
+              return; // Don't allow clicking black cells
+            }
+
+            if (selected.row === r && selected.col === c) {
+              // Clicked on the already selected cell, switch direction
+              currentDirection = currentDirection === 'across' ? 'down' : 'across';
+              console.log(`Switched direction to: ${currentDirection}`);
+            } else {
+              // Clicked on a new cell
+              selected = { row: r, col: c };
+              console.log(`New cell selected: (${selected.row}, ${selected.col})`);
+
+              // Try to infer the most likely direction for the new cell
+              const acrossWordInfo = getWordInfo(r, c, 'across');
+              const downWordInfo = getWordInfo(r, c, 'down');
+
+              const hasAcrossWord = acrossWordInfo.wordCells.length > 0 && acrossWordInfo.clueId;
+              const hasDownWord = downWordInfo.wordCells.length > 0 && downWordInfo.clueId;
+
+              // Logic to determine initial direction when clicking a new cell
+              // Prioritize existing currentDirection if valid word exists in that direction
+              if (currentDirection === 'across' && hasAcrossWord) {
+                // Keep across
+                console.log("Keeping direction across due to valid word.");
+              } else if (currentDirection === 'down' && hasDownWord) {
+                // Keep down
+                console.log("Keeping direction down due to valid word.");
+              } else if (hasAcrossWord) {
+                currentDirection = 'across';
+                console.log("Changed direction to across (only valid word).");
+              } else if (hasDownWord) {
+                currentDirection = 'down';
+                console.log("Changed direction to down (only valid word).");
+              } else {
+                // If neither has a valid word or clue (e.g., isolated white cell), default to across
+                currentDirection = 'across'; // Fallback
+                console.log("Defaulting direction to across (no valid words found).");
+              }
+            }
+            renderGrid();
+          };
+
+          gridEl.appendChild(div);
+        });
+      });
+
+      function getNthItemUsingEntries(direction, n) {
+        const entries = Object.entries(direction === 'across' ? cluesData.H : cluesData.V);
+        if (n >= 0 && n < entries.length) {
+          return entries[n][1]; // Returns value
+        }
+        return undefined; // Or throw an error for out-of-bounds index
+      }
+
+      // Highlight and display the active clue
+      if (activeClueId) {
+        const clueMap = currentDirection === 'across' ? cluesData.H : cluesData.V;
+        clue = getNthItemUsingEntries(currentDirection, activeClueId-1)
+        document.getElementById("clue").innerText = clue;
+      }
+
+      document.onkeydown = (e) => {
+        console.log(`Keydown event: ${e.key}. Current selected: (${selected.row}, ${selected.col}), Direction: ${currentDirection}`);
+        const r = selected.row;
+        const c = selected.col;
+
+        if (grid[r][c] === "-") { // Do not process key presses on black cells
+          console.log("Key press on black cell, ignored.");
+          e.preventDefault();
+          return;
+        }
+
+        if (e.key.length === 1 && /[a-z]/i.test(e.key)) {
+          answers[r][c] = e.key.toUpperCase();
+          console.log(`Entered '${e.key.toUpperCase()}' at (${r}, ${c}). Answers[${r}][${c}] = '${answers[r][c]}'`);
+
+          if (checkIfAllFilled()) {
+            console.log("All cells are filled. Checking if complete...");
+            if (checkIfComplete()) {
+              console.log("Crossword is complete!");
+              showSuccessModal();
+            } else {
+              console.log("Crossword is filled but incorrect.");
+              showErrorModal();
+            }
+          }
+          if (currentDirection === 'across') {
+            moveToNextEnterableCell(r, c, 1, 0); // Move right
+          } else {
+            moveToNextEnterableCell(r, c, 0, 1); // Move down
+          }
+
+        } else if (e.key === "Backspace") {
+          e.preventDefault(); // Prevent default backspace behavior (e.g., browser navigation)
+          console.log(`Backspace pressed at (${r}, ${c}). Current value: '${answers[r][c]}'`);
+          if (answers[r][c] !== "") {
+            answers[r][c] = "";
+            console.log(`Cleared cell (${r}, ${c}).`);
+          } else {
+            // If the current cell is empty, move back based on current direction
+            console.log(`Cell (${r}, ${c}) was empty, moving to previous enterable cell.`);
+            if (currentDirection === 'across') {
+              moveToPreviousEnterableCell(r, c, 1, 0); // Move left
+            } else {
+              moveToPreviousEnterableCell(r, c, 0, 1); // Move up
+            }
+          }
+        } else if (e.key === "ArrowRight") {
+            currentDirection = 'across';
+            moveToNextWhiteCell(r, c, 1, 0);
+            console.log(`ArrowRight pressed. New selected: (${selected.row}, ${selected.col}), Direction: ${currentDirection}`);
+        } else if (e.key === "ArrowLeft") {
+            currentDirection = 'across';
+            moveToNextWhiteCell(r, c, -1, 0);
+            console.log(`ArrowLeft pressed. New selected: (${selected.row}, ${selected.col}), Direction: ${currentDirection}`);
+        } else if (e.key === "ArrowUp") {
+            currentDirection = 'down';
+            moveToNextWhiteCell(r, c, 0, -1);
+            console.log(`ArrowUp pressed. New selected: (${selected.row}, ${selected.col}), Direction: ${currentDirection}`);
+        } else if (e.key === "ArrowDown") {
+            currentDirection = 'down';
+            moveToNextWhiteCell(r, c, 0, 1);
+            console.log(`ArrowDown pressed. New selected: (${selected.row}, ${selected.col}), Direction: ${currentDirection}`);
+        }
+        renderGrid();
+      };
+    }
+
+    function checkIfComplete() {
+      for (let r = 0; r < gridSize; r++) {
+        for (let c = 0; c < gridSize; c++) {
+          if (grid[r][c] === "-") continue;
+          if (answers[r][c].toUpperCase() !== grid[r][c].toUpperCase()) {
+            console.log(`Mismatch at (${r}, ${c}): Expected '${grid[r][c]}', Got '${answers[r][c]}'`);
+            return false;
+          }
+        }
+      }
+      return true;
+    }
+
+    function checkIfAllFilled() {
+      for (let r = 0; r < gridSize; r++) {
+        for (let c = 0; c < gridSize; c++) {
+          if (grid[r][c] !== "-" && answers[r][c] === "") {
+            console.log(`Cell (${r}, ${c}) is empty.`);
+            return false;
+          }
+        }
+      }
+      console.log("All white cells are filled.");
+      return true;
+    }
+
+    function moveToNextWhiteCell(row, col, dx, dy) {
+      console.log(`moveToNextWhiteCell from (${row}, ${col}) with dx:${dx}, dy:${dy}`);
+      let r = row;
+      let c = col;
+      let originalR = row;
+      let originalC = col;
+
+      do {
+        r += dy;
+        c += dx;
+        if (r < 0 || r >= gridSize || c < 0 || c >= gridSize) {
+            console.log(`Hit boundary at (${r}, ${c}). Staying at original.`);
+            selected = { row: originalR, col: originalC }; // Stay in current cell if no valid move
+            return;
+        }
+      } while (grid[r][c] === "-");
+
+      console.log(`Moved to next white cell: (${r}, ${c})`);
+      selected = { row: r, col: c };
+    }
+
+    function moveToNextEnterableCell(row, col, dx, dy) {
+      console.log(`moveToNextEnterableCell from (${row}, ${col}) with dx:${dx}, dy:${dy}`);
+      let nextR = row + dy;
+      let nextC = col + dx;
+
+      // Try to move within the current word first
+      while (nextR < gridSize && nextC < gridSize && nextR >= 0 && nextC >= 0) {
+        if (grid[nextR][nextC] !== "-") {
+          selected = { row: nextR, col: nextC };
+          console.log(`Moved to next enterable cell in current word: (${selected.row}, ${selected.col})`);
+          return;
+        }
+        nextR += dy;
+        nextC += dx;
+      }
+
+      // If no next enterable cell in current word, move to next word's start
+      console.log("No next enterable cell in current word. Searching for next word.");
+      if (currentDirection === 'across') {
+        // Find the next available non-black cell in reading order (across priority)
+        for (let r_new = row; r_new < gridSize; r_new++) {
+          for (let c_new = (r_new === row ? col + 1 : 0); c_new < gridSize; c_new++) {
+            if (grid[r_new][c_new] !== '-') {
+              selected = { row: r_new, col: c_new };
+              console.log(`Moved to start of next across word: (${selected.row}, ${selected.col})`);
+              return;
+            }
+          }
+        }
+      } else { // 'down'
+        // Find the next available non-black cell in reading order (downwards priority)
+        for (let c_new = col; c_new < gridSize; c_new++) {
+          for (let r_new = (c_new === col ? row + 1 : 0); r_new < gridSize; r_new++) {
+            if (grid[r_new][c_new] !== '-') {
+              selected = { row: r_new, col: c_new };
+              console.log(`Moved to start of next down word: (${selected.row}, ${selected.col})`);
+              return;
+            }
+          }
+        }
+      }
+      // If no next enterable cell found anywhere, stay on current cell
+      console.log("No next enterable cell found in entire grid. Staying at current.");
+      selected = { row: row, col: col };
+    }
+
+    function moveToPreviousEnterableCell(row, col, dx, dy) {
+        console.log(`moveToPreviousEnterableCell from (${row}, ${col}) with dx:${dx}, dy:${dy}`);
+        let prevR = row - dy;
+        let prevC = col - dx;
+
+        // Try to move within the current word first
+        while (prevR >= 0 && prevC >= 0 && prevR < gridSize && prevC < gridSize) {
+            if (grid[prevR][prevC] !== "-") {
+                selected = { row: prevR, col: prevC };
+                console.log(`Moved to previous enterable cell in current word: (${selected.row}, ${selected.col})`);
+                return;
+            }
+            prevR -= dy;
+            prevC -= dx;
+        }
+
+        // If no previous enterable cell in current word, find the last cell of the previous word
+        console.log("No previous enterable cell in current word. Searching for end of previous word.");
+        if (currentDirection === 'across') {
+            // Iterate backwards through rows, then columns, to find the end of a previous across word
+            for (let r_new = row; r_new >= 0; r_new--) {
+                // If we are on the current row, start from col - 1. Otherwise, start from gridSize - 1.
+                for (let c_new = (r_new === row ? col - 1 : gridSize - 1); c_new >= 0; c_new--) {
+                    if (grid[r_new][c_new] !== '-') {
+                        // Check if this cell is the LAST cell of an across word
+                        if (c_new === gridSize - 1 || grid[r_new][c_new + 1] === '-') {
+                             selected = { row: r_new, col: c_new };
+                             console.log(`Moved to end of previous across word: (${selected.row}, ${selected.col})`);
+                             return;
+                        }
+                    }
+                }
+            }
+        } else { // 'down'
+            // Iterate backwards through columns, then rows, to find the end of a previous down word
+            for (let c_new = col; c_new >= 0; c_new--) {
+                // If we are on the current column, start from row - 1. Otherwise, start from gridSize - 1.
+                for (let r_new = (c_new === col ? row - 1 : gridSize - 1); r_new >= 0; r_new--) {
+                    if (grid[r_new][c_new] !== '-') {
+                        // Check if this cell is the LAST cell of a down word
+                        if (r_new === gridSize - 1 || grid[r_new + 1][c_new] === '-') {
+                            selected = { row: r_new, col: c_new };
+                            console.log(`Moved to end of previous down word: (${selected.row}, ${selected.col})`);
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+        // If no previous word found (e.g., at the very first cell), stay at the current cell.
+        console.log("No previous word found in entire grid. Staying at current.");
+        selected = { row: row, col: col };
+    }
+
+
+  </script>
+</body>
+</html>

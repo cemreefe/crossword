@@ -1,0 +1,20 @@
+AUTHOR: Cemre
+GRID: 5
+-ASUS
+ORAYA
+HAKAN
+-BIRA
+KANIT
+
+H1.1: Amatörü eğlendirecek bilgisayar markası
+H2.1: O yere
+H3.1: Eski türk hükümdarı
+H4.1: Sıvı ekmek
+H5.1: Uyku tutmayınca izlenen dizi, belki
+V1.1: Çok iyi geldi!
+V1.2: Potasyumun simgesi
+V2.1: Yetişkin erkek oyuncağı
+V3.1: Durgun, dingin
+V4.1: Bile isteye isabet etmeyen polis ateşi
+V5.1: ___ sepet, ikileme.
+

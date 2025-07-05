@@ -1,0 +1,22 @@
+AUTHOR: Jones McGyle
+GRID: 5
+A-LO-
+YOU--
+EL-UR
+-I-FE
+-LEO-
+
+H1.1: "one" before a noun
+H1.2: __ and behold
+H2.1: Not me, __.
+H3.1: Spanish the.
+H3.2: Ancient anatolian city
+H4.1: My wife and __.
+H4.2: Iron.
+H5.1: Fiery horoscope
+V1.1: Yes in pirate
+V2.1: Famous nothingham fish shop
+V3.1: Famous square biscuits
+V4.1: Ancient vocative marker
+V4.2: Flying saucers, perhaps
+V5.1: Most repetitive of musical notes

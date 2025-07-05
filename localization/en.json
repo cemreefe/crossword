@@ -1,0 +1,16 @@
+{
+  "readyToPlay": "Ready to play?",
+  "startGame": "Start Crossword",
+  "crosswordSolved": "🎉 Crossword Solved!",
+  "youFinishedIn": "You finished in",
+  "playAgain": "Play Again",
+  "oopsKeepTrying": "Oops! Keep Trying!",
+  "stillMistakes": "It looks like there are still some mistakes. Don't worry, you'll get it!",
+  "keepGoing": "Keep Going",
+  "miniCrossword": "Mini Crossword",
+  "time": "Time",
+  "by": "by",
+  "failedToLoadPuzzle": "Failed to load crossword puzzle. Make sure the puzzle file exists and is correctly formatted.",
+  "across": "ACROSS",
+  "down": "DOWN"
+}

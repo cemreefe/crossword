@@ -1,0 +1,19 @@
+{
+  "##comment": "This file contains Turkish translations for the crossword game.",
+  "readyToPlay": "Oynamaya hazır mısın?",
+  "startGame": "Başla!",
+  "crosswordSolved": "🎉 Tebrikler! Bulmacayı çözdün!",
+  "youFinishedIn": "Bitirme süren:",
+  "playAgain": "Tekrar Oyna",
+  "oopsKeepTrying": "Amanın!",
+  "stillMistakes": "Görünüşe göre en az bir harf yanlış!",
+  "keepGoing": "Biraz daha dene",
+  "miniCrossword": "Mini Bulmaca",
+  "time": "Süre",
+  "by": "Hazırlayan:",
+  "failedToLoadPuzzle": "Bulmaca yüklenemedi. Lütfen bulmaca dosyasının var olduğundan ve doğru biçimlendirildiğinden emin ol.",
+  "across": "YATAY",
+  "down": "DİKEY",
+  "title": "Dutluk Mini Bulmaca",
+  "successOk": "Bakayım"
+}
