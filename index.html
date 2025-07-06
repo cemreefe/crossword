@@ -610,7 +610,7 @@
       let nextC = col + dx;
 
       while (nextR < gridSize && nextC < gridSize && nextR >= 0 && nextC >= 0) {
-        if (grid[nextR][nextC] !== "-") {
+        if (grid[nextR][nextC] !== "-" && answers[nextR][nextC] === "") {
           selected = { row: nextR, col: nextC };
           console.log(`Moved to next enterable cell in current word: (${selected.row}, ${selected.col})`);
           return;
@@ -623,7 +623,7 @@
       if (currentDirection === 'across') {
         for (let r_new = row; r_new < gridSize; r_new++) {
           for (let c_new = (r_new === row ? col + 1 : 0); c_new < gridSize; c_new++) {
-            if (grid[r_new][c_new] !== '-') {
+            if (grid[r_new][c_new] !== '-' && answers[r_new][c_new] === "") {
               selected = { row: r_new, col: c_new };
               console.log(`Moved to start of next across word: (${selected.row}, ${selected.col})`);
               return;
@@ -633,7 +633,7 @@
       } else { // 'down'
         for (let c_new = col; c_new < gridSize; c_new++) {
           for (let r_new = (c_new === col ? row + 1 : 0); r_new < gridSize; r_new++) {
-            if (grid[r_new][c_new] !== '-') {
+            if (grid[r_new][c_new] !== '-' && answers[r_new][c_new] === "") {
               selected = { row: r_new, col: c_new };
               console.log(`Moved to start of next down word: (${selected.row}, ${selected.col})`);
               return;
