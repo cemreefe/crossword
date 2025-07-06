@@ -493,17 +493,12 @@
             }
             renderGrid();
             
-            // Enhanced focus handling for iOS
+            // Simplified focus handling - let iOS show the button when needed
             if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-              // For iOS, maintain focus more aggressively
+              // For iOS, try to maintain focus but don't be aggressive about it
               setTimeout(() => {
-                if (!hiddenInput.matches(':focus')) {
-                  hiddenInput.focus();
-                  hiddenInput.click();
-                  // Hide the backup button since we're trying to maintain focus
-                  iosKeyboardTrigger.style.display = 'none';
-                }
-              }, 10);
+                hiddenInput.focus();
+              }, 50);
             } else {
               // For other devices, simple focus check
               if (!hiddenInput.matches(':focus')) {
@@ -751,14 +746,6 @@
         selected = { row: row, col: col };
     }
 
-    // Prevent focus loss on mobile when interacting with the grid
-    document.addEventListener('touchstart', (e) => {
-      // If touching a grid cell, prevent default to avoid focus loss
-      if (e.target.classList.contains('cell')) {
-        e.preventDefault();
-      }
-    }, { passive: false });
-
     // Enhanced focus management for iOS
     document.addEventListener('focusout', (e) => {
       // If the hidden input loses focus and no modal is open, refocus it
@@ -767,7 +754,9 @@
         if (!modalsOpen) {
           // For iOS, show the button again if focus is lost
           if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-            iosKeyboardTrigger.style.display = 'block';
+            setTimeout(() => {
+              iosKeyboardTrigger.style.display = 'block';
+            }, 100);
           } else {
             // For other devices, try to refocus automatically
             setTimeout(() => {
@@ -779,27 +768,6 @@
         }
       }
     });
-
-    // iOS-specific: prevent focus loss during cell interactions
-    if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-      let preventBlur = false;
-      
-      document.addEventListener('touchstart', (e) => {
-        if (e.target.classList.contains('cell')) {
-          preventBlur = true;
-          setTimeout(() => { preventBlur = false; }, 100);
-        }
-      });
-
-      hiddenInput.addEventListener('blur', (e) => {
-        if (preventBlur) {
-          e.preventDefault();
-          setTimeout(() => {
-            hiddenInput.focus();
-          }, 10);
-        }
-      });
-    }
 
     // Initial focus on the hidden input after the page loads
     window.onload = focusHiddenInput;
