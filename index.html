@@ -83,11 +83,19 @@
     }
     /* Hidden input field for mobile keyboard focus */
     #hiddenInput {
-      position: absolute;
-      left: -9999px; /* Off-screen */
-      opacity: 0;
+      position: fixed;
+      top: -1000px; /* Off-screen but not too far */
+      left: 0;
+      opacity: 0.01; /* Very transparent but not completely invisible */
       width: 1px;
       height: 1px;
+      border: none;
+      background: transparent;
+      color: transparent;
+      z-index: -1;
+      pointer-events: none;
+      /* Prevent iOS zoom on focus */
+      font-size: 16px;
     }
   </style>
 </head>
@@ -124,7 +132,12 @@
   <div id="clue"></div>
   <p><span id="by">prepared by</span> <span id="author"></span></p>
 
-  <input type="text" id="hiddenInput" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+  <input type="text" id="hiddenInput" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" inputmode="text" />
+
+  <!-- Add a visible button for iOS users to tap and focus the input -->
+  <div id="iosKeyboardTrigger" style="position: fixed; bottom: 20px; right: 20px; background: #007AFF; color: white; padding: 10px 15px; border-radius: 20px; font-size: 14px; cursor: pointer; z-index: 1000; display: none;">
+    📱 Tap to type
+  </div>
 
   <script>
     const today = new Date().toISOString().slice(0, 10);
@@ -132,6 +145,17 @@
 
     const lang = new URLSearchParams(window.location.search).get('lang') || 'tr'; 
     const hiddenInput = document.getElementById("hiddenInput");
+    const iosKeyboardTrigger = document.getElementById("iosKeyboardTrigger");
+
+    // Show iOS keyboard trigger button on iOS devices
+    if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+      iosKeyboardTrigger.style.display = 'block';
+      iosKeyboardTrigger.onclick = () => {
+        hiddenInput.focus();
+        hiddenInput.click();
+        iosKeyboardTrigger.style.display = 'none';
+      };
+    }
 
     // Get localization json
     fetch(`localization/${lang}.json`)
@@ -179,11 +203,16 @@
     function focusHiddenInput() {
       // Use a timeout to ensure focus after other DOM manipulations
       setTimeout(() => {
-        hiddenInput.focus();
-        // For some mobile browsers, a blur/focus cycle can help
-        // hiddenInput.blur();
-        // hiddenInput.focus();
-      }, 50);
+        try {
+          hiddenInput.focus();
+          // For iOS, sometimes we need to trigger a click event
+          if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+            hiddenInput.click();
+          }
+        } catch (e) {
+          console.log('Focus failed:', e);
+        }
+      }, 100);
     }
     // Use the input letters to hidden input to enter cells
 
@@ -450,7 +479,13 @@
               }
             }
             renderGrid();
-            focusHiddenInput(); // Re-focus hidden input on cell click
+            // Force focus on mobile after cell click
+            setTimeout(() => {
+              hiddenInput.focus();
+              if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+                hiddenInput.click();
+              }
+            }, 10);
           };
 
           gridEl.appendChild(div);
