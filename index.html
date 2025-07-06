@@ -93,9 +93,10 @@
       background: transparent;
       color: transparent;
       z-index: -1;
-      pointer-events: none;
       /* Prevent iOS zoom on focus */
       font-size: 16px;
+      /* Prevent focus loss on cell clicks */
+      pointer-events: auto;
     }
   </style>
 </head>
@@ -204,10 +205,13 @@
       // Use a timeout to ensure focus after other DOM manipulations
       setTimeout(() => {
         try {
-          hiddenInput.focus();
-          // For iOS, sometimes we need to trigger a click event
-          if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-            hiddenInput.click();
+          // Only focus if not already focused to prevent keyboard flicker
+          if (!hiddenInput.matches(':focus')) {
+            hiddenInput.focus();
+            // For iOS, sometimes we need to trigger a click event
+            if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+              hiddenInput.click();
+            }
           }
         } catch (e) {
           console.log('Focus failed:', e);
@@ -479,13 +483,12 @@
               }
             }
             renderGrid();
-            // Force focus on mobile after cell click
-            setTimeout(() => {
-              hiddenInput.focus();
-              if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-                hiddenInput.click();
-              }
-            }, 10);
+            // Keep the hidden input focused without causing keyboard flicker
+            if (!hiddenInput.matches(':focus')) {
+              setTimeout(() => {
+                hiddenInput.focus();
+              }, 10);
+            }
           };
 
           gridEl.appendChild(div);
@@ -724,6 +727,29 @@
         console.log("No previous word found in entire grid. Staying at current.");
         selected = { row: row, col: col };
     }
+
+    // Prevent focus loss on mobile when interacting with the grid
+    document.addEventListener('touchstart', (e) => {
+      // If touching a grid cell, prevent default to avoid focus loss
+      if (e.target.classList.contains('cell')) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    // Maintain focus on the hidden input
+    document.addEventListener('focusout', (e) => {
+      // If the hidden input loses focus and no modal is open, refocus it
+      if (e.target === hiddenInput) {
+        const modalsOpen = document.querySelector('.modal[style*="flex"]');
+        if (!modalsOpen) {
+          setTimeout(() => {
+            if (!hiddenInput.matches(':focus')) {
+              hiddenInput.focus();
+            }
+          }, 50);
+        }
+      }
+    });
 
     // Initial focus on the hidden input after the page loads
     window.onload = focusHiddenInput;
