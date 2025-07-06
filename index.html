@@ -6,9 +6,22 @@
   <title>Dutluk Mini Bulmaca</title>
   <link rel="icon" href="dut2.png" type="image/x-icon" />
   <style>
+    html, body {
+      overflow: hidden; /* Prevent scrolling entirely */
+      height: 100vh; /* Full viewport height */
+      margin: 0;
+      padding: 0;
+      position: fixed; /* Lock position */
+      width: 100%; 
+      top: 0;
+      left: 0;
+    }
     body {
       font-family: sans-serif;
       padding: 1rem;
+      box-sizing: border-box; /* Include padding in height calculation */
+      overflow-y: auto; /* Allow internal scrolling within body if needed */
+      overflow-x: hidden; /* No horizontal scroll */
     }
     .grid {
       display: grid;
@@ -156,6 +169,8 @@
         hiddenInput.focus();
         hiddenInput.click();
         iosKeyboardTrigger.style.display = 'none';
+        // Ensure no scroll after focus
+        setTimeout(() => window.scrollTo(0, 0), 10);
       };
       
       // Also add touch event to the trigger for better iOS handling
@@ -164,6 +179,8 @@
         hiddenInput.focus();
         hiddenInput.click();
         iosKeyboardTrigger.style.display = 'none';
+        // Ensure no scroll after focus
+        setTimeout(() => window.scrollTo(0, 0), 10);
       });
     }
 
@@ -222,6 +239,8 @@
               hiddenInput.click();
             }
           }
+          // Always ensure no scroll after focus
+          window.scrollTo(0, 0);
         } catch (e) {
           console.log('Focus failed:', e);
         }
@@ -745,6 +764,37 @@
         console.log("No previous word found in entire grid. Staying at current.");
         selected = { row: row, col: col };
     }
+
+    // Prevent any scrolling and keep viewport locked at top
+    function preventScroll() {
+      window.scrollTo(0, 0);
+    }
+
+    // Multiple event listeners to prevent scrolling
+    window.addEventListener('scroll', preventScroll, { passive: false });
+    window.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+    }, { passive: false });
+    window.addEventListener('wheel', (e) => {
+      e.preventDefault();
+    }, { passive: false });
+
+    // Prevent scroll on keyboard navigation
+    window.addEventListener('keydown', (e) => {
+      if (['Space', 'ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End'].includes(e.code)) {
+        // Only prevent if not typing in our hidden input
+        if (e.target !== hiddenInput) {
+          e.preventDefault();
+        }
+      }
+    });
+
+    // Force scroll to top periodically (backup)
+    setInterval(() => {
+      if (window.scrollY !== 0) {
+        window.scrollTo(0, 0);
+      }
+    }, 100);
 
     // Enhanced focus management for iOS
     document.addEventListener('focusout', (e) => {
