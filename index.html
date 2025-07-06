@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NYT Mini Clone</title>
+  <title>Dutluk Mini Bulmaca</title>
+  <link rel="icon" href="dut2.png" type="image/x-icon" />
   <style>
     body {
       font-family: sans-serif;
@@ -156,6 +157,14 @@
         hiddenInput.click();
         iosKeyboardTrigger.style.display = 'none';
       };
+      
+      // Also add touch event to the trigger for better iOS handling
+      iosKeyboardTrigger.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        hiddenInput.focus();
+        hiddenInput.click();
+        iosKeyboardTrigger.style.display = 'none';
+      });
     }
 
     // Get localization json
@@ -483,11 +492,25 @@
               }
             }
             renderGrid();
-            // Keep the hidden input focused without causing keyboard flicker
-            if (!hiddenInput.matches(':focus')) {
+            
+            // Enhanced focus handling for iOS
+            if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+              // For iOS, maintain focus more aggressively
               setTimeout(() => {
-                hiddenInput.focus();
+                if (!hiddenInput.matches(':focus')) {
+                  hiddenInput.focus();
+                  hiddenInput.click();
+                  // Hide the backup button since we're trying to maintain focus
+                  iosKeyboardTrigger.style.display = 'none';
+                }
               }, 10);
+            } else {
+              // For other devices, simple focus check
+              if (!hiddenInput.matches(':focus')) {
+                setTimeout(() => {
+                  hiddenInput.focus();
+                }, 10);
+              }
             }
           };
 
@@ -736,20 +759,47 @@
       }
     }, { passive: false });
 
-    // Maintain focus on the hidden input
+    // Enhanced focus management for iOS
     document.addEventListener('focusout', (e) => {
       // If the hidden input loses focus and no modal is open, refocus it
       if (e.target === hiddenInput) {
         const modalsOpen = document.querySelector('.modal[style*="flex"]');
         if (!modalsOpen) {
-          setTimeout(() => {
-            if (!hiddenInput.matches(':focus')) {
-              hiddenInput.focus();
-            }
-          }, 50);
+          // For iOS, show the button again if focus is lost
+          if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+            iosKeyboardTrigger.style.display = 'block';
+          } else {
+            // For other devices, try to refocus automatically
+            setTimeout(() => {
+              if (!hiddenInput.matches(':focus')) {
+                hiddenInput.focus();
+              }
+            }, 50);
+          }
         }
       }
     });
+
+    // iOS-specific: prevent focus loss during cell interactions
+    if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+      let preventBlur = false;
+      
+      document.addEventListener('touchstart', (e) => {
+        if (e.target.classList.contains('cell')) {
+          preventBlur = true;
+          setTimeout(() => { preventBlur = false; }, 100);
+        }
+      });
+
+      hiddenInput.addEventListener('blur', (e) => {
+        if (preventBlur) {
+          e.preventDefault();
+          setTimeout(() => {
+            hiddenInput.focus();
+          }, 10);
+        }
+      });
+    }
 
     // Initial focus on the hidden input after the page loads
     window.onload = focusHiddenInput;
