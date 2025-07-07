@@ -155,10 +155,59 @@
   </div>
 
   <script>
-    const today = new Date().toISOString().slice(0, 10);
-    document.getElementById("today").textContent = today;
+    let today; // Will be set dynamically to the latest available puzzle date
+    
+    const lang = new URLSearchParams(window.location.search).get('lang') || 'tr';
+    
+    // Simple XOR decryption function (matches encrypt.html)
+    function simpleDecrypt(encryptedText) {
+      const key = 42; // Same key as in encrypt.html
+      return encryptedText.split('').map(char => 
+        String.fromCharCode(char.charCodeAt(0) ^ key)
+      ).join('');
+    }
+    
+    // Function to process puzzle text (handle both plain and encrypted content)
+    function processPuzzleText(rawText) {
+      const text = rawText.trim();
+      
+      // Check if content is encrypted
+      if (text.startsWith('[ENCRYPTED]')) {
+        console.log("Detected encrypted content, decrypting...");
+        const encryptedContent = text.substring('[ENCRYPTED]\n'.length);
+        const decryptedContent = simpleDecrypt(encryptedContent);
+        console.log("Content decrypted successfully");
+        return decryptedContent;
+      } else {
+        console.log("Processing plain text content");
+        return text;
+      }
+    }
 
-    const lang = new URLSearchParams(window.location.search).get('lang') || 'tr'; 
+    // Function to find the latest available puzzle file
+    async function findLatestPuzzle() {
+      const today = new Date();
+      
+      // Try up to 30 days back
+      for (let i = 0; i < 30; i++) {
+        const testDate = new Date(today);
+        testDate.setDate(today.getDate() - i);
+        const dateString = testDate.toISOString().slice(0, 10);
+        
+        try {
+          const response = await fetch(`${lang}/${dateString}.txt`);
+          if (response.ok) {
+            console.log(`Found puzzle file for date: ${dateString}`);
+            return dateString;
+          }
+        } catch (error) {
+          console.log(`No puzzle file found for ${dateString}`);
+        }
+      }
+      
+      // Fallback to today's date if nothing found
+      return today.toISOString().slice(0, 10);
+    } 
     const hiddenInput = document.getElementById("hiddenInput");
     const iosKeyboardTrigger = document.getElementById("iosKeyboardTrigger");
 
@@ -184,33 +233,90 @@
       });
     }
 
-    // Get localization json
-    fetch(`localization/${lang}.json`)
-      .then(res => res.json())
-      .then(data => {
-        document.title = data.title;
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        const formattedDate = new Date(today).toLocaleDateString(lang, options);
-        document.getElementById("title").textContent = `${data.title}` ;
-        document.getElementById("today").textContent = formattedDate;
-        document.getElementById("startModal").querySelector("h2").textContent = data.readyToPlay;
-        document.getElementById("successModal").querySelector("h2").textContent = data.successTitle;
-        document.getElementById("errorModal").querySelector("h2").textContent = data.errorTitle;
-        document.getElementById("errorModal").querySelector("p").textContent = data.errorMessage;
-        document.getElementById("startButton").textContent = data.startGame;
-        document.getElementById("by").textContent = data.by;
-        document.getElementById("timerName").textContent = data.time;
-        document.getElementById("oops").textContent = data.oopsKeepTrying;
-        document.getElementById("dontWorry").textContent = data.stillMistakes;
-        document.getElementById("keepGoing").textContent = data.keepGoing;
-        document.getElementById("congrats").textContent = data.crosswordSolved;
-        document.getElementById("youFinishedIn").textContent = data.youFinishedIn;
-        document.getElementById("successOk").textContent = data.successOk;
-        console.log("Localization loaded:", data);
-      })
-      .catch(error => {
-        console.error("Error loading localization:", error);
+    // Get localization json and load puzzle
+    Promise.all([
+      fetch(`localization/${lang}.json`).then(res => res.json()),
+      findLatestPuzzle()
+    ]).then(([localizationData, puzzleDate]) => {
+      // Handle localization
+      document.title = localizationData.title;
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      const formattedDate = new Date(puzzleDate).toLocaleDateString(lang, options);
+      document.getElementById("title").textContent = `${localizationData.title}`;
+      document.getElementById("today").textContent = formattedDate;
+      document.getElementById("startModal").querySelector("h2").textContent = localizationData.readyToPlay;
+      document.getElementById("successModal").querySelector("h2").textContent = localizationData.successTitle;
+      document.getElementById("errorModal").querySelector("h2").textContent = localizationData.errorTitle;
+      document.getElementById("errorModal").querySelector("p").textContent = localizationData.errorMessage;
+      document.getElementById("startButton").textContent = localizationData.startGame;
+      document.getElementById("by").textContent = localizationData.by;
+      document.getElementById("timerName").textContent = localizationData.time;
+      document.getElementById("oops").textContent = localizationData.oopsKeepTrying;
+      document.getElementById("dontWorry").textContent = localizationData.stillMistakes;
+      document.getElementById("keepGoing").textContent = localizationData.keepGoing;
+      document.getElementById("congrats").textContent = localizationData.crosswordSolved;
+      document.getElementById("youFinishedIn").textContent = localizationData.youFinishedIn;
+      document.getElementById("successOk").textContent = localizationData.successOk;
+      console.log("Localization loaded:", localizationData);
+
+      // Load puzzle data
+      return fetch(`${lang}/${puzzleDate}.txt`);
+    }).then(res => {
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      return res.text();
+    }).then(text => {
+      console.log("Fetched puzzle data:", text);
+      const processedText = processPuzzleText(text);
+      console.log("Processed puzzle data:", processedText);
+      const lines = processedText.trim().split("\n");
+      const author = lines[0].split(": ")[1];
+      document.getElementById("author").textContent = author;
+
+      gridSize = parseInt(lines[1].split(": ")[1]);
+      const gridLines = lines.slice(2, 2 + gridSize);
+      if (gridLines.length !== gridSize || gridLines.some(l => l.length !== gridSize)) {
+        console.error("Grid size mismatch!", { expected: gridSize, actualRows: gridLines.length, actualCols: gridLines.map(l=>l.length) });
+        alert("Grid size mismatch");
+        throw new Error("Grid size mismatch");
+      }
+
+      grid = gridLines.map(l => l.split(""));
+      answers = Array(gridSize).fill(null).map(() => Array(gridSize).fill(""));
+      console.log("Initial grid loaded:", grid);
+      console.log("Initial answers array:", answers);
+
+      // If 0,0 is a black cell, set selected to the first white cell
+      while (selected.row < gridSize && selected.col < gridSize && grid[selected.row][selected.col] === '-') {
+        selected.col++;
+        if (selected.col >= gridSize) {
+          selected.col = 0;
+          selected.row++;
+        }
+      }
+      if (selected.row >= gridSize) {
+        console.error("No valid starting cell found in the grid.");
+        alert("No valid starting cell found in the grid.");
+        return;
+      }
+
+      // Populate original clues data from the file
+      lines.slice(2 + gridSize).forEach(line => {
+        if (!line.includes(": ")) return;
+        const [pos, clue] = line.split(": ");
+        const dir = pos.startsWith("H") ? "H" : "V";
+        const id = pos.slice(1);
+        cluesData[dir][id] = clue;
       });
+      console.log("Raw clues data loaded:", cluesData);
+
+      mapCluePositions(); // Map clue numbers to grid positions after grid is loaded
+      renderGrid(); // Render grid and manage clue visibility
+    }).catch(error => {
+      console.error("Error loading crossword data:", error);
+      alert("Failed to load crossword puzzle. Make sure the puzzle file exists and is correctly formatted.");
+    });
 
     let selected = { row: 0, col: 0 };
     let currentDirection = 'across'; // 'across' or 'down'
@@ -246,9 +352,6 @@
         }
       }, 100);
     }
-    // Use the input letters to hidden input to enter cells
-
-
 
     function startTimer() {
       startTime = Date.now();
@@ -332,64 +435,6 @@
       }
       console.log("Clue positions mapped:", { across: cluePositions.across, down: cluePositions.down });
     }
-
-    fetch(`${lang}/${today}.txt`)
-      .then(res => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! status: ${res.status}`);
-        }
-        return res.text();
-      })
-      .then(text => {
-        console.log("Fetched puzzle data:", text);
-        const lines = text.trim().split("\n");
-        const author = lines[0].split(": ")[1];
-        document.getElementById("author").textContent = author;
-
-        gridSize = parseInt(lines[1].split(": ")[1]);
-        const gridLines = lines.slice(2, 2 + gridSize);
-        if (gridLines.length !== gridSize || gridLines.some(l => l.length !== gridSize)) {
-          console.error("Grid size mismatch!", { expected: gridSize, actualRows: gridLines.length, actualCols: gridLines.map(l=>l.length) });
-          alert("Grid size mismatch");
-          throw new Error("Grid size mismatch");
-        }
-
-        grid = gridLines.map(l => l.split(""));
-        answers = Array(gridSize).fill(null).map(() => Array(gridSize).fill(""));
-        console.log("Initial grid loaded:", grid);
-        console.log("Initial answers array:", answers);
-
-        // If 0,0 is a black cell, set selected to the first white cell
-        while (selected.row < gridSize && selected.col < gridSize && grid[selected.row][selected.col] === '-') {
-          selected.col++;
-          if (selected.col >= gridSize) {
-            selected.col = 0;
-            selected.row++;
-          }
-        }
-        if (selected.row >= gridSize) {
-          console.error("No valid starting cell found in the grid.");
-          alert("No valid starting cell found in the grid.");
-          return;
-        }
-
-        // Populate original clues data from the file
-        lines.slice(2 + gridSize).forEach(line => {
-          if (!line.includes(": ")) return;
-          const [pos, clue] = line.split(": ");
-          const dir = pos.startsWith("H") ? "H" : "V";
-          const id = pos.slice(1);
-          cluesData[dir][id] = clue;
-        });
-        console.log("Raw clues data loaded:", cluesData);
-
-        mapCluePositions(); // Map clue numbers to grid positions after grid is loaded
-        renderGrid(); // Render grid and manage clue visibility
-      })
-      .catch(error => {
-        console.error("Error loading crossword data:", error);
-        alert("Failed to load crossword puzzle. Make sure the puzzle file exists and is correctly formatted.");
-      });
 
     function getWordInfo(row, col, direction) {
       console.log(`getWordInfo called for (${row}, ${col}) direction: ${direction}`);

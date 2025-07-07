@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crossword Encryption Utility</title>
+  <link rel="icon" href="dut2.png" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .step {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+    
+    .step.active {
+      border-color: #007AFF;
+      background: #f0f8ff;
+    }
+    
+    .step h2 {
+      color: #007AFF;
+      margin-top: 0;
+    }
+    
+    .upload-area {
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      padding: 40px;
+      text-align: center;
+      background: white;
+      transition: border-color 0.3s;
+      cursor: pointer;
+    }
+    
+    .upload-area:hover {
+      border-color: #007AFF;
+    }
+    
+    .upload-area.dragover {
+      border-color: #007AFF;
+      background: #f0f8ff;
+    }
+    
+    textarea {
+      width: 100%;
+      min-height: 200px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: monospace;
+      font-size: 14px;
+      resize: vertical;
+      box-sizing: border-box;
+    }
+    
+    button {
+      background: #007AFF;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px 5px;
+    }
+    
+    button:hover {
+      background: #0056b3;
+    }
+    
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    
+    .success {
+      color: #28a745;
+      font-weight: bold;
+    }
+    
+    .error {
+      color: #dc3545;
+      font-weight: bold;
+    }
+    
+    .validation-result {
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    
+    .validation-result.valid {
+      background: #d4edda;
+      border: 1px solid #c3e6cb;
+      color: #155724;
+    }
+    
+    .validation-result.invalid {
+      background: #f8d7da;
+      border: 1px solid #f5c6cb;
+      color: #721c24;
+    }
+    
+    .output-area {
+      background: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    .filename-input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 10px 0;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    
+    #step1 {
+      display: block;
+    }
+    
+    #step2 {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Crossword Encryption Utility</h1>
+    <p style="text-align: center; color: #666; margin-bottom: 30px;">
+      Upload or paste your crossword file to encrypt it for submission. The encrypted version can be played without revealing the solution.
+    </p>
+    
+    <!-- Step 1: Upload/Paste Content -->
+    <div id="step1" class="step active">
+      <h2>Step 1: Upload or Paste Crossword Content</h2>
+      
+      <div class="upload-area" id="uploadArea">
+        <p>📁 <strong>Drag and drop a crossword file here</strong></p>
+        <p>or</p>
+        <input type="file" id="fileInput" accept=".txt" style="display: none;">
+        <button onclick="document.getElementById('fileInput').click()">Choose File</button>
+      </div>
+      
+      <div style="margin: 20px 0; text-align: center;">
+        <strong>OR</strong>
+      </div>
+      
+      <textarea id="contentArea" placeholder="Paste your crossword content here...
+
+Example format:
+AUTHOR: Your Name
+GRID: 5
+ABCDE
+FGHIJ
+KLMNO
+PQRST
+UVWXY
+
+H1: First horizontal clue
+H2: Second horizontal clue
+V1: First vertical clue
+V2: Second vertical clue
+..."></textarea>
+      
+      <div>
+        <button onclick="validateContent()">Validate & Continue</button>
+        <button onclick="clearContent()">Clear</button>
+      </div>
+      
+      <div id="validationResult"></div>
+    </div>
+    
+    <!-- Step 2: Encrypt and Download -->
+    <div id="step2" class="step">
+      <h2>Step 2: Encrypt and Download</h2>
+      
+      <div id="validationSummary"></div>
+      
+      <div>
+        <label for="filenameInput"><strong>Output filename:</strong></label>
+        <input type="text" id="filenameInput" class="filename-input" placeholder="e.g., 2025-07-08.txt">
+        <small style="color: #666;">This will be the filename for the encrypted crossword.</small>
+      </div>
+      
+      <div>
+        <button onclick="encryptAndDownload()">🔐 Encrypt & Download</button>
+        <button onclick="goBackToStep1()">← Back to Step 1</button>
+      </div>
+      
+      <div class="output-area" id="encryptedOutput" style="display: none;">
+        <h4>Encrypted Content Preview:</h4>
+        <textarea readonly id="encryptedContent" style="min-height: 150px;"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let crosswordData = null;
+    let validationInfo = null;
+
+    // Simple XOR encryption/decryption
+    function simpleEncrypt(text) {
+      const key = 42; // Simple key
+      return text.split('').map(char => 
+        String.fromCharCode(char.charCodeAt(0) ^ key)
+      ).join('');
+    }
+
+    function simpleDecrypt(encryptedText) {
+      return simpleEncrypt(encryptedText); // XOR is symmetric
+    }
+
+    // File upload handling
+    document.getElementById('fileInput').addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          document.getElementById('contentArea').value = e.target.result;
+          // Auto-set filename based on uploaded file
+          const filename = file.name;
+          document.getElementById('filenameInput').value = filename;
+        };
+        reader.readAsText(file);
+      }
+    });
+
+    // Drag and drop handling
+    const uploadArea = document.getElementById('uploadArea');
+    
+    uploadArea.addEventListener('dragover', function(e) {
+      e.preventDefault();
+      uploadArea.classList.add('dragover');
+    });
+    
+    uploadArea.addEventListener('dragleave', function(e) {
+      e.preventDefault();
+      uploadArea.classList.remove('dragover');
+    });
+    
+    uploadArea.addEventListener('drop', function(e) {
+      e.preventDefault();
+      uploadArea.classList.remove('dragover');
+      
+      const files = e.dataTransfer.files;
+      if (files.length > 0) {
+        const file = files[0];
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          document.getElementById('contentArea').value = e.target.result;
+          // Auto-set filename based on uploaded file
+          document.getElementById('filenameInput').value = file.name;
+        };
+        reader.readAsText(file);
+      }
+    });
+
+    function validateContent() {
+      const content = document.getElementById('contentArea').value.trim();
+      const resultDiv = document.getElementById('validationResult');
+      
+      if (!content) {
+        showValidationResult('Please provide crossword content.', false);
+        return;
+      }
+
+      try {
+        const lines = content.split('\n').filter(line => line.trim());
+        
+        if (lines.length < 3) {
+          throw new Error('Content too short. Need at least author, size, and grid lines.');
+        }
+
+        // Validate author line
+        if (!lines[0].startsWith('AUTHOR: ')) {
+          throw new Error('First line must be "AUTHOR: [name]"');
+        }
+        const author = lines[0].split(': ')[1];
+        if (!author || !author.trim()) {
+          throw new Error('Author name cannot be empty');
+        }
+
+        // Validate size line
+        if (!lines[1].startsWith('GRID: ')) {
+          throw new Error('Second line must be "GRID: [number]"');
+        }
+        const size = parseInt(lines[1].split(': ')[1]);
+        if (isNaN(size) || size < 3 || size > 15) {
+          throw new Error('Size must be a number between 3 and 15');
+        }
+
+        // Validate grid
+        const gridLines = lines.slice(2, 2 + size);
+        if (gridLines.length !== size) {
+          throw new Error(`Expected ${size} grid lines, found ${gridLines.length}`);
+        }
+
+        for (let i = 0; i < size; i++) {
+          if (gridLines[i].length !== size) {
+            throw new Error(`Grid row ${i + 1} has ${gridLines[i].length} characters, expected ${size}`);
+          }
+          // Check for valid characters (letters, numbers, or dashes)
+          if (!/^[A-Za-z0-9\-]+$/.test(gridLines[i])) {
+            throw new Error(`Grid row ${i + 1} contains invalid characters. Use only letters, numbers, or dashes.`);
+          }
+        }
+
+        // Validate clues
+        const clueLines = lines.slice(2 + size + 1);
+        const hClues = clueLines.filter(line => line.startsWith('H')).length;
+        const vClues = clueLines.filter(line => line.startsWith('V')).length;
+        
+        if (hClues === 0 && vClues === 0) {
+          throw new Error('No clues found. Need at least one H[number]: or V[number]: clue.');
+        }
+
+        // Validate clue format
+        for (const line of clueLines) {
+          if (!line.includes(': ')) {
+            throw new Error(`Invalid clue format: "${line}". Should be "H[number]: clue text" or "V[number]: clue text"`);
+          }
+          const [prefix, clue] = line.split(': ');
+          if (!prefix.match(/^[HV]\d+\.\d+$/)) {
+            throw new Error(`Invalid clue prefix: "${prefix}". Should be H[number] or V[number]`);
+          }
+          if (!clue || !clue.trim()) {
+            throw new Error(`Empty clue for ${prefix}`);
+          }
+        }
+
+        // If we get here, validation passed
+        crosswordData = content;
+        validationInfo = {
+          author: author,
+          size: size,
+          gridLines: gridLines.length,
+          hClues: hClues,
+          vClues: vClues
+        };
+
+        showValidationResult(`✅ Valid crossword format!
+        
+Author: ${author}
+Grid size: ${size}×${size}
+Horizontal clues: ${hClues}
+Vertical clues: ${vClues}`, true);
+
+        // Auto-generate filename if empty
+        const filenameInput = document.getElementById('filenameInput');
+        if (!filenameInput.value.trim()) {
+          const today = new Date().toISOString().slice(0, 10);
+          filenameInput.value = `${today}.txt`;
+        }
+
+        // Move to step 2
+        setTimeout(() => {
+          showStep2();
+        }, 1000);
+
+      } catch (error) {
+        showValidationResult(`❌ ${error.message}`, false);
+      }
+    }
+
+    function showValidationResult(message, isValid) {
+      const resultDiv = document.getElementById('validationResult');
+      resultDiv.innerHTML = `<div class="validation-result ${isValid ? 'valid' : 'invalid'}">${message}</div>`;
+    }
+
+    function showStep2() {
+      document.getElementById('step1').style.display = 'none';
+      document.getElementById('step2').style.display = 'block';
+      document.getElementById('step1').classList.remove('active');
+      document.getElementById('step2').classList.add('active');
+
+      // Show validation summary
+      const summaryDiv = document.getElementById('validationSummary');
+      summaryDiv.innerHTML = `
+        <div class="validation-result valid">
+          ✅ Crossword validated successfully!<br>
+          Author: ${validationInfo.author}<br>
+          Size: ${validationInfo.size}×${validationInfo.size}<br>
+          Clues: ${validationInfo.hClues} horizontal, ${validationInfo.vClues} vertical
+        </div>
+      `;
+    }
+
+    function goBackToStep1() {
+      document.getElementById('step2').style.display = 'none';
+      document.getElementById('step1').style.display = 'block';
+      document.getElementById('step2').classList.remove('active');
+      document.getElementById('step1').classList.add('active');
+    }
+
+    function encryptAndDownload() {
+      if (!crosswordData) {
+        alert('No valid crossword data to encrypt');
+        return;
+      }
+
+      const filename = document.getElementById('filenameInput').value.trim();
+      if (!filename) {
+        alert('Please enter a filename');
+        return;
+      }
+
+      // Encrypt the content
+      const encrypted = simpleEncrypt(crosswordData);
+      const encryptedContent = `[ENCRYPTED]\n${encrypted}`;
+
+      // Show preview
+      document.getElementById('encryptedContent').value = encryptedContent;
+      document.getElementById('encryptedOutput').style.display = 'block';
+
+      // Create download
+      const blob = new Blob([encryptedContent], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+
+      alert(`✅ Encrypted crossword downloaded as "${filename}"!\n\nYou can now upload this file to your server. The game will automatically decrypt and load it.`);
+    }
+
+    function clearContent() {
+      document.getElementById('contentArea').value = '';
+      document.getElementById('validationResult').innerHTML = '';
+      document.getElementById('filenameInput').value = '';
+      crosswordData = null;
+      validationInfo = null;
+    }
+
+    // Test the encryption functions
+    console.log('Testing encryption...');
+    const testText = 'Hello World!';
+    const encrypted = simpleEncrypt(testText);
+    const decrypted = simpleDecrypt(encrypted);
+    console.log('Original:', testText);
+    console.log('Encrypted:', encrypted);
+    console.log('Decrypted:', decrypted);
+    console.log('Encryption test:', testText === decrypted ? 'PASSED' : 'FAILED');
+  </script>
+</body>
+</html>
