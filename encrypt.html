@@ -215,12 +215,19 @@ V2.1: Second vertical clue
       
       <div>
         <button onclick="encryptAndDownload()">🔐 Encrypt & Download</button>
+        <button onclick="previewCrossword()">👁️ Preview</button>
         <button onclick="goBackToStep1()">← Back to Step 1</button>
       </div>
       
       <div class="output-area" id="encryptedOutput" style="display: none;">
         <h4>Encrypted Content Preview:</h4>
         <textarea readonly id="encryptedContent" style="min-height: 150px;"></textarea>
+      </div>
+      
+      <div class="output-area" id="previewOutput" style="display: none;">
+        <h4>🎮 Crossword Preview:</h4>
+        <p style="color: #666; margin-bottom: 15px;">This is how your crossword will look when played:</p>
+        <iframe id="crosswordPreview" style="width: 100%; height: 600px; border: 1px solid #ddd; border-radius: 5px;"></iframe>
       </div>
     </div>
   </div>
@@ -513,6 +520,28 @@ Vertical clues: ${validationInfo.vClues}`, true);
       document.getElementById('step1').classList.add('active');
     }
 
+    function previewCrossword() {
+      if (!crosswordData) {
+        alert('No valid crossword data to preview');
+        return;
+      }
+
+      // URL encode the crossword data
+      const encodedData = encodeURIComponent(crosswordData);
+      
+      // Create the preview URL with the crossword override parameter
+      const previewUrl = `index.html?crosswordOverride=${encodedData}`;
+      
+      // Set the iframe source and show the preview
+      const iframe = document.getElementById('crosswordPreview');
+      iframe.src = previewUrl;
+      
+      document.getElementById('previewOutput').style.display = 'block';
+      
+      // Scroll to the preview
+      document.getElementById('previewOutput').scrollIntoView({ behavior: 'smooth' });
+    }
+
     function encryptAndDownload() {
       if (!crosswordData) {
         alert('No valid crossword data to encrypt');
@@ -549,6 +578,8 @@ Vertical clues: ${validationInfo.vClues}`, true);
       document.getElementById('contentArea').value = '';
       document.getElementById('validationResult').innerHTML = '';
       document.getElementById('filenameInput').value = '';
+      document.getElementById('encryptedOutput').style.display = 'none';
+      document.getElementById('previewOutput').style.display = 'none';
       crosswordData = null;
       validationInfo = null;
     }

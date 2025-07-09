@@ -184,6 +184,35 @@
       }
     }
 
+    // Function to get puzzle data from override or find latest puzzle
+    async function getOrFindPuzzleData() {
+      // Check for crossword override parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const crosswordOverride = urlParams.get('crosswordOverride');
+      
+      if (crosswordOverride) {
+        console.log("Using crossword override data from URL parameter");
+        try {
+          const decodedData = decodeURIComponent(crosswordOverride);
+          return {
+            isOverride: true,
+            content: decodedData,
+            date: new Date().toISOString().slice(0, 10) // Use today's date for display
+          };
+        } catch (error) {
+          console.error("Error decoding crossword override data:", error);
+          // Fall back to normal puzzle loading
+        }
+      }
+      
+      // Normal puzzle loading - find latest available
+      const puzzleDate = await findLatestPuzzle();
+      return {
+        isOverride: false,
+        date: puzzleDate
+      };
+    }
+
     // Function to find the latest available puzzle file
     async function findLatestPuzzle() {
       const today = new Date();
@@ -236,12 +265,12 @@
     // Get localization json and load puzzle
     Promise.all([
       fetch(`localization/${lang}.json`).then(res => res.json()),
-      findLatestPuzzle()
-    ]).then(([localizationData, puzzleDate]) => {
+      getOrFindPuzzleData()
+    ]).then(([localizationData, puzzleData]) => {
       // Handle localization
       document.title = localizationData.title;
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      const formattedDate = new Date(puzzleDate).toLocaleDateString(lang, options);
+      const formattedDate = new Date(puzzleData.date).toLocaleDateString(lang, options);
       document.getElementById("title").textContent = `${localizationData.title}`;
       document.getElementById("today").textContent = formattedDate;
       document.getElementById("startModal").querySelector("h2").textContent = localizationData.readyToPlay;
@@ -259,13 +288,28 @@
       document.getElementById("successOk").textContent = localizationData.successOk;
       console.log("Localization loaded:", localizationData);
 
-      // Load puzzle data
-      return fetch(`${lang}/${puzzleDate}.txt`);
-    }).then(res => {
-      if (!res.ok) {
-        throw new Error(`HTTP error! status: ${res.status}`);
+      // Use override data if available, otherwise fetch from file
+      if (puzzleData.isOverride) {
+        return Promise.resolve(puzzleData.content);
+      } else {
+        // Load puzzle data from file
+        return fetch(`${lang}/${puzzleData.date}.txt`);
       }
-      return res.text();
+    }).then(dataOrResponse => {
+      let puzzleTextPromise;
+      
+      if (typeof dataOrResponse === 'string') {
+        // It's override data, use directly
+        puzzleTextPromise = Promise.resolve(dataOrResponse);
+      } else {
+        // It's a fetch response
+        if (!dataOrResponse.ok) {
+          throw new Error(`HTTP error! status: ${dataOrResponse.status}`);
+        }
+        puzzleTextPromise = dataOrResponse.text();
+      }
+      
+      return puzzleTextPromise;
     }).then(text => {
       console.log("Fetched puzzle data:", text);
       const processedText = processPuzzleText(text);
