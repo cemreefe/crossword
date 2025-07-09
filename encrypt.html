@@ -336,27 +336,63 @@ V2.1: Second vertical clue
           }
         }
 
-        // Validate clues
-        const clueLines = lines.slice(2 + size + 1);
-        const hClues = clueLines.filter(line => line.startsWith('H')).length;
-        const vClues = clueLines.filter(line => line.startsWith('V')).length;
+        // Parse and validate words from grid
+        const expectedWords = extractWordsFromGrid(gridLines);
+        console.log('Expected words:', expectedWords);
         
-        if (hClues === 0 && vClues === 0) {
-          throw new Error('No clues found. Need at least one H[number]: or V[number]: clue.');
+        // Validate clues
+        const clueLines = lines.slice(2 + size);
+        if (clueLines.length === 0) {
+          throw new Error('No clues found. Need clues for all words in the grid.');
         }
-
-        // Validate clue format
+        console.log('Clue lines:', clueLines);
+        // Parse provided clues
+        const providedClues = new Map();
         for (const line of clueLines) {
           if (!line.includes(': ')) {
-            throw new Error(`Invalid clue format: "${line}". Should be "H[number]: clue text" or "V[number]: clue text"`);
+            throw new Error(`Invalid clue format: "${line}". Should be "H[number].[number]: clue text" or "V[number].[number]: clue text"`);
           }
           const [prefix, clue] = line.split(': ');
           if (!prefix.match(/^[HV]\d+\.\d+$/)) {
-            throw new Error(`Invalid clue prefix: "${prefix}". Should be H[number] or V[number]`);
+            throw new Error(`Invalid clue prefix: "${prefix}". Should be H[row].[word] or V[col].[word] (e.g., H1.1, V2.2)`);
           }
           if (!clue || !clue.trim()) {
             throw new Error(`Empty clue for ${prefix}`);
           }
+          
+          if (providedClues.has(prefix)) {
+            throw new Error(`Duplicate clue: ${prefix}`);
+          }
+          providedClues.set(prefix, clue.trim());
+        }
+        
+        console.log('Provided clues:', Array.from(providedClues.keys()));
+
+        // Validate that all expected words have clues
+        const missingClues = [];
+        const extraClues = [];
+        
+        for (const word of expectedWords) {
+          if (!providedClues.has(word.id)) {
+            missingClues.push(word);
+          }
+        }
+        
+        for (const clueId of providedClues.keys()) {
+          if (!expectedWords.some(word => word.id === clueId)) {
+            extraClues.push(clueId);
+          }
+        }
+
+        if (missingClues.length > 0) {
+          const missing = missingClues.map(word => 
+            `${word.id} (${word.direction === 'H' ? 'horizontal' : 'vertical'} word "${word.text}" at ${word.direction === 'H' ? 'row' : 'column'} ${word.position})`
+          ).join(', ');
+          throw new Error(`Missing clues for: ${missing}`);
+        }
+
+        if (extraClues.length > 0) {
+          throw new Error(`Extra clues that don't correspond to words in grid: ${extraClues.join(', ')}`);
         }
 
         // If we get here, validation passed
@@ -365,16 +401,18 @@ V2.1: Second vertical clue
           author: author,
           size: size,
           gridLines: gridLines.length,
-          hClues: hClues,
-          vClues: vClues
+          hClues: expectedWords.filter(w => w.direction === 'H').length,
+          vClues: expectedWords.filter(w => w.direction === 'V').length,
+          totalWords: expectedWords.length
         };
 
         showValidationResult(`✅ Valid crossword format!
         
 Author: ${author}
 Grid size: ${size}×${size}
-Horizontal clues: ${hClues}
-Vertical clues: ${vClues}`, true);
+Total words: ${validationInfo.totalWords}
+Horizontal clues: ${validationInfo.hClues}
+Vertical clues: ${validationInfo.vClues}`, true);
 
         // Auto-generate filename if empty
         const filenameInput = document.getElementById('filenameInput');
@@ -391,6 +429,57 @@ Vertical clues: ${vClues}`, true);
       } catch (error) {
         showValidationResult(`❌ ${error.message}`, false);
       }
+    }
+
+    function extractWordsFromGrid(gridLines) {
+      const words = [];
+      const size = gridLines.length;
+
+      // Extract horizontal words
+      for (let row = 0; row < size; row++) {
+        const line = gridLines[row];
+        const segments = line.split('-');
+        
+        let wordIndex = 1;
+        for (const segment of segments) {
+          if (segment.length >= 1) { // Only words with >=1 characters
+            words.push({
+              id: `H${row + 1}.${wordIndex}`,
+              text: segment,
+              direction: 'H',
+              position: row + 1,
+              wordNumber: wordIndex
+            });
+            wordIndex++;
+          }
+        }
+      }
+
+      // Extract vertical words
+      for (let col = 0; col < size; col++) {
+        let column = '';
+        for (let row = 0; row < size; row++) {
+          column += gridLines[row][col];
+        }
+        
+        const segments = column.split('-');
+        
+        let wordIndex = 1;
+        for (const segment of segments) {
+          if (segment.length >= 1) { // Only words with >=1 characters
+            words.push({
+              id: `V${col + 1}.${wordIndex}`,
+              text: segment,
+              direction: 'V',
+              position: col + 1,
+              wordNumber: wordIndex
+            });
+            wordIndex++;
+          }
+        }
+      }
+
+      return words;
     }
 
     function showValidationResult(message, isValid) {
@@ -411,6 +500,7 @@ Vertical clues: ${vClues}`, true);
           ✅ Crossword validated successfully!<br>
           Author: ${validationInfo.author}<br>
           Size: ${validationInfo.size}×${validationInfo.size}<br>
+          Total words: ${validationInfo.totalWords}<br>
           Clues: ${validationInfo.hClues} horizontal, ${validationInfo.vClues} vertical
         </div>
       `;
