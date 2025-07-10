@@ -212,6 +212,7 @@
     </div>
     <div id="clue"></div>
     <p><span id="by">prepared by</span> <span id="author"></span></p>
+    <div id="backlogIndicator" style="font-size: 0.8rem; color: #666; margin-top: 0.5rem; text-align: center; display: none;"></div>
   </div>
 
   <input type="text" id="hiddenInput" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" inputmode="text" />
@@ -220,8 +221,6 @@
   <div id="iosKeyboardTrigger" style="position: fixed; bottom: 20px; right: 20px; background: #007AFF; color: white; padding: 10px 15px; border-radius: 20px; font-size: 14px; cursor: pointer; z-index: 1000; display: none;">
     📱 Tap to type
   </div>
-
-  <div id="backlogIndicator" style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; display: none;"></div>
 
   <script>
     let puzzleDate; // Will be set dynamically to the latest available puzzle date
@@ -340,6 +339,11 @@
     ]).then(([localizationData, puzzleData]) => {
       // Store localization data globally for share function
       window.localizationData = localizationData;
+      
+      // Call the function and update the indicator when the result is available
+      findAvailableDaysInFuture().then(days => {
+        updateBacklogIndicator(days);
+      });
       
       // Set the global puzzleDate variable for use in completion checking
       puzzleDate = puzzleData.date;
@@ -1067,12 +1071,11 @@
       const currentDate = new Date();
       let availableDays = 0;
       let latestDate = null;
-      let maxCheck = 30; // Maximum days to check in the future
       
-      // Try up to 30 days back
+      // Try up to 30 days in the future
       for (let i = 0; i < 30; i++) {
         const testDate = new Date(currentDate);
-        testDate.setDate(currentDate.getDate() + i);
+        testDate.setDate(currentDate.getDate() + i + 1);
         const dateString = testDate.toISOString().slice(0, 10);
         
         try {
@@ -1083,30 +1086,40 @@
               latestDate = dateString;
             }
             availableDays++;
+          } else {
+            // 404 or other error response - stop checking
+            console.log(`No puzzle file found for ${dateString} (${response.status})`);
+            break;
           }
         } catch (error) {
-          console.log(`No puzzle file found for ${dateString}`);
-          return availableDays; // Stop checking if a file is not found
+          // Network error - stop checking
+          console.log(`Network error checking ${dateString}:`, error);
+          break;
         }
       }
       
-      // Update the backlog indicator
-      return maxCheck;
+      return availableDays;
     }
 
     // Function to update the backlog indicator
     function updateBacklogIndicator(days) {
       const backlogElement = document.getElementById("backlogIndicator");
       if (backlogElement) {
-        if (days > 0) {
-          backlogElement.textContent = `${days} puzzle${days === 1 ? '' : 's'} available`;
-          backlogElement.style.display = 'block';
-        } else {
-          backlogElement.style.display = 'none';
-        }
+        // Get the appropriate localized message
+        const localizationKey = days === 1 ? 'backlogSingular' : 'backlogPlural';
+        const messageTemplate = window.localizationData?.[localizationKey];
+        console.log(`Localization message for backlog: ${messageTemplate}`);
+        console.log(`Available days in future: ${days}`);
+        console.log(`Backlog element found: ${backlogElement}`);
+        console.log(`Backlog element text content before update: ${window.localizationData}`);
+      
+        // Replace the placeholder with the actual count
+        const message = messageTemplate.replace('{count}', days);
+        
+        backlogElement.textContent = message;
+        backlogElement.style.display = 'block';
       }
     }
-    updateBacklogIndicator(findAvailableDaysInFuture())
   </script>
   <script>
     // Share result function for mobile
