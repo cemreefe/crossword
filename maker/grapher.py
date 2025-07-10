@@ -9,8 +9,8 @@ from typing import Set, Dict, List
 import string
 
 # Configuration
-GRID_SIZE = 5  # Maximum word length for crossword
-MIN_WORD_LENGTH = 5
+GRID_SIZE = 4  # Maximum word length for crossword
+MIN_WORD_LENGTH = 3
 
 # Turkish alphabet (29 letters)
 TURKISH_ALPHABET = "abcdefghijklmnopqrstuvwxyzçğıöşü"

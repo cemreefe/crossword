@@ -133,7 +133,7 @@ class CrosswordGrid:
         if empty_cells <= math.ceil(GRID_SIZE / 2):
             if self.is_solvable_grid():
                 self.save_grid_to_file("solvables/")
-            else:
+            elif empty_cells <= math.ceil(GRID_SIZE / 2)-1:
                 self.save_grid_to_file(f"close_calls/")
 
 
@@ -801,7 +801,7 @@ class CrosswordGrid:
     def save_grid_to_file(self, dirname: str):
         """Save the current grid state to a file"""
         signature = self.get_grid_state_signature()
-        filename = os.path.join(dirname, f"grid_{len(self.word_placements)}_words_{signature.count('-')}_empty_{signature}.txt")
+        filename = os.path.join(dirname, f"grid_{GRID_SIZE}x{GRID_SIZE}_{signature.count('-')}_empty_{signature}.txt")
         try:
             with open(filename, 'w', encoding='utf-8') as f:
                 f.write(f"Grid saved at attempt {getattr(self, 'current_attempt', 'unknown')}\n")

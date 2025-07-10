@@ -3718,7 +3718,6 @@ antrparantez
 antsız
 anut
 anutluk
-anüri
 anüs
 anüs yüzgeci
 anyon
@@ -24472,8 +24471,6 @@ fakirleşmek
 fakirleştirme
 fakirleştirmek
 fakirlik
-fakr
-fakruzaruret
 faks
 faksimile
 fakslama
@@ -49503,7 +49500,6 @@ müzminlik
 Mv
 Na
 naaş
-naat
 nabekâr
 nabız
 nabız yoklaması
@@ -62914,8 +62910,8 @@ süzüş
 şale
 şalgam
 şalgam suyu
-şali
 şal kuşak
+şalı
 şallak
 şallak mallak
 şal örneği
@@ -76114,10 +76110,3 @@ züppelik
 zürafa
 zürafagiller
 zürefa
-zürra
-zürriyet
-zürriyetli
-zürriyetsiz
-zürriyetsizlik
-züyuf
-züyuf akçe
