@@ -1125,8 +1125,7 @@
         // Create share data
         const shareData = {
           title: shareTitle,
-          text: `${shareText} 🎉\n\n${playAt}:`,
-          url: 'https://bulmaca.dutl.uk'
+          text: `${shareText} 🎉\n\n${playAt}: https://bulmaca.dutl.uk`,
         };
 
         // Check if Web Share API is supported
@@ -1149,8 +1148,7 @@
         
         fallbackShare({
           title: shareTitle,
-          text: `${shareText} 🎉\n\n${playAt}: bulmaca.dutl.uk`,
-          url: 'https://bulmaca.dutl.uk'
+          text: `${shareText} 🎉\n\n${playAt}: https://bulmaca.dutl.uk`,
         });
       }
     }
@@ -1158,7 +1156,7 @@
     // Fallback share function for unsupported devices
     function fallbackShare(shareData) {
       // Try to copy to clipboard
-      const shareText = `${shareData.text}\n${shareData.url}`;
+      const shareText = `${shareData.text}`;
       const clipboardMessage = window.localizationData?.shareTextCopied || 'Share text copied to clipboard!';
       
       if (navigator.clipboard && navigator.clipboard.writeText) {
