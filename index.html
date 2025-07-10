@@ -203,7 +203,7 @@
   <div id="backlogIndicator" style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; display: none;"></div>
 
   <script>
-    let today; // Will be set dynamically to the latest available puzzle date
+    let puzzleDate; // Will be set dynamically to the latest available puzzle date
     
     const lang = new URLSearchParams(window.location.search).get('lang') || 'tr';
 
@@ -265,12 +265,12 @@
 
     // Function to find the latest available puzzle file
     async function findLatestPuzzle() {
-      const today = new Date();
+      const currentDate = new Date();
       
       // Try up to 30 days back
       for (let i = 0; i < 30; i++) {
-        const testDate = new Date(today);
-        testDate.setDate(today.getDate() - i);
+        const testDate = new Date(currentDate);
+        testDate.setDate(currentDate.getDate() - i);
         const dateString = testDate.toISOString().slice(0, 10);
         
         try {
@@ -285,7 +285,7 @@
       }
       
       // Fallback to today's date if nothing found
-      return today.toISOString().slice(0, 10);
+      return currentDate.toISOString().slice(0, 10);
     } 
     const hiddenInput = document.getElementById("hiddenInput");
     const iosKeyboardTrigger = document.getElementById("iosKeyboardTrigger");
@@ -317,6 +317,9 @@
       fetch(`localization/${lang}.json`).then(res => res.json()),
       getOrFindPuzzleData()
     ]).then(([localizationData, puzzleData]) => {
+      // Set the global puzzleDate variable for use in completion checking
+      puzzleDate = puzzleData.date;
+      
       // Handle localization
       document.title = localizationData.title;
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -713,7 +716,7 @@
 
             if (checkIfAllFilled()) {
               console.log("All cells are filled. Checking if complete...");
-              if (checkIfComplete()) {
+              if (isPuzzleComplete()) {
                 console.log("Crossword is complete!");
                 showSuccessModal();
               } else {
@@ -793,6 +796,68 @@
         }
       }
       return true;
+    }
+
+    function checkIfCompleteWithoutSpecialCharacters() {
+      for (let r = 0; r < gridSize; r++) {
+        for (let c = 0; c < gridSize; c++) {
+          if (grid[r][c] === "-") continue;
+          
+          let expectedChar = normalizeForComparison(toUpperCaseWithLocale(grid[r][c]));
+          let enteredChar = normalizeForComparison(toUpperCaseWithLocale(answers[r][c]));
+          
+          if (enteredChar !== expectedChar) {
+            console.log(`Mismatch (normalized) at (${r}, ${c}): Expected '${grid[r][c]}' (${expectedChar}), Got '${answers[r][c]}' (${enteredChar})`);
+            return false;
+          }
+        }
+      }
+      return true;
+    }
+
+    // Check if puzzle is complete, allowing fallback for older puzzles
+    function isPuzzleComplete() {
+      const exactMatch = checkIfComplete();
+      
+      // For puzzles dated July 10, 2025 or earlier, also allow Turkish/English equivalents
+      if (!exactMatch && shouldAllowTurkishEnglishEquivalents()) {
+        const normalizedMatch = checkIfCompleteWithoutSpecialCharacters();
+        if (normalizedMatch) {
+          console.log("Puzzle completed using Turkish/English letter equivalents (legacy support)");
+        }
+        return normalizedMatch;
+      }
+      
+      return exactMatch;
+    }
+
+    // Check if we should allow Turkish/English letter equivalents based on puzzle date
+    function shouldAllowTurkishEnglishEquivalents() {
+      try {
+        // Get the puzzle date from the puzzleDate variable or fallback
+        const puzzleDateStr = puzzleDate || new Date().toISOString().slice(0, 10);
+        const puzzleDateObj = new Date(puzzleDateStr);
+        const cutoffDate = new Date('2025-07-10');
+        
+        return puzzleDateObj <= cutoffDate;
+      } catch (error) {
+        console.log('Error checking puzzle date for Turkish equivalents:', error);
+        return false; // Default to strict checking if date parsing fails
+      }
+    }
+
+    // Normalize Turkish and English letter equivalents for comparison
+    function normalizeForComparison(char) {
+      const turkishToEnglish = {
+        'Ş': 'S', 'ş': 's',
+        'İ': 'I', 'ı': 'i', 'I': 'I',
+        'Ğ': 'G', 'ğ': 'g',
+        'Ü': 'U', 'ü': 'u',
+        'Ö': 'O', 'ö': 'o',
+        'Ç': 'C', 'ç': 'c'
+      };
+      
+      return turkishToEnglish[char] || char;
     }
 
     function checkIfAllFilled() {
@@ -974,14 +1039,14 @@
   </script>
   <script>
     async function findAvailableDaysInFuture() {
-      const today = new Date();
+      const currentDate = new Date();
       let availableDays = 0;
       let latestDate = null;
       
       // Try up to 30 days back
       for (let i = 0; i < 30; i++) {
-        const testDate = new Date(today);
-        testDate.setDate(today.getDate() - i);
+        const testDate = new Date(currentDate);
+        testDate.setDate(currentDate.getDate() - i);
         const dateString = testDate.toISOString().slice(0, 10);
         
         try {
