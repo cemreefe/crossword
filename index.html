@@ -4,7 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dutluk Mini Bulmaca</title>
-  <link rel="icon" href="dut2.png" type="image/x-icon" />
+  <link rel="icon" href="static/dut2.png" type="image/x-icon" />
+  <!-- Card image and meta tags -->
+  <meta property="og:title" content="Dutluk Mini Bulmaca" />
+  <meta property="og:description" content="Bağımlılık yapan eğlenceli küçük bulmaca" />
+  <meta property="og:image" content="https://bulmaca.dutl.uk/static/dutluk_card.png" />
+  <meta property="og:url" content="https://bulmaca.dutl.uk" />
+  <!-- Twitter meta -->
+  <meta name="twitter:card" content="https://bulmaca.dutl.uk/static/dutluk_card.png" />
+
   <style>
     :root {
       --mobile-breakpoint: 768px;
@@ -1051,11 +1059,12 @@
       const currentDate = new Date();
       let availableDays = 0;
       let latestDate = null;
+      let maxCheck = 30; // Maximum days to check in the future
       
       // Try up to 30 days back
       for (let i = 0; i < 30; i++) {
         const testDate = new Date(currentDate);
-        testDate.setDate(currentDate.getDate() - i);
+        testDate.setDate(currentDate.getDate() + i);
         const dateString = testDate.toISOString().slice(0, 10);
         
         try {
@@ -1069,12 +1078,12 @@
           }
         } catch (error) {
           console.log(`No puzzle file found for ${dateString}`);
+          return availableDays; // Stop checking if a file is not found
         }
       }
       
       // Update the backlog indicator
-      return availableDays;
-      
+      return maxCheck;
     }
 
     // Function to update the backlog indicator
