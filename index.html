@@ -186,7 +186,10 @@
     <div class="modal-content">
       <h2 id="congrats">🎉 Crossword Solved!</h2>
       <p><span id="youFinishedIn">You finished in</span> <span id="finalTime"></span>!</p>
-       <button id="successOk" onclick="closeSuccessModal()">Close</button>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <button id="shareButton" onclick="shareResult()" style="background: #007AFF; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">📱 Share</button>
+        <button id="successOk" onclick="closeSuccessModal()">Close</button>
+      </div>
     </div>
   </div>
 
@@ -357,6 +360,7 @@
       document.getElementById("congrats").textContent = localizationData.crosswordSolved;
       document.getElementById("youFinishedIn").textContent = localizationData.youFinishedIn;
       document.getElementById("successOk").textContent = localizationData.successOk;
+      document.getElementById("shareButton").textContent = `📱 ${localizationData.share || 'Share'}`;
       console.log("Localization loaded:", localizationData);
 
       // Use override data if available, otherwise fetch from file
@@ -1099,6 +1103,89 @@
       }
     }
     updateBacklogIndicator(findAvailableDaysInFuture())
+  </script>
+  <script>
+    // Share result function for mobile
+    async function shareResult() {
+      try {
+        // Get the final time from the modal
+        const finalTimeText = document.getElementById("finalTime").textContent;
+        
+        // Create share data
+        const shareData = {
+          title: 'Dutluk Mini Bulmaca',
+          text: `I solved today's Dutluk Mini Bulmaca in ${finalTimeText}! 🎉\n\nPlay at: bulmaca.dutl.uk`,
+          url: 'https://bulmaca.dutl.uk'
+        };
+
+        // Check if Web Share API is supported
+        if (navigator.share && navigator.canShare && navigator.canShare(shareData)) {
+          await navigator.share(shareData);
+          console.log('Content shared successfully');
+        } else {
+          // Fallback for devices that don't support Web Share API
+          fallbackShare(shareData);
+        }
+      } catch (error) {
+        console.log('Error sharing:', error);
+        // Fallback if sharing fails
+        fallbackShare({
+          title: 'Dutluk Mini Bulmaca',
+          text: `I solved today's Dutluk Mini Bulmaca in ${document.getElementById("finalTime").textContent}! 🎉\n\nPlay at: bulmaca.dutl.uk`,
+          url: 'https://bulmaca.dutl.uk'
+        });
+      }
+    }
+
+    // Fallback share function for unsupported devices
+    function fallbackShare(shareData) {
+      // Try to copy to clipboard
+      const shareText = `${shareData.text}\n${shareData.url}`;
+      
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(shareText).then(() => {
+          alert('Share text copied to clipboard!');
+        }).catch(() => {
+          // If clipboard fails, show the text to copy manually
+          showShareText(shareText);
+        });
+      } else {
+        // Show the text to copy manually
+        showShareText(shareText);
+      }
+    }
+
+    // Show share text for manual copying
+    function showShareText(text) {
+      const shareModal = document.createElement('div');
+      shareModal.style.cssText = `
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.5); display: flex; justify-content: center;
+        align-items: center; z-index: 2000; backdrop-filter: blur(7px);
+      `;
+      
+      const shareContent = document.createElement('div');
+      shareContent.style.cssText = `
+        background: white; padding: 2rem; border-radius: 8px; text-align: center;
+        max-width: 90%; word-wrap: break-word;
+      `;
+      
+      shareContent.innerHTML = `
+        <h3>Copy this text to share:</h3>
+        <textarea readonly style="width: 100%; height: 100px; margin: 1rem 0; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">${text}</textarea>
+        <button onclick="this.parentElement.parentElement.remove()" style="background: #007AFF; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Close</button>
+      `;
+      
+      shareModal.appendChild(shareContent);
+      document.body.appendChild(shareModal);
+      
+      // Select the text in the textarea
+      const textarea = shareContent.querySelector('textarea');
+      textarea.focus();
+      textarea.select();
+    }
+
+    // ...existing code...
   </script>
 </body>
 </html>
