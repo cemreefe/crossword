@@ -15,5 +15,11 @@
   "across": "YATAY",
   "down": "DİKEY",
   "title": "Dutluk Mini Bulmaca",
-  "successOk": "Bakayım"
+  "successOk": "Bakayım",
+  "share": "Paylaş",
+  "shareText": "Bugünkü Dutluk Mini Bulmacayı {time} sürede çözdüm!",
+  "playAt": "Sen de oyna",
+  "copyTextToShare": "Paylaşmak için bu metni kopyala:",
+  "shareTextCopied": "Paylaşım metni panoya kopyalandı!",
+  "close": "Kapat"
 }

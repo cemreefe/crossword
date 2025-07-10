@@ -12,5 +12,13 @@
   "by": "by",
   "failedToLoadPuzzle": "Failed to load crossword puzzle. Make sure the puzzle file exists and is correctly formatted.",
   "across": "ACROSS",
-  "down": "DOWN"
+  "down": "DOWN",
+  "title": "Dutluk Mini Crossword",
+  "successOk": "Close",
+  "share": "Share",
+  "shareText": "I solved today's Dutluk Mini Crossword in {time}!",
+  "playAt": "Play at",
+  "copyTextToShare": "Copy this text to share:",
+  "shareTextCopied": "Share text copied to clipboard!",
+  "close": "Close"
 }
