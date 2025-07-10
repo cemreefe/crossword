@@ -21,5 +21,7 @@
   "playAt": "Sen de oyna",
   "copyTextToShare": "Paylaşmak için bu metni kopyala:",
   "shareTextCopied": "Paylaşım metni panoya kopyalandı!",
-  "close": "Kapat"
+  "close": "Kapat",
+  "backlogSingular": "Gelecekte {count} mini var!",
+  "backlogPlural": "Gelecekte {count} mini var!"
 }

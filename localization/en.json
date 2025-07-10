@@ -20,5 +20,7 @@
   "playAt": "Play at",
   "copyTextToShare": "Copy this text to share:",
   "shareTextCopied": "Share text copied to clipboard!",
-  "close": "Close"
+  "close": "Close",
+  "backlogSingular": "There is {count} mini in the backlog!",
+  "backlogPlural": "There are {count} minis in the backlog!"
 }
