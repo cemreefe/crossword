@@ -14,8 +14,11 @@
   <meta name="twitter:card" content="https://bulmaca.dutl.uk/static/dutluk_card.png" />
 
   <style>
-    :root {
-      --mobile-breakpoint: 768px;
+
+    @media (max-width: 700px) {
+      #contentWrapper * {
+          margin: 1px;
+      }
     }
     
     html, body {
@@ -128,12 +131,6 @@
       font-size: min(1.8rem, 5vmin);
       margin-bottom: 1rem;
     }
-    /* Mobile responsive styles */
-    /* @media (max-width: var(--mobile-breakpoint)) {
-      #grid {
-        max-width: 100%;
-      }
-    } */
     .modal {
       position: fixed;
       top: 0; left: 0;
