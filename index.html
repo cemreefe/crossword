@@ -6,6 +6,10 @@
   <title>Dutluk Mini Bulmaca</title>
   <link rel="icon" href="dut2.png" type="image/x-icon" />
   <style>
+    :root {
+      --mobile-breakpoint: 768px;
+    }
+    
     html, body {
       overflow: hidden; /* Prevent scrolling entirely */
       height: 100vh; /* Full viewport height */
@@ -23,22 +27,37 @@
       overflow-y: auto; /* Allow internal scrolling within body if needed */
       overflow-x: hidden; /* No horizontal scroll */
     }
+    #contentWrapper {
+      width: min(100vw - 2rem, 100vh - 2rem, 450px);
+      height: min(100vw - 2rem, 100vh - 2rem, 450px);
+      min-width: 200px;
+      min-height: 200px;
+      margin: 0 auto;
+      aspect-ratio: 1;
+      display: flex;
+      flex-direction: column;
+      font-size: min(1rem, 4vmin);
+    }
     .grid {
       display: grid;
-      gap: 2px;
-      column-gap: 4px;
+      gap: 0.2vmin;
+      column-gap: 0.4vmin;
+      width: 100%;
+      /* max-width: min(80%, 80vh); */
+      margin: 0 auto;
+      aspect-ratio: 1;
+      grid-template-columns: repeat(var(--grid-size), 1fr);
     }
     .cell {
-      width: 40px;
-      height: 40px;
       border: 1px solid #aaa;
       display: flex;
       justify-content: center;
       align-items: center;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: min(1rem, 3vmin);
       cursor: pointer;
       background: white;
+      aspect-ratio: 1;
     }
     .cell.black {
       background: black;
@@ -68,56 +87,43 @@
       display: list-item; /* Ensure highlighted clue is visible */
     }
     #timeDiv {
-      font-size: 1.2rem;
+      font-size: min(1.2rem, 4vmin);
       font-weight: bold;
       margin-bottom: 1rem;
     }
     #dateText {
-      font-size: 0.9rem;
+      font-size: min(0.9rem, 3vmin);
       color: #666;
       margin-bottom: 0.5rem;
     }
-    /* Mobile responsive styles */
-    @media (max-width: 768px) {
-      body {
-        padding: 0.5rem;
-      }
-      
-      .grid {
-        width: 95%;
-        max-width: 400px;
-        margin: 0 auto;
-        aspect-ratio: 1;
-        grid-template-columns: repeat(var(--grid-size), 1fr) !important;
-      }
-      
-      .cell {
-        width: auto !important;
-        height: auto !important;
-        aspect-ratio: 1;
-        font-size: min(1.2rem, 4vw);
-      }
-      
-      h1 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
-      
-      #dateText {
-        font-size: 0.8rem;
-      }
-      
-      #timeDiv {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-      }
-      
-      #clue {
-        margin-top: 0.5rem;
-        font-size: 1rem;
-        max-width: 95%;
-      }
+    #dateTimeRow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1em;
     }
+    
+    #dateTimeRow {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    #dateText, #timeDiv {
+      margin-bottom: 0;
+    }
+    h1 {
+      font-size: min(1.8rem, 5vmin);
+      margin-bottom: 1rem;
+    }
+    /* Mobile responsive styles */
+    /* @media (max-width: var(--mobile-breakpoint)) {
+      #grid {
+        max-width: 100%;
+      }
+    } */
     .modal {
       position: fixed;
       top: 0; left: 0;
@@ -137,7 +143,7 @@
     }
     #clue {
       margin-top: 1rem;
-      font-size: 1.2rem;
+      font-size: min(1.2rem, 4vmin);
       font-weight: bold;
       color: #1e40af; /* blue-800 */
     }
@@ -184,14 +190,18 @@
     </div>
   </div>
 
-  <h1 id="title">Mini Crossword</h1>
-  <p id="dateText"><span id="today"></span></p>
-  <div id="timeDiv"><span id="timerName">Time</span>: <span id="timer">00:00</span></div>
-  <div style="gap: 2rem">
-    <div id="grid"></div>
+  <div id="contentWrapper">
+    <h1 id="title">Mini Crossword</h1>
+    <div id="dateTimeRow">
+      <p id="dateText"><span id="today"></span></p>
+      <div id="timeDiv"><span id="timerName">Time</span>: <span id="timer">00:00</span></div>
+    </div>
+    <div style="gap: 2rem">
+      <div id="grid"></div>
+    </div>
+    <div id="clue"></div>
+    <p><span id="by">prepared by</span> <span id="author"></span></p>
   </div>
-  <div id="clue"></div>
-  <p><span id="by">prepared by</span> <span id="author"></span></p>
 
   <input type="text" id="hiddenInput" autofocus autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" inputmode="text" />
 
@@ -588,11 +598,10 @@
     function renderGrid() {
       console.log(`renderGrid called. Selected: (${selected.row}, ${selected.col}), Direction: ${currentDirection}`);
       const gridEl = document.getElementById("grid");
-      gridEl.style.gridTemplateColumns = `repeat(${gridSize}, 40px)`;
       gridEl.className = "grid";
       gridEl.innerHTML = "";
 
-      // Set CSS custom property for mobile responsive grid sizing
+      // Set CSS custom property for responsive grid sizing
       document.documentElement.style.setProperty('--grid-size', gridSize);
 
       document.querySelectorAll('.clues li').forEach(el => {
