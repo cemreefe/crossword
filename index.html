@@ -72,6 +72,52 @@
       font-weight: bold;
       margin-bottom: 1rem;
     }
+    #dateText {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    /* Mobile responsive styles */
+    @media (max-width: 768px) {
+      body {
+        padding: 0.5rem;
+      }
+      
+      .grid {
+        width: 95%;
+        max-width: 400px;
+        margin: 0 auto;
+        aspect-ratio: 1;
+        grid-template-columns: repeat(var(--grid-size), 1fr) !important;
+      }
+      
+      .cell {
+        width: auto !important;
+        height: auto !important;
+        aspect-ratio: 1;
+        font-size: min(1.2rem, 4vw);
+      }
+      
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      #dateText {
+        font-size: 0.8rem;
+      }
+      
+      #timeDiv {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      #clue {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        max-width: 95%;
+      }
+    }
     .modal {
       position: fixed;
       top: 0; left: 0;
@@ -139,7 +185,7 @@
   </div>
 
   <h1 id="title">Mini Crossword</h1>
-  <p><span id="today"></span></p>
+  <p id="dateText"><span id="today"></span></p>
   <div id="timeDiv"><span id="timerName">Time</span>: <span id="timer">00:00</span></div>
   <div style="gap: 2rem">
     <div id="grid"></div>
@@ -154,10 +200,14 @@
     📱 Tap to type
   </div>
 
+  <div id="backlogIndicator" style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; display: none;"></div>
+
   <script>
     let today; // Will be set dynamically to the latest available puzzle date
     
     const lang = new URLSearchParams(window.location.search).get('lang') || 'tr';
+
+    let allCellsFilledOnce = false; // Track if all cells have been filled at least once
     
     // Simple XOR decryption function (matches encrypt.html)
     function simpleDecrypt(encryptedText) {
@@ -526,6 +576,11 @@
       return { wordCells, clueId };
     }
 
+    function toUpperCaseWithLocale(str) {
+      // Convert to uppercase based on the current locale
+      return str.toLocaleUpperCase(lang === 'tr' ? 'tr-TR' : 'en-US');
+    }
+
 
     function renderGrid() {
       console.log(`renderGrid called. Selected: (${selected.row}, ${selected.col}), Direction: ${currentDirection}`);
@@ -533,6 +588,9 @@
       gridEl.style.gridTemplateColumns = `repeat(${gridSize}, 40px)`;
       gridEl.className = "grid";
       gridEl.innerHTML = "";
+
+      // Set CSS custom property for mobile responsive grid sizing
+      document.documentElement.style.setProperty('--grid-size', gridSize);
 
       document.querySelectorAll('.clues li').forEach(el => {
         el.classList.remove('highlighted-clue');
@@ -649,9 +707,9 @@
         const inputValue = e.target.value;
         if (inputValue && inputValue.length > 0) {
           const lastChar = inputValue[inputValue.length - 1];
-          if (/[a-zA-Z]/.test(lastChar)) {
-            answers[r][c] = lastChar.toUpperCase();
-            console.log(`Entered '${lastChar.toUpperCase()}' at (${r}, ${c}). Answers[${r}][${c}] = '${answers[r][c]}'`);
+          if (/[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF]/.test(lastChar)) {
+            answers[r][c] = toUpperCaseWithLocale(lastChar);
+            console.log(`Entered '${toUpperCaseWithLocale(lastChar)}' at (${r}, ${c}). Answers[${r}][${c}] = '${answers[r][c]}'`);
 
             if (checkIfAllFilled()) {
               console.log("All cells are filled. Checking if complete...");
@@ -660,7 +718,10 @@
                 showSuccessModal();
               } else {
                 console.log("Crossword is filled but incorrect.");
-                showErrorModal();
+                if (!allCellsFilledOnce) {
+                  showErrorModal();
+                }
+                allCellsFilledOnce = true;
               }
             }
             if (currentDirection === 'across') {
@@ -725,7 +786,7 @@
       for (let r = 0; r < gridSize; r++) {
         for (let c = 0; c < gridSize; c++) {
           if (grid[r][c] === "-") continue;
-          if (answers[r][c].toUpperCase() !== grid[r][c].toUpperCase()) {
+          if (toUpperCaseWithLocale(answers[r][c]) !== toUpperCaseWithLocale(grid[r][c])) {
             console.log(`Mismatch at (${r}, ${c}): Expected '${grid[r][c]}', Got '${answers[r][c]}'`);
             return false;
           }
@@ -910,6 +971,51 @@
 
     // Initial focus on the hidden input after the page loads
     window.onload = focusHiddenInput;
+  </script>
+  <script>
+    async function findAvailableDaysInFuture() {
+      const today = new Date();
+      let availableDays = 0;
+      let latestDate = null;
+      
+      // Try up to 30 days back
+      for (let i = 0; i < 30; i++) {
+        const testDate = new Date(today);
+        testDate.setDate(today.getDate() - i);
+        const dateString = testDate.toISOString().slice(0, 10);
+        
+        try {
+          const response = await fetch(`${lang}/${dateString}.txt`);
+          if (response.ok) {
+            console.log(`Found puzzle file for date: ${dateString}`);
+            if (!latestDate) {
+              latestDate = dateString;
+            }
+            availableDays++;
+          }
+        } catch (error) {
+          console.log(`No puzzle file found for ${dateString}`);
+        }
+      }
+      
+      // Update the backlog indicator
+      return availableDays;
+      
+    }
+
+    // Function to update the backlog indicator
+    function updateBacklogIndicator(days) {
+      const backlogElement = document.getElementById("backlogIndicator");
+      if (backlogElement) {
+        if (days > 0) {
+          backlogElement.textContent = `${days} puzzle${days === 1 ? '' : 's'} available`;
+          backlogElement.style.display = 'block';
+        } else {
+          backlogElement.style.display = 'none';
+        }
+      }
+    }
+    updateBacklogIndicator(findAvailableDaysInFuture())
   </script>
 </body>
 </html>
