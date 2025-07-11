@@ -337,8 +337,8 @@ V2.1: Second vertical clue
           if (gridLines[i].length !== size) {
             throw new Error(`Grid row ${i + 1} has ${gridLines[i].length} characters, expected ${size}`);
           }
-          // Check for valid characters (letters, numbers, or dashes)
-          if (!/^[A-Za-z0-9\-]+$/.test(gridLines[i])) {
+          // Check for valid characters (letters including Turkish/Unicode, numbers, or dashes)
+          if (!/^[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF0-9\-]+$/.test(gridLines[i])) {
             throw new Error(`Grid row ${i + 1} contains invalid characters. Use only letters, numbers, or dashes.`);
           }
         }
