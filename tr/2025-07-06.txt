@@ -3,7 +3,7 @@ GRID: 5
 -ASUS
 ORAYA
 HAKAN
--BIRA
+-BİRA
 KANIT
 
 H1.1: Amatörü eğlendirecek bilgisayar markası
