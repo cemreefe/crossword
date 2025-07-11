@@ -611,7 +611,7 @@
 
     function toUpperCaseWithLocale(str) {
       // Convert to uppercase based on the current locale
-      return str.toLocaleUpperCase(lang === 'tr' ? 'tr-TR' : 'en-US');
+      return str.toLocaleUpperCase(!!lang? lang : 'en-US');
     }
 
 
