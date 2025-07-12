@@ -1,0 +1,156 @@
+@media (max-width: 700px) {
+  #contentWrapper * {
+      margin: 1px;
+  }
+}
+
+html, body {
+  overflow: hidden; /* Prevent scrolling entirely */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  position: fixed; /* Lock position */
+  width: 100%; 
+  top: 0;
+  left: 0;
+}
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+  box-sizing: border-box; /* Include padding in height calculation */
+  overflow-y: auto; /* Allow internal scrolling within body if needed */
+  overflow-x: hidden; /* No horizontal scroll */
+}
+#contentWrapper {
+  /* width: min(100vw - 2rem, 100vh - 2rem, 450px);
+  height: min(100vw - 2rem, 100vh - 2rem, 450px); */
+  width: min(85vw, 450px);
+  height: min(85vw, 450px);
+  min-width: 200px;
+  min-height: 200px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: min(1rem, 4vmin);
+}
+.grid {
+  display: grid;
+  gap: 0.2vmin;
+  column-gap: 0.4vmin;
+  width: 100%;
+  /* max-width: min(80%, 80vh); */
+  margin: 0 auto;
+  aspect-ratio: 1;
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+}
+.cell {
+  border: 1px solid #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: calc(min(85vw, 450px) / var(--grid-size) * 0.4);
+  cursor: pointer;
+  background: white;
+  aspect-ratio: 1;
+}
+.cell.black {
+  background: black;
+}
+.cell.selected {
+  background: #facc15 !important; /* yellow-400 */
+}
+.cell.highlighted-word {
+  background: #93c5fd; /* blue-300 */
+}
+.cell.error {
+  background: #f87171 !important; /* red-400 */
+  color: white;
+}
+.clues {
+  margin-top: 1rem;
+}
+.clues h3 {
+  margin-bottom: 0.5rem;
+}
+.clues li:not(.highlighted-clue) {
+  display: none; /* Hide clues that are NOT highlighted */
+}
+.clues li.highlighted-clue {
+  background: #bfdbfe; /* blue-200 */
+  font-weight: bold;
+  display: list-item; /* Ensure highlighted clue is visible */
+}
+#timeDiv {
+  font-size: min(1.2rem, 4vmin);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#dateText {
+  font-size: min(0.9rem, 3vmin);
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+#dateTimeRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1em;
+}
+
+#dateTimeRow {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+#dateText, #timeDiv {
+  margin-bottom: 0;
+}
+h1 {
+  font-size: min(1.8rem, 5vmin);
+  margin-bottom: 1rem;
+}
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(7px);
+}
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+#clue {
+  margin-top: 1rem;
+  font-size: min(1.2rem, 4vmin);
+  font-weight: bold;
+  color: #1e40af; /* blue-800 */
+}
+/* Hidden input field for mobile keyboard focus */
+#hiddenInput {
+  position: fixed;
+  top: -1000px; /* Off-screen but not too far */
+  left: 0;
+  opacity: 0.01; /* Very transparent but not completely invisible */
+  width: 1px;
+  height: 1px;
+  border: none;
+  background: transparent;
+  color: transparent;
+  z-index: -1;
+  /* Prevent iOS zoom on focus */
+  font-size: 16px;
+  /* Prevent focus loss on cell clicks */
+  pointer-events: auto;
+}
