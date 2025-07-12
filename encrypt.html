@@ -533,6 +533,7 @@ Vertical clues: ${validationInfo.vClues}`, true);
       
       // Create the preview URL with the crossword override parameter
       const previewUrl = `index.html?crosswordOverride=${encodedData}`;
+      console.log(previewUrl);
       
       // Set the iframe source and show the preview
       const iframe = document.getElementById('crosswordPreview');
