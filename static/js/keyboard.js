@@ -66,7 +66,7 @@ function createCustomKeyboard() {
     rowDiv.style.cssText = `
       display: flex;
       justify-content: center;
-      margin: 2px 0;
+      margin: ${gapSize}px 0;
       gap: ${gapSize}px;
     `;
 
