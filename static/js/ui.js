@@ -75,14 +75,10 @@ function renderGrid() {
         }
         renderGrid();
         
-        // Simplified focus handling - let iOS show the button when needed
-        if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-          // For iOS, try to maintain focus but don't be aggressive about it
-          setTimeout(() => {
-            hiddenInput.focus();
-          }, 50);
+        // Show custom keyboard on mobile, focus hidden input on desktop
+        if (isMobileDevice()) {
+          showCustomKeyboard();
         } else {
-          // For other devices, simple focus check
           if (!hiddenInput.matches(':focus')) {
             setTimeout(() => {
               hiddenInput.focus();

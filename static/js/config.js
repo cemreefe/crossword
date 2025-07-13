@@ -19,6 +19,11 @@ let startTime;
 
 // DOM elements
 const hiddenInput = document.getElementById("hiddenInput");
-const iosKeyboardTrigger = document.getElementById("iosKeyboardTrigger");
+
+// Utility functions
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
+         (window.innerWidth <= 768 && window.innerHeight <= 1024);
+}
 
 console.log("Configuration loaded.");

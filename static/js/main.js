@@ -108,6 +108,11 @@ Promise.all([
 
   mapCluePositions(); // Map clue numbers to grid positions after grid is loaded
   renderGrid(); // Render grid and manage clue visibility
+  
+  // Initialize mobile keyboard if needed
+  if (isMobileDevice()) {
+    console.log("Mobile device detected, custom keyboard will be available");
+  }
 }).catch(error => {
   console.error("Error loading crossword data:", error);
   alert("Failed to load crossword puzzle. Make sure the puzzle file exists and is correctly formatted.");
