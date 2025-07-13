@@ -50,6 +50,7 @@ function createCustomKeyboard() {
   // For rows with only letters
   const letterRowGaps = (maxLetterKeysInRow - 1) * gapSize;
   const letterKeyWidth = Math.floor((containerWidth - letterRowGaps) / maxLetterKeysInRow);
+  const letterKeyHeight = letterKeyWidth*1.8;
   
   // For the last row with special buttons, calculate available space for special buttons
   const lastRowLetters = layout[layout.length - 1].length;
@@ -76,7 +77,7 @@ function createCustomKeyboard() {
       closeKey.innerHTML = '⌄';
       closeKey.style.cssText = `
         width: ${specialButtonWidth}px;
-        height: 40px;
+        height: ${letterKeyHeight}px;
         background: rgb(163 163 163);
         color: white;
         border: 1px solid #ddd;
@@ -119,7 +120,7 @@ function createCustomKeyboard() {
       key.textContent = letter;
       key.style.cssText = `
         width: ${letterKeyWidth}px;
-        height: 40px;
+        height: ${letterKeyHeight}px;
         background: white;
         border: 1px solid #ddd;
         border-radius: 6px;
@@ -164,7 +165,7 @@ function createCustomKeyboard() {
       backspaceKey.innerHTML = '⌫';
       backspaceKey.style.cssText = `
         width: ${specialButtonWidth}px;
-        height: 40px;
+        height: ${letterKeyHeight}px;
         background: #ff6b6b;
         color: white;
         border: 1px solid #ddd;
@@ -294,16 +295,19 @@ function handleBackspace() {
   }
 
   console.log(`Backspace pressed at (${r}, ${c}). Current value: '${answers[r][c]}'`);
+  
+  // Clear the current cell if it has content
   if (answers[r][c] !== "") {
     answers[r][c] = "";
     console.log(`Cleared cell (${r}, ${c}).`);
+  }
+  
+  // Always move to previous cell after backspace (whether we cleared content or not)
+  console.log(`Moving to previous enterable cell.`);
+  if (currentDirection === 'across') {
+    moveToPreviousEnterableCell(r, c, 1, 0);
   } else {
-    console.log(`Cell (${r}, ${c}) was empty, moving to previous enterable cell.`);
-    if (currentDirection === 'across') {
-      moveToPreviousEnterableCell(r, c, 1, 0);
-    } else {
-      moveToPreviousEnterableCell(r, c, 0, 1);
-    }
+    moveToPreviousEnterableCell(r, c, 0, 1);
   }
   
   renderGrid();

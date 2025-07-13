@@ -1,5 +1,14 @@
 // Input handling and focus management
 
+// Check if we're running in an iframe (like in the encrypt.html preview)
+function isInIframe() {
+  try {
+    return window.self !== window.top;
+  } catch (e) {
+    return true;
+  }
+}
+
 function focusHiddenInput() {
   // Only focus hidden input on desktop devices
   if (!isMobileDevice()) {
@@ -8,7 +17,10 @@ function focusHiddenInput() {
         if (!hiddenInput.matches(':focus')) {
           hiddenInput.focus();
         }
-        window.scrollTo(0, 0);
+        // Only prevent scroll if not in iframe
+        if (!isInIframe()) {
+          window.scrollTo(0, 0);
+        }
       } catch (e) {
         console.log('Focus failed:', e);
       }
@@ -16,19 +28,23 @@ function focusHiddenInput() {
   }
 }
 
-// Prevent any scrolling and keep viewport locked at top
+// Prevent any scrolling and keep viewport locked at top (only if not in iframe)
 function preventScroll() {
-  window.scrollTo(0, 0);
+  if (!isInIframe()) {
+    window.scrollTo(0, 0);
+  }
 }
 
-// Multiple event listeners to prevent scrolling
-window.addEventListener('scroll', preventScroll, { passive: false });
-window.addEventListener('touchmove', (e) => {
-  e.preventDefault();
-}, { passive: false });
-window.addEventListener('wheel', (e) => {
-  e.preventDefault();
-}, { passive: false });
+// Multiple event listeners to prevent scrolling (only if not in iframe)
+if (!isInIframe()) {
+  window.addEventListener('scroll', preventScroll, { passive: false });
+  window.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+  }, { passive: false });
+  window.addEventListener('wheel', (e) => {
+    e.preventDefault();
+  }, { passive: false });
+}
 
 // Prevent scroll on keyboard navigation
 window.addEventListener('keydown', (e) => {
@@ -40,12 +56,14 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
-// Force scroll to top periodically (backup)
-setInterval(() => {
-  if (window.scrollY !== 0) {
-    window.scrollTo(0, 0);
-  }
-}, 100);
+// Force scroll to top periodically (backup) - only if not in iframe
+if (!isInIframe()) {
+  setInterval(() => {
+    if (window.scrollY !== 0) {
+      window.scrollTo(0, 0);
+    }
+  }, 100);
+}
 
 // Enhanced focus management - only for desktop
 document.addEventListener('focusout', (e) => {
