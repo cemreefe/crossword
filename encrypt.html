@@ -223,15 +223,18 @@ V2.1: Second vertical clue
         <h4>Encrypted Content Preview:</h4>
         <textarea readonly id="encryptedContent" style="min-height: 150px;"></textarea>
       </div>
-      
-      <div class="output-area" id="previewOutput" style="display: none;">
-        <h4>🎮 Crossword Preview:</h4>
-        <p style="color: #666; margin-bottom: 15px;">This is how your crossword will look when played:</p>
-        <iframe id="crosswordPreview" style="width: 100%; height: 600px; border: 1px solid #ddd; border-radius: 5px;"></iframe>
-      </div>
 
        <h2>Step 3: Send the encrypted file to <a href="mailto:cemre@duck.com">cemre@duck.com</a></h2>
     </div>
+  </div>
+
+  <!-- Full-width preview section -->
+   <div id="previewSection" style="display: none;">
+    <div id="previewOutput" style="margin-top: 20px; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      <h4 style="text-align: center; color: #007AFF; margin-bottom: 15px;">🎮 Crossword Preview</h4>
+      <p style="color: #666; margin-bottom: 15px; text-align: center;">This is how your crossword will look when played:</p>
+    </div>
+    <iframe id="crosswordPreview" style="width: 100%; height: 600px; border: 1px solid #ddd; border-radius: 5px;"></iframe>
   </div>
 
   <script>
@@ -539,10 +542,10 @@ Vertical clues: ${validationInfo.vClues}`, true);
       const iframe = document.getElementById('crosswordPreview');
       iframe.src = previewUrl;
       
-      document.getElementById('previewOutput').style.display = 'block';
+      document.getElementById('previewSection').style.display = 'block';
       
       // Scroll to the preview
-      document.getElementById('previewOutput').scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('previewSection').scrollIntoView({ behavior: 'smooth' });
     }
 
     function encryptAndDownload() {
@@ -582,7 +585,7 @@ Vertical clues: ${validationInfo.vClues}`, true);
       document.getElementById('validationResult').innerHTML = '';
       document.getElementById('filenameInput').value = '';
       document.getElementById('encryptedOutput').style.display = 'none';
-      document.getElementById('previewOutput').style.display = 'none';
+      document.getElementById('previewSection').style.display = 'none';
       crosswordData = null;
       validationInfo = null;
     }
