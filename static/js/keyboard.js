@@ -296,18 +296,26 @@ function handleBackspace() {
 
   console.log(`Backspace pressed at (${r}, ${c}). Current value: '${answers[r][c]}'`);
   
-  // Clear the current cell if it has content
+  // If current cell has content, clear it and stay here
   if (answers[r][c] !== "") {
     answers[r][c] = "";
-    console.log(`Cleared cell (${r}, ${c}).`);
-  }
-  
-  // Always move to previous cell after backspace (whether we cleared content or not)
-  console.log(`Moving to previous enterable cell.`);
-  if (currentDirection === 'across') {
-    moveToPreviousEnterableCell(r, c, 1, 0);
+    console.log(`Cleared cell (${r}, ${c}) and staying in place.`);
   } else {
-    moveToPreviousEnterableCell(r, c, 0, 1);
+    // If current cell is empty, move to previous cell and delete its content
+    console.log(`Cell (${r}, ${c}) was empty, moving to previous enterable cell and deleting its content.`);
+    if (currentDirection === 'across') {
+      moveToPreviousEnterableCell(r, c, 1, 0);
+    } else {
+      moveToPreviousEnterableCell(r, c, 0, 1);
+    }
+    
+    // After moving, delete the content of the new cell
+    const newR = selected.row;
+    const newC = selected.col;
+    if (answers[newR] && answers[newR][newC] !== undefined) {
+      answers[newR][newC] = "";
+      console.log(`Cleared content at new position (${newR}, ${newC}).`);
+    }
   }
   
   renderGrid();
