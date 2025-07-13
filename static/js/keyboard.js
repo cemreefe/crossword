@@ -50,7 +50,7 @@ function createCustomKeyboard() {
   // For rows with only letters
   const letterRowGaps = (maxLetterKeysInRow - 1) * gapSize;
   const letterKeyWidth = Math.floor((containerWidth - letterRowGaps) / maxLetterKeysInRow);
-  const letterKeyHeight = letterKeyWidth*1.8;
+  const letterKeyHeight = letterKeyWidth*1.6;
   
   // For the last row with special buttons, calculate available space for special buttons
   const lastRowLetters = layout[layout.length - 1].length;
