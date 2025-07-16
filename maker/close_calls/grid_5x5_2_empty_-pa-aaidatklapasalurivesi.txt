@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · p a · a
+ 1 a i d a t
+ 2 k l a p a
+ 3 s a l u r
+ 4 i v e s i
+
+Placed words:
+ 1. 'pilav' at (0,1) v
+ 2. 'salur' at (3,0) h
+ 3. 'ivesi' at (4,0) h
+ 4. 'atari' at (0,4) v
+ 5. 'aidat' at (1,0) h
+ 6. 'klapa' at (2,0) h
+ 7. 'adale' at (0,2) v
+
+Unique words placed (7):
+ 1. adale
+ 2. aidat
+ 3. atari
+ 4. ivesi
+ 5. klapa
+ 6. pilav
+ 7. salur

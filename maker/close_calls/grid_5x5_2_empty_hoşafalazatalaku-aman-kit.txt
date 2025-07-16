@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h o ş a f
+ 1 a l a z a
+ 2 t a l a k
+ 3 u · a m a
+ 4 n · k i t
+
+Placed words:
+ 1. 'hoşaf' at (0,0) horizontal
+ 2. 'talak' at (2,0) horizontal
+ 3. 'alaza' at (1,0) horizontal
+ 4. 'fakat' at (0,4) vertical
+ 5. 'hatun' at (0,0) vertical
+ 6. 'azami' at (0,3) vertical
+ 7. 'şalak' at (0,2) vertical
+
+Unique words placed (7):
+ 1. alaza
+ 2. azami
+ 3. fakat
+ 4. hatun
+ 5. hoşaf
+ 6. talak
+ 7. şalak

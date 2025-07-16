@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 y ı s a
+ 1 a s ı k
+ 2 k ı ğ ı
+ 3 a l · m
+
+Placed words:
+ 1. 'asık' at (1,0) horizontal
+ 2. 'akım' at (0,3) vertical
+ 3. 'yaka' at (0,0) vertical
+ 4. 'ısıl' at (0,1) vertical
+ 5. 'kığı' at (2,0) horizontal
+ 6. 'yısa' at (0,0) horizontal
+
+Unique words placed (6):
+ 1. akım
+ 2. asık
+ 3. kığı
+ 4. yaka
+ 5. yısa
+ 6. ısıl

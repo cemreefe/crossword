@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ö n d e r
+ 1 r i · g a
+ 2 e s b a p
+ 3 k a b l o
+ 4 e n · e r
+
+Placed words:
+ 1. 'önder' at (0,0) horizontal
+ 2. 'esbap' at (2,0) horizontal
+ 3. 'öreke' at (0,0) vertical
+ 4. 'egale' at (0,3) vertical
+ 5. 'rapor' at (0,4) vertical
+ 6. 'kablo' at (3,0) horizontal
+ 7. 'nisan' at (0,1) vertical
+
+Unique words placed (7):
+ 1. egale
+ 2. esbap
+ 3. kablo
+ 4. nisan
+ 5. rapor
+ 6. önder
+ 7. öreke

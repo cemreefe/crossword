@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · s a · i
+ 1 s a n ı ş
+ 2 i l a v e
+ 3 d o n a m
+ 4 e n e m e
+
+Placed words:
+ 1. 'sanış' at (1,0) horizontal
+ 2. 'salon' at (0,1) vertical
+ 3. 'anane' at (0,2) vertical
+ 4. 'ilave' at (2,0) horizontal
+ 5. 'donam' at (3,0) horizontal
+ 6. 'eneme' at (4,0) horizontal
+ 7. 'işeme' at (0,4) vertical
+
+Unique words placed (7):
+ 1. anane
+ 2. donam
+ 3. eneme
+ 4. ilave
+ 5. işeme
+ 6. salon
+ 7. sanış

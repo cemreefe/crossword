@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 a d a n a
+ 1 ş e r a n
+ 2 a m a d e
+ 3 r e m i l
+ 4 i k a m e
+
+Placed words:
+ 1. 'aşari' at (0,0) vertical
+ 2. 'amade' at (2,0) horizontal
+ 3. 'ikame' at (4,0) horizontal
+ 4. 'remil' at (3,0) horizontal
+ 5. 'demek' at (0,1) vertical
+ 6. 'nadim' at (0,3) vertical
+ 7. 'anele' at (0,4) vertical
+ 8. 'adana' at (0,0) horizontal
+ 9. 'arama' at (0,2) vertical
+
+Unique words placed (9):
+ 1. adana
+ 2. amade
+ 3. anele
+ 4. arama
+ 5. aşari
+ 6. demek
+ 7. ikame
+ 8. nadim
+ 9. remil

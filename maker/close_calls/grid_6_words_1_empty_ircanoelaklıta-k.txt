@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i r c a
+ 1 n o e l
+ 2 a k l ı
+ 3 t a · k
+
+Placed words:
+ 1. 'aklı' at (2,0) horizontal
+ 2. 'inat' at (0,0) vertical
+ 3. 'alık' at (0,3) vertical
+ 4. 'irca' at (0,0) horizontal
+ 5. 'noel' at (1,0) horizontal
+ 6. 'roka' at (0,1) vertical
+
+Unique words placed (6):
+ 1. aklı
+ 2. alık
+ 3. inat
+ 4. irca
+ 5. noel
+ 6. roka

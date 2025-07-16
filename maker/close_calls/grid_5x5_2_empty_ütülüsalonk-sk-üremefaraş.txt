@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ü t ü l ü
+ 1 s a l o n
+ 2 k · s k ·
+ 3 ü r e m e
+ 4 f a r a ş
+
+Placed words:
+ 1. 'ütülü' at (0,0) horizontal
+ 2. 'salon' at (1,0) horizontal
+ 3. 'üreme' at (3,0) horizontal
+ 4. 'üsküf' at (0,0) vertical
+ 5. 'ülser' at (0,2) vertical
+ 6. 'lokma' at (0,3) vertical
+ 7. 'faraş' at (4,0) horizontal
+
+Unique words placed (7):
+ 1. faraş
+ 2. lokma
+ 3. salon
+ 4. ülser
+ 5. üreme
+ 6. üsküf
+ 7. ütülü

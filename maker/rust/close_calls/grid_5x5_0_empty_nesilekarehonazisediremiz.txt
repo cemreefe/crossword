@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 n e s i l 
+ 1 e k a r e 
+ 2 h o n a z 
+ 3 i s e d i 
+ 4 r e m i z 
+
+Placed words:
+ 1. 'nesil' at (0,0) Horizontal
+ 2. 'honaz' at (2,0) Horizontal
+ 3. 'nehir' at (0,0) Vertical
+ 4. 'remiz' at (4,0) Horizontal
+ 5. 'leziz' at (0,4) Vertical
+ 6. 'sanem' at (0,2) Vertical
+ 7. 'iradi' at (0,3) Vertical
+ 8. 'ekose' at (0,1) Vertical
+
+Unique words placed (8):
+ 1. sanem
+ 2. nehir
+ 3. nesil
+ 4. honaz
+ 5. ekose
+ 6. leziz
+ 7. remiz
+ 8. iradi

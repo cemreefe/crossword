@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 g e l i ş
+ 1 ü · · m i
+ 2 l i m a n
+ 3 ü r e m i
+ 4 t e l e k
+
+Placed words:
+ 1. 'geliş' at (0,0) h
+ 2. 'liman' at (2,0) h
+ 3. 'imame' at (0,3) v
+ 4. 'telek' at (4,0) h
+ 5. 'gülüt' at (0,0) v
+ 6. 'şinik' at (0,4) v
+ 7. 'üremi' at (3,0) h
+
+Unique words placed (7):
+ 1. geliş
+ 2. gülüt
+ 3. imame
+ 4. liman
+ 5. telek
+ 6. üremi
+ 7. şinik

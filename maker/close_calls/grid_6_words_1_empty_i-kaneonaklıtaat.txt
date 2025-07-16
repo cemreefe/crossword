@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i · k a
+ 1 n e o n
+ 2 a k l ı
+ 3 t a a t
+
+Placed words:
+ 1. 'aklı' at (2,0) horizontal
+ 2. 'inat' at (0,0) vertical
+ 3. 'kola' at (0,2) vertical
+ 4. 'taat' at (3,0) horizontal
+ 5. 'anıt' at (0,3) vertical
+ 6. 'neon' at (1,0) horizontal
+
+Unique words placed (6):
+ 1. aklı
+ 2. anıt
+ 3. inat
+ 4. kola
+ 5. neon
+ 6. taat

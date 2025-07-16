@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 o m · e t
+ 1 t u r n a
+ 2 a h · a r
+ 3 m i d y e
+ 4 a k a i t
+
+Placed words:
+ 1. 'midye' at (3,0) h
+ 2. 'taret' at (0,4) v
+ 3. 'turna' at (1,0) h
+ 4. 'otama' at (0,0) v
+ 5. 'akait' at (4,0) h
+ 6. 'enayi' at (0,3) v
+ 7. 'muhik' at (0,1) v
+
+Unique words placed (7):
+ 1. akait
+ 2. enayi
+ 3. midye
+ 4. muhik
+ 5. otama
+ 6. taret
+ 7. turna

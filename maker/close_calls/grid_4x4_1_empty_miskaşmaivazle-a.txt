@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 m i s k
+ 1 a ş m a
+ 2 i v a z
+ 3 l e · a
+
+Placed words:
+ 1. 'misk' at (0,0) horizontal
+ 2. 'ivaz' at (2,0) horizontal
+ 3. 'mail' at (0,0) vertical
+ 4. 'kaza' at (0,3) vertical
+ 5. 'işve' at (0,1) vertical
+ 6. 'aşma' at (1,0) horizontal
+
+Unique words placed (6):
+ 1. aşma
+ 2. ivaz
+ 3. işve
+ 4. kaza
+ 5. mail
+ 6. misk

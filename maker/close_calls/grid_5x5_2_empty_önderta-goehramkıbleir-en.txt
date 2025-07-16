@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ö n d e r
+ 1 t a · g o
+ 2 e h r a m
+ 3 k ı b l e
+ 4 i r · e n
+
+Placed words:
+ 1. 'önder' at (0,0) horizontal
+ 2. 'nahır' at (0,1) vertical
+ 3. 'kıble' at (3,0) horizontal
+ 4. 'öteki' at (0,0) vertical
+ 5. 'ehram' at (2,0) horizontal
+ 6. 'romen' at (0,4) vertical
+ 7. 'egale' at (0,3) vertical
+
+Unique words placed (7):
+ 1. egale
+ 2. ehram
+ 3. kıble
+ 4. nahır
+ 5. romen
+ 6. önder
+ 7. öteki

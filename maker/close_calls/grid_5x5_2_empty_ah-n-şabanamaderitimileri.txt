@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a h · n ·
+ 1 ş a b a n
+ 2 a m a d e
+ 3 r i t i m
+ 4 i l e r i
+
+Placed words:
+ 1. 'aşari' at (0,0) vertical
+ 2. 'amade' at (2,0) horizontal
+ 3. 'hamil' at (0,1) vertical
+ 4. 'ritim' at (3,0) horizontal
+ 5. 'nadir' at (0,3) vertical
+ 6. 'ileri' at (4,0) horizontal
+ 7. 'şaban' at (1,0) horizontal
+
+Unique words placed (7):
+ 1. amade
+ 2. aşari
+ 3. hamil
+ 4. ileri
+ 5. nadir
+ 6. ritim
+ 7. şaban

@@ -1,0 +1,23 @@
+[package]
+name = "crossword-maker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+indexmap = "2.0"
+itertools = "0.12"
+rayon = "1.8"
+rand = "0.8"
+
+[[bin]]
+name = "grapher"
+path = "src/main.rs"
+
+[[bin]]
+name = "maker"
+path = "src/maker.rs"
+
+[lib]
+name = "crossword_grapher"
+path = "src/lib.rs"

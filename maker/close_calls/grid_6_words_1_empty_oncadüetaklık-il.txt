@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 o n c a
+ 1 d ü e t
+ 2 a k l ı
+ 3 k · i l
+
+Placed words:
+ 1. 'aklı' at (2,0) horizontal
+ 2. 'düet' at (1,0) horizontal
+ 3. 'onca' at (0,0) horizontal
+ 4. 'odak' at (0,0) vertical
+ 5. 'celi' at (0,2) vertical
+ 6. 'atıl' at (0,3) vertical
+
+Unique words placed (6):
+ 1. aklı
+ 2. atıl
+ 3. celi
+ 4. düet
+ 5. odak
+ 6. onca

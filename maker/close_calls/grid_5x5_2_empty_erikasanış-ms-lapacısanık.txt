@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 e r i k a
+ 1 s a n ı ş
+ 2 · m s · l
+ 3 a p a c ı
+ 4 s a n ı k
+
+Placed words:
+ 1. 'sanış' at (1,0) horizontal
+ 2. 'rampa' at (0,1) vertical
+ 3. 'insan' at (0,2) vertical
+ 4. 'erika' at (0,0) horizontal
+ 5. 'aşlık' at (0,4) vertical
+ 6. 'apacı' at (3,0) horizontal
+ 7. 'sanık' at (4,0) horizontal
+
+Unique words placed (7):
+ 1. apacı
+ 2. aşlık
+ 3. erika
+ 4. insan
+ 5. rampa
+ 6. sanık
+ 7. sanış

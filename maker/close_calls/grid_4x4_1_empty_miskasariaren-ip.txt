@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 m i s k
+ 1 a s a r
+ 2 i a r e
+ 3 n · i p
+
+Placed words:
+ 1. 'misk' at (0,0) horizontal
+ 2. 'iare' at (2,0) horizontal
+ 3. 'main' at (0,0) vertical
+ 4. 'krep' at (0,3) vertical
+ 5. 'sari' at (0,2) vertical
+ 6. 'asar' at (1,0) horizontal
+
+Unique words placed (6):
+ 1. asar
+ 2. iare
+ 3. krep
+ 4. main
+ 5. misk
+ 6. sari

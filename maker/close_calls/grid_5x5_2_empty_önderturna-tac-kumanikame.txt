@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ö n d e r
+ 1 t u r n a
+ 2 · t a c ·
+ 3 k u m a n
+ 4 i k a m e
+
+Placed words:
+ 1. 'önder' at (0,0) horizontal
+ 2. 'kuman' at (3,0) horizontal
+ 3. 'ikame' at (4,0) horizontal
+ 4. 'encam' at (0,3) vertical
+ 5. 'nutuk' at (0,1) vertical
+ 6. 'drama' at (0,2) vertical
+ 7. 'turna' at (1,0) horizontal
+
+Unique words placed (7):
+ 1. drama
+ 2. encam
+ 3. ikame
+ 4. kuman
+ 5. nutuk
+ 6. turna
+ 7. önder

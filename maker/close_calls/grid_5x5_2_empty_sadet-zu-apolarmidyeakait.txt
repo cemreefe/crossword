@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s a d e t
+ 1 · z u · a
+ 2 p o l a r
+ 3 m i d y e
+ 4 a k a i t
+
+Placed words:
+ 1. 'midye' at (3,0) h
+ 2. 'taret' at (0,4) v
+ 3. 'dulda' at (0,2) v
+ 4. 'akait' at (4,0) h
+ 5. 'azoik' at (0,1) v
+ 6. 'sadet' at (0,0) h
+ 7. 'polar' at (2,0) h
+
+Unique words placed (7):
+ 1. akait
+ 2. azoik
+ 3. dulda
+ 4. midye
+ 5. polar
+ 6. sadet
+ 7. taret

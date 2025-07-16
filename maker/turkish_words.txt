@@ -30793,8 +30793,6 @@ hemofili
 hemoglobin
 hemoroit
 hemoroitli
-hempa
-hempalık
 hemşehri
 hemşehrilik
 Hemşin 
@@ -30804,7 +30802,6 @@ hemşirezade
 hemze
 hemzemin
 hemzemin geçit
-hem  hem 
 hendek
 Hendek
 hendese
@@ -31552,9 +31549,6 @@ homur homur
 homurtu
 homurtulu
 homurtusuz
-hona
-Honaz 
-honda çeliği
 Honduraslı
 hop
 Hopa 
@@ -31979,9 +31973,6 @@ iadeiziyaret
 iadeli
 iadeli taahhütlü
 iadesiz
-iane
-iare
-iaşe
 iaşe ve ibate
 ibadet
 ibadetgâh

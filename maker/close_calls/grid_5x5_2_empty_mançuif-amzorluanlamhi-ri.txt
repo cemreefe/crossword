@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m a n ç u
+ 1 i f · a m
+ 2 z o r l u
+ 3 a n l a m
+ 4 h i · r i
+
+Placed words:
+ 1. 'mançu' at (0,0) h
+ 2. 'çalar' at (0,3) v
+ 3. 'zorlu' at (2,0) h
+ 4. 'afoni' at (0,1) v
+ 5. 'umumi' at (0,4) v
+ 6. 'mizah' at (0,0) v
+ 7. 'anlam' at (3,0) h
+
+Unique words placed (7):
+ 1. afoni
+ 2. anlam
+ 3. mançu
+ 4. mizah
+ 5. umumi
+ 6. zorlu
+ 7. çalar

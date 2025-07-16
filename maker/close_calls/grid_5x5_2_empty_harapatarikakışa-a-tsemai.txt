@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h a r a p
+ 1 a t a r i
+ 2 k a k ı ş
+ 3 a · a · t
+ 4 s e m a i
+
+Placed words:
+ 1. 'pişti' at (0,4) vertical
+ 2. 'rakam' at (0,2) vertical
+ 3. 'semai' at (4,0) horizontal
+ 4. 'hakas' at (0,0) vertical
+ 5. 'atari' at (1,0) horizontal
+ 6. 'kakış' at (2,0) horizontal
+ 7. 'harap' at (0,0) horizontal
+
+Unique words placed (7):
+ 1. atari
+ 2. hakas
+ 3. harap
+ 4. kakış
+ 5. pişti
+ 6. rakam
+ 7. semai

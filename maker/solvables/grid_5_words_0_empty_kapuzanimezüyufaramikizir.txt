@@ -1,0 +1,25 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 5
+
+Grid:
+   0 1 2 3 4
+ 0 k a p u z
+ 1 a n i m e
+ 2 z ü y u f
+ 3 a r a m i
+ 4 k i z i r
+
+Placed words:
+ 1. 'züyuf' at (2,0) horizontal
+ 2. 'arami' at (3,0) horizontal
+ 3. 'kizir' at (4,0) horizontal
+ 4. 'anime' at (1,0) horizontal
+ 5. 'kapuz' at (0,0) horizontal
+
+Unique words placed (5):
+ 1. anime
+ 2. arami
+ 3. kapuz
+ 4. kizir
+ 5. züyuf

@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 e ş · a
+ 1 d i n k
+ 2 a k l ı
+ 3 t e i n
+
+Placed words:
+ 1. 'aklı' at (2,0) horizontal
+ 2. 'dink' at (1,0) horizontal
+ 3. 'edat' at (0,0) vertical
+ 4. 'şike' at (0,1) vertical
+ 5. 'tein' at (3,0) horizontal
+ 6. 'akın' at (0,3) vertical
+
+Unique words placed (6):
+ 1. aklı
+ 2. akın
+ 3. dink
+ 4. edat
+ 5. tein
+ 6. şike

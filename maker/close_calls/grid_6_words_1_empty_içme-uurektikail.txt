@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i ç m e
+ 1 · u u r
+ 2 e k t i
+ 3 k a i l
+
+Placed words:
+ 1. 'içme' at (0,0) horizontal
+ 2. 'eril' at (0,3) vertical
+ 3. 'kail' at (3,0) horizontal
+ 4. 'muti' at (0,2) vertical
+ 5. 'ekti' at (2,0) horizontal
+ 6. 'çuka' at (0,1) vertical
+
+Unique words placed (6):
+ 1. ekti
+ 2. eril
+ 3. içme
+ 4. kail
+ 5. muti
+ 6. çuka

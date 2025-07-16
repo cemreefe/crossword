@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ö r e k e
+ 1 t i r i t
+ 2 m · b n ·
+ 3 e g a l e
+ 4 k a p i k
+
+Placed words:
+ 1. 'öreke' at (0,0) horizontal
+ 2. 'egale' at (3,0) horizontal
+ 3. 'tirit' at (1,0) horizontal
+ 4. 'erbap' at (0,2) vertical
+ 5. 'ötmek' at (0,0) vertical
+ 6. 'kinli' at (0,3) vertical
+ 7. 'kapik' at (4,0) horizontal
+
+Unique words placed (7):
+ 1. egale
+ 2. erbap
+ 3. kapik
+ 4. kinli
+ 5. tirit
+ 6. öreke
+ 7. ötmek

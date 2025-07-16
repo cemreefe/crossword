@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i ç m e
+ 1 z ı · h
+ 2 i m d i
+ 3 n a i l
+
+Placed words:
+ 1. 'içme' at (0,0) horizontal
+ 2. 'izin' at (0,0) vertical
+ 3. 'imdi' at (2,0) horizontal
+ 4. 'çıma' at (0,1) vertical
+ 5. 'nail' at (3,0) horizontal
+ 6. 'ehil' at (0,3) vertical
+
+Unique words placed (6):
+ 1. ehil
+ 2. imdi
+ 3. izin
+ 4. içme
+ 5. nail
+ 6. çıma

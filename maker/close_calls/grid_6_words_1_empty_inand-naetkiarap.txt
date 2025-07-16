@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i n a n
+ 1 d · n a
+ 2 e t k i
+ 3 a r a p
+
+Placed words:
+ 1. 'etki' at (2,0) horizontal
+ 2. 'idea' at (0,0) vertical
+ 3. 'anka' at (0,2) vertical
+ 4. 'naip' at (0,3) vertical
+ 5. 'inan' at (0,0) horizontal
+ 6. 'arap' at (3,0) horizontal
+
+Unique words placed (6):
+ 1. anka
+ 2. arap
+ 3. etki
+ 4. idea
+ 5. inan
+ 6. naip

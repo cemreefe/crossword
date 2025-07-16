@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 d e m e t
+ 1 a r e n a
+ 2 i c b a r
+ 3 m i d y e
+ 4 a k · i t
+
+Placed words:
+ 1. 'midye' at (3,0) h
+ 2. 'taret' at (0,4) v
+ 3. 'demet' at (0,0) h
+ 4. 'daima' at (0,0) v
+ 5. 'ercik' at (0,1) v
+ 6. 'enayi' at (0,3) v
+ 7. 'icbar' at (2,0) h
+ 8. 'arena' at (1,0) h
+
+Unique words placed (8):
+ 1. arena
+ 2. daima
+ 3. demet
+ 4. enayi
+ 5. ercik
+ 6. icbar
+ 7. midye
+ 8. taret

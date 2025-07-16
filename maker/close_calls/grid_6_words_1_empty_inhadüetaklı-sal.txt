@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i n h a
+ 1 d ü e t
+ 2 a k l ı
+ 3 · s a l
+
+Placed words:
+ 1. 'aklı' at (2,0) horizontal
+ 2. 'düet' at (1,0) horizontal
+ 3. 'atıl' at (0,3) vertical
+ 4. 'inha' at (0,0) horizontal
+ 5. 'hela' at (0,2) vertical
+ 6. 'nüks' at (0,1) vertical
+
+Unique words placed (6):
+ 1. aklı
+ 2. atıl
+ 3. düet
+ 4. hela
+ 5. inha
+ 6. nüks

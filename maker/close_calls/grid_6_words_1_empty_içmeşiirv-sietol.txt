@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i ç m e
+ 1 ş i i r
+ 2 v · s i
+ 3 e t o l
+
+Placed words:
+ 1. 'içme' at (0,0) horizontal
+ 2. 'eril' at (0,3) vertical
+ 3. 'şiir' at (1,0) horizontal
+ 4. 'etol' at (3,0) horizontal
+ 5. 'miso' at (0,2) vertical
+ 6. 'işve' at (0,0) vertical
+
+Unique words placed (6):
+ 1. eril
+ 2. etol
+ 3. içme
+ 4. işve
+ 5. miso
+ 6. şiir

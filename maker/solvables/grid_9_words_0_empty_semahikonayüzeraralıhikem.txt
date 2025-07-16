@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 s e m a h
+ 1 i k o n a
+ 2 y ü z e r
+ 3 a r a l ı
+ 4 h i k e m
+
+Placed words:
+ 1. 'yüzer' at (2,0) horizontal
+ 2. 'siyah' at (0,0) vertical
+ 3. 'mozak' at (0,2) vertical
+ 4. 'ikona' at (1,0) horizontal
+ 5. 'eküri' at (0,1) vertical
+ 6. 'anele' at (0,3) vertical
+ 7. 'aralı' at (3,0) horizontal
+ 8. 'semah' at (0,0) horizontal
+ 9. 'harım' at (0,4) vertical
+
+Unique words placed (9):
+ 1. anele
+ 2. aralı
+ 3. eküri
+ 4. harım
+ 5. ikona
+ 6. mozak
+ 7. semah
+ 8. siyah
+ 9. yüzer

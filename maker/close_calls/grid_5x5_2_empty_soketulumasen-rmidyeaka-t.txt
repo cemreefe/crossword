@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s o k e t
+ 1 u l u m a
+ 2 s e n · r
+ 3 m i d y e
+ 4 a k a · t
+
+Placed words:
+ 1. 'midye' at (3,0) h
+ 2. 'taret' at (0,4) v
+ 3. 'uluma' at (1,0) h
+ 4. 'soket' at (0,0) h
+ 5. 'oleik' at (0,1) v
+ 6. 'susma' at (0,0) v
+ 7. 'kunda' at (0,2) v
+
+Unique words placed (7):
+ 1. kunda
+ 2. midye
+ 3. oleik
+ 4. soket
+ 5. susma
+ 6. taret
+ 7. uluma

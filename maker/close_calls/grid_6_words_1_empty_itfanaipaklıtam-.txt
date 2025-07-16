@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i t f a
+ 1 n a i p
+ 2 a k l ı
+ 3 t a m ·
+
+Placed words:
+ 1. 'aklı' at (2,0) horizontal
+ 2. 'inat' at (0,0) vertical
+ 3. 'film' at (0,2) vertical
+ 4. 'itfa' at (0,0) horizontal
+ 5. 'naip' at (1,0) horizontal
+ 6. 'taka' at (0,1) vertical
+
+Unique words placed (6):
+ 1. aklı
+ 2. film
+ 3. inat
+ 4. itfa
+ 5. naip
+ 6. taka

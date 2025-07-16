@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i l a h
+ 1 d · t a
+ 2 e t k i
+ 3 a r ı z
+
+Placed words:
+ 1. 'etki' at (2,0) horizontal
+ 2. 'idea' at (0,0) vertical
+ 3. 'atkı' at (0,2) vertical
+ 4. 'ilah' at (0,0) horizontal
+ 5. 'haiz' at (0,3) vertical
+ 6. 'arız' at (3,0) horizontal
+
+Unique words placed (6):
+ 1. arız
+ 2. atkı
+ 3. etki
+ 4. haiz
+ 5. idea
+ 6. ilah

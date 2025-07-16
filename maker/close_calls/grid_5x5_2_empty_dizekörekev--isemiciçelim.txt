@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 d i z e k
+ 1 ö r e k e
+ 2 v · · i s
+ 3 e m i c i
+ 4 ç e l i m
+
+Placed words:
+ 1. 'öreke' at (1,0) horizontal
+ 2. 'dizek' at (0,0) horizontal
+ 3. 'emici' at (3,0) horizontal
+ 4. 'döveç' at (0,0) vertical
+ 5. 'ekici' at (0,3) vertical
+ 6. 'kesim' at (0,4) vertical
+ 7. 'çelim' at (4,0) horizontal
+
+Unique words placed (7):
+ 1. dizek
+ 2. döveç
+ 3. ekici
+ 4. emici
+ 5. kesim
+ 6. çelim
+ 7. öreke

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ü t ü l ü
+ 1 l i s a n
+ 2 ü r e m i
+ 3 · i r e t
+ 4 · z a l e
+
+Placed words:
+ 1. 'ütülü' at (0,0) horizontal
+ 2. 'lisan' at (1,0) horizontal
+ 3. 'ünite' at (0,4) vertical
+ 4. 'tiriz' at (0,1) vertical
+ 5. 'lamel' at (0,3) vertical
+ 6. 'üsera' at (0,2) vertical
+ 7. 'üremi' at (2,0) horizontal
+
+Unique words placed (7):
+ 1. lamel
+ 2. lisan
+ 3. tiriz
+ 4. ünite
+ 5. üremi
+ 6. üsera
+ 7. ütülü

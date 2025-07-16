@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i ç m e
+ 1 z a a ·
+ 2 i ç l i
+ 3 n a a t
+
+Placed words:
+ 1. 'içme' at (0,0) horizontal
+ 2. 'izin' at (0,0) vertical
+ 3. 'naat' at (3,0) horizontal
+ 4. 'çaça' at (0,1) vertical
+ 5. 'içli' at (2,0) horizontal
+ 6. 'mala' at (0,2) vertical
+
+Unique words placed (6):
+ 1. izin
+ 2. içli
+ 3. içme
+ 4. mala
+ 5. naat
+ 6. çaça

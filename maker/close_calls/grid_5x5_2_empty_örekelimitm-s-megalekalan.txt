@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ö r e k e
+ 1 l i m i t
+ 2 m · s · m
+ 3 e g a l e
+ 4 k a l a n
+
+Placed words:
+ 1. 'öreke' at (0,0) horizontal
+ 2. 'egale' at (3,0) horizontal
+ 3. 'kalan' at (4,0) horizontal
+ 4. 'emsal' at (0,2) vertical
+ 5. 'ölmek' at (0,0) vertical
+ 6. 'etmen' at (0,4) vertical
+ 7. 'limit' at (1,0) horizontal
+
+Unique words placed (7):
+ 1. egale
+ 2. emsal
+ 3. etmen
+ 4. kalan
+ 5. limit
+ 6. ölmek
+ 7. öreke

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a · e t
+ 1 o k u m a
+ 2 ş a m a r
+ 3 m i d y e
+ 4 a t · e t
+
+Placed words:
+ 1. 'midye' at (3,0) h
+ 2. 'taret' at (0,4) v
+ 3. 'şamar' at (2,0) h
+ 4. 'emaye' at (0,3) v
+ 5. 'koşma' at (0,0) v
+ 6. 'okuma' at (1,0) h
+ 7. 'akait' at (0,1) v
+
+Unique words placed (7):
+ 1. akait
+ 2. emaye
+ 3. koşma
+ 4. midye
+ 5. okuma
+ 6. taret
+ 7. şamar

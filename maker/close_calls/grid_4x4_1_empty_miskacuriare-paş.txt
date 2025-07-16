@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 m i s k
+ 1 a c u r
+ 2 i a r e
+ 3 · p a ş
+
+Placed words:
+ 1. 'misk' at (0,0) horizontal
+ 2. 'iare' at (2,0) horizontal
+ 3. 'acur' at (1,0) horizontal
+ 4. 'kreş' at (0,3) vertical
+ 5. 'sura' at (0,2) vertical
+ 6. 'icap' at (0,1) vertical
+
+Unique words placed (6):
+ 1. acur
+ 2. iare
+ 3. icap
+ 4. kreş
+ 5. misk
+ 6. sura

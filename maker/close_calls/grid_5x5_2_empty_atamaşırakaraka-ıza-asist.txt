@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a t a m a
+ 1 ş ı r a k
+ 2 a r a k a
+ 3 · ı z a ·
+ 4 a s i s t
+
+Placed words:
+ 1. 'tırıs' at (0,1) vertical
+ 2. 'makas' at (0,3) vertical
+ 3. 'asist' at (4,0) horizontal
+ 4. 'arazi' at (0,2) vertical
+ 5. 'araka' at (2,0) horizontal
+ 6. 'atama' at (0,0) horizontal
+ 7. 'şırak' at (1,0) horizontal
+
+Unique words placed (7):
+ 1. araka
+ 2. arazi
+ 3. asist
+ 4. atama
+ 5. makas
+ 6. tırıs
+ 7. şırak

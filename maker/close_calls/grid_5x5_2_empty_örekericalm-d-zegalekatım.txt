@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ö r e k e
+ 1 r i c a l
+ 2 m · d · z
+ 3 e g a l e
+ 4 k a t ı m
+
+Placed words:
+ 1. 'öreke' at (0,0) horizontal
+ 2. 'egale' at (3,0) horizontal
+ 3. 'katım' at (4,0) horizontal
+ 4. 'örmek' at (0,0) vertical
+ 5. 'elzem' at (0,4) vertical
+ 6. 'rical' at (1,0) horizontal
+ 7. 'ecdat' at (0,2) vertical
+
+Unique words placed (7):
+ 1. ecdat
+ 2. egale
+ 3. elzem
+ 4. katım
+ 5. rical
+ 6. öreke
+ 7. örmek

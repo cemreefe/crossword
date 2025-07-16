@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ö r e k e
+ 1 z i f i n
+ 2 d · l · t
+ 3 e g a l e
+ 4 n a k i l
+
+Placed words:
+ 1. 'öreke' at (0,0) horizontal
+ 2. 'egale' at (3,0) horizontal
+ 3. 'entel' at (0,4) vertical
+ 4. 'nakil' at (4,0) horizontal
+ 5. 'özden' at (0,0) vertical
+ 6. 'eflak' at (0,2) vertical
+ 7. 'zifin' at (1,0) horizontal
+
+Unique words placed (7):
+ 1. eflak
+ 2. egale
+ 3. entel
+ 4. nakil
+ 5. zifin
+ 6. öreke
+ 7. özden

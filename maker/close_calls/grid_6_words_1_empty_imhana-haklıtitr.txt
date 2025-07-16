@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i m h a
+ 1 n a · h
+ 2 a k l ı
+ 3 t i t r
+
+Placed words:
+ 1. 'aklı' at (2,0) horizontal
+ 2. 'inat' at (0,0) vertical
+ 3. 'ahır' at (0,3) vertical
+ 4. 'maki' at (0,1) vertical
+ 5. 'imha' at (0,0) horizontal
+ 6. 'titr' at (3,0) horizontal
+
+Unique words placed (6):
+ 1. ahır
+ 2. aklı
+ 3. imha
+ 4. inat
+ 5. maki
+ 6. titr

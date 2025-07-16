@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a d i r
+ 1 a r i f e
+ 2 n o k r a
+ 3 · m e a ·
+ 4 k a ç t a
+
+Placed words:
+ 1. 'nokra' at (2,0) horizontal
+ 2. 'dikeç' at (0,2) vertical
+ 3. 'aroma' at (0,1) vertical
+ 4. 'ifrat' at (0,3) vertical
+ 5. 'kaçta' at (4,0) horizontal
+ 6. 'kadir' at (0,0) horizontal
+ 7. 'arife' at (1,0) horizontal
+
+Unique words placed (7):
+ 1. arife
+ 2. aroma
+ 3. dikeç
+ 4. ifrat
+ 5. kadir
+ 6. kaçta
+ 7. nokra

@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 a k a r
+ 1 d o n e
+ 2 e t k i
+ 3 t a a ·
+
+Placed words:
+ 1. 'etki' at (2,0) horizontal
+ 2. 'done' at (1,0) horizontal
+ 3. 'kota' at (0,1) vertical
+ 4. 'akar' at (0,0) horizontal
+ 5. 'adet' at (0,0) vertical
+ 6. 'anka' at (0,2) vertical
+
+Unique words placed (6):
+ 1. adet
+ 2. akar
+ 3. anka
+ 4. done
+ 5. etki
+ 6. kota

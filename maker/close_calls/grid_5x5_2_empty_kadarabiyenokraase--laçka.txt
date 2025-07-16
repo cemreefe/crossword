@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a d a r
+ 1 a b i y e
+ 2 n o k r a
+ 3 a s e · ·
+ 4 l a ç k a
+
+Placed words:
+ 1. 'nokra' at (2,0) horizontal
+ 2. 'dikeç' at (0,2) vertical
+ 3. 'kadar' at (0,0) horizontal
+ 4. 'abiye' at (1,0) horizontal
+ 5. 'abosa' at (0,1) vertical
+ 6. 'laçka' at (4,0) horizontal
+ 7. 'kanal' at (0,0) vertical
+
+Unique words placed (7):
+ 1. abiye
+ 2. abosa
+ 3. dikeç
+ 4. kadar
+ 5. kanal
+ 6. laçka
+ 7. nokra

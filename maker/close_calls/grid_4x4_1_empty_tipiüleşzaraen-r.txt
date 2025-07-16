@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 t i p i
+ 1 ü l e ş
+ 2 z a r a
+ 3 e n · r
+
+Placed words:
+ 1. 'tipi' at (0,0) horizontal
+ 2. 'tüze' at (0,0) vertical
+ 3. 'ilan' at (0,1) vertical
+ 4. 'işar' at (0,3) vertical
+ 5. 'üleş' at (1,0) horizontal
+ 6. 'zara' at (2,0) horizontal
+
+Unique words placed (6):
+ 1. ilan
+ 2. işar
+ 3. tipi
+ 4. tüze
+ 5. zara
+ 6. üleş

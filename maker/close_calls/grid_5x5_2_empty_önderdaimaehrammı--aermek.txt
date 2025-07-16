@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ö n d e r
+ 1 d a i m a
+ 2 e h r a m
+ 3 m ı · · a
+ 4 e r m e k
+
+Placed words:
+ 1. 'önder' at (0,0) horizontal
+ 2. 'nahır' at (0,1) vertical
+ 3. 'ödeme' at (0,0) vertical
+ 4. 'ramak' at (0,4) vertical
+ 5. 'daima' at (1,0) horizontal
+ 6. 'ehram' at (2,0) horizontal
+ 7. 'ermek' at (4,0) horizontal
+
+Unique words placed (7):
+ 1. daima
+ 2. ehram
+ 3. ermek
+ 4. nahır
+ 5. ramak
+ 6. ödeme
+ 7. önder

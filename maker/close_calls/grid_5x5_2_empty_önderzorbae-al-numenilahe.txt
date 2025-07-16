@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ö n d e r
+ 1 z o r b a
+ 2 e · a l ·
+ 3 n u m e n
+ 4 i l a h e
+
+Placed words:
+ 1. 'önder' at (0,0) horizontal
+ 2. 'zorba' at (1,0) horizontal
+ 3. 'numen' at (3,0) horizontal
+ 4. 'ebleh' at (0,3) vertical
+ 5. 'drama' at (0,2) vertical
+ 6. 'ilahe' at (4,0) horizontal
+ 7. 'özeni' at (0,0) vertical
+
+Unique words placed (7):
+ 1. drama
+ 2. ebleh
+ 3. ilahe
+ 4. numen
+ 5. zorba
+ 6. önder
+ 7. özeni

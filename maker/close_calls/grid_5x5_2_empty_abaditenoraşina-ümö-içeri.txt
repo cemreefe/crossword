@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a b a d i
+ 1 t e n o r
+ 2 a ş i n a
+ 3 · ü m ö ·
+ 4 i ç e r i
+
+Placed words:
+ 1. 'donör' at (0,3) v
+ 2. 'anime' at (0,2) v
+ 3. 'beşüç' at (0,1) v
+ 4. 'tenor' at (1,0) h
+ 5. 'abadi' at (0,0) h
+ 6. 'içeri' at (4,0) h
+ 7. 'aşina' at (2,0) h
+
+Unique words placed (7):
+ 1. abadi
+ 2. anime
+ 3. aşina
+ 4. beşüç
+ 5. donör
+ 6. içeri
+ 7. tenor

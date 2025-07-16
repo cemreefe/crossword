@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i r i s
+ 1 d a t a
+ 2 e t k i
+ 3 a · i k
+
+Placed words:
+ 1. 'etki' at (2,0) horizontal
+ 2. 'idea' at (0,0) vertical
+ 3. 'data' at (1,0) horizontal
+ 4. 'saik' at (0,3) vertical
+ 5. 'itki' at (0,2) vertical
+ 6. 'iris' at (0,0) horizontal
+
+Unique words placed (6):
+ 1. data
+ 2. etki
+ 3. idea
+ 4. iris
+ 5. itki
+ 6. saik

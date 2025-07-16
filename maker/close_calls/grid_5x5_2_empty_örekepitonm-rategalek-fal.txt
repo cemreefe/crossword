@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ö r e k e
+ 1 p i t o n
+ 2 m · r a t
+ 3 e g a l e
+ 4 k · f a l
+
+Placed words:
+ 1. 'öreke' at (0,0) horizontal
+ 2. 'egale' at (3,0) horizontal
+ 3. 'entel' at (0,4) vertical
+ 4. 'öpmek' at (0,0) vertical
+ 5. 'etraf' at (0,2) vertical
+ 6. 'koala' at (0,3) vertical
+ 7. 'piton' at (1,0) horizontal
+
+Unique words placed (7):
+ 1. egale
+ 2. entel
+ 3. etraf
+ 4. koala
+ 5. piton
+ 6. öpmek
+ 7. öreke

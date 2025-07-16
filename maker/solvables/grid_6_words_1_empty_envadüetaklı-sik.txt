@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 e n v a
+ 1 d ü e t
+ 2 a k l ı
+ 3 · s i k
+
+Placed words:
+ 1. 'aklı' at (2,0) horizontal
+ 2. 'düet' at (1,0) horizontal
+ 3. 'nüks' at (0,1) vertical
+ 4. 'veli' at (0,2) vertical
+ 5. 'enva' at (0,0) horizontal
+ 6. 'atık' at (0,3) vertical
+
+Unique words placed (6):
+ 1. aklı
+ 2. atık
+ 3. düet
+ 4. enva
+ 5. nüks
+ 6. veli

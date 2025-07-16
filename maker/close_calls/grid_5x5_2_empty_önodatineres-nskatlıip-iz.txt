@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ö n o d a
+ 1 t i n e r
+ 2 e s · n s
+ 3 k a t l ı
+ 4 i p · i z
+
+Placed words:
+ 1. 'katlı' at (3,0) horizontal
+ 2. 'tiner' at (1,0) horizontal
+ 3. 'öteki' at (0,0) vertical
+ 4. 'denli' at (0,3) vertical
+ 5. 'önoda' at (0,0) horizontal
+ 6. 'arsız' at (0,4) vertical
+ 7. 'nisap' at (0,1) vertical
+
+Unique words placed (7):
+ 1. arsız
+ 2. denli
+ 3. katlı
+ 4. nisap
+ 5. tiner
+ 6. önoda
+ 7. öteki

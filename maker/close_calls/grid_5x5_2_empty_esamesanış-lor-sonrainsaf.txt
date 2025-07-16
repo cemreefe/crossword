@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 e s a m e
+ 1 s a n ı ş
+ 2 · l o r ·
+ 3 s o n r a
+ 4 i n s a f
+
+Placed words:
+ 1. 'sanış' at (1,0) horizontal
+ 2. 'salon' at (0,1) vertical
+ 3. 'esame' at (0,0) horizontal
+ 4. 'anons' at (0,2) vertical
+ 5. 'insaf' at (4,0) horizontal
+ 6. 'sonra' at (3,0) horizontal
+ 7. 'mırra' at (0,3) vertical
+
+Unique words placed (7):
+ 1. anons
+ 2. esame
+ 3. insaf
+ 4. mırra
+ 5. salon
+ 6. sanış
+ 7. sonra

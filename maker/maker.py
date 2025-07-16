@@ -13,6 +13,8 @@ from itertools import product
 from typing import List, Tuple, Optional, Set
 from dataclasses import dataclass
 from grapher import CrosswordGraph, GRID_SIZE, MIN_WORD_LENGTH, TURKISH_ALPHABET
+from collections import defaultdict
+
 
 @dataclass
 class WordPlacement:
@@ -20,13 +22,13 @@ class WordPlacement:
     word: str
     row: int
     col: int
-    direction: str  # 'horizontal' or 'vertical'
+    direction: str  # 'h' or 'v'
     
     def get_positions(self) -> List[Tuple[int, int]]:
         """Get all grid positions occupied by this word"""
         positions = []
         for i, char in enumerate(self.word):
-            if self.direction == 'horizontal':
+            if self.direction == 'h':
                 positions.append((self.row, self.col + i))
             else:  # vertical
                 positions.append((self.row + i, self.col))
@@ -62,7 +64,7 @@ class CrosswordGrid:
         if word in self.words_on_grid:
             return False
 
-        if direction == 'horizontal':
+        if direction == 'h':
             if col + len(word) > GRID_SIZE:
                 return False
             for i, char in enumerate(word):
@@ -99,7 +101,7 @@ class CrosswordGrid:
         
         # Validate each character placement against liner constraints
         placement_positions = []
-        if direction == 'horizontal':
+        if direction == 'h':
             for i, char in enumerate(word):
                 pos_row, pos_col = row, col + i
                 placement_positions.append((pos_row, pos_col, char))
@@ -123,7 +125,7 @@ class CrosswordGrid:
         for pos_row, pos_col, char in placement_positions:
             if self.grid[pos_row][pos_col] == '.':
                 self.filled_cells += 1  # Increment filled cells counter
-            self.grid[pos_row][pos_col] = char
+                self.grid[pos_row][pos_col] = char
         
         self.word_placements.append(placement)
         self.words_on_grid.add(word)  # Track the word as placed
@@ -239,9 +241,8 @@ class CrosswordGrid:
     
     def can_form_wordful_liner(self, current_state: str, verbose: bool = False) -> bool:
         """Check if a row/column state can be completed to form a liner that contains at least one word"""
-        empty_positions = [i for i, c in enumerate(current_state) if c == '.']
         
-        if not empty_positions:
+        if not (has_empty_positions := '.' in current_state):
             # No empty cells - check if current state is a valid word or valid liner with words
             if current_state in self.graph.words:
                 return True
@@ -253,9 +254,12 @@ class CrosswordGrid:
                     if words:  # If any intermediary has words, this liner is wordful
                         return True
             return False
+
+        empty_positions = [i for i, c in enumerate(current_state) if c == '.']
+        len_empty = len(empty_positions)
         
         # Special case: if the entire state is empty, it's always valid
-        if len(empty_positions) == GRID_SIZE:
+        if len_empty == GRID_SIZE:
             return True
         
         # Try to find at least one completion that results in a wordful liner
@@ -276,8 +280,8 @@ class CrosswordGrid:
             return True
         
         # Try more combinations if we have few empty positions
-        if len(empty_positions) <= 2:  # Only for 1-2 empty positions
-            for combo in product(['_', '@'], repeat=len(empty_positions)):
+        if len_empty <= 2:  # Only for 1-2 empty positions
+            for combo in product(['_', '@'], repeat=len_empty):
                 candidate = list(current_state)
                 for pos, replacement in zip(empty_positions, combo):
                     candidate[pos] = replacement
@@ -378,34 +382,41 @@ class CrosswordGrid:
         for row in range(GRID_SIZE):
             row_state = self.get_row_state(row)
             if '.' in row_state:  # Only if row has empty cells
-                row_placements = self._get_placements_for_line(row_state, row, 'horizontal')
+                row_placements = self._get_placements_for_line(row_state, row, 'h')
                 placements.extend(row_placements)
         
         # Check each column for possible vertical placements
         for col in range(GRID_SIZE):
             col_state = self.get_col_state(col)
             if '.' in col_state:  # Only if column has empty cells
-                col_placements = self._get_placements_for_line(col_state, col, 'vertical')
+                col_placements = self._get_placements_for_line(col_state, col, 'v')
                 placements.extend(col_placements)
         
         # Filter out words already placed and randomize
-        valid_placements = []
+        valid_placements_by_length = defaultdict(list)
         for word, row, col, direction in placements:
             if word not in self.words_on_grid:
-                valid_placements.append((word, row, col, direction))
+                if len(word) == GRID_SIZE:
+                    valid_placements_by_length["="].append((word, row, col, direction))
+                else:
+                    valid_placements_by_length["<"].append((word, row, col, direction))
+
+        PRIORITIZE_BY_LENGTH = True  # Flag to prioritize GRID_SIZE words first
         
         # Prioritize by word length (GRID_SIZE first) and randomize within each group
-        grid_size_placements = [p for p in valid_placements if len(p[0]) == GRID_SIZE]
-        shorter_placements = [p for p in valid_placements if len(p[0]) < GRID_SIZE]
-        
-        random.shuffle(grid_size_placements)
-        random.shuffle(shorter_placements)
-        
-        # Return GRID_SIZE words first, then shorter words
-        if grid_size_placements:
-            return grid_size_placements
+        if PRIORITIZE_BY_LENGTH:
+            if grid_size_placements := valid_placements_by_length.get("=", []):
+                random.shuffle(grid_size_placements)
+                return grid_size_placements
+            else:
+                shorter_placements = valid_placements_by_length.get("<", [])
+                random.shuffle(shorter_placements)
+                return shorter_placements
         else:
-            return shorter_placements
+            all_placements = (*valid_placements_by_length.get("=", []), *valid_placements_by_length.get("<", []))
+            random.shuffle(all_placements)
+            return all_placements
+
     
     def _get_placements_for_line(self, line_state: str, line_index: int, direction: str) -> List[Tuple[str, int, int, str]]:
         """Get possible word placements for a specific row or column using liner patterns"""
@@ -432,12 +443,12 @@ class CrosswordGrid:
                         word_placements = self._find_word_positions_in_liner(word, liner_pattern, line_state)
                         
                         for start_pos in word_placements:
-                            if direction == 'horizontal':
+                            if direction == 'h':
                                 # Row placement
-                                placements.append((word, line_index, start_pos, 'horizontal'))
+                                placements.append((word, line_index, start_pos, 'h'))
                             else:
                                 # Column placement  
-                                placements.append((word, start_pos, line_index, 'vertical'))
+                                placements.append((word, start_pos, line_index, 'v'))
         
         return placements
     
@@ -910,7 +921,6 @@ class CrosswordSolver:
         if self.attempts > self.max_attempts:
             print(f"Max attempts ({self.max_attempts}) reached. Stopping.")
             raise Exception("Max attempts reached")
-            return None
         
         # # Create grid state signature 
         grid_signature = grid.get_grid_state_signature()

@@ -1,0 +1,26 @@
+Grid saved at attempt unknown
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3
+ 0 i p e k
+ 1 d a r a
+ 2 e t k i
+ 3 a · e m
+
+Placed words:
+ 1. 'etki' at (2,0) horizontal
+ 2. 'idea' at (0,0) vertical
+ 3. 'dara' at (1,0) horizontal
+ 4. 'ipek' at (0,0) horizontal
+ 5. 'erke' at (0,2) vertical
+ 6. 'kaim' at (0,3) vertical
+
+Unique words placed (6):
+ 1. dara
+ 2. erke
+ 3. etki
+ 4. idea
+ 5. ipek
+ 6. kaim
