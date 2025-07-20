@@ -6,7 +6,7 @@ LAZER
 ADANA
 ŞERİT
 
-H1.1: Küçüktür ama mide bulandırır
+H1.1: Yaz uykusunun küçük düşmanı
 H2.1: Oturgaçlı götürgeçin muzaffer ismi
 H3.1: Hem göze hem göte uygulanabilen bir teknoloji
 H4.1: Yerli ve milli teksas
