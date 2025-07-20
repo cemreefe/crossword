@@ -14,6 +14,6 @@ H5.1: Soldakisi sağdakisinden hızlı olan şey
 V1.1: Eğreti, özensiz
 V2.1: Harekete geçme gücü
 V3.1: Bir çeşit boncuğun can düşmanı
-V4.1: "Ananı"ya br alternatif
+V4.1: "Ananı"ya bir alternatif
 V5.1: Değerli materyal ölçüsü
 
