@@ -154,3 +154,78 @@ h1 {
   /* Prevent focus loss on cell clicks */
   pointer-events: auto;
 }
+
+/* Print-specific clues container */
+#printClues {
+  display: none;
+}
+
+#printClues .print-clues-section {
+  margin-bottom: 1rem;
+}
+
+#printClues .print-clues-section h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#printClues .print-clues-section ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+#printClues .print-clues-section li {
+  margin-bottom: 0.3rem;
+}
+
+/* Print styles */
+@media print {
+  /* Hide interactive elements */
+  #timeDiv, #backlogIndicator, .modal {
+    display: none !important;
+  }
+  
+  /* Hide single-clue view */
+  #clue {
+    display: none !important;
+  }
+  
+  /* Show complete clues list */
+  #printClues {
+    display: block !important;
+    margin-top: 1rem;
+  }
+  
+  /* Reset body styles for print */
+  html, body {
+    overflow: visible;
+    height: auto;
+    position: static;
+  }
+  
+  body {
+    padding: 0;
+  }
+  
+  #contentWrapper {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    font-size: 12pt;
+  }
+  
+  .grid {
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+  }
+  
+  .cell {
+    font-size: 16pt;
+  }
+  
+  /* Ensure grid cells are visible */
+  .cell.selected,
+  .cell.highlighted-word {
+    background: white !important;
+  }
+}

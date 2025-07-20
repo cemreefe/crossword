@@ -37,6 +37,10 @@ Promise.all([
   document.getElementById("successOk").textContent = localizationData.successOk;
   document.getElementById("shareButton").textContent = `📱 ${localizationData.share || 'Share'}`;
   
+  // Set print clues titles
+  document.getElementById("acrossTitle").textContent = localizationData.across;
+  document.getElementById("downTitle").textContent = localizationData.down;
+  
   console.log("Localization loaded:", localizationData);
 
   // Use override data if available, otherwise fetch from file
@@ -107,6 +111,7 @@ Promise.all([
   console.log("Raw clues data loaded:", cluesData);
 
   mapCluePositions(); // Map clue numbers to grid positions after grid is loaded
+  populatePrintClues(); // Populate complete clues list for print view
   renderGrid(); // Render grid and manage clue visibility
   
   // Initialize mobile keyboard if needed
@@ -119,3 +124,35 @@ Promise.all([
 });
 
 console.log("Main initialization script loaded.");
+
+// Function to populate the complete clues list for print view
+function populatePrintClues() {
+  const acrossCluesList = document.getElementById('acrossCluesList');
+  const downCluesList = document.getElementById('downCluesList');
+  
+  // Clear existing content
+  acrossCluesList.innerHTML = '';
+  downCluesList.innerHTML = '';
+  
+  // Populate across clues
+  const acrossEntries = Object.entries(cluesData.H);
+  acrossEntries.sort((a, b) => parseInt(a[0]) - parseInt(b[0])); // Sort by clue number
+  
+  acrossEntries.forEach(([clueNumber, clueText]) => {
+    const li = document.createElement('li');
+    li.innerHTML = `<strong>${clueNumber}.</strong> ${clueText}`;
+    acrossCluesList.appendChild(li);
+  });
+  
+  // Populate down clues
+  const downEntries = Object.entries(cluesData.V);
+  downEntries.sort((a, b) => parseInt(a[0]) - parseInt(b[0])); // Sort by clue number
+  
+  downEntries.forEach(([clueNumber, clueText]) => {
+    const li = document.createElement('li');
+    li.innerHTML = `<strong>${clueNumber}.</strong> ${clueText}`;
+    downCluesList.appendChild(li);
+  });
+  
+  console.log("Print clues populated");
+}
