@@ -1,0 +1,19 @@
+AUTHOR: Cemre
+GRID: 5
+SİNEK
+ARABA
+LAZER
+ADANA
+ŞERİT
+
+H1.1: Küçüktür ama mide bulandırır
+H2.1: Oturgaçlı götürgeçin muzaffer ismi
+H3.1: Hem göze hem göte uygulanabilen bir teknoloji
+H4.1: Yerli ve milli teksas
+H5.1: Soldakisi sağdakisinden hızlı olan şey
+V1.1: Eğreti, özensiz
+V2.1: Harekete geçme gücü
+V3.1: Bir çeşit boncuğun can düşmanı
+V4.1: "Ananı"ya br alternatif
+V5.1: Değerli materyal ölçüsü
+
