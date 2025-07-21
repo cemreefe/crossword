@@ -1,0 +1,18 @@
+AUTHOR: Cemre
+GRID: 5
+PAPAZ
+ADANA
+LANET
+ANİME
+SAKİN
+
+H1.1: İmamın meryemperver muadili
+H2.1: 01
+H3.1: Mahvedici, baş belası büyü
+H4.1: Sevenlerinin çizgifilm denince kızdığı çançinçon şeysi
+H5.1: Dingin, uysal
+V1.1: Mine Kırıkkanat'ın Sinek Sarayı kitabından çalıntı Elif Şafak romanı, Bit ____. 
+V2.1: 2inci satırın aynısı
+V3.1: Dev uçan böcek gorünce ansızan kapılınan dehşet türü, belki
+V4.1: Orak hücrelisi ünlü bir hastalık
+V5.1: 'Halihazırda' veya 'doğrusu' anlamında bir kelime
