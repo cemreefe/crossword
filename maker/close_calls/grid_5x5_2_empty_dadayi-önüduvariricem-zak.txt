@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 d a d a y
+ 1 i · ö n ü
+ 2 d u v a r
+ 3 i r i c e
+ 4 m · z a k
+
+Placed words:
+ 1. 'döviz' at (0,2) v
+ 2. 'daday' at (0,0) h
+ 3. 'duvar' at (2,0) h
+ 4. 'yürek' at (0,4) v
+ 5. 'anaca' at (0,3) v
+ 6. 'irice' at (3,0) h
+ 7. 'didim' at (0,0) v
+
+Unique words placed (7):
+ 1. anaca
+ 2. daday
+ 3. didim
+ 4. duvar
+ 5. döviz
+ 6. irice
+ 7. yürek

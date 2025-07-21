@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 f a i k 
+ 1 i g l u 
+ 2 n · i l 
+ 3 k a m p 
+
+Placed words:
+ 1. 'fink' at (0,0) Vertical
+ 2. 'faik' at (0,0) Horizontal
+ 3. 'iglu' at (1,0) Horizontal
+ 4. 'kulp' at (0,3) Vertical
+ 5. 'ilim' at (0,2) Vertical
+ 6. 'kamp' at (3,0) Horizontal
+
+Unique words placed (6):
+ 1. ilim
+ 2. iglu
+ 3. kulp
+ 4. kamp
+ 5. fink
+ 6. faik

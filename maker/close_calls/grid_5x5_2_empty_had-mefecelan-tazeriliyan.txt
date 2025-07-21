@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h a d · m
+ 1 e f e c e
+ 2 l a n · t
+ 3 a z e r i
+ 4 l i y a n
+
+Placed words:
+ 1. 'helal' at (0,0) v
+ 2. 'deney' at (0,2) v
+ 3. 'liyan' at (4,0) h
+ 4. 'metin' at (0,4) v
+ 5. 'afazi' at (0,1) v
+ 6. 'azeri' at (3,0) h
+ 7. 'efece' at (1,0) h
+
+Unique words placed (7):
+ 1. afazi
+ 2. azeri
+ 3. deney
+ 4. efece
+ 5. helal
+ 6. liyan
+ 7. metin

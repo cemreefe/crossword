@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 a d a k 
+ 1 c o b a 
+ 2 u l a m 
+ 3 n u t a 
+
+Placed words:
+ 1. 'adak' at (0,0) Horizontal
+ 2. 'abat' at (0,2) Vertical
+ 3. 'ulam' at (2,0) Horizontal
+ 4. 'kama' at (0,3) Vertical
+ 5. 'dolu' at (0,1) Vertical
+ 6. 'acun' at (0,0) Vertical
+
+Unique words placed (6):
+ 1. adak
+ 2. dolu
+ 3. acun
+ 4. abat
+ 5. ulam
+ 6. kama

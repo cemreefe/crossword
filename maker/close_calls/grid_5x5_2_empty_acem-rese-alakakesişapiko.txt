@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a c e m ·
+ 1 r e s e ·
+ 2 a l a k a
+ 3 k e s i ş
+ 4 a p i k o
+
+Placed words:
+ 1. 'kesiş' at (3,0) h
+ 2. 'alaka' at (2,0) h
+ 3. 'araka' at (0,0) v
+ 4. 'esasi' at (0,2) v
+ 5. 'apiko' at (4,0) h
+ 6. 'celep' at (0,1) v
+ 7. 'mekik' at (0,3) v
+
+Unique words placed (7):
+ 1. alaka
+ 2. apiko
+ 3. araka
+ 4. celep
+ 5. esasi
+ 6. kesiş
+ 7. mekik

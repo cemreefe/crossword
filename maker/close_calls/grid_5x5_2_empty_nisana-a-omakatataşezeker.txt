@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 n i s a n
+ 1 a · a · o
+ 2 m a k a t
+ 3 a t a ş e
+ 4 z e k e r
+
+Placed words:
+ 1. 'makat' at (2,0) h
+ 2. 'ataşe' at (3,0) h
+ 3. 'noter' at (0,4) v
+ 4. 'namaz' at (0,0) v
+ 5. 'zeker' at (4,0) h
+ 6. 'nisan' at (0,0) h
+ 7. 'sakak' at (0,2) v
+
+Unique words placed (7):
+ 1. ataşe
+ 2. makat
+ 3. namaz
+ 4. nisan
+ 5. noter
+ 6. sakak
+ 7. zeker

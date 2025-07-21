@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 v a s i t 
+ 1 e r a v o 
+ 2 f a l e z 
+ 3 a b o s a 
+ 4 t a n i n 
+
+Placed words:
+ 1. 'falez' at (2,0) Horizontal
+ 2. 'ivesi' at (0,3) Vertical
+ 3. 'salon' at (0,2) Vertical
+ 4. 'abosa' at (3,0) Horizontal
+ 5. 'araba' at (0,1) Vertical
+ 6. 'tozan' at (0,4) Vertical
+ 7. 'tanin' at (4,0) Horizontal
+ 8. 'vefat' at (0,0) Vertical
+
+Unique words placed (8):
+ 1. abosa
+ 2. vefat
+ 3. ivesi
+ 4. salon
+ 5. tanin
+ 6. araba
+ 7. tozan
+ 8. falez

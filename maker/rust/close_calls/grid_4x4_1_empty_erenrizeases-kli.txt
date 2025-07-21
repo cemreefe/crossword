@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e r e n 
+ 1 r i z e 
+ 2 a s e s 
+ 3 · k l i 
+
+Placed words:
+ 1. 'eren' at (0,0) Horizontal
+ 2. 'ezel' at (0,2) Vertical
+ 3. 'risk' at (0,1) Vertical
+ 4. 'ases' at (2,0) Horizontal
+ 5. 'nesi' at (0,3) Vertical
+ 6. 'rize' at (1,0) Horizontal
+
+Unique words placed (6):
+ 1. ezel
+ 2. risk
+ 3. eren
+ 4. ases
+ 5. nesi
+ 6. rize

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ş e b e k
+ 1 a · i t e
+ 2 k o y u ş
+ 3 a r e n a
+ 4 k · l u n
+
+Placed words:
+ 1. 'koyuş' at (2,0) h
+ 2. 'şebek' at (0,0) h
+ 3. 'biyel' at (0,2) v
+ 4. 'şakak' at (0,0) v
+ 5. 'arena' at (3,0) h
+ 6. 'keşan' at (0,4) v
+ 7. 'etunu' at (0,3) v
+
+Unique words placed (7):
+ 1. arena
+ 2. biyel
+ 3. etunu
+ 4. keşan
+ 5. koyuş
+ 6. şakak
+ 7. şebek

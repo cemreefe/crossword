@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 c i h a t 
+ 1 a b a d i 
+ 2 d a m a r 
+ 3 · r a m a 
+ 4 m e m a t 
+
+Placed words:
+ 1. 'damar' at (2,0) Horizontal
+ 2. 'memat' at (4,0) Horizontal
+ 3. 'ibare' at (0,1) Vertical
+ 4. 'adama' at (0,3) Vertical
+ 5. 'hamam' at (0,2) Vertical
+ 6. 'abadi' at (1,0) Horizontal
+ 7. 'tirat' at (0,4) Vertical
+ 8. 'cihat' at (0,0) Horizontal
+
+Unique words placed (8):
+ 1. cihat
+ 2. tirat
+ 3. hamam
+ 4. abadi
+ 5. memat
+ 6. damar
+ 7. adama
+ 8. ibare

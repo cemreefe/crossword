@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m a d a ·
+ 1 i ş e m e
+ 2 s a r i h
+ 3 a m i g ·
+ 4 k a n o n
+
+Placed words:
+ 1. 'kanon' at (4,0) h
+ 2. 'sarih' at (2,0) h
+ 3. 'aşama' at (0,1) v
+ 4. 'derin' at (0,2) v
+ 5. 'işeme' at (1,0) h
+ 6. 'misak' at (0,0) v
+ 7. 'amigo' at (0,3) v
+
+Unique words placed (7):
+ 1. amigo
+ 2. aşama
+ 3. derin
+ 4. işeme
+ 5. kanon
+ 6. misak
+ 7. sarih

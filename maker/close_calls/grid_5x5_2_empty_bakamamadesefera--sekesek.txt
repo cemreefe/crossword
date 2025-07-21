@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 b a k a m
+ 1 a m a d e
+ 2 s e f e r
+ 3 a · · s e
+ 4 k e s e k
+
+Placed words:
+ 1. 'sefer' at (2,0) h
+ 2. 'amade' at (1,0) h
+ 3. 'bakam' at (0,0) h
+ 4. 'kesek' at (4,0) h
+ 5. 'basak' at (0,0) v
+ 6. 'adese' at (0,3) v
+ 7. 'merek' at (0,4) v
+
+Unique words placed (7):
+ 1. adese
+ 2. amade
+ 3. bakam
+ 4. basak
+ 5. kesek
+ 6. merek
+ 7. sefer

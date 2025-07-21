@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 b a h i s
+ 1 e t u · ·
+ 2 k a m a n
+ 3 a ş u r e
+ 4 r e s i m
+
+Placed words:
+ 1. 'aşure' at (3,0) h
+ 2. 'humus' at (0,2) v
+ 3. 'resim' at (4,0) h
+ 4. 'kaman' at (2,0) h
+ 5. 'bahis' at (0,0) h
+ 6. 'ataşe' at (0,1) v
+ 7. 'bekar' at (0,0) v
+
+Unique words placed (7):
+ 1. ataşe
+ 2. aşure
+ 3. bahis
+ 4. bekar
+ 5. humus
+ 6. kaman
+ 7. resim

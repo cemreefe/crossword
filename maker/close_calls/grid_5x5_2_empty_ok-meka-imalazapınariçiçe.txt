@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 o k · m e
+ 1 k a · i m
+ 2 a l a z a
+ 3 p ı n a r
+ 4 i ç i ç e
+
+Placed words:
+ 1. 'pınar' at (3,0) h
+ 2. 'mizaç' at (0,3) v
+ 3. 'alaza' at (2,0) h
+ 4. 'okapi' at (0,0) v
+ 5. 'emare' at (0,4) v
+ 6. 'içiçe' at (4,0) h
+ 7. 'kalıç' at (0,1) v
+
+Unique words placed (7):
+ 1. alaza
+ 2. emare
+ 3. içiçe
+ 4. kalıç
+ 5. mizaç
+ 6. okapi
+ 7. pınar

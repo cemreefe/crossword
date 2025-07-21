@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 · k u h 
+ 1 m a z i 
+ 2 i m a l 
+ 3 p a y e 
+
+Placed words:
+ 1. 'uzay' at (0,2) Vertical
+ 2. 'hile' at (0,3) Vertical
+ 3. 'paye' at (3,0) Horizontal
+ 4. 'imal' at (2,0) Horizontal
+ 5. 'mazi' at (1,0) Horizontal
+ 6. 'kama' at (0,1) Vertical
+
+Unique words placed (6):
+ 1. paye
+ 2. hile
+ 3. imal
+ 4. kama
+ 5. mazi
+ 6. uzay

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i ç i c i
+ 1 t ı · · l
+ 2 i b a r e
+ 3 n a t ü r
+ 4 a n e m i
+
+Placed words:
+ 1. 'natür' at (3,0) h
+ 2. 'çıban' at (0,1) v
+ 3. 'içici' at (0,0) h
+ 4. 'ibare' at (2,0) h
+ 5. 'ileri' at (0,4) v
+ 6. 'anemi' at (4,0) h
+ 7. 'itina' at (0,0) v
+
+Unique words placed (7):
+ 1. anemi
+ 2. ibare
+ 3. ileri
+ 4. itina
+ 5. içici
+ 6. natür
+ 7. çıban

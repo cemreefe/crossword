@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 d o y u m
+ 1 e l e l e
+ 2 l a z u t
+ 3 · s i · i
+ 4 k ı t a l
+
+Placed words:
+ 1. 'olası' at (0,1) v
+ 2. 'yezit' at (0,2) v
+ 3. 'kıta' at (4,0) h
+ 4. 'metil' at (0,4) v
+ 5. 'elele' at (1,0) h
+ 6. 'lazut' at (2,0) h
+ 7. 'doyum' at (0,0) h
+
+Unique words placed (7):
+ 1. doyum
+ 2. elele
+ 3. kıta
+ 4. lazut
+ 5. metil
+ 6. olası
+ 7. yezit

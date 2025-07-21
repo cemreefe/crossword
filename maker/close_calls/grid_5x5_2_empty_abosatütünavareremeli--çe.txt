@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a b o s a
+ 1 t ü t ü n
+ 2 a v a r e
+ 3 r e m e l
+ 4 i · · ç e
+
+Placed words:
+ 1. 'süreç' at (0,3) v
+ 2. 'remel' at (3,0) h
+ 3. 'anele' at (0,4) v
+ 4. 'abosa' at (0,0) h
+ 5. 'tütün' at (1,0) h
+ 6. 'avare' at (2,0) h
+ 7. 'atari' at (0,0) v
+
+Unique words placed (7):
+ 1. abosa
+ 2. anele
+ 3. atari
+ 4. avare
+ 5. remel
+ 6. süreç
+ 7. tütün

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 o j e l i
+ 1 k o l i t
+ 2 a k e m i
+ 3 p e l i n
+ 4 i r · t ·
+
+Placed words:
+ 1. 'pelin' at (3,0) h
+ 2. 'limit' at (0,3) v
+ 3. 'kolit' at (1,0) h
+ 4. 'ojeli' at (0,0) h
+ 5. 'okapi' at (0,0) v
+ 6. 'joker' at (0,1) v
+ 7. 'akemi' at (2,0) h
+
+Unique words placed (7):
+ 1. akemi
+ 2. joker
+ 3. kolit
+ 4. limit
+ 5. ojeli
+ 6. okapi
+ 7. pelin

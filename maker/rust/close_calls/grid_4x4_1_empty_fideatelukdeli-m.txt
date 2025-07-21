@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 f i d e 
+ 1 a t e l 
+ 2 u k d e 
+ 3 l i · m 
+
+Placed words:
+ 1. 'ukde' at (2,0) Horizontal
+ 2. 'elem' at (0,3) Vertical
+ 3. 'fide' at (0,0) Horizontal
+ 4. 'atel' at (1,0) Horizontal
+ 5. 'itki' at (0,1) Vertical
+ 6. 'faul' at (0,0) Vertical
+
+Unique words placed (6):
+ 1. atel
+ 2. elem
+ 3. fide
+ 4. itki
+ 5. ukde
+ 6. faul

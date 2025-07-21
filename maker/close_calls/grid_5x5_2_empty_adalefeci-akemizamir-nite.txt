@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a d a l e
+ 1 f e c i ·
+ 2 a k e m i
+ 3 z a m i r
+ 4 · n i t e
+
+Placed words:
+ 1. 'acemi' at (0,2) v
+ 2. 'dekan' at (0,1) v
+ 3. 'zamir' at (3,0) h
+ 4. 'feci' at (1,0) h
+ 5. 'akemi' at (2,0) h
+ 6. 'adale' at (0,0) h
+ 7. 'nite' at (4,1) h
+
+Unique words placed (7):
+ 1. acemi
+ 2. adale
+ 3. akemi
+ 4. dekan
+ 5. feci
+ 6. nite
+ 7. zamir

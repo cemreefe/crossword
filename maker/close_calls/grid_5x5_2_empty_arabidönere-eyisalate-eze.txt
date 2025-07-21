@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a r a b i
+ 1 d ö n e r
+ 2 e · e y i
+ 3 s a l a t
+ 4 e · e z e
+
+Placed words:
+ 1. 'salat' at (3,0) h
+ 2. 'döner' at (1,0) h
+ 3. 'beyaz' at (0,3) v
+ 4. 'irite' at (0,4) v
+ 5. 'anele' at (0,2) v
+ 6. 'arabi' at (0,0) h
+ 7. 'adese' at (0,0) v
+
+Unique words placed (7):
+ 1. adese
+ 2. anele
+ 3. arabi
+ 4. beyaz
+ 5. döner
+ 6. irite
+ 7. salat

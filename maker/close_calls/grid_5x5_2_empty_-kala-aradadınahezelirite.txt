@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · k a l a
+ 1 · a r a d
+ 2 a d ı n a
+ 3 h e z e l
+ 4 i r i t e
+
+Placed words:
+ 1. 'hezel' at (3,0) h
+ 2. 'kader' at (0,1) v
+ 3. 'adına' at (2,0) h
+ 4. 'adale' at (0,4) v
+ 5. 'irite' at (4,0) h
+ 6. 'lanet' at (0,3) v
+ 7. 'arızi' at (0,2) v
+
+Unique words placed (7):
+ 1. adale
+ 2. adına
+ 3. arızi
+ 4. hezel
+ 5. irite
+ 6. kader
+ 7. lanet

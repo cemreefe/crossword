@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · t · n u
+ 1 h a r i ç
+ 2 a l a k a
+ 3 t a m e r
+ 4 a n a l ı
+
+Placed words:
+ 1. 'uçarı' at (0,4) v
+ 2. 'tamer' at (3,0) h
+ 3. 'hariç' at (1,0) h
+ 4. 'alaka' at (2,0) h
+ 5. 'talan' at (0,1) v
+ 6. 'nikel' at (0,3) v
+ 7. 'analı' at (4,0) h
+
+Unique words placed (7):
+ 1. alaka
+ 2. analı
+ 3. hariç
+ 4. nikel
+ 5. talan
+ 6. tamer
+ 7. uçarı

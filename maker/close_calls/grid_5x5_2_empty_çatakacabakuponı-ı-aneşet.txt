@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ç a t a k
+ 1 a c a b a
+ 2 k u p o n
+ 3 ı · ı · a
+ 4 n e ş e t
+
+Placed words:
+ 1. 'kupon' at (2,0) h
+ 2. 'çakın' at (0,0) v
+ 3. 'tapış' at (0,2) v
+ 4. 'acaba' at (1,0) h
+ 5. 'kanat' at (0,4) v
+ 6. 'neşet' at (4,0) h
+ 7. 'çatak' at (0,0) h
+
+Unique words placed (7):
+ 1. acaba
+ 2. kanat
+ 3. kupon
+ 4. neşet
+ 5. tapış
+ 6. çakın
+ 7. çatak

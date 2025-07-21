@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 n i y e 
+ 1 · n a n 
+ 2 b e r e 
+ 3 i k a z 
+
+Placed words:
+ 1. 'niye' at (0,0) Horizontal
+ 2. 'inek' at (0,1) Vertical
+ 3. 'bere' at (2,0) Horizontal
+ 4. 'enez' at (0,3) Vertical
+ 5. 'yara' at (0,2) Vertical
+ 6. 'ikaz' at (3,0) Horizontal
+
+Unique words placed (6):
+ 1. enez
+ 2. yara
+ 3. inek
+ 4. ikaz
+ 5. bere
+ 6. niye

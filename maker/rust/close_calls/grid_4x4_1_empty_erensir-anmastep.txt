@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e r e n 
+ 1 s i r · 
+ 2 a n m a 
+ 3 s t e p 
+
+Placed words:
+ 1. 'eren' at (0,0) Horizontal
+ 2. 'erme' at (0,2) Vertical
+ 3. 'rint' at (0,1) Vertical
+ 4. 'esas' at (0,0) Vertical
+ 5. 'step' at (3,0) Horizontal
+ 6. 'anma' at (2,0) Horizontal
+
+Unique words placed (6):
+ 1. step
+ 2. rint
+ 3. erme
+ 4. eren
+ 5. esas
+ 6. anma

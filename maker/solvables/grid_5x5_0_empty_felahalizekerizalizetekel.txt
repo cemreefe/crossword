@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 f e l a h
+ 1 a l i z e
+ 2 k e r i z
+ 3 a l i z e
+ 4 t e k e l
+
+Placed words:
+ 1. 'hezel' at (0,4) v
+ 2. 'fakat' at (0,0) v
+ 3. 'elele' at (0,1) v
+ 4. 'keriz' at (2,0) h
+ 5. 'felah' at (0,0) h
+ 6. 'alize' at (3,0) h
+ 7. 'tekel' at (4,0) h
+ 8. 'lirik' at (0,2) v
+ 9. 'azize' at (0,3) v
+
+Unique words placed (9):
+ 1. alize
+ 2. azize
+ 3. elele
+ 4. fakat
+ 5. felah
+ 6. hezel
+ 7. keriz
+ 8. lirik
+ 9. tekel

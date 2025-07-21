@@ -1,0 +1,22 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 4
+
+Grid:
+   0 1 2 3 
+ 0 k e k y 
+ 1 a l e a 
+ 2 t a n b 
+ 3 i n t a 
+
+Placed words:
+ 1. 'kati' at (0,0) Vertical
+ 2. 'kent' at (0,2) Vertical
+ 3. 'elan' at (0,1) Vertical
+ 4. 'yaba' at (0,3) Vertical
+
+Unique words placed (4):
+ 1. yaba
+ 2. elan
+ 3. kent
+ 4. kati

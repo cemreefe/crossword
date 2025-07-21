@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 d u b a r 
+ 1 e z i n e 
+ 2 n a d a s 
+ 3 m a o c u 
+ 4 y a n a l 
+
+Placed words:
+ 1. 'bidon' at (0,2) Vertical
+ 2. 'ezine' at (1,0) Horizontal
+ 3. 'yanal' at (4,0) Horizontal
+ 4. 'anaca' at (0,3) Vertical
+ 5. 'nadas' at (2,0) Horizontal
+ 6. 'dubar' at (0,0) Horizontal
+ 7. 'resul' at (0,4) Vertical
+ 8. 'maocu' at (3,0) Horizontal
+
+Unique words placed (8):
+ 1. yanal
+ 2. resul
+ 3. nadas
+ 4. ezine
+ 5. dubar
+ 6. maocu
+ 7. anaca
+ 8. bidon

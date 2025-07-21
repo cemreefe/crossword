@@ -7,7 +7,7 @@ use rayon::prelude::*;
 // Configuration constants
 pub const GRID_SIZE: usize = 5;
 pub const MIN_WORD_LENGTH: usize = 5;
-pub const TURKISH_ALPHABET: &str = "abcdefghijklmnopqrstuvwxyzçğıöşü";
+pub const TURKISH_ALPHABET: &str = "abcdefghijklmnopqrstuvyzçğıöşü";
 
 #[derive(Debug, Clone)]
 pub struct CrosswordGraph {

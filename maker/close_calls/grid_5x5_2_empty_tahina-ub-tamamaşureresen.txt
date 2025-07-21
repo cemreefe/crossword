@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 t a h i n
+ 1 a · u b ·
+ 2 t a m a m
+ 3 a ş u r e
+ 4 r e s e n
+
+Placed words:
+ 1. 'aşure' at (3,0) h
+ 2. 'humus' at (0,2) v
+ 3. 'tatar' at (0,0) v
+ 4. 'ibare' at (0,3) v
+ 5. 'tamam' at (2,0) h
+ 6. 'tahin' at (0,0) h
+ 7. 'resen' at (4,0) h
+
+Unique words placed (7):
+ 1. aşure
+ 2. humus
+ 3. ibare
+ 4. resen
+ 5. tahin
+ 6. tamam
+ 7. tatar

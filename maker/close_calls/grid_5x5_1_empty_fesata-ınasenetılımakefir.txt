@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 f e s a t
+ 1 a · ı n a
+ 2 s e n e t
+ 3 ı l ı m a
+ 4 k e f i r
+
+Placed words:
+ 1. 'fasık' at (0,0) v
+ 2. 'sınıf' at (0,2) v
+ 3. 'fesat' at (0,0) h
+ 4. 'kefir' at (4,0) h
+ 5. 'senet' at (2,0) h
+ 6. 'ılıma' at (3,0) h
+ 7. 'tatar' at (0,4) v
+ 8. 'anemi' at (0,3) v
+
+Unique words placed (8):
+ 1. anemi
+ 2. fasık
+ 3. fesat
+ 4. kefir
+ 5. senet
+ 6. sınıf
+ 7. tatar
+ 8. ılıma

@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 i k i l i
+ 1 b e t i m
+ 2 a ş i n a
+ 3 t e c i l
+ 4 e · i n e
+
+Placed words:
+ 1. 'betim' at (1,0) h
+ 2. 'tecil' at (3,0) h
+ 3. 'ibate' at (0,0) v
+ 4. 'ikili' at (0,0) h
+ 5. 'linin' at (0,3) v
+ 6. 'itici' at (0,2) v
+ 7. 'imale' at (0,4) v
+ 8. 'aşina' at (2,0) h
+
+Unique words placed (8):
+ 1. aşina
+ 2. betim
+ 3. ibate
+ 4. ikili
+ 5. imale
+ 6. itici
+ 7. linin
+ 8. tecil

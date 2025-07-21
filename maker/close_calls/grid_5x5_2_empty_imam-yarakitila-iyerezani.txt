@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 i m a m ·
+ 1 y a r a k
+ 2 i t i l a
+ 3 · i y e r
+ 4 e z a n i
+
+Placed words:
+ 1. 'yarak' at (1,0) h
+ 2. 'malen' at (0,3) v
+ 3. 'itila' at (2,0) h
+ 4. 'ariya' at (0,2) v
+ 5. 'ezan' at (4,0) h
+ 6. 'matiz' at (0,1) v
+ 7. 'imam' at (0,0) h
+ 8. 'kari' at (1,4) v
+
+Unique words placed (8):
+ 1. ariya
+ 2. ezan
+ 3. imam
+ 4. itila
+ 5. kari
+ 6. malen
+ 7. matiz
+ 8. yarak

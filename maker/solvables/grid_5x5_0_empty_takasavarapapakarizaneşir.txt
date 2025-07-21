@@ -1,0 +1,27 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 6
+
+Grid:
+   0 1 2 3 4
+ 0 t a k a s
+ 1 a v a r a
+ 2 p a p a k
+ 3 a r i z a
+ 4 n e ş i r
+
+Placed words:
+ 1. 'kapiş' at (0,2) v
+ 2. 'sakar' at (0,4) v
+ 3. 'arazi' at (0,3) v
+ 4. 'takas' at (0,0) h
+ 5. 'avare' at (0,1) v
+ 6. 'tapan' at (0,0) v
+
+Unique words placed (6):
+ 1. arazi
+ 2. avare
+ 3. kapiş
+ 4. sakar
+ 5. takas
+ 6. tapan

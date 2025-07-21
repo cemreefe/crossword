@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i f a d e
+ 1 d · r ü m
+ 2 a l a z a
+ 3 d i z e y
+ 4 i · i ç e
+
+Placed words:
+ 1. 'düzeç' at (0,3) v
+ 2. 'dizey' at (3,0) h
+ 3. 'alaza' at (2,0) h
+ 4. 'emaye' at (0,4) v
+ 5. 'idadi' at (0,0) v
+ 6. 'arazi' at (0,2) v
+ 7. 'ifade' at (0,0) h
+
+Unique words placed (7):
+ 1. alaza
+ 2. arazi
+ 3. dizey
+ 4. düzeç
+ 5. emaye
+ 6. idadi
+ 7. ifade

@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 · t i l a
+ 1 p a h a l
+ 2 a b a z a
+ 3 · i l e k
+ 4 o p e r a
+
+Placed words:
+ 1. 'tabip' at (0,1) v
+ 2. 'pahal' at (1,0) h
+ 3. 'opera' at (4,0) h
+ 4. 'abaza' at (2,0) h
+ 5. 'hale' at (1,2) v
+ 6. 'ihale' at (0,2) v
+ 7. 'lazer' at (0,3) v
+ 8. 'alaka' at (0,4) v
+
+Unique words placed (8):
+ 1. abaza
+ 2. alaka
+ 3. hale
+ 4. ihale
+ 5. lazer
+ 6. opera
+ 7. pahal
+ 8. tabip

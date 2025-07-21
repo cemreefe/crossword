@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 ş a h i t
+ 1 a k a · a
+ 2 m a d i k
+ 3 a ğ ı l ı
+ 4 r a m a k
+
+Placed words:
+ 1. 'şahit' at (0,0) h
+ 2. 'akağa' at (0,1) v
+ 3. 'ramak' at (4,0) h
+ 4. 'takık' at (0,4) v
+ 5. 'madik' at (2,0) h
+ 6. 'ağılı' at (3,0) h
+ 7. 'şamar' at (0,0) v
+ 8. 'hadım' at (0,2) v
+
+Unique words placed (8):
+ 1. akağa
+ 2. ağılı
+ 3. hadım
+ 4. madik
+ 5. ramak
+ 6. takık
+ 7. şahit
+ 8. şamar

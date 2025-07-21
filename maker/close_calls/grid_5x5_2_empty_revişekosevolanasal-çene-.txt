@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 r e v i ş
+ 1 e k o s e
+ 2 v o l a n
+ 3 a s a l ·
+ 4 ç e n e ·
+
+Placed words:
+ 1. 'reviş' at (0,0) h
+ 2. 'volan' at (2,0) h
+ 3. 'isale' at (0,3) v
+ 4. 'reva' at (0,0) v
+ 5. 'revaç' at (0,0) v
+ 6. 'ekose' at (1,0) h
+ 7. 'çene' at (4,0) h
+ 8. 'asal' at (3,0) h
+
+Unique words placed (8):
+ 1. asal
+ 2. ekose
+ 3. isale
+ 4. reva
+ 5. revaç
+ 6. reviş
+ 7. volan
+ 8. çene

@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e s e n 
+ 1 v e t o 
+ 2 e m m e 
+ 3 t a e · 
+
+Placed words:
+ 1. 'esen' at (0,0) Horizontal
+ 2. 'etme' at (0,2) Vertical
+ 3. 'veto' at (1,0) Horizontal
+ 4. 'emme' at (2,0) Horizontal
+ 5. 'evet' at (0,0) Vertical
+ 6. 'sema' at (0,1) Vertical
+
+Unique words placed (6):
+ 1. evet
+ 2. sema
+ 3. esen
+ 4. etme
+ 5. veto
+ 6. emme

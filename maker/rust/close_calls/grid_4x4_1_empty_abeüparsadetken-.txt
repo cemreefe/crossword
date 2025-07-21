@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 a b e ü 
+ 1 p a r s 
+ 2 a d e t 
+ 3 k e n · 
+
+Placed words:
+ 1. 'pars' at (1,0) Horizontal
+ 2. 'eren' at (0,2) Vertical
+ 3. 'bade' at (0,1) Vertical
+ 4. 'apak' at (0,0) Vertical
+ 5. 'adet' at (2,0) Horizontal
+ 6. 'üst' at (0,3) Vertical
+
+Unique words placed (6):
+ 1. üst
+ 2. adet
+ 3. apak
+ 4. eren
+ 5. pars
+ 6. bade

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 l a k a p
+ 1 e l i ş i
+ 2 m e r a k
+ 3 i · i · a
+ 4 s i l a j
+
+Placed words:
+ 1. 'kiril' at (0,2) v
+ 2. 'pikaj' at (0,4) v
+ 3. 'lakap' at (0,0) h
+ 4. 'lemis' at (0,0) v
+ 5. 'silaj' at (4,0) h
+ 6. 'merak' at (2,0) h
+ 7. 'elişi' at (1,0) h
+
+Unique words placed (7):
+ 1. elişi
+ 2. kiril
+ 3. lakap
+ 4. lemis
+ 5. merak
+ 6. pikaj
+ 7. silaj

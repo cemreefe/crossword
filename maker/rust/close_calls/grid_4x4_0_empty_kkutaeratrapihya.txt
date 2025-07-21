@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k k u t 
+ 1 a e r a 
+ 2 t r a p 
+ 3 i h y a 
+
+Placed words:
+ 1. 'kati' at (0,0) Vertical
+ 2. 'trap' at (2,0) Horizontal
+ 3. 'uray' at (0,2) Vertical
+ 4. 'ihya' at (3,0) Horizontal
+ 5. 'tapa' at (0,3) Vertical
+ 6. 'kerh' at (0,1) Vertical
+
+Unique words placed (6):
+ 1. kerh
+ 2. ihya
+ 3. trap
+ 4. uray
+ 5. kati
+ 6. tapa

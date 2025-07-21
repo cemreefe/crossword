@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i p · k a
+ 1 h e · a l
+ 2 a l e v i
+ 3 t i r i z
+ 4 a n e l e
+
+Placed words:
+ 1. 'pelin' at (0,1) v
+ 2. 'ihata' at (0,0) v
+ 3. 'alevi' at (2,0) h
+ 4. 'kavil' at (0,3) v
+ 5. 'tiriz' at (3,0) h
+ 6. 'anele' at (4,0) h
+ 7. 'alize' at (0,4) v
+
+Unique words placed (7):
+ 1. alevi
+ 2. alize
+ 3. anele
+ 4. ihata
+ 5. kavil
+ 6. pelin
+ 7. tiriz

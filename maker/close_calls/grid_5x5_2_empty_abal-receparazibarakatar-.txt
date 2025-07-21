@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a b a l ·
+ 1 r e c e p
+ 2 a r a z i
+ 3 b a r a k
+ 4 a t a r ·
+
+Placed words:
+ 1. 'recep' at (1,0) h
+ 2. 'lezar' at (0,3) v
+ 3. 'arazi' at (2,0) h
+ 4. 'acara' at (0,2) v
+ 5. 'araba' at (0,0) v
+ 6. 'barak' at (3,0) h
+ 7. 'berat' at (0,1) v
+
+Unique words placed (7):
+ 1. acara
+ 2. araba
+ 3. arazi
+ 4. barak
+ 5. berat
+ 6. lezar
+ 7. recep

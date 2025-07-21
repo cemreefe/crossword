@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 b o r a n
+ 1 a c u b ·
+ 2 d u h u l
+ 3 a m e l ·
+ 4 t a n i n
+
+Placed words:
+ 1. 'boran' at (0,0) h
+ 2. 'duhul' at (2,0) h
+ 3. 'ruhen' at (0,2) v
+ 4. 'ocuma' at (0,1) v
+ 5. 'badat' at (0,0) v
+ 6. 'tanin' at (4,0) h
+ 7. 'abuli' at (0,3) v
+
+Unique words placed (7):
+ 1. abuli
+ 2. badat
+ 3. boran
+ 4. duhul
+ 5. ocuma
+ 6. ruhen
+ 7. tanin

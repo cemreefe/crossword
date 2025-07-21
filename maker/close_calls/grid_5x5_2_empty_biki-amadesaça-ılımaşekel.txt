@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 b i k i ·
+ 1 a m a d e
+ 2 s a ç a ·
+ 3 ı l ı m a
+ 4 ş e k e l
+
+Placed words:
+ 1. 'kaçık' at (0,2) v
+ 2. 'imale' at (0,1) v
+ 3. 'şekel' at (4,0) h
+ 4. 'basış' at (0,0) v
+ 5. 'idame' at (0,3) v
+ 6. 'ılıma' at (3,0) h
+ 7. 'amade' at (1,0) h
+
+Unique words placed (7):
+ 1. amade
+ 2. basış
+ 3. idame
+ 4. imale
+ 5. kaçık
+ 6. ılıma
+ 7. şekel

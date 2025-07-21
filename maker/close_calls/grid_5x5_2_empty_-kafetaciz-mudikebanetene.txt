@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · k a f e
+ 1 t a c i z
+ 2 · m u d i
+ 3 k e b a n
+ 4 e t e n e
+
+Placed words:
+ 1. 'fidan' at (0,3) v
+ 2. 'taciz' at (1,0) h
+ 3. 'keban' at (3,0) h
+ 4. 'etene' at (4,0) h
+ 5. 'acube' at (0,2) v
+ 6. 'mudi' at (2,1) h
+ 7. 'kafe' at (0,1) h
+
+Unique words placed (7):
+ 1. acube
+ 2. etene
+ 3. fidan
+ 4. kafe
+ 5. keban
+ 6. mudi
+ 7. taciz

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 l · k · t
+ 1 a b o n e
+ 2 k a z a z
+ 3 a d a n a
+ 4 p i k e t
+
+Placed words:
+ 1. 'kazaz' at (2,0) h
+ 2. 'piket' at (4,0) h
+ 3. 'adana' at (3,0) h
+ 4. 'abone' at (1,0) h
+ 5. 'lakap' at (0,0) v
+ 6. 'tezat' at (0,4) v
+ 7. 'kozak' at (0,2) v
+
+Unique words placed (7):
+ 1. abone
+ 2. adana
+ 3. kazaz
+ 4. kozak
+ 5. lakap
+ 6. piket
+ 7. tezat

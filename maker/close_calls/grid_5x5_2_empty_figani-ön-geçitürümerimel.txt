@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f i g a n
+ 1 i · ö n ·
+ 2 g e ç i t
+ 3 ü r ü m e
+ 4 r i m e l
+
+Placed words:
+ 1. 'göçüm' at (0,2) v
+ 2. 'figür' at (0,0) v
+ 3. 'ürüme' at (3,0) h
+ 4. 'rimel' at (4,0) h
+ 5. 'geçit' at (2,0) h
+ 6. 'anime' at (0,3) v
+ 7. 'figan' at (0,0) h
+
+Unique words placed (7):
+ 1. anime
+ 2. figan
+ 3. figür
+ 4. geçit
+ 5. göçüm
+ 6. rimel
+ 7. ürüme

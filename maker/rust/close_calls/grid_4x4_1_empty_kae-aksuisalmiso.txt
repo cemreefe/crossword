@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k a e · 
+ 1 a k s u 
+ 2 i s a l 
+ 3 m i s o 
+
+Placed words:
+ 1. 'miso' at (3,0) Horizontal
+ 2. 'kaim' at (0,0) Vertical
+ 3. 'esas' at (0,2) Vertical
+ 4. 'aksu' at (1,0) Horizontal
+ 5. 'isal' at (2,0) Horizontal
+ 6. 'aksi' at (0,1) Vertical
+
+Unique words placed (6):
+ 1. aksu
+ 2. isal
+ 3. aksi
+ 4. miso
+ 5. kaim
+ 6. esas

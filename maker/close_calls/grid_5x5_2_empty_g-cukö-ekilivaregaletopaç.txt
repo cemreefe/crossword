@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 g · c u k
+ 1 ö · e k i
+ 2 l i v a r
+ 3 e g a l e
+ 4 t o p a ç
+
+Placed words:
+ 1. 'gölet' at (0,0) v
+ 2. 'kireç' at (0,4) v
+ 3. 'cevap' at (0,2) v
+ 4. 'livar' at (2,0) h
+ 5. 'egale' at (3,0) h
+ 6. 'topaç' at (4,0) h
+ 7. 'ukala' at (0,3) v
+
+Unique words placed (7):
+ 1. cevap
+ 2. egale
+ 3. gölet
+ 4. kireç
+ 5. livar
+ 6. topaç
+ 7. ukala

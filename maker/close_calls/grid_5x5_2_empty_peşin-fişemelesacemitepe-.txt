@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 p e ş i n
+ 1 · f i ş e
+ 2 m e l e s
+ 3 a c e m i
+ 4 t e p e ·
+
+Placed words:
+ 1. 'meles' at (2,0) h
+ 2. 'peşin' at (0,0) h
+ 3. 'işeme' at (0,3) v
+ 4. 'acemi' at (3,0) h
+ 5. 'şile' at (0,2) v
+ 6. 'fişe' at (1,1) h
+ 7. 'şilep' at (0,2) v
+ 8. 'tepe' at (4,0) h
+
+Unique words placed (8):
+ 1. acemi
+ 2. fişe
+ 3. işeme
+ 4. meles
+ 5. peşin
+ 6. tepe
+ 7. şile
+ 8. şilep

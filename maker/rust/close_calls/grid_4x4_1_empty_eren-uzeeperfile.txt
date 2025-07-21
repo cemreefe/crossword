@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e r e n 
+ 1 · u z e 
+ 2 e p e r 
+ 3 f i l e 
+
+Placed words:
+ 1. 'eren' at (0,0) Horizontal
+ 2. 'ezel' at (0,2) Vertical
+ 3. 'rupi' at (0,1) Vertical
+ 4. 'file' at (3,0) Horizontal
+ 5. 'eper' at (2,0) Horizontal
+ 6. 'nere' at (0,3) Vertical
+
+Unique words placed (6):
+ 1. ezel
+ 2. eren
+ 3. file
+ 4. rupi
+ 5. eper
+ 6. nere

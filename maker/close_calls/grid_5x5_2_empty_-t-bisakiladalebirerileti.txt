@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · t · b i
+ 1 s a k i l
+ 2 a d a l e
+ 3 b i r e r
+ 4 i l e t i
+
+Placed words:
+ 1. 'sakil' at (1,0) h
+ 2. 'birer' at (3,0) h
+ 3. 'tadil' at (0,1) v
+ 4. 'sabi' at (1,0) v
+ 5. 'ileri' at (0,4) v
+ 6. 'bilet' at (0,3) v
+ 7. 'kare' at (1,2) v
+
+Unique words placed (7):
+ 1. bilet
+ 2. birer
+ 3. ileri
+ 4. kare
+ 5. sabi
+ 6. sakil
+ 7. tadil

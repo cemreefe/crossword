@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s i l a h
+ 1 a k a b e
+ 2 r · z i l
+ 3 i · e d i
+ 4 g e r e k
+
+Placed words:
+ 1. 'gerek' at (4,0) h
+ 2. 'akabe' at (1,0) h
+ 3. 'silah' at (0,0) h
+ 4. 'sarig' at (0,0) v
+ 5. 'abide' at (0,3) v
+ 6. 'helik' at (0,4) v
+ 7. 'lazer' at (0,2) v
+
+Unique words placed (7):
+ 1. abide
+ 2. akabe
+ 3. gerek
+ 4. helik
+ 5. lazer
+ 6. sarig
+ 7. silah

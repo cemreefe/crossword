@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 t e m a s
+ 1 · s e · i
+ 2 m i l a t
+ 3 ö r e k e
+ 4 r e s i m
+
+Placed words:
+ 1. 'milat' at (2,0) h
+ 2. 'öreke' at (3,0) h
+ 3. 'temas' at (0,0) h
+ 4. 'resim' at (4,0) h
+ 5. 'meles' at (0,2) v
+ 6. 'sitem' at (0,4) v
+ 7. 'esire' at (0,1) v
+
+Unique words placed (7):
+ 1. esire
+ 2. meles
+ 3. milat
+ 4. resim
+ 5. sitem
+ 6. temas
+ 7. öreke

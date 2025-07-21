@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s e ç i m
+ 1 i m a l e
+ 2 g · · e r
+ 3 a c a r a
+ 4 r i t i m
+
+Placed words:
+ 1. 'ritim' at (4,0) h
+ 2. 'seçim' at (0,0) h
+ 3. 'imale' at (1,0) h
+ 4. 'sigar' at (0,0) v
+ 5. 'meram' at (0,4) v
+ 6. 'acara' at (3,0) h
+ 7. 'ileri' at (0,3) v
+
+Unique words placed (7):
+ 1. acara
+ 2. ileri
+ 3. imale
+ 4. meram
+ 5. ritim
+ 6. seçim
+ 7. sigar

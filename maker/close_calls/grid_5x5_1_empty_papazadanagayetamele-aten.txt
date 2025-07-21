@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 p a p a z
+ 1 a d a n a
+ 2 g a y e t
+ 3 a m e l e
+ 4 · a t e n
+
+Placed words:
+ 1. 'zaten' at (0,4) v
+ 2. 'adana' at (1,0) h
+ 3. 'papaz' at (0,0) h
+ 4. 'gayet' at (2,0) h
+ 5. 'amele' at (3,0) h
+ 6. 'payet' at (0,2) v
+ 7. 'adama' at (0,1) v
+ 8. 'anele' at (0,3) v
+
+Unique words placed (8):
+ 1. adama
+ 2. adana
+ 3. amele
+ 4. anele
+ 5. gayet
+ 6. papaz
+ 7. payet
+ 8. zaten

@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 s u d a n
+ 1 · z i z e
+ 2 y a z ı ş
+ 3 a m e l e
+ 4 h a y ı t
+
+Placed words:
+ 1. 'hayıt' at (4,0) h
+ 2. 'yazış' at (2,0) h
+ 3. 'azılı' at (0,3) v
+ 4. 'sudan' at (0,0) h
+ 5. 'dizey' at (0,2) v
+ 6. 'uzama' at (0,1) v
+ 7. 'amel' at (3,0) h
+ 8. 'neşet' at (0,4) v
+
+Unique words placed (8):
+ 1. amel
+ 2. azılı
+ 3. dizey
+ 4. hayıt
+ 5. neşet
+ 6. sudan
+ 7. uzama
+ 8. yazış

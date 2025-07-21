@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 y · b a z
+ 1 a · a b a
+ 2 m a k a t
+ 3 a t a ş e
+ 4 k a n o n
+
+Placed words:
+ 1. 'makat' at (2,0) h
+ 2. 'ataşe' at (3,0) h
+ 3. 'zaten' at (0,4) v
+ 4. 'abaşo' at (0,3) v
+ 5. 'yamak' at (0,0) v
+ 6. 'bakan' at (0,2) v
+ 7. 'kanon' at (4,0) h
+
+Unique words placed (7):
+ 1. abaşo
+ 2. ataşe
+ 3. bakan
+ 4. kanon
+ 5. makat
+ 6. yamak
+ 7. zaten

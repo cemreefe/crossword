@@ -1,0 +1,27 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 6
+
+Grid:
+   0 1 2 3 4 
+ 0 h a m a k 
+ 1 a r a b a 
+ 2 k a r a r 
+ 3 i t i n a 
+ 4 n a l a n 
+
+Placed words:
+ 1. 'karar' at (2,0) Horizontal
+ 2. 'abana' at (0,3) Vertical
+ 3. 'hamak' at (0,0) Horizontal
+ 4. 'nalan' at (4,0) Horizontal
+ 5. 'araba' at (1,0) Horizontal
+ 6. 'itina' at (3,0) Horizontal
+
+Unique words placed (6):
+ 1. nalan
+ 2. araba
+ 3. hamak
+ 4. abana
+ 5. itina
+ 6. karar

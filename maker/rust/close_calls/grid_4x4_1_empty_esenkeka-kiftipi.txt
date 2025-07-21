@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e s e n 
+ 1 k e k a 
+ 2 · k i f 
+ 3 t i p i 
+
+Placed words:
+ 1. 'esen' at (0,0) Horizontal
+ 2. 'keka' at (1,0) Horizontal
+ 3. 'seki' at (0,1) Vertical
+ 4. 'nafi' at (0,3) Vertical
+ 5. 'tipi' at (3,0) Horizontal
+ 6. 'ekip' at (0,2) Vertical
+
+Unique words placed (6):
+ 1. keka
+ 2. esen
+ 3. tipi
+ 4. nafi
+ 5. seki
+ 6. ekip

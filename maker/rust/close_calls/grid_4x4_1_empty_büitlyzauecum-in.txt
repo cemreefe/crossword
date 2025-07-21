@@ -1,0 +1,22 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 4
+
+Grid:
+   0 1 2 3 
+ 0 b ü i t 
+ 1 l y z a 
+ 2 u e c u 
+ 3 m · i n 
+
+Placed words:
+ 1. 'blum' at (0,0) Vertical
+ 2. 'izci' at (0,2) Vertical
+ 3. 'taun' at (0,3) Vertical
+ 4. 'üye' at (0,1) Vertical
+
+Unique words placed (4):
+ 1. izci
+ 2. üye
+ 3. blum
+ 4. taun

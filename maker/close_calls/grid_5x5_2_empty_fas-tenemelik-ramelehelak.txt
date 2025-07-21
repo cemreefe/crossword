@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f a s · t
+ 1 e n e m e
+ 2 l i k · r
+ 3 a m e l e
+ 4 h e l a k
+
+Placed words:
+ 1. 'felah' at (0,0) v
+ 2. 'helak' at (4,0) h
+ 3. 'amele' at (3,0) h
+ 4. 'eneme' at (1,0) h
+ 5. 'anime' at (0,1) v
+ 6. 'terek' at (0,4) v
+ 7. 'sekel' at (0,2) v
+
+Unique words placed (7):
+ 1. amele
+ 2. anime
+ 3. eneme
+ 4. felah
+ 5. helak
+ 6. sekel
+ 7. terek

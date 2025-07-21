@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i l e t ·
+ 1 m a s o n
+ 2 e m a r e
+ 3 c e s u r
+ 4 e l · l e
+
+Placed words:
+ 1. 'torul' at (0,3) v
+ 2. 'cesur' at (3,0) h
+ 3. 'imece' at (0,0) v
+ 4. 'emare' at (2,0) h
+ 5. 'lamel' at (0,1) v
+ 6. 'esas' at (0,2) v
+ 7. 'nere' at (1,4) v
+
+Unique words placed (7):
+ 1. cesur
+ 2. emare
+ 3. esas
+ 4. imece
+ 5. lamel
+ 6. nere
+ 7. torul

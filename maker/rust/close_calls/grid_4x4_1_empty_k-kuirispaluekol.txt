@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k · k u 
+ 1 i r i s 
+ 2 p a l u 
+ 3 e k o l 
+
+Placed words:
+ 1. 'kipe' at (0,0) Vertical
+ 2. 'iris' at (1,0) Horizontal
+ 3. 'kilo' at (0,2) Vertical
+ 4. 'usul' at (0,3) Vertical
+ 5. 'ekol' at (3,0) Horizontal
+ 6. 'palu' at (2,0) Horizontal
+
+Unique words placed (6):
+ 1. kilo
+ 2. usul
+ 3. ekol
+ 4. kipe
+ 5. palu
+ 6. iris

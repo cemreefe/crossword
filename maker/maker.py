@@ -15,6 +15,7 @@ from dataclasses import dataclass
 from grapher import CrosswordGraph, GRID_SIZE, MIN_WORD_LENGTH, TURKISH_ALPHABET
 from collections import defaultdict
 
+PRIORITIZE_BY_LENGTH = False  # Flag to prioritize GRID_SIZE words first
 
 @dataclass
 class WordPlacement:
@@ -401,7 +402,6 @@ class CrosswordGrid:
                 else:
                     valid_placements_by_length["<"].append((word, row, col, direction))
 
-        PRIORITIZE_BY_LENGTH = True  # Flag to prioritize GRID_SIZE words first
         
         # Prioritize by word length (GRID_SIZE first) and randomize within each group
         if PRIORITIZE_BY_LENGTH:
@@ -413,7 +413,7 @@ class CrosswordGrid:
                 random.shuffle(shorter_placements)
                 return shorter_placements
         else:
-            all_placements = (*valid_placements_by_length.get("=", []), *valid_placements_by_length.get("<", []))
+            all_placements = [*valid_placements_by_length.get("=", []), *valid_placements_by_length.get("<", [])]
             random.shuffle(all_placements)
             return all_placements
 

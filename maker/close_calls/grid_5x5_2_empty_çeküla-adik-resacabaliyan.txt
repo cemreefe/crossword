@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ç e k ü l
+ 1 a · a d i
+ 2 k · r e s
+ 3 a c a b a
+ 4 l i y a n
+
+Placed words:
+ 1. 'liyan' at (4,0) h
+ 2. 'çekül' at (0,0) h
+ 3. 'lisan' at (0,4) v
+ 4. 'üdeba' at (0,3) v
+ 5. 'karay' at (0,2) v
+ 6. 'çakal' at (0,0) v
+ 7. 'acaba' at (3,0) h
+
+Unique words placed (7):
+ 1. acaba
+ 2. karay
+ 3. lisan
+ 4. liyan
+ 5. çakal
+ 6. çekül
+ 7. üdeba

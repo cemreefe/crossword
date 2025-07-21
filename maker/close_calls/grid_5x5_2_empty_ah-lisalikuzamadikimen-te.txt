@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a h · l i
+ 1 s a l i k
+ 2 u z a m a
+ 3 d i k i m
+ 4 e n · t e
+
+Placed words:
+ 1. 'hazin' at (0,1) v
+ 2. 'salik' at (1,0) h
+ 3. 'dikim' at (3,0) h
+ 4. 'uzama' at (2,0) h
+ 5. 'asude' at (0,0) v
+ 6. 'ikame' at (0,4) v
+ 7. 'limit' at (0,3) v
+
+Unique words placed (7):
+ 1. asude
+ 2. dikim
+ 3. hazin
+ 4. ikame
+ 5. limit
+ 6. salik
+ 7. uzama

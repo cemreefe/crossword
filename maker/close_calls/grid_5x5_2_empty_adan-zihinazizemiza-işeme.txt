@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 a d a n ·
+ 1 z i h i n
+ 2 a z i z e
+ 3 m i z a ·
+ 4 i ş e m e
+
+Placed words:
+ 1. 'zihin' at (1,0) h
+ 2. 'diziş' at (0,1) v
+ 3. 'azami' at (0,0) v
+ 4. 'nizam' at (0,3) v
+ 5. 'aziz' at (2,0) h
+ 6. 'ahize' at (0,2) v
+ 7. 'işeme' at (4,0) h
+ 8. 'azize' at (2,0) h
+
+Unique words placed (8):
+ 1. ahize
+ 2. azami
+ 3. aziz
+ 4. azize
+ 5. diziş
+ 6. işeme
+ 7. nizam
+ 8. zihin

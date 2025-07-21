@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 · k a l a
+ 1 l o k a l
+ 2 a l a k a
+ 3 v a l i z
+ 4 a j a n ·
+
+Placed words:
+ 1. 'kolaj' at (0,1) v
+ 2. 'valiz' at (3,0) h
+ 3. 'akala' at (0,2) v
+ 4. 'kala' at (0,1) h
+ 5. 'lakin' at (0,3) v
+ 6. 'alaka' at (2,0) h
+ 7. 'alaz' at (0,4) v
+ 8. 'lava' at (1,0) v
+
+Unique words placed (8):
+ 1. akala
+ 2. alaka
+ 3. alaz
+ 4. kala
+ 5. kolaj
+ 6. lakin
+ 7. lava
+ 8. valiz

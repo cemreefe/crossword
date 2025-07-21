@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 b u k e 
+ 1 a z a z 
+ 2 c u m a 
+ 3 a · u n 
+
+Placed words:
+ 1. 'kamu' at (0,2) Vertical
+ 2. 'azaz' at (1,0) Horizontal
+ 3. 'ezan' at (0,3) Vertical
+ 4. 'baca' at (0,0) Vertical
+ 5. 'cuma' at (2,0) Horizontal
+ 6. 'buke' at (0,0) Horizontal
+
+Unique words placed (6):
+ 1. baca
+ 2. cuma
+ 3. buke
+ 4. ezan
+ 5. azaz
+ 6. kamu

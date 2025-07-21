@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 m a b a t
+ 1 · l a c a
+ 2 s a l e p
+ 3 · c e m i
+ 4 s a t i r
+
+Placed words:
+ 1. 'satir' at (4,0) h
+ 2. 'mabat' at (0,0) h
+ 3. 'alaca' at (0,1) v
+ 4. 'salep' at (2,0) h
+ 5. 'acemi' at (0,3) v
+ 6. 'balet' at (0,2) v
+ 7. 'cemi' at (3,1) h
+ 8. 'tapir' at (0,4) v
+
+Unique words placed (8):
+ 1. acemi
+ 2. alaca
+ 3. balet
+ 4. cemi
+ 5. mabat
+ 6. salep
+ 7. satir
+ 8. tapir

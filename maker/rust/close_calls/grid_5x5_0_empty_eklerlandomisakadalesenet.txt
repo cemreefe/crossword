@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 e k l e r 
+ 1 l a n d o 
+ 2 m i s a k 
+ 3 a d a l e 
+ 4 s e n e t 
+
+Placed words:
+ 1. 'kaide' at (0,1) Vertical
+ 2. 'senet' at (4,0) Horizontal
+ 3. 'roket' at (0,4) Vertical
+ 4. 'lando' at (1,0) Horizontal
+ 5. 'misak' at (2,0) Horizontal
+ 6. 'elmas' at (0,0) Vertical
+ 7. 'adale' at (3,0) Horizontal
+ 8. 'ekler' at (0,0) Horizontal
+
+Unique words placed (8):
+ 1. elmas
+ 2. kaide
+ 3. senet
+ 4. misak
+ 5. ekler
+ 6. roket
+ 7. lando
+ 8. adale

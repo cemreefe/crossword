@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m a r u l
+ 1 a r a z i
+ 2 k o y a r
+ 3 a m i · ·
+ 4 s a ç a k
+
+Placed words:
+ 1. 'marul' at (0,0) h
+ 2. 'saçak' at (4,0) h
+ 3. 'makas' at (0,0) v
+ 4. 'koyar' at (2,0) h
+ 5. 'arazi' at (1,0) h
+ 6. 'aroma' at (0,1) v
+ 7. 'rayiç' at (0,2) v
+
+Unique words placed (7):
+ 1. arazi
+ 2. aroma
+ 3. koyar
+ 4. makas
+ 5. marul
+ 6. rayiç
+ 7. saçak

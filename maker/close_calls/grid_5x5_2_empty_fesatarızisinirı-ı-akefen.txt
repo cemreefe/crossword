@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f e s a t
+ 1 a r ı z i
+ 2 s i n i r
+ 3 ı · ı · a
+ 4 k e f e n
+
+Placed words:
+ 1. 'fasık' at (0,0) v
+ 2. 'sınıf' at (0,2) v
+ 3. 'fesat' at (0,0) h
+ 4. 'arızi' at (1,0) h
+ 5. 'kefen' at (4,0) h
+ 6. 'tiran' at (0,4) v
+ 7. 'sinir' at (2,0) h
+
+Unique words placed (7):
+ 1. arızi
+ 2. fasık
+ 3. fesat
+ 4. kefen
+ 5. sinir
+ 6. sınıf
+ 7. tiran

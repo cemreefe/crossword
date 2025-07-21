@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 a b a z a
+ 1 p a t o z
+ 2 i d a r i
+ 3 k a m u ·
+ 4 · t a n e
+
+Placed words:
+ 1. 'zorun' at (0,3) v
+ 2. 'badat' at (0,1) v
+ 3. 'patoz' at (1,0) h
+ 4. 'idari' at (2,0) h
+ 5. 'kamu' at (3,0) h
+ 6. 'baza' at (0,1) h
+ 7. 'abaza' at (0,0) h
+ 8. 'tane' at (4,1) h
+
+Unique words placed (8):
+ 1. abaza
+ 2. badat
+ 3. baza
+ 4. idari
+ 5. kamu
+ 6. patoz
+ 7. tane
+ 8. zorun

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s e ç i m
+ 1 a b a z a
+ 2 h · · a t
+ 3 u l u f e
+ 4 r i t i m
+
+Placed words:
+ 1. 'ritim' at (4,0) h
+ 2. 'seçim' at (0,0) h
+ 3. 'sahur' at (0,0) v
+ 4. 'izafi' at (0,3) v
+ 5. 'abaza' at (1,0) h
+ 6. 'ulufe' at (3,0) h
+ 7. 'matem' at (0,4) v
+
+Unique words placed (7):
+ 1. abaza
+ 2. izafi
+ 3. matem
+ 4. ritim
+ 5. sahur
+ 6. seçim
+ 7. ulufe

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · a y a n
+ 1 · d ü z e
+ 2 y a z ı ş
+ 3 a n e l e
+ 4 h a y ı t
+
+Placed words:
+ 1. 'hayıt' at (4,0) h
+ 2. 'yazış' at (2,0) h
+ 3. 'azılı' at (0,3) v
+ 4. 'anele' at (3,0) h
+ 5. 'neşet' at (0,4) v
+ 6. 'ayan' at (0,1) h
+ 7. 'düze' at (1,1) h
+
+Unique words placed (7):
+ 1. anele
+ 2. ayan
+ 3. azılı
+ 4. düze
+ 5. hayıt
+ 6. neşet
+ 7. yazış

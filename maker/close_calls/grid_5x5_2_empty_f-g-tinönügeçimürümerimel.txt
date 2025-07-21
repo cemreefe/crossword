@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f · g · t
+ 1 i n ö n ü
+ 2 g e ç i m
+ 3 ü r ü m e
+ 4 r i m e l
+
+Placed words:
+ 1. 'göçüm' at (0,2) v
+ 2. 'figür' at (0,0) v
+ 3. 'ürüme' at (3,0) h
+ 4. 'rimel' at (4,0) h
+ 5. 'geçim' at (2,0) h
+ 6. 'inönü' at (1,0) h
+ 7. 'tümel' at (0,4) v
+
+Unique words placed (7):
+ 1. figür
+ 2. geçim
+ 3. göçüm
+ 4. inönü
+ 5. rimel
+ 6. tümel
+ 7. ürüme

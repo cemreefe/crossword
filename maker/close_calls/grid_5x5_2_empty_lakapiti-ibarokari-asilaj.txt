@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 l a k a p
+ 1 i t i · i
+ 2 b a r o k
+ 3 a r i · a
+ 4 s i l a j
+
+Placed words:
+ 1. 'kiril' at (0,2) v
+ 2. 'pikaj' at (0,4) v
+ 3. 'lakap' at (0,0) h
+ 4. 'silaj' at (4,0) h
+ 5. 'libas' at (0,0) v
+ 6. 'atari' at (0,1) v
+ 7. 'barok' at (2,0) h
+
+Unique words placed (7):
+ 1. atari
+ 2. barok
+ 3. kiril
+ 4. lakap
+ 5. libas
+ 6. pikaj
+ 7. silaj

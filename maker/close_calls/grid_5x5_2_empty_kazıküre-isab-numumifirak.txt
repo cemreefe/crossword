@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a z ı k
+ 1 ü r e · i
+ 2 s a b · n
+ 3 u m u m i
+ 4 f i r a k
+
+Placed words:
+ 1. 'kinik' at (0,4) v
+ 2. 'kazık' at (0,0) h
+ 3. 'küsuf' at (0,0) v
+ 4. 'zebur' at (0,2) v
+ 5. 'arami' at (0,1) v
+ 6. 'umumi' at (3,0) h
+ 7. 'firak' at (4,0) h
+
+Unique words placed (7):
+ 1. arami
+ 2. firak
+ 3. kazık
+ 4. kinik
+ 5. küsuf
+ 6. umumi
+ 7. zebur

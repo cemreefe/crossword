@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 n · k a p
+ 1 e k i l i
+ 2 f · r a k
+ 3 e r i k a
+ 4 s i l a j
+
+Placed words:
+ 1. 'kiril' at (0,2) v
+ 2. 'pikaj' at (0,4) v
+ 3. 'ekili' at (1,0) h
+ 4. 'erika' at (3,0) h
+ 5. 'alaka' at (0,3) v
+ 6. 'nefes' at (0,0) v
+ 7. 'silaj' at (4,0) h
+
+Unique words placed (7):
+ 1. alaka
+ 2. ekili
+ 3. erika
+ 4. kiril
+ 5. nefes
+ 6. pikaj
+ 7. silaj

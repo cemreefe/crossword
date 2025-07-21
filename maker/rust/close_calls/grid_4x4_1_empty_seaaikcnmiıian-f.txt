@@ -1,0 +1,22 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 4
+
+Grid:
+   0 1 2 3 
+ 0 s e a a 
+ 1 i k c n 
+ 2 m i ı i 
+ 3 a n · f 
+
+Placed words:
+ 1. 'anif' at (0,3) Vertical
+ 2. 'ekin' at (0,1) Vertical
+ 3. 'sima' at (0,0) Vertical
+ 4. 'acı' at (0,2) Vertical
+
+Unique words placed (4):
+ 1. ekin
+ 2. anif
+ 3. sima
+ 4. acı

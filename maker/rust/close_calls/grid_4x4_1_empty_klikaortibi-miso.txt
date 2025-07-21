@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k l i k 
+ 1 a o r t 
+ 2 i b i · 
+ 3 m i s o 
+
+Placed words:
+ 1. 'miso' at (3,0) Horizontal
+ 2. 'kaim' at (0,0) Vertical
+ 3. 'lobi' at (0,1) Vertical
+ 4. 'iris' at (0,2) Vertical
+ 5. 'klik' at (0,0) Horizontal
+ 6. 'aort' at (1,0) Horizontal
+
+Unique words placed (6):
+ 1. lobi
+ 2. klik
+ 3. aort
+ 4. miso
+ 5. kaim
+ 6. iris

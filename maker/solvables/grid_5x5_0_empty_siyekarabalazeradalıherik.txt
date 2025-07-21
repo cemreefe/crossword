@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 s i y e k
+ 1 a r a b a
+ 2 l a z e r
+ 3 a d a l ı
+ 4 h e r i k
+
+Placed words:
+ 1. 'siyek' at (0,0) h
+ 2. 'herik' at (4,0) h
+ 3. 'lazer' at (2,0) h
+ 4. 'karık' at (0,4) v
+ 5. 'ebeli' at (0,3) v
+ 6. 'yazar' at (0,2) v
+ 7. 'irade' at (0,1) v
+ 8. 'adalı' at (3,0) h
+ 9. 'araba' at (1,0) h
+
+Unique words placed (9):
+ 1. adalı
+ 2. araba
+ 3. ebeli
+ 4. herik
+ 5. irade
+ 6. karık
+ 7. lazer
+ 8. siyek
+ 9. yazar

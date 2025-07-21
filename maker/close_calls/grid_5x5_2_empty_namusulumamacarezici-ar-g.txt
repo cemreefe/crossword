@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 n a m u s
+ 1 u l u m a
+ 2 m a c a r
+ 3 e z i c i
+ 4 · a r · g
+
+Placed words:
+ 1. 'sarig' at (0,4) v
+ 2. 'mucir' at (0,2) v
+ 3. 'macar' at (2,0) h
+ 4. 'namus' at (0,0) h
+ 5. 'ezici' at (3,0) h
+ 6. 'uluma' at (1,0) h
+ 7. 'alaza' at (0,1) v
+
+Unique words placed (7):
+ 1. alaza
+ 2. ezici
+ 3. macar
+ 4. mucir
+ 5. namus
+ 6. sarig
+ 7. uluma

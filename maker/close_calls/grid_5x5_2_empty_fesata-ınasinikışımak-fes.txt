@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f e s a t
+ 1 a · ı n a
+ 2 s i n i k
+ 3 ı ş ı m a
+ 4 k · f e s
+
+Placed words:
+ 1. 'fasık' at (0,0) v
+ 2. 'sınıf' at (0,2) v
+ 3. 'fesat' at (0,0) h
+ 4. 'ışıma' at (3,0) h
+ 5. 'takas' at (0,4) v
+ 6. 'anime' at (0,3) v
+ 7. 'sinik' at (2,0) h
+
+Unique words placed (7):
+ 1. anime
+ 2. fasık
+ 3. fesat
+ 4. sinik
+ 5. sınıf
+ 6. takas
+ 7. ışıma

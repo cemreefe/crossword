@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a ş a m a
+ 1 r a c o n
+ 2 a h i z ·
+ 3 b a b a ·
+ 4 i p e k a
+
+Placed words:
+ 1. 'acibe' at (0,2) v
+ 2. 'ipeka' at (4,0) h
+ 3. 'racon' at (1,0) h
+ 4. 'şahap' at (0,1) v
+ 5. 'arabi' at (0,0) v
+ 6. 'mozak' at (0,3) v
+ 7. 'aşama' at (0,0) h
+
+Unique words placed (7):
+ 1. acibe
+ 2. arabi
+ 3. aşama
+ 4. ipeka
+ 5. mozak
+ 6. racon
+ 7. şahap

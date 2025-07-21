@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 i k a m e 
+ 1 t a h r a 
+ 2 a y v a n 
+ 3 a m a d e 
+ 4 t e l e k 
+
+Placed words:
+ 1. 'kayme' at (0,1) Vertical
+ 2. 'telek' at (4,0) Horizontal
+ 3. 'tahra' at (1,0) Horizontal
+ 4. 'ayvan' at (2,0) Horizontal
+ 5. 'itaat' at (0,0) Vertical
+ 6. 'ahval' at (0,2) Vertical
+ 7. 'amade' at (3,0) Horizontal
+ 8. 'ikame' at (0,0) Horizontal
+
+Unique words placed (8):
+ 1. telek
+ 2. tahra
+ 3. ahval
+ 4. ayvan
+ 5. itaat
+ 6. kayme
+ 7. ikame
+ 8. amade

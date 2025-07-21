@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 g a l e 
+ 1 r · a m 
+ 2 e s i m 
+ 3 n i n e 
+
+Placed words:
+ 1. 'gren' at (0,0) Vertical
+ 2. 'nine' at (3,0) Horizontal
+ 3. 'gale' at (0,0) Horizontal
+ 4. 'esim' at (2,0) Horizontal
+ 5. 'emme' at (0,3) Vertical
+ 6. 'lain' at (0,2) Vertical
+
+Unique words placed (6):
+ 1. nine
+ 2. gale
+ 3. gren
+ 4. esim
+ 5. emme
+ 6. lain

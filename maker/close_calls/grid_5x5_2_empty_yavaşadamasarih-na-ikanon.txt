@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 y a v a ş
+ 1 a d a m a
+ 2 s a r i h
+ 3 · n a · i
+ 4 k a n o n
+
+Placed words:
+ 1. 'kanon' at (4,0) h
+ 2. 'sarih' at (2,0) h
+ 3. 'yavaş' at (0,0) h
+ 4. 'adana' at (0,1) v
+ 5. 'varan' at (0,2) v
+ 6. 'şahin' at (0,4) v
+ 7. 'adama' at (1,0) h
+
+Unique words placed (7):
+ 1. adama
+ 2. adana
+ 3. kanon
+ 4. sarih
+ 5. varan
+ 6. yavaş
+ 7. şahin

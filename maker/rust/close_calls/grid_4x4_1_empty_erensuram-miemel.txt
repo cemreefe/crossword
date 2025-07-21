@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e r e n 
+ 1 s u r a 
+ 2 m · m i 
+ 3 e m e l 
+
+Placed words:
+ 1. 'eren' at (0,0) Horizontal
+ 2. 'erme' at (0,2) Vertical
+ 3. 'esme' at (0,0) Vertical
+ 4. 'emel' at (3,0) Horizontal
+ 5. 'sura' at (1,0) Horizontal
+ 6. 'nail' at (0,3) Vertical
+
+Unique words placed (6):
+ 1. emel
+ 2. erme
+ 3. esme
+ 4. eren
+ 5. sura
+ 6. nail

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h a s e p
+ 1 a b o s a
+ 2 n i k e l
+ 3 ı · · m a
+ 4 m e r e s
+
+Placed words:
+ 1. 'hanım' at (0,0) v
+ 2. 'abosa' at (1,0) h
+ 3. 'palas' at (0,4) v
+ 4. 'meres' at (4,0) h
+ 5. 'eseme' at (0,3) v
+ 6. 'hasep' at (0,0) h
+ 7. 'nikel' at (2,0) h
+
+Unique words placed (7):
+ 1. abosa
+ 2. eseme
+ 3. hanım
+ 4. hasep
+ 5. meres
+ 6. nikel
+ 7. palas

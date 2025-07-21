@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 g r a m 
+ 1 r a m i 
+ 2 e c i · 
+ 3 n i n e 
+
+Placed words:
+ 1. 'gren' at (0,0) Vertical
+ 2. 'nine' at (3,0) Horizontal
+ 3. 'raci' at (0,1) Vertical
+ 4. 'gram' at (0,0) Horizontal
+ 5. 'rami' at (1,0) Horizontal
+ 6. 'amin' at (0,2) Vertical
+
+Unique words placed (6):
+ 1. amin
+ 2. nine
+ 3. raci
+ 4. rami
+ 5. gren
+ 6. gram

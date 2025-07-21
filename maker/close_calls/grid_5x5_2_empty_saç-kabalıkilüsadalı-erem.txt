@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s a ç · k
+ 1 a b a l ı
+ 2 k i l ü s
+ 3 a d a l ı
+ 4 · e r e m
+
+Placed words:
+ 1. 'kısım' at (0,4) v
+ 2. 'kilüs' at (2,0) h
+ 3. 'çalar' at (0,2) v
+ 4. 'adalı' at (3,0) h
+ 5. 'abide' at (0,1) v
+ 6. 'saka' at (0,0) v
+ 7. 'lüle' at (1,3) v
+
+Unique words placed (7):
+ 1. abide
+ 2. adalı
+ 3. kilüs
+ 4. kısım
+ 5. lüle
+ 6. saka
+ 7. çalar

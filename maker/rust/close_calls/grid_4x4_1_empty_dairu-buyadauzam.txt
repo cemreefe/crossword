@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 d a i r 
+ 1 u · b u 
+ 2 y a d a 
+ 3 u z a m 
+
+Placed words:
+ 1. 'ibda' at (0,2) Vertical
+ 2. 'dair' at (0,0) Horizontal
+ 3. 'uzam' at (3,0) Horizontal
+ 4. 'ruam' at (0,3) Vertical
+ 5. 'yada' at (2,0) Horizontal
+ 6. 'duyu' at (0,0) Vertical
+
+Unique words placed (6):
+ 1. ruam
+ 2. yada
+ 3. dair
+ 4. ibda
+ 5. duyu
+ 6. uzam

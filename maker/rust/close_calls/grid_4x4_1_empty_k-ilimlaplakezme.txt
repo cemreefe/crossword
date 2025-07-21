@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k · i l 
+ 1 i m l a 
+ 2 p l a k 
+ 3 e z m e 
+
+Placed words:
+ 1. 'kipe' at (0,0) Vertical
+ 2. 'ezme' at (3,0) Horizontal
+ 3. 'imla' at (1,0) Horizontal
+ 4. 'lake' at (0,3) Vertical
+ 5. 'ilam' at (0,2) Vertical
+ 6. 'plak' at (2,0) Horizontal
+
+Unique words placed (6):
+ 1. plak
+ 2. ezme
+ 3. kipe
+ 4. ilam
+ 5. imla
+ 6. lake

@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k · i p 
+ 1 a b l a 
+ 2 t r a p 
+ 3 i f n a 
+
+Placed words:
+ 1. 'kati' at (0,0) Vertical
+ 2. 'trap' at (2,0) Horizontal
+ 3. 'abla' at (1,0) Horizontal
+ 4. 'ilan' at (0,2) Vertical
+ 5. 'papa' at (0,3) Vertical
+ 6. 'ifna' at (3,0) Horizontal
+
+Unique words placed (6):
+ 1. papa
+ 2. ifna
+ 3. abla
+ 4. trap
+ 5. kati
+ 6. ilan

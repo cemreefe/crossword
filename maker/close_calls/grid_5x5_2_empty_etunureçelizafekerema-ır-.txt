@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 e t u n u
+ 1 r e ç e l
+ 2 i z a f e
+ 3 k e r e m
+ 4 a · ı r ·
+
+Placed words:
+ 1. 'nefer' at (0,3) v
+ 2. 'uçarı' at (0,2) v
+ 3. 'etunu' at (0,0) h
+ 4. 'izafe' at (2,0) h
+ 5. 'kerem' at (3,0) h
+ 6. 'reçel' at (1,0) h
+ 7. 'erika' at (0,0) v
+
+Unique words placed (7):
+ 1. erika
+ 2. etunu
+ 3. izafe
+ 4. kerem
+ 5. nefer
+ 6. reçel
+ 7. uçarı

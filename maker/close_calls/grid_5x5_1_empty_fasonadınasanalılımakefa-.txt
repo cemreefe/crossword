@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 f a s o n
+ 1 a d ı n a
+ 2 s a n a l
+ 3 ı l ı m a
+ 4 k e f a ·
+
+Placed words:
+ 1. 'fasık' at (0,0) v
+ 2. 'sınıf' at (0,2) v
+ 3. 'onama' at (0,3) v
+ 4. 'ılıma' at (3,0) h
+ 5. 'adale' at (0,1) v
+ 6. 'fason' at (0,0) h
+ 7. 'adına' at (1,0) h
+ 8. 'sanal' at (2,0) h
+
+Unique words placed (8):
+ 1. adale
+ 2. adına
+ 3. fason
+ 4. fasık
+ 5. onama
+ 6. sanal
+ 7. sınıf
+ 8. ılıma

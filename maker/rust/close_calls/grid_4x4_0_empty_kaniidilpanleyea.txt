@@ -1,0 +1,22 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 4
+
+Grid:
+   0 1 2 3 
+ 0 k a n i 
+ 1 i d i l 
+ 2 p a n l 
+ 3 e y e a 
+
+Placed words:
+ 1. 'kipe' at (0,0) Vertical
+ 2. 'aday' at (0,1) Vertical
+ 3. 'nine' at (0,2) Vertical
+ 4. 'illa' at (0,3) Vertical
+
+Unique words placed (4):
+ 1. nine
+ 2. kipe
+ 3. aday
+ 4. illa

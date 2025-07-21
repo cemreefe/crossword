@@ -1,0 +1,22 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 4
+
+Grid:
+   0 1 2 3 
+ 0 k e m d 
+ 1 i k o a 
+ 2 p o l n 
+ 3 e l a s 
+
+Placed words:
+ 1. 'kipe' at (0,0) Vertical
+ 2. 'ekol' at (0,1) Vertical
+ 3. 'mola' at (0,2) Vertical
+ 4. 'dans' at (0,3) Vertical
+
+Unique words placed (4):
+ 1. ekol
+ 2. kipe
+ 3. dans
+ 4. mola

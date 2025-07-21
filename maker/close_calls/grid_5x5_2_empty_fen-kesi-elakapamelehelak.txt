@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f e n · k
+ 1 e s i · e
+ 2 l a k a p
+ 3 a m e l e
+ 4 h e l a k
+
+Placed words:
+ 1. 'felah' at (0,0) v
+ 2. 'helak' at (4,0) h
+ 3. 'amele' at (3,0) h
+ 4. 'kepek' at (0,4) v
+ 5. 'lakap' at (2,0) h
+ 6. 'esame' at (0,1) v
+ 7. 'nikel' at (0,2) v
+
+Unique words placed (7):
+ 1. amele
+ 2. esame
+ 3. felah
+ 4. helak
+ 5. kepek
+ 6. lakap
+ 7. nikel

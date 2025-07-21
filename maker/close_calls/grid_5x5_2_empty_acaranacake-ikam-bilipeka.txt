@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a c a r a
+ 1 n a c a k
+ 2 e · i k a
+ 3 m · b i l
+ 4 i p e k a
+
+Placed words:
+ 1. 'acibe' at (0,2) v
+ 2. 'ipeka' at (4,0) h
+ 3. 'rakik' at (0,3) v
+ 4. 'nacak' at (1,0) h
+ 5. 'anemi' at (0,0) v
+ 6. 'akala' at (0,4) v
+ 7. 'acara' at (0,0) h
+
+Unique words placed (7):
+ 1. acara
+ 2. acibe
+ 3. akala
+ 4. anemi
+ 5. ipeka
+ 6. nacak
+ 7. rakik

@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 m a r u l
+ 1 a d a l e
+ 2 k a y · ç
+ 3 a n i m e
+ 4 s a ç a k
+
+Placed words:
+ 1. 'marul' at (0,0) h
+ 2. 'saçak' at (4,0) h
+ 3. 'makas' at (0,0) v
+ 4. 'adana' at (0,1) v
+ 5. 'rayiç' at (0,2) v
+ 6. 'anime' at (3,0) h
+ 7. 'adale' at (1,0) h
+ 8. 'leçek' at (0,4) v
+
+Unique words placed (8):
+ 1. adale
+ 2. adana
+ 3. anime
+ 4. leçek
+ 5. makas
+ 6. marul
+ 7. rayiç
+ 8. saçak

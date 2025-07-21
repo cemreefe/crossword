@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f i · u ·
+ 1 a k a l a
+ 2 r o m e n
+ 3 a n i m e
+ 4 d a l a k
+
+Placed words:
+ 1. 'dalak' at (4,0) h
+ 2. 'romen' at (2,0) h
+ 3. 'farad' at (0,0) v
+ 4. 'akala' at (1,0) h
+ 5. 'ikona' at (0,1) v
+ 6. 'anime' at (3,0) h
+ 7. 'ulema' at (0,3) v
+
+Unique words placed (7):
+ 1. akala
+ 2. anime
+ 3. dalak
+ 4. farad
+ 5. ikona
+ 6. romen
+ 7. ulema

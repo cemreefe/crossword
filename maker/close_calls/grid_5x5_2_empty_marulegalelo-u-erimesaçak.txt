@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m a r u l
+ 1 e g a l e
+ 2 l o · u ·
+ 3 e r i m e
+ 4 s a ç a k
+
+Placed words:
+ 1. 'marul' at (0,0) h
+ 2. 'saçak' at (4,0) h
+ 3. 'erime' at (3,0) h
+ 4. 'uluma' at (0,3) v
+ 5. 'agora' at (0,1) v
+ 6. 'meles' at (0,0) v
+ 7. 'egale' at (1,0) h
+
+Unique words placed (7):
+ 1. agora
+ 2. egale
+ 3. erime
+ 4. marul
+ 5. meles
+ 6. saçak
+ 7. uluma

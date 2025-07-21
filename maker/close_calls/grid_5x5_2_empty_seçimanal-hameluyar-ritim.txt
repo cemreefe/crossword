@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s e ç i m
+ 1 a n a l ·
+ 2 h a m e l
+ 3 u y a r ·
+ 4 r i t i m
+
+Placed words:
+ 1. 'ritim' at (4,0) h
+ 2. 'seçim' at (0,0) h
+ 3. 'sahur' at (0,0) v
+ 4. 'enayi' at (0,1) v
+ 5. 'ileri' at (0,3) v
+ 6. 'hamel' at (2,0) h
+ 7. 'çamat' at (0,2) v
+
+Unique words placed (7):
+ 1. enayi
+ 2. hamel
+ 3. ileri
+ 4. ritim
+ 5. sahur
+ 6. seçim
+ 7. çamat

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · m a l e
+ 1 r e c e p
+ 2 a v a z e
+ 3 s u b a y
+ 4 · t a r i
+
+Placed words:
+ 1. 'recep' at (1,0) h
+ 2. 'lezar' at (0,3) v
+ 3. 'mevut' at (0,1) v
+ 4. 'subay' at (3,0) h
+ 5. 'avaze' at (2,0) h
+ 6. 'acaba' at (0,2) v
+ 7. 'epeyi' at (0,4) v
+
+Unique words placed (7):
+ 1. acaba
+ 2. avaze
+ 3. epeyi
+ 4. lezar
+ 5. mevut
+ 6. recep
+ 7. subay

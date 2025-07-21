@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · s a s ·
+ 1 f e c i r
+ 2 a b i y e
+ 3 k e b a n
+ 4 i p e k a
+
+Placed words:
+ 1. 'acibe' at (0,2) v
+ 2. 'ipeka' at (4,0) h
+ 3. 'siyak' at (0,3) v
+ 4. 'keban' at (3,0) h
+ 5. 'fecir' at (1,0) h
+ 6. 'sebep' at (0,1) v
+ 7. 'abiye' at (2,0) h
+
+Unique words placed (7):
+ 1. abiye
+ 2. acibe
+ 3. fecir
+ 4. ipeka
+ 5. keban
+ 6. sebep
+ 7. siyak

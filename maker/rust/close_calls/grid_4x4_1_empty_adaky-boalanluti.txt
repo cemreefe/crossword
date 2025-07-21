@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 a d a k 
+ 1 y · b o 
+ 2 a l a n 
+ 3 l u t i 
+
+Placed words:
+ 1. 'adak' at (0,0) Horizontal
+ 2. 'abat' at (0,2) Vertical
+ 3. 'alan' at (2,0) Horizontal
+ 4. 'luti' at (3,0) Horizontal
+ 5. 'koni' at (0,3) Vertical
+ 6. 'ayal' at (0,0) Vertical
+
+Unique words placed (6):
+ 1. adak
+ 2. koni
+ 3. abat
+ 4. luti
+ 5. alan
+ 6. ayal

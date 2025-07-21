@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a d e s e
+ 1 h o z a n
+ 2 a n i m e
+ 3 l ö · · z
+ 4 i r i t e
+
+Placed words:
+ 1. 'ahali' at (0,0) v
+ 2. 'donör' at (0,1) v
+ 3. 'hozan' at (1,0) h
+ 4. 'adese' at (0,0) h
+ 5. 'irite' at (4,0) h
+ 6. 'eneze' at (0,4) v
+ 7. 'anime' at (2,0) h
+
+Unique words placed (7):
+ 1. adese
+ 2. ahali
+ 3. anime
+ 4. donör
+ 5. eneze
+ 6. hozan
+ 7. irite

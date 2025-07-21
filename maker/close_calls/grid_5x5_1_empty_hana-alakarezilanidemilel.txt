@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 h a n a ·
+ 1 a l a k a
+ 2 r e z i l
+ 3 a n i d e
+ 4 m i l e l
+
+Placed words:
+ 1. 'haram' at (0,0) v
+ 2. 'nazil' at (0,2) v
+ 3. 'akide' at (0,3) v
+ 4. 'milel' at (4,0) h
+ 5. 'anide' at (3,0) h
+ 6. 'alaka' at (1,0) h
+ 7. 'aleni' at (0,1) v
+ 8. 'rezil' at (2,0) h
+
+Unique words placed (8):
+ 1. akide
+ 2. alaka
+ 3. aleni
+ 4. anide
+ 5. haram
+ 6. milel
+ 7. nazil
+ 8. rezil

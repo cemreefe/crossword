@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a ş a r
+ 1 a b · z a
+ 2 s a l a m
+ 3 ı ş · m a
+ 4 k o m i k
+
+Placed words:
+ 1. 'komik' at (4,0) h
+ 2. 'kaşar' at (0,0) h
+ 3. 'ramak' at (0,4) v
+ 4. 'azami' at (0,3) v
+ 5. 'salam' at (2,0) h
+ 6. 'abaşo' at (0,1) v
+ 7. 'kasık' at (0,0) v
+
+Unique words placed (7):
+ 1. abaşo
+ 2. azami
+ 3. kasık
+ 4. kaşar
+ 5. komik
+ 6. ramak
+ 7. salam

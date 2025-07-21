@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m a r u f
+ 1 a n i m e
+ 2 m a · u r
+ 3 a n · m i
+ 4 k e m i k
+
+Placed words:
+ 1. 'maruf' at (0,0) h
+ 2. 'kemik' at (4,0) h
+ 3. 'ferik' at (0,4) v
+ 4. 'umumi' at (0,3) v
+ 5. 'anane' at (0,1) v
+ 6. 'mamak' at (0,0) v
+ 7. 'anime' at (1,0) h
+
+Unique words placed (7):
+ 1. anane
+ 2. anime
+ 3. ferik
+ 4. kemik
+ 5. mamak
+ 6. maruf
+ 7. umumi

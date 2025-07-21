@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · k a p i
+ 1 c e n a p
+ 2 i b a t e
+ 3 b i n e k
+ 4 · r e n a
+
+Placed words:
+ 1. 'paten' at (0,3) v
+ 2. 'cenap' at (1,0) h
+ 3. 'kebir' at (0,1) v
+ 4. 'binek' at (3,0) h
+ 5. 'ipeka' at (0,4) v
+ 6. 'ibate' at (2,0) h
+ 7. 'anane' at (0,2) v
+
+Unique words placed (7):
+ 1. anane
+ 2. binek
+ 3. cenap
+ 4. ibate
+ 5. ipeka
+ 6. kebir
+ 7. paten

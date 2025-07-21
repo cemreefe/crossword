@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 a d a m a
+ 1 h o r o n
+ 2 a n a l ı
+ 3 l ö k o z
+ 4 i r a · ·
+
+Placed words:
+ 1. 'ahali' at (0,0) v
+ 2. 'donör' at (0,1) v
+ 3. 'araka' at (0,2) v
+ 4. 'lökoz' at (3,0) h
+ 5. 'anal' at (2,0) h
+ 6. 'adam' at (0,0) h
+ 7. 'horon' at (1,0) h
+ 8. 'anız' at (0,4) v
+
+Unique words placed (8):
+ 1. adam
+ 2. ahali
+ 3. anal
+ 4. anız
+ 5. araka
+ 6. donör
+ 7. horon
+ 8. lökoz

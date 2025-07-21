@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m a b a t
+ 1 o k u m a
+ 2 l a k · p
+ 3 a l e · i
+ 4 s a t i r
+
+Placed words:
+ 1. 'satir' at (4,0) h
+ 2. 'mabat' at (0,0) h
+ 3. 'okuma' at (1,0) h
+ 4. 'akala' at (0,1) v
+ 5. 'molas' at (0,0) v
+ 6. 'tapir' at (0,4) v
+ 7. 'buket' at (0,2) v
+
+Unique words placed (7):
+ 1. akala
+ 2. buket
+ 3. mabat
+ 4. molas
+ 5. okuma
+ 6. satir
+ 7. tapir

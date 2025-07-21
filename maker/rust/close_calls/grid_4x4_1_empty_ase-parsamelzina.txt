@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 a s e · 
+ 1 p a r s 
+ 2 a m e l 
+ 3 z i n a 
+
+Placed words:
+ 1. 'pars' at (1,0) Horizontal
+ 2. 'eren' at (0,2) Vertical
+ 3. 'sami' at (0,1) Vertical
+ 4. 'apaz' at (0,0) Vertical
+ 5. 'amel' at (2,0) Horizontal
+ 6. 'zina' at (3,0) Horizontal
+
+Unique words placed (6):
+ 1. zina
+ 2. amel
+ 3. sami
+ 4. eren
+ 5. apaz
+ 6. pars

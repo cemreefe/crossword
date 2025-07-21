@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f a r a ş
+ 1 a · e r i
+ 2 r o m e n
+ 3 a · e n i
+ 4 d a l a k
+
+Placed words:
+ 1. 'dalak' at (4,0) h
+ 2. 'romen' at (2,0) h
+ 3. 'remel' at (0,2) v
+ 4. 'arena' at (0,3) v
+ 5. 'şinik' at (0,4) v
+ 6. 'farad' at (0,0) v
+ 7. 'faraş' at (0,0) h
+
+Unique words placed (7):
+ 1. arena
+ 2. dalak
+ 3. farad
+ 4. faraş
+ 5. remel
+ 6. romen
+ 7. şinik

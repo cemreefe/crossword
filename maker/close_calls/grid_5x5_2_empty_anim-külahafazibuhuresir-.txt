@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a n i m ·
+ 1 k ü l a h
+ 2 a f a z i
+ 3 b u h u r
+ 4 e s i r ·
+
+Placed words:
+ 1. 'buhur' at (3,0) h
+ 2. 'afazi' at (2,0) h
+ 3. 'mazur' at (0,3) v
+ 4. 'ilahi' at (0,2) v
+ 5. 'akabe' at (0,0) v
+ 6. 'nüfus' at (0,1) v
+ 7. 'külah' at (1,0) h
+
+Unique words placed (7):
+ 1. afazi
+ 2. akabe
+ 3. buhur
+ 4. ilahi
+ 5. külah
+ 6. mazur
+ 7. nüfus

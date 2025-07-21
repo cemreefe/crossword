@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 p i n e s 
+ 1 i k a m e 
+ 2 s i f i n 
+ 3 i y i c e 
+ 4 k i z i r 
+
+Placed words:
+ 1. 'sifin' at (2,0) Horizontal
+ 2. 'pisik' at (0,0) Vertical
+ 3. 'kizir' at (4,0) Horizontal
+ 4. 'emici' at (0,3) Vertical
+ 5. 'pines' at (0,0) Horizontal
+ 6. 'nafiz' at (0,2) Vertical
+ 7. 'ikame' at (1,0) Horizontal
+ 8. 'iyice' at (3,0) Horizontal
+
+Unique words placed (8):
+ 1. iyice
+ 2. kizir
+ 3. sifin
+ 4. pines
+ 5. pisik
+ 6. ikame
+ 7. emici
+ 8. nafiz

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m a b a t
+ 1 · l a · a
+ 2 n a d a s
+ 3 a c a r a
+ 4 s a t i r
+
+Placed words:
+ 1. 'satir' at (4,0) h
+ 2. 'mabat' at (0,0) h
+ 3. 'alaca' at (0,1) v
+ 4. 'nadas' at (2,0) h
+ 5. 'badat' at (0,2) v
+ 6. 'acar' at (3,0) h
+ 7. 'tasar' at (0,4) v
+
+Unique words placed (7):
+ 1. acar
+ 2. alaca
+ 3. badat
+ 4. mabat
+ 5. nadas
+ 6. satir
+ 7. tasar

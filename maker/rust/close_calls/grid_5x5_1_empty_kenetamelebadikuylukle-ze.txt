@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 k e n e t 
+ 1 a m e l e 
+ 2 b a d i k 
+ 3 u y l u k 
+ 4 l e · z e 
+
+Placed words:
+ 1. 'badik' at (2,0) Horizontal
+ 2. 'kabul' at (0,0) Vertical
+ 3. 'kenet' at (0,0) Horizontal
+ 4. 'emaye' at (0,1) Vertical
+ 5. 'amele' at (1,0) Horizontal
+ 6. 'tekke' at (0,4) Vertical
+ 7. 'eliuz' at (0,3) Vertical
+ 8. 'uyluk' at (3,0) Horizontal
+
+Unique words placed (8):
+ 1. kabul
+ 2. tekke
+ 3. eliuz
+ 4. amele
+ 5. badik
+ 6. kenet
+ 7. emaye
+ 8. uyluk

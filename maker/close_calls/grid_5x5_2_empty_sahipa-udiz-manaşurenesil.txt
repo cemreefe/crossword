@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s a h i p
+ 1 a · u d i
+ 2 z · m a n
+ 3 a ş u r e
+ 4 n e s i l
+
+Placed words:
+ 1. 'aşure' at (3,0) h
+ 2. 'humus' at (0,2) v
+ 3. 'sahip' at (0,0) h
+ 4. 'pinel' at (0,4) v
+ 5. 'nesil' at (4,0) h
+ 6. 'sazan' at (0,0) v
+ 7. 'idari' at (0,3) v
+
+Unique words placed (7):
+ 1. aşure
+ 2. humus
+ 3. idari
+ 4. nesil
+ 5. pinel
+ 6. sahip
+ 7. sazan

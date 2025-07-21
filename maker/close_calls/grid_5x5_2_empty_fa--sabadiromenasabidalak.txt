@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f a · · s
+ 1 a b a d i
+ 2 r o m e n
+ 3 a s a b i
+ 4 d a l a k
+
+Placed words:
+ 1. 'dalak' at (4,0) h
+ 2. 'romen' at (2,0) h
+ 3. 'farad' at (0,0) v
+ 4. 'asabi' at (3,0) h
+ 5. 'abadi' at (1,0) h
+ 6. 'sinik' at (0,4) v
+ 7. 'abosa' at (0,1) v
+
+Unique words placed (7):
+ 1. abadi
+ 2. abosa
+ 3. asabi
+ 4. dalak
+ 5. farad
+ 6. romen
+ 7. sinik

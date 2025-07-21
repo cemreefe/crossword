@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a d a m a
+ 1 r e c e p
+ 2 a ğ ı l ·
+ 3 b e l e k
+ 4 i ç ı s ·
+
+Placed words:
+ 1. 'recep' at (1,0) h
+ 2. 'değeç' at (0,1) v
+ 3. 'adama' at (0,0) h
+ 4. 'meles' at (0,3) v
+ 5. 'acılı' at (0,2) v
+ 6. 'belek' at (3,0) h
+ 7. 'arabi' at (0,0) v
+
+Unique words placed (7):
+ 1. acılı
+ 2. adama
+ 3. arabi
+ 4. belek
+ 5. değeç
+ 6. meles
+ 7. recep

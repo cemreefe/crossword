@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h i l a t
+ 1 a n a n e
+ 2 l i d e r
+ 3 u · e m a
+ 4 k · s i s
+
+Placed words:
+ 1. 'hilat' at (0,0) h
+ 2. 'haluk' at (0,0) v
+ 3. 'anane' at (1,0) h
+ 4. 'lades' at (0,2) v
+ 5. 'teras' at (0,4) v
+ 6. 'anemi' at (0,3) v
+ 7. 'lider' at (2,0) h
+
+Unique words placed (7):
+ 1. anane
+ 2. anemi
+ 3. haluk
+ 4. hilat
+ 5. lades
+ 6. lider
+ 7. teras

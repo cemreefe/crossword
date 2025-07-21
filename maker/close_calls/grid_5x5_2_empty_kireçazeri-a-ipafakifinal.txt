@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k i r e ç
+ 1 a z e r i
+ 2 · a · i p
+ 3 a f a k i
+ 4 f i n a l
+
+Placed words:
+ 1. 'final' at (4,0) h
+ 2. 'kireç' at (0,0) h
+ 3. 'çipil' at (0,4) v
+ 4. 'erika' at (0,3) v
+ 5. 'izafi' at (0,1) v
+ 6. 'azeri' at (1,0) h
+ 7. 'afaki' at (3,0) h
+
+Unique words placed (7):
+ 1. afaki
+ 2. azeri
+ 3. erika
+ 4. final
+ 5. izafi
+ 6. kireç
+ 7. çipil

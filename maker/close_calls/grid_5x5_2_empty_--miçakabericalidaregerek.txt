@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · · m i ç
+ 1 a k a b e
+ 2 r i c a l
+ 3 i d a r e
+ 4 g e r e k
+
+Placed words:
+ 1. 'gerek' at (4,0) h
+ 2. 'akabe' at (1,0) h
+ 3. 'rical' at (2,0) h
+ 4. 'idare' at (3,0) h
+ 5. 'çelek' at (0,4) v
+ 6. 'macar' at (0,2) v
+ 7. 'ibare' at (0,3) v
+
+Unique words placed (7):
+ 1. akabe
+ 2. gerek
+ 3. ibare
+ 4. idare
+ 5. macar
+ 6. rical
+ 7. çelek

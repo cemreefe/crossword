@@ -1,0 +1,22 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 4
+
+Grid:
+   0 1 2 3 
+ 0 s m m a 
+ 1 e u a n 
+ 2 k ş l i 
+ 3 s · i f 
+
+Placed words:
+ 1. 'anif' at (0,3) Vertical
+ 2. 'seks' at (0,0) Vertical
+ 3. 'mali' at (0,2) Vertical
+ 4. 'muş' at (0,1) Vertical
+
+Unique words placed (4):
+ 1. seks
+ 2. mali
+ 3. muş
+ 4. anif

@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k f m · 
+ 1 i r i s 
+ 2 p e r i 
+ 3 e r a t 
+
+Placed words:
+ 1. 'kipe' at (0,0) Vertical
+ 2. 'iris' at (1,0) Horizontal
+ 3. 'erat' at (3,0) Horizontal
+ 4. 'mira' at (0,2) Vertical
+ 5. 'peri' at (2,0) Horizontal
+ 6. 'frer' at (0,1) Vertical
+
+Unique words placed (6):
+ 1. erat
+ 2. kipe
+ 3. mira
+ 4. frer
+ 5. peri
+ 6. iris

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i d a r i
+ 1 b e · a r
+ 2 a f a k i
+ 3 t i r i t
+ 4 e n · t e
+
+Placed words:
+ 1. 'tirit' at (3,0) h
+ 2. 'rakit' at (0,3) v
+ 3. 'defin' at (0,1) v
+ 4. 'ibate' at (0,0) v
+ 5. 'irite' at (0,4) v
+ 6. 'afaki' at (2,0) h
+ 7. 'idari' at (0,0) h
+
+Unique words placed (7):
+ 1. afaki
+ 2. defin
+ 3. ibate
+ 4. idari
+ 5. irite
+ 6. rakit
+ 7. tirit

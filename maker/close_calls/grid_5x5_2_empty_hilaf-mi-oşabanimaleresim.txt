@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h i l a f
+ 1 · m i · o
+ 2 ş a b a n
+ 3 i m a l e
+ 4 r e s i m
+
+Placed words:
+ 1. 'imame' at (0,1) v
+ 2. 'resim' at (4,0) h
+ 3. 'şaban' at (2,0) h
+ 4. 'hilaf' at (0,0) h
+ 5. 'fonem' at (0,4) v
+ 6. 'libas' at (0,2) v
+ 7. 'imale' at (3,0) h
+
+Unique words placed (7):
+ 1. fonem
+ 2. hilaf
+ 3. imale
+ 4. imame
+ 5. libas
+ 6. resim
+ 7. şaban

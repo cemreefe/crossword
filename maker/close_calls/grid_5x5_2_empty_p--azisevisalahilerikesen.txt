@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 p · · a z
+ 1 i s e v i
+ 2 s a l a h
+ 3 i l e r i
+ 4 k e s e n
+
+Placed words:
+ 1. 'avare' at (0,3) v
+ 2. 'zihin' at (0,4) v
+ 3. 'kesen' at (4,0) h
+ 4. 'ileri' at (3,0) h
+ 5. 'isevi' at (1,0) h
+ 6. 'salah' at (2,0) h
+ 7. 'pisik' at (0,0) v
+
+Unique words placed (7):
+ 1. avare
+ 2. ileri
+ 3. isevi
+ 4. kesen
+ 5. pisik
+ 6. salah
+ 7. zihin

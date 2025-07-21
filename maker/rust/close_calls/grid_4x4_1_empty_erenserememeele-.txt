@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e r e n 
+ 1 s e r e 
+ 2 m e m e 
+ 3 e l e · 
+
+Placed words:
+ 1. 'eren' at (0,0) Horizontal
+ 2. 'erme' at (0,2) Vertical
+ 3. 'esme' at (0,0) Vertical
+ 4. 'sere' at (1,0) Horizontal
+ 5. 'reel' at (0,1) Vertical
+ 6. 'meme' at (2,0) Horizontal
+
+Unique words placed (6):
+ 1. meme
+ 2. erme
+ 3. esme
+ 4. eren
+ 5. sere
+ 6. reel

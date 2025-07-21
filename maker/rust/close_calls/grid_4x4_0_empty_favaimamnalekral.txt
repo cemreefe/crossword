@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 f a v a 
+ 1 i m a m 
+ 2 n a l e 
+ 3 k r a l 
+
+Placed words:
+ 1. 'fink' at (0,0) Vertical
+ 2. 'nale' at (2,0) Horizontal
+ 3. 'fava' at (0,0) Horizontal
+ 4. 'amel' at (0,3) Vertical
+ 5. 'imam' at (1,0) Horizontal
+ 6. 'kral' at (3,0) Horizontal
+
+Unique words placed (6):
+ 1. nale
+ 2. imam
+ 3. fava
+ 4. amel
+ 5. fink
+ 6. kral

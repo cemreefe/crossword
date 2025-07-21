@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 u f u k 
+ 1 l a m e 
+ 2 a b u s 
+ 3 a l t o 
+
+Placed words:
+ 1. 'ufuk' at (0,0) Horizontal
+ 2. 'lame' at (1,0) Horizontal
+ 3. 'fabl' at (0,1) Vertical
+ 4. 'umut' at (0,2) Vertical
+ 5. 'abus' at (2,0) Horizontal
+ 6. 'alto' at (3,0) Horizontal
+
+Unique words placed (6):
+ 1. lame
+ 2. umut
+ 3. alto
+ 4. fabl
+ 5. abus
+ 6. ufuk

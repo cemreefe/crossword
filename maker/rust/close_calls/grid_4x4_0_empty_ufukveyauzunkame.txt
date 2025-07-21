@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 u f u k 
+ 1 v e y a 
+ 2 u z u n 
+ 3 k a m e 
+
+Placed words:
+ 1. 'ufuk' at (0,0) Horizontal
+ 2. 'uzun' at (2,0) Horizontal
+ 3. 'kame' at (3,0) Horizontal
+ 4. 'uyum' at (0,2) Vertical
+ 5. 'feza' at (0,1) Vertical
+ 6. 'veya' at (1,0) Horizontal
+
+Unique words placed (6):
+ 1. veya
+ 2. uzun
+ 3. feza
+ 4. kame
+ 5. uyum
+ 6. ufuk

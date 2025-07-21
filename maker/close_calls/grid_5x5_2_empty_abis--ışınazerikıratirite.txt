@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 a b i s ·
+ 1 · ı ş ı n
+ 2 a z e r i
+ 3 k ı r a t
+ 4 i r i t e
+
+Placed words:
+ 1. 'kırat' at (3,0) h
+ 2. 'sırat' at (0,3) v
+ 3. 'irite' at (4,0) h
+ 4. 'şeri' at (1,2) v
+ 5. 'azeri' at (2,0) h
+ 6. 'ışın' at (1,1) h
+ 7. 'bızır' at (0,1) v
+ 8. 'abis' at (0,0) h
+
+Unique words placed (8):
+ 1. abis
+ 2. azeri
+ 3. bızır
+ 4. irite
+ 5. kırat
+ 6. sırat
+ 7. ışın
+ 8. şeri

@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 t a m i r
+ 1 a r a z ·
+ 2 k a z a z
+ 3 i m a l e
+ 4 p i k e t
+
+Placed words:
+ 1. 'kazaz' at (2,0) h
+ 2. 'piket' at (4,0) h
+ 3. 'izale' at (0,3) v
+ 4. 'arami' at (0,1) v
+ 5. 'takip' at (0,0) v
+ 6. 'tamir' at (0,0) h
+ 7. 'mazak' at (0,2) v
+ 8. 'imale' at (3,0) h
+
+Unique words placed (8):
+ 1. arami
+ 2. imale
+ 3. izale
+ 4. kazaz
+ 5. mazak
+ 6. piket
+ 7. takip
+ 8. tamir

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 p e ş i n
+ 1 a f i ş e
+ 2 m e l e s
+ 3 · c · m i
+ 4 k e m e r
+
+Placed words:
+ 1. 'meles' at (2,0) h
+ 2. 'peşin' at (0,0) h
+ 3. 'işeme' at (0,3) v
+ 4. 'nesi' at (0,4) v
+ 5. 'kemer' at (4,0) h
+ 6. 'efece' at (0,1) v
+ 7. 'afişe' at (1,0) h
+
+Unique words placed (7):
+ 1. afişe
+ 2. efece
+ 3. işeme
+ 4. kemer
+ 5. meles
+ 6. nesi
+ 7. peşin

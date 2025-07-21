@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a z ı k
+ 1 a c e · i
+ 2 d e f · n
+ 3 e z i c i
+ 4 m e r a k
+
+Placed words:
+ 1. 'kinik' at (0,4) v
+ 2. 'kazık' at (0,0) h
+ 3. 'zefir' at (0,2) v
+ 4. 'aceze' at (0,1) v
+ 5. 'kadem' at (0,0) v
+ 6. 'ezici' at (3,0) h
+ 7. 'merak' at (4,0) h
+
+Unique words placed (7):
+ 1. aceze
+ 2. ezici
+ 3. kadem
+ 4. kazık
+ 5. kinik
+ 6. merak
+ 7. zefir

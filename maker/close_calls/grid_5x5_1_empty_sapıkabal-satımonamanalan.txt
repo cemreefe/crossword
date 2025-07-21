@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 s a p ı k
+ 1 a b a l ·
+ 2 s a t ı m
+ 3 o n a m a
+ 4 n a l a n
+
+Placed words:
+ 1. 'sapık' at (0,0) h
+ 2. 'abana' at (0,1) v
+ 3. 'sason' at (0,0) v
+ 4. 'satım' at (2,0) h
+ 5. 'patal' at (0,2) v
+ 6. 'nalan' at (4,0) h
+ 7. 'onama' at (3,0) h
+ 8. 'ılıma' at (0,3) v
+
+Unique words placed (8):
+ 1. abana
+ 2. nalan
+ 3. onama
+ 4. patal
+ 5. sapık
+ 6. sason
+ 7. satım
+ 8. ılıma

@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 s e ç i m
+ 1 a z e r i
+ 2 f i n a l
+ 3 i · e d i
+ 4 r i t i m
+
+Placed words:
+ 1. 'ritim' at (4,0) h
+ 2. 'seçim' at (0,0) h
+ 3. 'safir' at (0,0) v
+ 4. 'milim' at (0,4) v
+ 5. 'çenet' at (0,2) v
+ 6. 'azeri' at (1,0) h
+ 7. 'iradi' at (0,3) v
+ 8. 'final' at (2,0) h
+
+Unique words placed (8):
+ 1. azeri
+ 2. final
+ 3. iradi
+ 4. milim
+ 5. ritim
+ 6. safir
+ 7. seçim
+ 8. çenet

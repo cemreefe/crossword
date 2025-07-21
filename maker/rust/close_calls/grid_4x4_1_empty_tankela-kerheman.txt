@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 t a n k 
+ 1 e l a · 
+ 2 k e r h 
+ 3 e m a n 
+
+Placed words:
+ 1. 'teke' at (0,0) Vertical
+ 2. 'nara' at (0,2) Vertical
+ 3. 'kerh' at (2,0) Horizontal
+ 4. 'eman' at (3,0) Horizontal
+ 5. 'alem' at (0,1) Vertical
+ 6. 'tank' at (0,0) Horizontal
+
+Unique words placed (6):
+ 1. eman
+ 2. kerh
+ 3. alem
+ 4. tank
+ 5. teke
+ 6. nara

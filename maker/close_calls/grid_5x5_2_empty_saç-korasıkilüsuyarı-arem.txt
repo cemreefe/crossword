@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s a ç · k
+ 1 o r a s ı
+ 2 k i l ü s
+ 3 u y a r ı
+ 4 · a r e m
+
+Placed words:
+ 1. 'kısım' at (0,4) v
+ 2. 'kilüs' at (2,0) h
+ 3. 'çalar' at (0,2) v
+ 4. 'ariya' at (0,1) v
+ 5. 'uyarı' at (3,0) h
+ 6. 'soku' at (0,0) v
+ 7. 'süre' at (1,3) v
+
+Unique words placed (7):
+ 1. ariya
+ 2. kilüs
+ 3. kısım
+ 4. soku
+ 5. süre
+ 6. uyarı
+ 7. çalar

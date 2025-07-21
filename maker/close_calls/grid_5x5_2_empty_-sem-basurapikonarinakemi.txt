@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · s e m ·
+ 1 b a s u r
+ 2 a p i k o
+ 3 n a r i n
+ 4 a k e m i
+
+Placed words:
+ 1. 'sapak' at (0,1) v
+ 2. 'mukim' at (0,3) v
+ 3. 'narin' at (3,0) h
+ 4. 'basur' at (1,0) h
+ 5. 'apiko' at (2,0) h
+ 6. 'esire' at (0,2) v
+ 7. 'akemi' at (4,0) h
+
+Unique words placed (7):
+ 1. akemi
+ 2. apiko
+ 3. basur
+ 4. esire
+ 5. mukim
+ 6. narin
+ 7. sapak

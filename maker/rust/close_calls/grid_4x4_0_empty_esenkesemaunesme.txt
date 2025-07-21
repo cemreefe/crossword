@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e s e n 
+ 1 k e s e 
+ 2 m a u n 
+ 3 e s m e 
+
+Placed words:
+ 1. 'esen' at (0,0) Horizontal
+ 2. 'esme' at (3,0) Horizontal
+ 3. 'ekme' at (0,0) Vertical
+ 4. 'nene' at (0,3) Vertical
+ 5. 'kese' at (1,0) Horizontal
+ 6. 'maun' at (2,0) Horizontal
+
+Unique words placed (6):
+ 1. esen
+ 2. ekme
+ 3. esme
+ 4. nene
+ 5. kese
+ 6. maun

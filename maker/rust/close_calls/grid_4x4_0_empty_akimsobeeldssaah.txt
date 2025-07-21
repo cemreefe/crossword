@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 a k i m 
+ 1 s o b e 
+ 2 e l d s 
+ 3 s a a h 
+
+Placed words:
+ 1. 'ibda' at (0,2) Vertical
+ 2. 'sobe' at (1,0) Horizontal
+ 3. 'akim' at (0,0) Horizontal
+ 4. 'ases' at (0,0) Vertical
+ 5. 'kola' at (0,1) Vertical
+ 6. 'mesh' at (0,3) Vertical
+
+Unique words placed (6):
+ 1. kola
+ 2. ibda
+ 3. akim
+ 4. ases
+ 5. sobe
+ 6. mesh

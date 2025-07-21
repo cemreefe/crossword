@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 a d e s e 
+ 1 b u t i k 
+ 2 b · m s l 
+ 3 a m e l e 
+ 4 s a k i m 
+
+Placed words:
+ 1. 'etmek' at (0,2) Vertical
+ 2. 'abbas' at (0,0) Vertical
+ 3. 'sakim' at (4,0) Horizontal
+ 4. 'butik' at (1,0) Horizontal
+ 5. 'adese' at (0,0) Horizontal
+ 6. 'eklem' at (0,4) Vertical
+ 7. 'amele' at (3,0) Horizontal
+ 8. 'sisli' at (0,3) Vertical
+
+Unique words placed (8):
+ 1. butik
+ 2. etmek
+ 3. amele
+ 4. sakim
+ 5. eklem
+ 6. abbas
+ 7. adese
+ 8. sisli

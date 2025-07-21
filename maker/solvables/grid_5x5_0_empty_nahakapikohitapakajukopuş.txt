@@ -1,0 +1,25 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 5
+
+Grid:
+   0 1 2 3 4
+ 0 n a h a k
+ 1 a p i k o
+ 2 h i t a p
+ 3 a k a j u
+ 4 k o p u ş
+
+Placed words:
+ 1. 'kopuş' at (0,4) v
+ 2. 'hitap' at (0,2) v
+ 3. 'akaju' at (0,3) v
+ 4. 'apiko' at (0,1) v
+ 5. 'nahak' at (0,0) v
+
+Unique words placed (5):
+ 1. akaju
+ 2. apiko
+ 3. hitap
+ 4. kopuş
+ 5. nahak

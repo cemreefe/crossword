@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s o r u m
+ 1 e v · y e
+ 2 d a l a k
+ 3 i l e r i
+ 4 r ı · ı k
+
+Placed words:
+ 1. 'sorum' at (0,0) h
+ 2. 'dalak' at (2,0) h
+ 3. 'ovalı' at (0,1) v
+ 4. 'uyarı' at (0,3) v
+ 5. 'ileri' at (3,0) h
+ 6. 'mekik' at (0,4) v
+ 7. 'sedir' at (0,0) v
+
+Unique words placed (7):
+ 1. dalak
+ 2. ileri
+ 3. mekik
+ 4. ovalı
+ 5. sedir
+ 6. sorum
+ 7. uyarı

@@ -1,0 +1,27 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 6
+
+Grid:
+   0 1 2 3 4
+ 0 m a h u r
+ 1 ü r e m e
+ 2 b a d a s
+ 3 a b e c e
+ 4 h a r ı n
+
+Placed words:
+ 1. 'harın' at (4,0) h
+ 2. 'resen' at (0,4) v
+ 3. 'mübah' at (0,0) v
+ 4. 'araba' at (0,1) v
+ 5. 'umacı' at (0,3) v
+ 6. 'heder' at (0,2) v
+
+Unique words placed (6):
+ 1. araba
+ 2. harın
+ 3. heder
+ 4. mübah
+ 5. resen
+ 6. umacı

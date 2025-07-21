@@ -9,11 +9,22 @@ from typing import Set, Dict, List
 import string
 
 # Configuration
-GRID_SIZE = 5  # Maximum word length for crossword
-MIN_WORD_LENGTH = 4
+GRID_SIZE = 6  # Maximum word length for crossword
+MIN_WORD_LENGTH = 6
 
 # Turkish alphabet (29 letters)
-TURKISH_ALPHABET = "abcdefghijklmnopqrstuvwxyzçğıöşü"
+TURKISH_ALPHABET = "abcdefghijklmnoprstuvyzçğıöşü"
+
+GET_RID_OF_CONSONANT_COMBOS = True  # Whether to remove consonant combinations
+
+lower_map = {
+    ord(u'I'): u'ı',
+    ord(u'İ'): u'i',
+    }
+
+def custom_lowercase(s: str) -> str:
+    """Custom lowercase function for Turkish characters"""
+    return s.translate(lower_map).lower()
 
 class CrosswordGraph:
     """Graph structure for crossword words and intermediaries"""
@@ -37,7 +48,7 @@ class CrosswordGraph:
         
         with open(filename, 'r', encoding='utf-8') as f:
             for line in f:
-                word = line.strip().lower()
+                word = custom_lowercase(line.strip())
                 word = word.replace(" ", "")  # Remove spaces
                 
                 # Filter words: length between MIN_WORD_LENGTH and GRID_SIZE
@@ -52,6 +63,10 @@ class CrosswordGraph:
     
     def _is_valid_word(self, word: str) -> bool:
         """Check if word contains only valid Turkish letters"""
+        if GET_RID_OF_CONSONANT_COMBOS:
+            # invalidate words with consonant combinations
+            if re.search(r'([bcdfghjklmnprstvwxyzşğç]{2,})', word):
+                return False
         return all(c in TURKISH_ALPHABET for c in word)
     
     def generate_intermediaries_for_word(self, word: str) -> Set[str]:

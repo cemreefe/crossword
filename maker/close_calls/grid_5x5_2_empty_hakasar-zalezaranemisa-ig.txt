@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h a k a s
+ 1 a r · z a
+ 2 l e z a r
+ 3 a n e m i
+ 4 s a · i g
+
+Placed words:
+ 1. 'sarig' at (0,4) v
+ 2. 'lezar' at (2,0) h
+ 3. 'hakas' at (0,0) h
+ 4. 'azami' at (0,3) v
+ 5. 'halas' at (0,0) v
+ 6. 'anemi' at (3,0) h
+ 7. 'arena' at (0,1) v
+
+Unique words placed (7):
+ 1. anemi
+ 2. arena
+ 3. azami
+ 4. hakas
+ 5. halas
+ 6. lezar
+ 7. sarig

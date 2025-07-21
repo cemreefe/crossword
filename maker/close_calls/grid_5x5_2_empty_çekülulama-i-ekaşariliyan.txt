@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ç e k ü l
+ 1 u l a m a
+ 2 · i · e k
+ 3 a ş a r i
+ 4 l i y a n
+
+Placed words:
+ 1. 'liyan' at (4,0) h
+ 2. 'çekül' at (0,0) h
+ 3. 'lakin' at (0,4) v
+ 4. 'ulama' at (1,0) h
+ 5. 'aşari' at (3,0) h
+ 6. 'ümera' at (0,3) v
+ 7. 'elişi' at (0,1) v
+
+Unique words placed (7):
+ 1. aşari
+ 2. elişi
+ 3. lakin
+ 4. liyan
+ 5. ulama
+ 6. çekül
+ 7. ümera

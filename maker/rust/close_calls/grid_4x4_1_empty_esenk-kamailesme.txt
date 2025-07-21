@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e s e n 
+ 1 k · k a 
+ 2 m a i l 
+ 3 e s m e 
+
+Placed words:
+ 1. 'esen' at (0,0) Horizontal
+ 2. 'esme' at (3,0) Horizontal
+ 3. 'ekme' at (0,0) Vertical
+ 4. 'ekim' at (0,2) Vertical
+ 5. 'nale' at (0,3) Vertical
+ 6. 'mail' at (2,0) Horizontal
+
+Unique words placed (6):
+ 1. esen
+ 2. ekme
+ 3. esme
+ 4. ekim
+ 5. nale
+ 6. mail

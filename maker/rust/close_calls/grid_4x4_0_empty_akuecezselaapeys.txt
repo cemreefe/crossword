@@ -1,0 +1,22 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 4
+
+Grid:
+   0 1 2 3 
+ 0 a k u e 
+ 1 c e z s 
+ 2 e l a a 
+ 3 p e y s 
+
+Placed words:
+ 1. 'uzay' at (0,2) Vertical
+ 2. 'acep' at (0,0) Vertical
+ 3. 'kele' at (0,1) Vertical
+ 4. 'esas' at (0,3) Vertical
+
+Unique words placed (4):
+ 1. kele
+ 2. acep
+ 3. esas
+ 4. uzay

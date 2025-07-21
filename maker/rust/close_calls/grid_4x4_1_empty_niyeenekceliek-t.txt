@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 n i y e 
+ 1 e n e k 
+ 2 c e l i 
+ 3 e k · t 
+
+Placed words:
+ 1. 'niye' at (0,0) Horizontal
+ 2. 'inek' at (0,1) Vertical
+ 3. 'enek' at (1,0) Horizontal
+ 4. 'ekit' at (0,3) Vertical
+ 5. 'celi' at (2,0) Horizontal
+ 6. 'nece' at (0,0) Vertical
+
+Unique words placed (6):
+ 1. celi
+ 2. inek
+ 3. enek
+ 4. ekit
+ 5. nece
+ 6. niye

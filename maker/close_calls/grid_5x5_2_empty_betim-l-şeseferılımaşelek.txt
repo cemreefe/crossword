@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 b e t i m
+ 1 · l · ş e
+ 2 s e f e r
+ 3 ı l ı m a
+ 4 ş e l e k
+
+Placed words:
+ 1. 'sefer' at (2,0) h
+ 2. 'şelek' at (4,0) h
+ 3. 'işeme' at (0,3) v
+ 4. 'ılıma' at (3,0) h
+ 5. 'elele' at (0,1) v
+ 6. 'beti' at (0,0) h
+ 7. 'merak' at (0,4) v
+
+Unique words placed (7):
+ 1. beti
+ 2. elele
+ 3. işeme
+ 4. merak
+ 5. sefer
+ 6. ılıma
+ 7. şelek

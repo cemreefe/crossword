@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 p a t · z
+ 1 i z a f e
+ 2 n i c e l
+ 3 e z i c i
+ 4 s · k i l
+
+Placed words:
+ 1. 'nicel' at (2,0) h
+ 2. 'izafe' at (1,0) h
+ 3. 'zelil' at (0,4) v
+ 4. 'aziz' at (0,1) v
+ 5. 'tacik' at (0,2) v
+ 6. 'pines' at (0,0) v
+ 7. 'feci' at (1,3) v
+
+Unique words placed (7):
+ 1. aziz
+ 2. feci
+ 3. izafe
+ 4. nicel
+ 5. pines
+ 6. tacik
+ 7. zelil

@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 m a k a k
+ 1 a ş u r e
+ 2 t e r i m
+ 3 · · u f a
+ 4 h i m e n
+
+Placed words:
+ 1. 'himen' at (4,0) h
+ 2. 'keman' at (0,4) v
+ 3. 'aşure' at (1,0) h
+ 4. 'kurum' at (0,2) v
+ 5. 'arife' at (0,3) v
+ 6. 'erim' at (2,1) h
+ 7. 'terim' at (2,0) h
+ 8. 'makak' at (0,0) h
+
+Unique words placed (8):
+ 1. arife
+ 2. aşure
+ 3. erim
+ 4. himen
+ 5. keman
+ 6. kurum
+ 7. makak
+ 8. terim

@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 i d e a l 
+ 1 s a y f a 
+ 2 m i m i k 
+ 3 e r · l i 
+ 4 t e k i n 
+
+Placed words:
+ 1. 'sayfa' at (1,0) Horizontal
+ 2. 'mimik' at (2,0) Horizontal
+ 3. 'tekin' at (4,0) Horizontal
+ 4. 'daire' at (0,1) Vertical
+ 5. 'afili' at (0,3) Vertical
+ 6. 'lakin' at (0,4) Vertical
+ 7. 'ismet' at (0,0) Vertical
+ 8. 'ideal' at (0,0) Horizontal
+
+Unique words placed (8):
+ 1. ismet
+ 2. lakin
+ 3. sayfa
+ 4. daire
+ 5. ideal
+ 6. mimik
+ 7. tekin
+ 8. afili

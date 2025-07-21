@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e n e z 
+ 1 t i k · 
+ 2 i s i m 
+ 3 l a m e 
+
+Placed words:
+ 1. 'lame' at (3,0) Horizontal
+ 2. 'etil' at (0,0) Vertical
+ 3. 'nisa' at (0,1) Vertical
+ 4. 'enez' at (0,0) Horizontal
+ 5. 'ekim' at (0,2) Vertical
+ 6. 'isim' at (2,0) Horizontal
+
+Unique words placed (6):
+ 1. etil
+ 2. enez
+ 3. isim
+ 4. ekim
+ 5. nisa
+ 6. lame

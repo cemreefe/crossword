@@ -1,0 +1,22 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 4
+
+Grid:
+   0 1 2 3 
+ 0 z a u a 
+ 1 i k f n 
+ 2 r a u i 
+ 3 a r k f 
+
+Placed words:
+ 1. 'anif' at (0,3) Vertical
+ 2. 'akar' at (0,1) Vertical
+ 3. 'zira' at (0,0) Vertical
+ 4. 'ufuk' at (0,2) Vertical
+
+Unique words placed (4):
+ 1. ufuk
+ 2. anif
+ 3. akar
+ 4. zira

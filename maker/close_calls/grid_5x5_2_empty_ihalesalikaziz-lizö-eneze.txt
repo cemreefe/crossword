@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i h a l e
+ 1 s a l i k
+ 2 a z i z ·
+ 3 l i z ö ·
+ 4 e n e z e
+
+Placed words:
+ 1. 'hazin' at (0,1) v
+ 2. 'salik' at (1,0) h
+ 3. 'alize' at (0,2) v
+ 4. 'eneze' at (4,0) h
+ 5. 'isale' at (0,0) v
+ 6. 'lizöz' at (0,3) v
+ 7. 'ihale' at (0,0) h
+
+Unique words placed (7):
+ 1. alize
+ 2. eneze
+ 3. hazin
+ 4. ihale
+ 5. isale
+ 6. lizöz
+ 7. salik

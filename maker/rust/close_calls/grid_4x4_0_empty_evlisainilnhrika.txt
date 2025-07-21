@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e v l i 
+ 1 s a i n 
+ 2 i l n h 
+ 3 r i k a 
+
+Placed words:
+ 1. 'evli' at (0,0) Horizontal
+ 2. 'vali' at (0,1) Vertical
+ 3. 'esir' at (0,0) Vertical
+ 4. 'inha' at (0,3) Vertical
+ 5. 'rika' at (3,0) Horizontal
+ 6. 'link' at (0,2) Vertical
+
+Unique words placed (6):
+ 1. link
+ 2. vali
+ 3. evli
+ 4. esir
+ 5. inha
+ 6. rika

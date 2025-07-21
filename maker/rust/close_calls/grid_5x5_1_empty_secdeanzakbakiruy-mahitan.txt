@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 s e c d e 
+ 1 a n z a k 
+ 2 b a k i r 
+ 3 u y · m a 
+ 4 h i t a n 
+
+Placed words:
+ 1. 'secde' at (0,0) Horizontal
+ 2. 'sabuh' at (0,0) Vertical
+ 3. 'ekran' at (0,4) Vertical
+ 4. 'hitan' at (4,0) Horizontal
+ 5. 'bakir' at (2,0) Horizontal
+ 6. 'enayi' at (0,1) Vertical
+ 7. 'daima' at (0,3) Vertical
+ 8. 'anzak' at (1,0) Horizontal
+
+Unique words placed (8):
+ 1. bakir
+ 2. daima
+ 3. secde
+ 4. hitan
+ 5. sabuh
+ 6. anzak
+ 7. ekran
+ 8. enayi

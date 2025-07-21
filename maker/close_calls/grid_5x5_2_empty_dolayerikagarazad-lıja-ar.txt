@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 d o l a y
+ 1 e r i k a
+ 2 g a r a z
+ 3 a d · l ı
+ 4 j a · a r
+
+Placed words:
+ 1. 'garaz' at (2,0) h
+ 2. 'dolay' at (0,0) h
+ 3. 'akala' at (0,3) v
+ 4. 'degaj' at (0,0) v
+ 5. 'orada' at (0,1) v
+ 6. 'erika' at (1,0) h
+ 7. 'yazır' at (0,4) v
+
+Unique words placed (7):
+ 1. akala
+ 2. degaj
+ 3. dolay
+ 4. erika
+ 5. garaz
+ 6. orada
+ 7. yazır

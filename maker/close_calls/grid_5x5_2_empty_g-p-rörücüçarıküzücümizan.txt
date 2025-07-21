@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 g · p · r
+ 1 ö r ü c ü
+ 2 ç a r ı k
+ 3 ü z ü c ü
+ 4 m i z a n
+
+Placed words:
+ 1. 'pürüz' at (0,2) v
+ 2. 'göçüm' at (0,0) v
+ 3. 'örücü' at (1,0) h
+ 4. 'çarık' at (2,0) h
+ 5. 'üzücü' at (3,0) h
+ 6. 'mizan' at (4,0) h
+ 7. 'rükün' at (0,4) v
+
+Unique words placed (7):
+ 1. göçüm
+ 2. mizan
+ 3. pürüz
+ 4. rükün
+ 5. çarık
+ 6. örücü
+ 7. üzücü

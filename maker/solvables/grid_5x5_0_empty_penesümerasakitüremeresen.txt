@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 p e n e s
+ 1 ü m e r a
+ 2 s a k i t
+ 3 ü r e m e
+ 4 r e s e n
+
+Placed words:
+ 1. 'penes' at (0,0) h
+ 2. 'püsür' at (0,0) v
+ 3. 'üreme' at (3,0) h
+ 4. 'emare' at (0,1) v
+ 5. 'sakit' at (2,0) h
+ 6. 'resen' at (4,0) h
+ 7. 'nekes' at (0,2) v
+ 8. 'erime' at (0,3) v
+ 9. 'ümera' at (1,0) h
+
+Unique words placed (9):
+ 1. emare
+ 2. erime
+ 3. nekes
+ 4. penes
+ 5. püsür
+ 6. resen
+ 7. sakit
+ 8. ümera
+ 9. üreme

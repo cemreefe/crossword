@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h a n · k
+ 1 a l a c a
+ 2 r e z · l
+ 3 a n i m e
+ 4 m i l i m
+
+Placed words:
+ 1. 'haram' at (0,0) v
+ 2. 'nazil' at (0,2) v
+ 3. 'alaca' at (1,0) h
+ 4. 'aleni' at (0,1) v
+ 5. 'kalem' at (0,4) v
+ 6. 'anime' at (3,0) h
+ 7. 'milim' at (4,0) h
+
+Unique words placed (7):
+ 1. alaca
+ 2. aleni
+ 3. anime
+ 4. haram
+ 5. kalem
+ 6. milim
+ 7. nazil

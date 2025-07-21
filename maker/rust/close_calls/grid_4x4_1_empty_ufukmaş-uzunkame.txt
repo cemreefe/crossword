@@ -1,0 +1,22 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 4
+
+Grid:
+   0 1 2 3 
+ 0 u f u k 
+ 1 m a ş · 
+ 2 u z u n 
+ 3 k a m e 
+
+Placed words:
+ 1. 'ufuk' at (0,0) Horizontal
+ 2. 'uzun' at (2,0) Horizontal
+ 3. 'kame' at (3,0) Horizontal
+ 4. 'maş' at (1,0) Horizontal
+
+Unique words placed (4):
+ 1. uzun
+ 2. kame
+ 3. maş
+ 4. ufuk

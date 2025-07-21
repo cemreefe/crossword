@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 o k a p i
+ 1 · a d a l
+ 2 · b a t e
+ 3 g u l e t
+ 4 a l e n i
+
+Placed words:
+ 1. 'paten' at (0,3) v
+ 2. 'gulet' at (3,0) h
+ 3. 'okapi' at (0,0) h
+ 4. 'aleni' at (4,0) h
+ 5. 'adale' at (0,2) v
+ 6. 'ileti' at (0,4) v
+ 7. 'kabul' at (0,1) v
+
+Unique words placed (7):
+ 1. adale
+ 2. aleni
+ 3. gulet
+ 4. ileti
+ 5. kabul
+ 6. okapi
+ 7. paten

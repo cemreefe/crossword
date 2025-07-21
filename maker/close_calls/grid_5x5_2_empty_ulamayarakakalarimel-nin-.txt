@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 u l a m a
+ 1 y a r a k
+ 2 a k a l a
+ 3 r i m e l
+ 4 · n i n ·
+
+Placed words:
+ 1. 'yarak' at (1,0) h
+ 2. 'malen' at (0,3) v
+ 3. 'ulama' at (0,0) h
+ 4. 'rimel' at (3,0) h
+ 5. 'arami' at (0,2) v
+ 6. 'lakin' at (0,1) v
+ 7. 'kala' at (2,1) h
+ 8. 'akala' at (2,0) h
+
+Unique words placed (8):
+ 1. akala
+ 2. arami
+ 3. kala
+ 4. lakin
+ 5. malen
+ 6. rimel
+ 7. ulama
+ 8. yarak

@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 f e · a ·
+ 1 e r i k a
+ 2 l i y a n
+ 3 a m e l e
+ 4 h e l a k
+
+Placed words:
+ 1. 'felah' at (0,0) v
+ 2. 'helak' at (4,0) h
+ 3. 'amele' at (3,0) h
+ 4. 'liyan' at (2,0) h
+ 5. 'kala' at (1,3) v
+ 6. 'akala' at (0,3) v
+ 7. 'erika' at (1,0) h
+ 8. 'erime' at (0,1) v
+
+Unique words placed (8):
+ 1. akala
+ 2. amele
+ 3. erika
+ 4. erime
+ 5. felah
+ 6. helak
+ 7. kala
+ 8. liyan

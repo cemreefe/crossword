@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 · · a k a
+ 1 b a k ı ş
+ 2 i ç ı s ı
+ 3 g ı c ı r
+ 4 a ş ı r ı
+
+Placed words:
+ 1. 'kısır' at (0,3) v
+ 2. 'akıcı' at (0,2) v
+ 3. 'bakı' at (1,0) h
+ 4. 'bakış' at (1,0) h
+ 5. 'içısı' at (2,0) h
+ 6. 'açış' at (1,1) v
+ 7. 'aşırı' at (0,4) v
+ 8. 'biga' at (1,0) v
+
+Unique words placed (8):
+ 1. akıcı
+ 2. açış
+ 3. aşırı
+ 4. bakı
+ 5. bakış
+ 6. biga
+ 7. içısı
+ 8. kısır

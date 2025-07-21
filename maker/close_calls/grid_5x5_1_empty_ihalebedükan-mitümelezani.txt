@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 i h a l e
+ 1 b e d ü k
+ 2 a n · m i
+ 3 t ü m e l
+ 4 e z a n i
+
+Placed words:
+ 1. 'henüz' at (0,1) v
+ 2. 'bedük' at (1,0) h
+ 3. 'ezani' at (4,0) h
+ 4. 'ibate' at (0,0) v
+ 5. 'lümen' at (0,3) v
+ 6. 'ekili' at (0,4) v
+ 7. 'ihale' at (0,0) h
+ 8. 'tümel' at (3,0) h
+
+Unique words placed (8):
+ 1. bedük
+ 2. ekili
+ 3. ezani
+ 4. henüz
+ 5. ibate
+ 6. ihale
+ 7. lümen
+ 8. tümel

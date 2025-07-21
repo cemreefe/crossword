@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e r e n 
+ 1 k a r e 
+ 2 o · m f 
+ 3 l i e t 
+
+Placed words:
+ 1. 'eren' at (0,0) Horizontal
+ 2. 'erme' at (0,2) Vertical
+ 3. 'ekol' at (0,0) Vertical
+ 4. 'kare' at (1,0) Horizontal
+ 5. 'liet' at (3,0) Horizontal
+ 6. 'neft' at (0,3) Vertical
+
+Unique words placed (6):
+ 1. ekol
+ 2. erme
+ 3. eren
+ 4. liet
+ 5. kare
+ 6. neft

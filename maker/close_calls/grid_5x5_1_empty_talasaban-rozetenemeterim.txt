@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 t a l a s
+ 1 a b a n ·
+ 2 r o z e t
+ 3 e n e m e
+ 4 t e r i m
+
+Placed words:
+ 1. 'rozet' at (2,0) h
+ 2. 'eneme' at (3,0) h
+ 3. 'talas' at (0,0) h
+ 4. 'taret' at (0,0) v
+ 5. 'anemi' at (0,3) v
+ 6. 'terim' at (4,0) h
+ 7. 'abone' at (0,1) v
+ 8. 'lazer' at (0,2) v
+
+Unique words placed (8):
+ 1. abone
+ 2. anemi
+ 3. eneme
+ 4. lazer
+ 5. rozet
+ 6. talas
+ 7. taret
+ 8. terim

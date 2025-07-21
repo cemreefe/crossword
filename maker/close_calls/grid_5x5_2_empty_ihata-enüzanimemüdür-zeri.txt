@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i h a t a
+ 1 · e n ü z
+ 2 a n i m e
+ 3 m ü d ü r
+ 4 · z e r i
+
+Placed words:
+ 1. 'henüz' at (0,1) v
+ 2. 'tümür' at (0,3) v
+ 3. 'müdür' at (3,0) h
+ 4. 'anime' at (2,0) h
+ 5. 'ihata' at (0,0) h
+ 6. 'azeri' at (0,4) v
+ 7. 'anide' at (0,2) v
+
+Unique words placed (7):
+ 1. anide
+ 2. anime
+ 3. azeri
+ 4. henüz
+ 5. ihata
+ 6. müdür
+ 7. tümür

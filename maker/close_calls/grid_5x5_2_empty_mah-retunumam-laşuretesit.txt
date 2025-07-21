@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m a h · r
+ 1 e t u n u
+ 2 m a m · l
+ 3 a ş u r e
+ 4 t e s i t
+
+Placed words:
+ 1. 'aşure' at (3,0) h
+ 2. 'humus' at (0,2) v
+ 3. 'etunu' at (1,0) h
+ 4. 'tesit' at (4,0) h
+ 5. 'rulet' at (0,4) v
+ 6. 'ataşe' at (0,1) v
+ 7. 'memat' at (0,0) v
+
+Unique words placed (7):
+ 1. ataşe
+ 2. aşure
+ 3. etunu
+ 4. humus
+ 5. memat
+ 6. rulet
+ 7. tesit

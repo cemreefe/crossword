@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k e k e 
+ 1 i r i s 
+ 2 p · l i 
+ 3 e f o r 
+
+Placed words:
+ 1. 'kipe' at (0,0) Vertical
+ 2. 'iris' at (1,0) Horizontal
+ 3. 'kilo' at (0,2) Vertical
+ 4. 'keke' at (0,0) Horizontal
+ 5. 'esir' at (0,3) Vertical
+ 6. 'efor' at (3,0) Horizontal
+
+Unique words placed (6):
+ 1. kilo
+ 2. keke
+ 3. kipe
+ 4. esir
+ 5. efor
+ 6. iris

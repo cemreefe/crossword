@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e s e n 
+ 1 n o t a 
+ 2 i · m i 
+ 3 r e e l 
+
+Placed words:
+ 1. 'esen' at (0,0) Horizontal
+ 2. 'etme' at (0,2) Vertical
+ 3. 'enir' at (0,0) Vertical
+ 4. 'nota' at (1,0) Horizontal
+ 5. 'reel' at (3,0) Horizontal
+ 6. 'nail' at (0,3) Vertical
+
+Unique words placed (6):
+ 1. esen
+ 2. enir
+ 3. nota
+ 4. etme
+ 5. reel
+ 6. nail

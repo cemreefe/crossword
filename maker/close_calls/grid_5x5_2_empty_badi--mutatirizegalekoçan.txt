@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 b a d i ·
+ 1 · m u t a
+ 2 t i r i z
+ 3 e g a l e
+ 4 k o ç a n
+
+Placed words:
+ 1. 'duraç' at (0,2) v
+ 2. 'egale' at (3,0) h
+ 3. 'tiriz' at (2,0) h
+ 4. 'amigo' at (0,1) v
+ 5. 'koçan' at (4,0) h
+ 6. 'badi' at (0,0) h
+ 7. 'muta' at (1,1) h
+
+Unique words placed (7):
+ 1. amigo
+ 2. badi
+ 3. duraç
+ 4. egale
+ 5. koçan
+ 6. muta
+ 7. tiriz

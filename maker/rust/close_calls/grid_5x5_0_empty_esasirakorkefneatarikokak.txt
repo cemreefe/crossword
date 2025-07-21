@@ -1,0 +1,27 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 6
+
+Grid:
+   0 1 2 3 4 
+ 0 e s a s i 
+ 1 r a k o r 
+ 2 k e f n e 
+ 3 a t a r i 
+ 4 k o k a k 
+
+Placed words:
+ 1. 'sonra' at (0,3) Vertical
+ 2. 'kokak' at (4,0) Horizontal
+ 3. 'rakor' at (1,0) Horizontal
+ 4. 'atari' at (3,0) Horizontal
+ 5. 'esasi' at (0,0) Horizontal
+ 6. 'kefne' at (2,0) Horizontal
+
+Unique words placed (6):
+ 1. esasi
+ 2. kefne
+ 3. rakor
+ 4. atari
+ 5. sonra
+ 6. kokak

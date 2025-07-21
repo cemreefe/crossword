@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 e · i n e
+ 1 s · t e n
+ 2 a r i f e
+ 3 s a n e m
+ 4 i d a r e
+
+Placed words:
+ 1. 'nefer' at (0,3) v
+ 2. 'eneme' at (0,4) v
+ 3. 'itina' at (0,2) v
+ 4. 'idare' at (4,0) h
+ 5. 'arife' at (2,0) h
+ 6. 'esasi' at (0,0) v
+ 7. 'sanem' at (3,0) h
+
+Unique words placed (7):
+ 1. arife
+ 2. eneme
+ 3. esasi
+ 4. idare
+ 5. itina
+ 6. nefer
+ 7. sanem

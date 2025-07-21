@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 e s a s i
+ 1 v e c i h
+ 2 · r i y a
+ 3 · a b a t
+ 4 i p e k a
+
+Placed words:
+ 1. 'acibe' at (0,2) v
+ 2. 'ipeka' at (4,0) h
+ 3. 'siyak' at (0,3) v
+ 4. 'esasi' at (0,0) h
+ 5. 'vecih' at (1,0) h
+ 6. 'ihata' at (0,4) v
+ 7. 'serap' at (0,1) v
+
+Unique words placed (7):
+ 1. acibe
+ 2. esasi
+ 3. ihata
+ 4. ipeka
+ 5. serap
+ 6. siyak
+ 7. vecih

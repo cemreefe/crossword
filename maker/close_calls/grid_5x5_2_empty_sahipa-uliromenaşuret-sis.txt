@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s a h i p
+ 1 a · u l i
+ 2 r o m e n
+ 3 a ş u r e
+ 4 t · s i s
+
+Placed words:
+ 1. 'aşure' at (3,0) h
+ 2. 'humus' at (0,2) v
+ 3. 'pines' at (0,4) v
+ 4. 'romen' at (2,0) h
+ 5. 'sarat' at (0,0) v
+ 6. 'ileri' at (0,3) v
+ 7. 'sahip' at (0,0) h
+
+Unique words placed (7):
+ 1. aşure
+ 2. humus
+ 3. ileri
+ 4. pines
+ 5. romen
+ 6. sahip
+ 7. sarat

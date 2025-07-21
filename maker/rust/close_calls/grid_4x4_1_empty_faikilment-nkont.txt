@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 f a i k 
+ 1 i l m e 
+ 2 n t · n 
+ 3 k o n t 
+
+Placed words:
+ 1. 'fink' at (0,0) Vertical
+ 2. 'faik' at (0,0) Horizontal
+ 3. 'kont' at (3,0) Horizontal
+ 4. 'kent' at (0,3) Vertical
+ 5. 'ilme' at (1,0) Horizontal
+ 6. 'alto' at (0,1) Vertical
+
+Unique words placed (6):
+ 1. kont
+ 2. kent
+ 3. ilme
+ 4. alto
+ 5. fink
+ 6. faik

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 g ö ç · k
+ 1 ö z e n i
+ 2 l ı k · r
+ 3 e s e m e
+ 4 t ı k a ç
+
+Placed words:
+ 1. 'gölet' at (0,0) v
+ 2. 'kireç' at (0,4) v
+ 3. 'özeni' at (1,0) h
+ 4. 'tıkaç' at (4,0) h
+ 5. 'çekek' at (0,2) v
+ 6. 'eseme' at (3,0) h
+ 7. 'özısı' at (0,1) v
+
+Unique words placed (7):
+ 1. eseme
+ 2. gölet
+ 3. kireç
+ 4. tıkaç
+ 5. çekek
+ 6. özeni
+ 7. özısı

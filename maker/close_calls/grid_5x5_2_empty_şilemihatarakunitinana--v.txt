@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ş i l e m
+ 1 i h a t a
+ 2 r a k u n
+ 3 i t i n a
+ 4 n a · · v
+
+Placed words:
+ 1. 'manav' at (0,4) v
+ 2. 'şirin' at (0,0) v
+ 3. 'ihata' at (1,0) h
+ 4. 'itina' at (3,0) h
+ 5. 'hata' at (1,1) v
+ 6. 'şilem' at (0,0) h
+ 7. 'rakun' at (2,0) h
+
+Unique words placed (7):
+ 1. hata
+ 2. ihata
+ 3. itina
+ 4. manav
+ 5. rakun
+ 6. şilem
+ 7. şirin

@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 · d a r u
+ 1 h a r i ç
+ 2 a d a m a
+ 3 t a m e r
+ 4 a ş a · ı
+
+Placed words:
+ 1. 'uçarı' at (0,4) v
+ 2. 'tamer' at (3,0) h
+ 3. 'hariç' at (1,0) h
+ 4. 'adaş' at (1,1) v
+ 5. 'arama' at (0,2) v
+ 6. 'adama' at (2,0) h
+ 7. 'hata' at (1,0) v
+ 8. 'daru' at (0,1) h
+
+Unique words placed (8):
+ 1. adama
+ 2. adaş
+ 3. arama
+ 4. daru
+ 5. hariç
+ 6. hata
+ 7. tamer
+ 8. uçarı

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a h a l i
+ 1 r e f a h
+ 2 · n o d a
+ 3 · ü n e l
+ 4 e z i n e
+
+Placed words:
+ 1. 'henüz' at (0,1) v
+ 2. 'refah' at (1,0) h
+ 3. 'afoni' at (0,2) v
+ 4. 'ezine' at (4,0) h
+ 5. 'ihale' at (0,4) v
+ 6. 'laden' at (0,3) v
+ 7. 'ahali' at (0,0) h
+
+Unique words placed (7):
+ 1. afoni
+ 2. ahali
+ 3. ezine
+ 4. henüz
+ 5. ihale
+ 6. laden
+ 7. refah

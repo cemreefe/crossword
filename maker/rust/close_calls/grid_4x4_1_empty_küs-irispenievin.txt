@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k ü s · 
+ 1 i r i s 
+ 2 p e n i 
+ 3 e v i n 
+
+Placed words:
+ 1. 'kipe' at (0,0) Vertical
+ 2. 'iris' at (1,0) Horizontal
+ 3. 'evin' at (3,0) Horizontal
+ 4. 'sini' at (0,2) Vertical
+ 5. 'peni' at (2,0) Horizontal
+ 6. 'küs' at (0,0) Horizontal
+
+Unique words placed (6):
+ 1. evin
+ 2. küs
+ 3. kipe
+ 4. peni
+ 5. sini
+ 6. iris

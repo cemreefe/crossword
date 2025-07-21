@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ş a m a n
+ 1 u m a c ·
+ 2 b a l e t
+ 3 a d a m ·
+ 4 t e k i r
+
+Placed words:
+ 1. 'şubat' at (0,0) v
+ 2. 'tekir' at (4,0) h
+ 3. 'şaman' at (0,0) h
+ 4. 'malak' at (0,2) v
+ 5. 'balet' at (2,0) h
+ 6. 'acemi' at (0,3) v
+ 7. 'amade' at (0,1) v
+
+Unique words placed (7):
+ 1. acemi
+ 2. amade
+ 3. balet
+ 4. malak
+ 5. tekir
+ 6. şaman
+ 7. şubat

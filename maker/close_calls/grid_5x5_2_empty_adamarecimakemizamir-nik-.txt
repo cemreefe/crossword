@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 a d a m a
+ 1 r e c i m
+ 2 a k e m i
+ 3 z a m i r
+ 4 · n i k ·
+
+Placed words:
+ 1. 'acemi' at (0,2) v
+ 2. 'dekan' at (0,1) v
+ 3. 'zamir' at (3,0) h
+ 4. 'adam' at (0,0) h
+ 5. 'araz' at (0,0) v
+ 6. 'akemi' at (2,0) h
+ 7. 'mimik' at (0,3) v
+ 8. 'amir' at (0,4) v
+
+Unique words placed (8):
+ 1. acemi
+ 2. adam
+ 3. akemi
+ 4. amir
+ 5. araz
+ 6. dekan
+ 7. mimik
+ 8. zamir

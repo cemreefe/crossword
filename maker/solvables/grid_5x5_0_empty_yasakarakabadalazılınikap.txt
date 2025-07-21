@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 y a s a k
+ 1 a r a k a
+ 2 b a d a l
+ 3 a z ı l ı
+ 4 n i k a p
+
+Placed words:
+ 1. 'badal' at (2,0) h
+ 2. 'nikap' at (4,0) h
+ 3. 'kalıp' at (0,4) v
+ 4. 'akala' at (0,3) v
+ 5. 'sadık' at (0,2) v
+ 6. 'yaban' at (0,0) v
+ 7. 'yasak' at (0,0) h
+ 8. 'azılı' at (3,0) h
+ 9. 'arazi' at (0,1) v
+
+Unique words placed (9):
+ 1. akala
+ 2. arazi
+ 3. azılı
+ 4. badal
+ 5. kalıp
+ 6. nikap
+ 7. sadık
+ 8. yaban
+ 9. yasak

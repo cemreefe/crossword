@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 e n e m e
+ 1 p i l o t
+ 2 · c · b e
+ 3 p e l i n
+ 4 e l e l e
+
+Placed words:
+ 1. 'pelin' at (3,0) h
+ 2. 'pilot' at (1,0) h
+ 3. 'elele' at (4,0) h
+ 4. 'eneme' at (0,0) h
+ 5. 'etene' at (0,4) v
+ 6. 'mobil' at (0,3) v
+ 7. 'nicel' at (0,1) v
+
+Unique words placed (7):
+ 1. elele
+ 2. eneme
+ 3. etene
+ 4. mobil
+ 5. nicel
+ 6. pelin
+ 7. pilot

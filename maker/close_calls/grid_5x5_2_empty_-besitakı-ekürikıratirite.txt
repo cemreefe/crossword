@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · b e s i
+ 1 t a k ı ·
+ 2 e k ü r i
+ 3 k ı r a t
+ 4 i r i t e
+
+Placed words:
+ 1. 'kırat' at (3,0) h
+ 2. 'sırat' at (0,3) v
+ 3. 'irite' at (4,0) h
+ 4. 'eküri' at (2,0) h
+ 5. 'bakır' at (0,1) v
+ 6. 'takı' at (1,0) h
+ 7. 'besi' at (0,1) h
+
+Unique words placed (7):
+ 1. bakır
+ 2. besi
+ 3. eküri
+ 4. irite
+ 5. kırat
+ 6. sırat
+ 7. takı

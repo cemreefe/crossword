@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 p e s o 
+ 1 o k · r 
+ 2 t o h t 
+ 3 a l m a 
+
+Placed words:
+ 1. 'toht' at (2,0) Horizontal
+ 2. 'ekol' at (0,1) Vertical
+ 3. 'peso' at (0,0) Horizontal
+ 4. 'orta' at (0,3) Vertical
+ 5. 'pota' at (0,0) Vertical
+ 6. 'alma' at (3,0) Horizontal
+
+Unique words placed (6):
+ 1. pota
+ 2. peso
+ 3. alma
+ 4. toht
+ 5. orta
+ 6. ekol

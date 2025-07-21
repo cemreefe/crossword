@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 t e m a 
+ 1 i k o n 
+ 2 p i l i 
+ 3 i n · f 
+
+Placed words:
+ 1. 'anif' at (0,3) Vertical
+ 2. 'ekin' at (0,1) Vertical
+ 3. 'ikon' at (1,0) Horizontal
+ 4. 'tema' at (0,0) Horizontal
+ 5. 'pili' at (2,0) Horizontal
+ 6. 'tipi' at (0,0) Vertical
+
+Unique words placed (6):
+ 1. ikon
+ 2. ekin
+ 3. tema
+ 4. anif
+ 5. pili
+ 6. tipi

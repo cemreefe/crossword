@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 i p e · a
+ 1 h e m e n
+ 2 a l a c a
+ 3 t i r a n
+ 4 a n e l e
+
+Placed words:
+ 1. 'pelin' at (0,1) v
+ 2. 'ihata' at (0,0) v
+ 3. 'emare' at (0,2) v
+ 4. 'alaca' at (2,0) h
+ 5. 'tiran' at (3,0) h
+ 6. 'anane' at (0,4) v
+ 7. 'hemen' at (1,0) h
+ 8. 'anele' at (4,0) h
+
+Unique words placed (8):
+ 1. alaca
+ 2. anane
+ 3. anele
+ 4. emare
+ 5. hemen
+ 6. ihata
+ 7. pelin
+ 8. tiran

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · k a l a
+ 1 · e h i n
+ 2 a d a m a
+ 3 p e l i n
+ 4 i r i t e
+
+Placed words:
+ 1. 'pelin' at (3,0) h
+ 2. 'limit' at (0,3) v
+ 3. 'anane' at (0,4) v
+ 4. 'ahali' at (0,2) v
+ 5. 'irite' at (4,0) h
+ 6. 'adama' at (2,0) h
+ 7. 'keder' at (0,1) v
+
+Unique words placed (7):
+ 1. adama
+ 2. ahali
+ 3. anane
+ 4. irite
+ 5. keder
+ 6. limit
+ 7. pelin

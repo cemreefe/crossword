@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i m a m e
+ 1 k a r a r
+ 2 a h ı r ·
+ 3 m u c u k
+ 4 · r ı z a
+
+Placed words:
+ 1. 'arıcı' at (0,2) v
+ 2. 'imame' at (0,0) h
+ 3. 'mucuk' at (3,0) h
+ 4. 'maruz' at (0,3) v
+ 5. 'karar' at (1,0) h
+ 6. 'rıza' at (4,1) h
+ 7. 'ahır' at (2,0) h
+
+Unique words placed (7):
+ 1. ahır
+ 2. arıcı
+ 3. imame
+ 4. karar
+ 5. maruz
+ 6. mucuk
+ 7. rıza

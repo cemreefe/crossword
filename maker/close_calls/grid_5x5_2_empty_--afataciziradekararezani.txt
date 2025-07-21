@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · · a f a
+ 1 t a c i z
+ 2 i r a d e
+ 3 k a r a r
+ 4 e z a n i
+
+Placed words:
+ 1. 'fidan' at (0,3) v
+ 2. 'taciz' at (1,0) h
+ 3. 'karar' at (3,0) h
+ 4. 'acara' at (0,2) v
+ 5. 'azeri' at (0,4) v
+ 6. 'araz' at (1,1) v
+ 7. 'tike' at (1,0) v
+
+Unique words placed (7):
+ 1. acara
+ 2. araz
+ 3. azeri
+ 4. fidan
+ 5. karar
+ 6. taciz
+ 7. tike

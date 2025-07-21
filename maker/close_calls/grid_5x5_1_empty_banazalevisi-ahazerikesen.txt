@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 b a n a z
+ 1 a l e v i
+ 2 s i · a h
+ 3 a z e r i
+ 4 k e s e n
+
+Placed words:
+ 1. 'avare' at (0,3) v
+ 2. 'zihin' at (0,4) v
+ 3. 'kesen' at (4,0) h
+ 4. 'azeri' at (3,0) h
+ 5. 'banaz' at (0,0) h
+ 6. 'basak' at (0,0) v
+ 7. 'alevi' at (1,0) h
+ 8. 'alize' at (0,1) v
+
+Unique words placed (8):
+ 1. alevi
+ 2. alize
+ 3. avare
+ 4. azeri
+ 5. banaz
+ 6. basak
+ 7. kesen
+ 8. zihin

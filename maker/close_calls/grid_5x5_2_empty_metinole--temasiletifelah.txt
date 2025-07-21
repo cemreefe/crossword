@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m e t i n
+ 1 o l e · ·
+ 2 t e m a s
+ 3 i l e t i
+ 4 f e l a h
+
+Placed words:
+ 1. 'felah' at (4,0) h
+ 2. 'metin' at (0,0) h
+ 3. 'temas' at (2,0) h
+ 4. 'temel' at (0,2) v
+ 5. 'ileti' at (3,0) h
+ 6. 'elele' at (0,1) v
+ 7. 'motif' at (0,0) v
+
+Unique words placed (7):
+ 1. elele
+ 2. felah
+ 3. ileti
+ 4. metin
+ 5. motif
+ 6. temas
+ 7. temel

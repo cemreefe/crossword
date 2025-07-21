@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i y i c e
+ 1 t a l a n
+ 2 i l a h e
+ 3 n a ç i z
+ 4 a k · l ·
+
+Placed words:
+ 1. 'yalak' at (0,1) v
+ 2. 'naçiz' at (3,0) h
+ 3. 'cahil' at (0,3) v
+ 4. 'iyice' at (0,0) h
+ 5. 'enez' at (0,4) v
+ 6. 'itina' at (0,0) v
+ 7. 'ilaç' at (0,2) v
+
+Unique words placed (7):
+ 1. cahil
+ 2. enez
+ 3. ilaç
+ 4. itina
+ 5. iyice
+ 6. naçiz
+ 7. yalak

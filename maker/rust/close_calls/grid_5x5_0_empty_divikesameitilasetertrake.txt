@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 d i v i k 
+ 1 e s a m e 
+ 2 i t i l a 
+ 3 s e t e r 
+ 4 t r a k e 
+
+Placed words:
+ 1. 'imlek' at (0,3) Vertical
+ 2. 'divik' at (0,0) Horizontal
+ 3. 'seter' at (3,0) Horizontal
+ 4. 'ister' at (0,1) Vertical
+ 5. 'deist' at (0,0) Vertical
+ 6. 'esame' at (1,0) Horizontal
+ 7. 'trake' at (4,0) Horizontal
+ 8. 'itila' at (2,0) Horizontal
+
+Unique words placed (8):
+ 1. seter
+ 2. itila
+ 3. ister
+ 4. deist
+ 5. esame
+ 6. divik
+ 7. trake
+ 8. imlek

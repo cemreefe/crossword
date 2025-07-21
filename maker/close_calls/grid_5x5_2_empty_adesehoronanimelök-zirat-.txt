@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 a d e s e
+ 1 h o r o n
+ 2 a n i m e
+ 3 l ö k · z
+ 4 i r a t ·
+
+Placed words:
+ 1. 'ahali' at (0,0) v
+ 2. 'donör' at (0,1) v
+ 3. 'anime' at (2,0) h
+ 4. 'horon' at (1,0) h
+ 5. 'adese' at (0,0) h
+ 6. 'erik' at (0,2) v
+ 7. 'enez' at (0,4) v
+ 8. 'irat' at (4,0) h
+
+Unique words placed (8):
+ 1. adese
+ 2. ahali
+ 3. anime
+ 4. donör
+ 5. enez
+ 6. erik
+ 7. horon
+ 8. irat

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 p a p a z
+ 1 a d a n a
+ 2 t · z a t
+ 3 a · a l e
+ 4 k a r ı n
+
+Placed words:
+ 1. 'zaten' at (0,4) v
+ 2. 'adana' at (1,0) h
+ 3. 'papaz' at (0,0) h
+ 4. 'karın' at (4,0) h
+ 5. 'analı' at (0,3) v
+ 6. 'pazar' at (0,2) v
+ 7. 'patak' at (0,0) v
+
+Unique words placed (7):
+ 1. adana
+ 2. analı
+ 3. karın
+ 4. papaz
+ 5. patak
+ 6. pazar
+ 7. zaten

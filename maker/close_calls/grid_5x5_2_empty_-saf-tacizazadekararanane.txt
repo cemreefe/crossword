@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 · s a f ·
+ 1 t a c i z
+ 2 a z a d e
+ 3 k a r a r
+ 4 a n a n e
+
+Placed words:
+ 1. 'fidan' at (0,3) v
+ 2. 'taciz' at (1,0) h
+ 3. 'karar' at (3,0) h
+ 4. 'acara' at (0,2) v
+ 5. 'zade' at (2,1) h
+ 6. 'sazan' at (0,1) v
+ 7. 'nane' at (4,1) h
+ 8. 'taka' at (1,0) v
+
+Unique words placed (8):
+ 1. acara
+ 2. fidan
+ 3. karar
+ 4. nane
+ 5. sazan
+ 6. taciz
+ 7. taka
+ 8. zade

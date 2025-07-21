@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 v e b a 
+ 1 i k o n 
+ 2 c i c i 
+ 3 · n i f 
+
+Placed words:
+ 1. 'anif' at (0,3) Vertical
+ 2. 'ekin' at (0,1) Vertical
+ 3. 'ikon' at (1,0) Horizontal
+ 4. 'veba' at (0,0) Horizontal
+ 5. 'boci' at (0,2) Vertical
+ 6. 'cici' at (2,0) Horizontal
+
+Unique words placed (6):
+ 1. ikon
+ 2. veba
+ 3. ekin
+ 4. boci
+ 5. anif
+ 6. cici

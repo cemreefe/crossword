@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 f e k e 
+ 1 i n a m 
+ 2 n l o · 
+ 3 k i s t 
+
+Placed words:
+ 1. 'fink' at (0,0) Vertical
+ 2. 'kaos' at (0,2) Vertical
+ 3. 'inam' at (1,0) Horizontal
+ 4. 'feke' at (0,0) Horizontal
+ 5. 'kist' at (3,0) Horizontal
+ 6. 'enli' at (0,1) Vertical
+
+Unique words placed (6):
+ 1. feke
+ 2. kaos
+ 3. inam
+ 4. enli
+ 5. fink
+ 6. kist

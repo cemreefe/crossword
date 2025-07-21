@@ -1,0 +1,22 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 4
+
+Grid:
+   0 1 2 3 
+ 0 b d i t 
+ 1 l e z a 
+ 2 u r c u 
+ 3 m z i n 
+
+Placed words:
+ 1. 'blum' at (0,0) Vertical
+ 2. 'izci' at (0,2) Vertical
+ 3. 'taun' at (0,3) Vertical
+ 4. 'derz' at (0,1) Vertical
+
+Unique words placed (4):
+ 1. izci
+ 2. blum
+ 3. derz
+ 4. taun

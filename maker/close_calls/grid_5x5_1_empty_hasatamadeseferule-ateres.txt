@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 h a s a t
+ 1 a m a d e
+ 2 s e f e r
+ 3 u l e · a
+ 4 t e r e s
+
+Placed words:
+ 1. 'sefer' at (2,0) h
+ 2. 'amade' at (1,0) h
+ 3. 'hasat' at (0,0) h
+ 4. 'hasut' at (0,0) v
+ 5. 'teres' at (4,0) h
+ 6. 'safer' at (0,2) v
+ 7. 'teras' at (0,4) v
+ 8. 'amele' at (0,1) v
+
+Unique words placed (8):
+ 1. amade
+ 2. amele
+ 3. hasat
+ 4. hasut
+ 5. safer
+ 6. sefer
+ 7. teras
+ 8. teres

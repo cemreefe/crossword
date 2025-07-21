@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h a n a y
+ 1 a f a k i
+ 2 r o z e t
+ 3 a · i · i
+ 4 m i l i m
+
+Placed words:
+ 1. 'haram' at (0,0) v
+ 2. 'nazil' at (0,2) v
+ 3. 'yitim' at (0,4) v
+ 4. 'rozet' at (2,0) h
+ 5. 'milim' at (4,0) h
+ 6. 'hanay' at (0,0) h
+ 7. 'afaki' at (1,0) h
+
+Unique words placed (7):
+ 1. afaki
+ 2. hanay
+ 3. haram
+ 4. milim
+ 5. nazil
+ 6. rozet
+ 7. yitim

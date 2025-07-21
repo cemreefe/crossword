@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 y u v a k
+ 1 u l e · a
+ 2 m u r i s
+ 3 a m e l e
+ 4 k a v i m
+
+Placed words:
+ 1. 'yuvak' at (0,0) h
+ 2. 'kavim' at (4,0) h
+ 3. 'yumak' at (0,0) v
+ 4. 'kasem' at (0,4) v
+ 5. 'amele' at (3,0) h
+ 6. 'verev' at (0,2) v
+ 7. 'muris' at (2,0) h
+ 8. 'uluma' at (0,1) v
+
+Unique words placed (8):
+ 1. amele
+ 2. kasem
+ 3. kavim
+ 4. muris
+ 5. uluma
+ 6. verev
+ 7. yumak
+ 8. yuvak

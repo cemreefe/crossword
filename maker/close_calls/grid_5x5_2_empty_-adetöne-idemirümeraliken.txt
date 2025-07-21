@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 · a d e t
+ 1 ö n e · i
+ 2 d e m i r
+ 3 ü m e r a
+ 4 l i k e n
+
+Placed words:
+ 1. 'tiran' at (0,4) v
+ 2. 'demek' at (0,2) v
+ 3. 'mera' at (3,1) h
+ 4. 'anemi' at (0,1) v
+ 5. 'ümera' at (3,0) h
+ 6. 'adet' at (0,1) h
+ 7. 'liken' at (4,0) h
+ 8. 'emir' at (2,1) h
+ 9. 'ödül' at (1,0) v
+
+Unique words placed (9):
+ 1. adet
+ 2. anemi
+ 3. demek
+ 4. emir
+ 5. liken
+ 6. mera
+ 7. tiran
+ 8. ödül
+ 9. ümera

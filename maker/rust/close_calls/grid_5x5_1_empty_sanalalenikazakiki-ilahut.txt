@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 s a n a l 
+ 1 a l e n i 
+ 2 k a z a k 
+ 3 i k i · i 
+ 4 l a h u t 
+
+Placed words:
+ 1. 'lahut' at (4,0) Horizontal
+ 2. 'likit' at (0,4) Vertical
+ 3. 'sakil' at (0,0) Vertical
+ 4. 'alaka' at (0,1) Vertical
+ 5. 'kazak' at (2,0) Horizontal
+ 6. 'sanal' at (0,0) Horizontal
+ 7. 'nezih' at (0,2) Vertical
+ 8. 'aleni' at (1,0) Horizontal
+
+Unique words placed (8):
+ 1. lahut
+ 2. aleni
+ 3. sakil
+ 4. alaka
+ 5. likit
+ 6. kazak
+ 7. sanal
+ 8. nezih

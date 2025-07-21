@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 b a s a r
+ 1 a l i · e
+ 2 s a r i h
+ 3 a k e · i
+ 4 k a n o n
+
+Placed words:
+ 1. 'kanon' at (4,0) h
+ 2. 'sarih' at (2,0) h
+ 3. 'siren' at (0,2) v
+ 4. 'basar' at (0,0) h
+ 5. 'rehin' at (0,4) v
+ 6. 'alaka' at (0,1) v
+ 7. 'basak' at (0,0) v
+
+Unique words placed (7):
+ 1. alaka
+ 2. basak
+ 3. basar
+ 4. kanon
+ 5. rehin
+ 6. sarih
+ 7. siren

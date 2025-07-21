@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 o k a p i
+ 1 r e c e p
+ 2 a · · t e
+ 3 y e m e k
+ 4 a l a k a
+
+Placed words:
+ 1. 'recep' at (1,0) h
+ 2. 'petek' at (0,3) v
+ 3. 'alaka' at (4,0) h
+ 4. 'yemek' at (3,0) h
+ 5. 'oraya' at (0,0) v
+ 6. 'ipeka' at (0,4) v
+ 7. 'okapi' at (0,0) h
+
+Unique words placed (7):
+ 1. alaka
+ 2. ipeka
+ 3. okapi
+ 4. oraya
+ 5. petek
+ 6. recep
+ 7. yemek

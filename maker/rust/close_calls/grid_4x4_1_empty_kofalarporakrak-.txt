@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k o f a 
+ 1 l a r p 
+ 2 o r a k 
+ 3 r a k · 
+
+Placed words:
+ 1. 'klor' at (0,0) Vertical
+ 2. 'larp' at (1,0) Horizontal
+ 3. 'oara' at (0,1) Vertical
+ 4. 'frak' at (0,2) Vertical
+ 5. 'orak' at (2,0) Horizontal
+ 6. 'kofa' at (0,0) Horizontal
+
+Unique words placed (6):
+ 1. kofa
+ 2. frak
+ 3. larp
+ 4. oara
+ 5. klor
+ 6. orak

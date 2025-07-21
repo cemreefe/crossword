@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a s a p
+ 1 · r ü l ·
+ 2 v e r i ş
+ 3 e n e z e
+ 4 r a k e t
+
+Placed words:
+ 1. 'veriş' at (2,0) h
+ 2. 'eneze' at (3,0) h
+ 3. 'sürek' at (0,2) v
+ 4. 'arena' at (0,1) v
+ 5. 'alize' at (0,3) v
+ 6. 'raket' at (4,0) h
+ 7. 'kasap' at (0,0) h
+
+Unique words placed (7):
+ 1. alize
+ 2. arena
+ 3. eneze
+ 4. kasap
+ 5. raket
+ 6. sürek
+ 7. veriş

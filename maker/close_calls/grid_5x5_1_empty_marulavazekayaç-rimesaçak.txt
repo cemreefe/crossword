@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 m a r u l
+ 1 a v a z e
+ 2 k a y a ç
+ 3 · r i m e
+ 4 s a ç a k
+
+Placed words:
+ 1. 'marul' at (0,0) h
+ 2. 'saçak' at (4,0) h
+ 3. 'avara' at (0,1) v
+ 4. 'uzama' at (0,3) v
+ 5. 'leçek' at (0,4) v
+ 6. 'avaze' at (1,0) h
+ 7. 'rayiç' at (0,2) v
+ 8. 'kayaç' at (2,0) h
+
+Unique words placed (8):
+ 1. avara
+ 2. avaze
+ 3. kayaç
+ 4. leçek
+ 5. marul
+ 6. rayiç
+ 7. saçak
+ 8. uzama

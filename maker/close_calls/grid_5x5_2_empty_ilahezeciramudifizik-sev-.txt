@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i l a h e
+ 1 z e c i r
+ 2 a m u d i
+ 3 f i z i k
+ 4 · s e v ·
+
+Placed words:
+ 1. 'fizik' at (3,0) h
+ 2. 'ilahe' at (0,0) h
+ 3. 'amudi' at (2,0) h
+ 4. 'acuze' at (0,2) v
+ 5. 'zecir' at (1,0) h
+ 6. 'hidiv' at (0,3) v
+ 7. 'lemis' at (0,1) v
+
+Unique words placed (7):
+ 1. acuze
+ 2. amudi
+ 3. fizik
+ 4. hidiv
+ 5. ilahe
+ 6. lemis
+ 7. zecir

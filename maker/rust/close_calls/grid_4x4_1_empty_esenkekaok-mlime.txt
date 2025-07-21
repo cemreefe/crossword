@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e s e n 
+ 1 k e k a 
+ 2 o k · m 
+ 3 l i m e 
+
+Placed words:
+ 1. 'esen' at (0,0) Horizontal
+ 2. 'keka' at (1,0) Horizontal
+ 3. 'seki' at (0,1) Vertical
+ 4. 'lime' at (3,0) Horizontal
+ 5. 'name' at (0,3) Vertical
+ 6. 'ekol' at (0,0) Vertical
+
+Unique words placed (6):
+ 1. name
+ 2. keka
+ 3. esen
+ 4. ekol
+ 5. seki
+ 6. lime

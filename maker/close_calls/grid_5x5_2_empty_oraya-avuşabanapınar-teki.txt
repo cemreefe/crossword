@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 o r a y a
+ 1 · a v u ş
+ 2 a b a n a
+ 3 p ı n a r
+ 4 · t e k i
+
+Placed words:
+ 1. 'pınar' at (3,0) h
+ 2. 'yunak' at (0,3) v
+ 3. 'rabıt' at (0,1) v
+ 4. 'abana' at (2,0) h
+ 5. 'avane' at (0,2) v
+ 6. 'aşari' at (0,4) v
+ 7. 'oraya' at (0,0) h
+
+Unique words placed (7):
+ 1. abana
+ 2. avane
+ 3. aşari
+ 4. oraya
+ 5. pınar
+ 6. rabıt
+ 7. yunak

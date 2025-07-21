@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 s e d e · 
+ 1 a r a k a 
+ 2 f i t i l 
+ 3 i k i c i 
+ 4 r a f i t 
+
+Placed words:
+ 1. 'datif' at (0,2) Vertical
+ 2. 'rafit' at (4,0) Horizontal
+ 3. 'fitil' at (2,0) Horizontal
+ 4. 'araka' at (1,0) Horizontal
+ 5. 'safir' at (0,0) Vertical
+ 6. 'erika' at (0,1) Vertical
+ 7. 'ekici' at (0,3) Vertical
+ 8. 'ikici' at (3,0) Horizontal
+
+Unique words placed (8):
+ 1. datif
+ 2. rafit
+ 3. fitil
+ 4. erika
+ 5. ekici
+ 6. araka
+ 7. safir
+ 8. ikici

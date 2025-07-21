@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 y a n a z
+ 1 e r i k a
+ 2 m o p e t
+ 3 i m e · e
+ 4 n a l · n
+
+Placed words:
+ 1. 'yanaz' at (0,0) h
+ 2. 'mopet' at (2,0) h
+ 3. 'nipel' at (0,2) v
+ 4. 'aroma' at (0,1) v
+ 5. 'yemin' at (0,0) v
+ 6. 'erika' at (1,0) h
+ 7. 'zaten' at (0,4) v
+
+Unique words placed (7):
+ 1. aroma
+ 2. erika
+ 3. mopet
+ 4. nipel
+ 5. yanaz
+ 6. yemin
+ 7. zaten

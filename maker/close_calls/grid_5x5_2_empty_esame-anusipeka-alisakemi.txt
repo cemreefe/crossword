@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 e s a m e
+ 1 · a n u s
+ 2 i p e k a
+ 3 · a l i s
+ 4 a k e m i
+
+Placed words:
+ 1. 'sapak' at (0,1) v
+ 2. 'mukim' at (0,3) v
+ 3. 'akemi' at (4,0) h
+ 4. 'esame' at (0,0) h
+ 5. 'anele' at (0,2) v
+ 6. 'ipeka' at (2,0) h
+ 7. 'esasi' at (0,4) v
+
+Unique words placed (7):
+ 1. akemi
+ 2. anele
+ 3. esame
+ 4. esasi
+ 5. ipeka
+ 6. mukim
+ 7. sapak

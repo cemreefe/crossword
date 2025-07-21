@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a h a l i
+ 1 s a k i l
+ 2 a m · d e
+ 3 b i r e r
+ 4 i ş · r i
+
+Placed words:
+ 1. 'sakil' at (1,0) h
+ 2. 'birer' at (3,0) h
+ 3. 'lider' at (0,3) v
+ 4. 'ahali' at (0,0) h
+ 5. 'ileri' at (0,4) v
+ 6. 'asabi' at (0,0) v
+ 7. 'hamiş' at (0,1) v
+
+Unique words placed (7):
+ 1. ahali
+ 2. asabi
+ 3. birer
+ 4. hamiş
+ 5. ileri
+ 6. lider
+ 7. sakil

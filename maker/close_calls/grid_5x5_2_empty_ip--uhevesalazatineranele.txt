@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i p · · u
+ 1 h e v e s
+ 2 a l a z a
+ 3 t i n e r
+ 4 a n e l e
+
+Placed words:
+ 1. 'pelin' at (0,1) v
+ 2. 'ihata' at (0,0) v
+ 3. 'heves' at (1,0) h
+ 4. 'alaza' at (2,0) h
+ 5. 'tiner' at (3,0) h
+ 6. 'anele' at (4,0) h
+ 7. 'usare' at (0,4) v
+
+Unique words placed (7):
+ 1. alaza
+ 2. anele
+ 3. heves
+ 4. ihata
+ 5. pelin
+ 6. tiner
+ 7. usare

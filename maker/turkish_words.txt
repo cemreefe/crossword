@@ -4192,8 +4192,6 @@ aritmik
 ariya
 ariyet
 ariyeten
-ariza
-ariz amik
 arjantin
 Arjantinli
 ark
@@ -34863,7 +34861,6 @@ Ilgın
 ılgıngiller
 ılgıt ılgıt
 ılıca
-Ilıca
 ılıcak
 ılık
 ılıkça
@@ -39119,8 +39116,6 @@ kellik
 keloğlan
 Keloğlan
 kem
-Kemah 
-kemakân
 kemal
 kemaliafiyet
 Kemalist
@@ -47826,7 +47821,6 @@ misafir salonu
 misak
 Misakımillî
 misal
-misel
 misil
 misilleme
 misilsiz
@@ -49984,17 +49978,7 @@ nefyetmek
 negatif
 negatif büyüklük
 negatif sayı
-nehari
 nehir
-nehir roman
-nehiy
-nekahet
-nekahethane
-nekais
-nekes
-nekeslik
-nekre
-nekrelik
 nekrofil
 nekrofili
 nekroloji
@@ -50003,7 +49987,6 @@ nekrotik
 nekroz
 nektar
 nem
-nema
 nemalandırma
 nemalandırmak
 nemalanma
@@ -54245,8 +54228,6 @@ pençgâh
 Pendik
 pendname
 peneplen
-penes
-pengö
 penguen
 penguengiller
 penguenler
@@ -59325,10 +59306,6 @@ ses yitimi
 ses yolu
 ses yönetmeni
 set
-seter
-setik
-setir
-setliç
 setre
 setretme
 setretmek

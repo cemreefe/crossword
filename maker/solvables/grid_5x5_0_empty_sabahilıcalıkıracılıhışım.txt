@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 s a b a h
+ 1 i l ı c a
+ 2 l ı k ı r
+ 3 a c ı l ı
+ 4 h ı ş ı m
+
+Placed words:
+ 1. 'lıkır' at (2,0) h
+ 2. 'bıkış' at (0,2) v
+ 3. 'silah' at (0,0) v
+ 4. 'ilıca' at (1,0) h
+ 5. 'harım' at (0,4) v
+ 6. 'hışım' at (4,0) h
+ 7. 'sabah' at (0,0) h
+ 8. 'acılı' at (0,3) v
+ 9. 'alıcı' at (0,1) v
+
+Unique words placed (9):
+ 1. acılı
+ 2. alıcı
+ 3. bıkış
+ 4. harım
+ 5. hışım
+ 6. ilıca
+ 7. lıkır
+ 8. sabah
+ 9. silah

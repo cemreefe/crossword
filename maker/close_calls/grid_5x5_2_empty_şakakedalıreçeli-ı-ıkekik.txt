@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ş a k a k
+ 1 e d a l ı
+ 2 r e ç e l
+ 3 i · ı · ı
+ 4 k e k i k
+
+Placed words:
+ 1. 'kaçık' at (0,2) v
+ 2. 'şerik' at (0,0) v
+ 3. 'kılık' at (0,4) v
+ 4. 'şakak' at (0,0) h
+ 5. 'kekik' at (4,0) h
+ 6. 'reçel' at (2,0) h
+ 7. 'edalı' at (1,0) h
+
+Unique words placed (7):
+ 1. edalı
+ 2. kaçık
+ 3. kekik
+ 4. kılık
+ 5. reçel
+ 6. şakak
+ 7. şerik

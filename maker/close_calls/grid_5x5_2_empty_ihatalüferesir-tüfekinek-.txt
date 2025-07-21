@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 i h a t a
+ 1 l ü f e r
+ 2 e s i r ·
+ 3 t ü f e k
+ 4 i n e k ·
+
+Placed words:
+ 1. 'hüsün' at (0,1) v
+ 2. 'tüfek' at (3,0) h
+ 3. 'afife' at (0,2) v
+ 4. 'esir' at (2,0) h
+ 5. 'ihata' at (0,0) h
+ 6. 'tere' at (0,3) v
+ 7. 'lüfer' at (1,0) h
+ 8. 'inek' at (4,0) h
+
+Unique words placed (8):
+ 1. afife
+ 2. esir
+ 3. hüsün
+ 4. ihata
+ 5. inek
+ 6. lüfer
+ 7. tere
+ 8. tüfek

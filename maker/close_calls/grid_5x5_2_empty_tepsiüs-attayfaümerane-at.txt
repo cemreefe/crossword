@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 t e p s i
+ 1 ü s · a t
+ 2 t a y f a
+ 3 ü m e r a
+ 4 n e · a t
+
+Placed words:
+ 1. 'tütün' at (0,0) v
+ 2. 'safra' at (0,3) v
+ 3. 'tepsi' at (0,0) h
+ 4. 'esame' at (0,1) v
+ 5. 'ümera' at (3,0) h
+ 6. 'tayfa' at (2,0) h
+ 7. 'itaat' at (0,4) v
+
+Unique words placed (7):
+ 1. esame
+ 2. itaat
+ 3. safra
+ 4. tayfa
+ 5. tepsi
+ 6. tütün
+ 7. ümera

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f e n i k
+ 1 e r i · ·
+ 2 l i p i t
+ 3 a m e l e
+ 4 h e l a k
+
+Placed words:
+ 1. 'felah' at (0,0) v
+ 2. 'helak' at (4,0) h
+ 3. 'amele' at (3,0) h
+ 4. 'lipit' at (2,0) h
+ 5. 'nipel' at (0,2) v
+ 6. 'fenik' at (0,0) h
+ 7. 'erime' at (0,1) v
+
+Unique words placed (7):
+ 1. amele
+ 2. erime
+ 3. felah
+ 4. fenik
+ 5. helak
+ 6. lipit
+ 7. nipel

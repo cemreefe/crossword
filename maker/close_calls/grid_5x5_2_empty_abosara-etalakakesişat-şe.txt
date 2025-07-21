@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a b o s a
+ 1 r a · e t
+ 2 a l a k a
+ 3 k e s i ş
+ 4 a t · ş e
+
+Placed words:
+ 1. 'kesiş' at (3,0) h
+ 2. 'alaka' at (2,0) h
+ 3. 'araka' at (0,0) v
+ 4. 'ataşe' at (0,4) v
+ 5. 'balet' at (0,1) v
+ 6. 'abosa' at (0,0) h
+ 7. 'sekiş' at (0,3) v
+
+Unique words placed (7):
+ 1. abosa
+ 2. alaka
+ 3. araka
+ 4. ataşe
+ 5. balet
+ 6. kesiş
+ 7. sekiş

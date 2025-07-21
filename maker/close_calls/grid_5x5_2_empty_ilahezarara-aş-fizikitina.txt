@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i l a h e
+ 1 z a r a r
+ 2 a · a ş ·
+ 3 f i z i k
+ 4 i t i n a
+
+Placed words:
+ 1. 'fizik' at (3,0) h
+ 2. 'ilahe' at (0,0) h
+ 3. 'izafi' at (0,0) v
+ 4. 'haşin' at (0,3) v
+ 5. 'itina' at (4,0) h
+ 6. 'zarar' at (1,0) h
+ 7. 'arazi' at (0,2) v
+
+Unique words placed (7):
+ 1. arazi
+ 2. fizik
+ 3. haşin
+ 4. ilahe
+ 5. itina
+ 6. izafi
+ 7. zarar

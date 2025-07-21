@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k a l a 
+ 1 a l u · 
+ 2 i f t a 
+ 3 m a r n 
+
+Placed words:
+ 1. 'ifta' at (2,0) Horizontal
+ 2. 'kaim' at (0,0) Vertical
+ 3. 'alfa' at (0,1) Vertical
+ 4. 'marn' at (3,0) Horizontal
+ 5. 'kala' at (0,0) Horizontal
+ 6. 'lutr' at (0,2) Vertical
+
+Unique words placed (6):
+ 1. kaim
+ 2. ifta
+ 3. alfa
+ 4. kala
+ 5. lutr
+ 6. marn

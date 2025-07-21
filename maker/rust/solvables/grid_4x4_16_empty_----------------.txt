@@ -1,0 +1,14 @@
+Grid saved
+Filled cells: 0/16
+Words placed: 0
+
+Grid:
+   0 1 2 3 
+ 0 · · · · 
+ 1 · · · · 
+ 2 · · · · 
+ 3 · · · · 
+
+Placed words:
+
+Unique words placed (0):

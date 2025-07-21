@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 e m i · i
+ 1 t e l · ş
+ 2 e l e l e
+ 3 n a t ü r
+ 4 e l i ş i
+
+Placed words:
+ 1. 'natür' at (3,0) h
+ 2. 'melal' at (0,1) v
+ 3. 'elele' at (2,0) h
+ 4. 'işeri' at (0,4) v
+ 5. 'etene' at (0,0) v
+ 6. 'elişi' at (4,0) h
+ 7. 'ileti' at (0,2) v
+
+Unique words placed (7):
+ 1. elele
+ 2. elişi
+ 3. etene
+ 4. ileti
+ 5. işeri
+ 6. melal
+ 7. natür

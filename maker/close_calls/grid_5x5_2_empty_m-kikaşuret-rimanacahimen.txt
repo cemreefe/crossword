@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m · k i k
+ 1 a ş u r e
+ 2 t · r i m
+ 3 a n a c a
+ 4 h i m e n
+
+Placed words:
+ 1. 'himen' at (4,0) h
+ 2. 'keman' at (0,4) v
+ 3. 'aşure' at (1,0) h
+ 4. 'anaca' at (3,0) h
+ 5. 'kuram' at (0,2) v
+ 6. 'irice' at (0,3) v
+ 7. 'matah' at (0,0) v
+
+Unique words placed (7):
+ 1. anaca
+ 2. aşure
+ 3. himen
+ 4. irice
+ 5. keman
+ 6. kuram
+ 7. matah

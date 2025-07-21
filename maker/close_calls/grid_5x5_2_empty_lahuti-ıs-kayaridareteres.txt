@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 l a h u t
+ 1 i · ı s ·
+ 2 k a y a r
+ 3 i d a r e
+ 4 t e r e s
+
+Placed words:
+ 1. 'hıyar' at (0,2) v
+ 2. 'likit' at (0,0) v
+ 3. 'idare' at (3,0) h
+ 4. 'usare' at (0,3) v
+ 5. 'kayar' at (2,0) h
+ 6. 'lahut' at (0,0) h
+ 7. 'teres' at (4,0) h
+
+Unique words placed (7):
+ 1. hıyar
+ 2. idare
+ 3. kayar
+ 4. lahut
+ 5. likit
+ 6. teres
+ 7. usare

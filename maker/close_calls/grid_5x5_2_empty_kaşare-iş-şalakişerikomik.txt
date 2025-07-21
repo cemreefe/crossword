@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a ş a r
+ 1 e · i ş ·
+ 2 ş a l a k
+ 3 i ş e r i
+ 4 k o m i k
+
+Placed words:
+ 1. 'komik' at (4,0) h
+ 2. 'kaşar' at (0,0) h
+ 3. 'aşari' at (0,3) v
+ 4. 'şalak' at (2,0) h
+ 5. 'şilem' at (0,2) v
+ 6. 'şeri' at (3,1) h
+ 7. 'keşik' at (0,0) v
+
+Unique words placed (7):
+ 1. aşari
+ 2. kaşar
+ 3. keşik
+ 4. komik
+ 5. şalak
+ 6. şeri
+ 7. şilem

@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 f a v a 
+ 1 i r a p 
+ 2 n a l e 
+ 3 k z e · 
+
+Placed words:
+ 1. 'fink' at (0,0) Vertical
+ 2. 'nale' at (2,0) Horizontal
+ 3. 'fava' at (0,0) Horizontal
+ 4. 'irap' at (1,0) Horizontal
+ 5. 'vale' at (0,2) Vertical
+ 6. 'araz' at (0,1) Vertical
+
+Unique words placed (6):
+ 1. nale
+ 2. araz
+ 3. irap
+ 4. fava
+ 5. vale
+ 6. fink

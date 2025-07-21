@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 r a d a r
+ 1 a · a c ·
+ 2 k a l ı t
+ 3 ı ş ı m a
+ 4 m e z a r
+
+Placed words:
+ 1. 'kalıt' at (2,0) h
+ 2. 'rakım' at (0,0) v
+ 3. 'acıma' at (0,3) v
+ 4. 'mezar' at (4,0) h
+ 5. 'dalız' at (0,2) v
+ 6. 'radar' at (0,0) h
+ 7. 'ışıma' at (3,0) h
+
+Unique words placed (7):
+ 1. acıma
+ 2. dalız
+ 3. kalıt
+ 4. mezar
+ 5. radar
+ 6. rakım
+ 7. ışıma

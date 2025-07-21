@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 n i k a p
+ 1 a m a d e
+ 2 s e f e r
+ 3 · · e s e
+ 4 r e s e n
+
+Placed words:
+ 1. 'sefer' at (2,0) h
+ 2. 'amade' at (1,0) h
+ 3. 'nikap' at (0,0) h
+ 4. 'resen' at (4,0) h
+ 5. 'kafes' at (0,2) v
+ 6. 'peren' at (0,4) v
+ 7. 'adese' at (0,3) v
+
+Unique words placed (7):
+ 1. adese
+ 2. amade
+ 3. kafes
+ 4. nikap
+ 5. peren
+ 6. resen
+ 7. sefer

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a ş a r
+ 1 e l e m e
+ 2 s a r i h
+ 3 i · a · i
+ 4 k a n o n
+
+Placed words:
+ 1. 'kanon' at (4,0) h
+ 2. 'sarih' at (2,0) h
+ 3. 'kaşar' at (0,0) h
+ 4. 'rehin' at (0,4) v
+ 5. 'şeran' at (0,2) v
+ 6. 'eleme' at (1,0) h
+ 7. 'kesik' at (0,0) v
+
+Unique words placed (7):
+ 1. eleme
+ 2. kanon
+ 3. kaşar
+ 4. kesik
+ 5. rehin
+ 6. sarih
+ 7. şeran

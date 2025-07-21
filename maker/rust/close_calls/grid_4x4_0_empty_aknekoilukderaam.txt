@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 a k n e 
+ 1 k o i l 
+ 2 u k d e 
+ 3 r a a m 
+
+Placed words:
+ 1. 'ukde' at (2,0) Horizontal
+ 2. 'elem' at (0,3) Vertical
+ 3. 'akur' at (0,0) Vertical
+ 4. 'nida' at (0,2) Vertical
+ 5. 'akne' at (0,0) Horizontal
+ 6. 'koka' at (0,1) Vertical
+
+Unique words placed (6):
+ 1. koka
+ 2. akne
+ 3. elem
+ 4. akur
+ 5. nida
+ 6. ukde

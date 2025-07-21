@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 · m i c i
+ 1 f e r i h
+ 2 a c a b a
+ 3 t a d i l
+ 4 · z i n e
+
+Placed words:
+ 1. 'ferih' at (1,0) h
+ 2. 'mecaz' at (0,1) v
+ 3. 'acaba' at (2,0) h
+ 4. 'ihale' at (0,4) v
+ 5. 'iradi' at (0,2) v
+ 6. 'adil' at (3,1) h
+ 7. 'tadil' at (3,0) h
+ 8. 'cibin' at (0,3) v
+
+Unique words placed (8):
+ 1. acaba
+ 2. adil
+ 3. cibin
+ 4. ferih
+ 5. ihale
+ 6. iradi
+ 7. mecaz
+ 8. tadil

@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e r c e 
+ 1 n o e l 
+ 2 u k d e 
+ 3 · a i m 
+
+Placed words:
+ 1. 'ukde' at (2,0) Horizontal
+ 2. 'elem' at (0,3) Vertical
+ 3. 'roka' at (0,1) Vertical
+ 4. 'erce' at (0,0) Horizontal
+ 5. 'cedi' at (0,2) Vertical
+ 6. 'noel' at (1,0) Horizontal
+
+Unique words placed (6):
+ 1. noel
+ 2. cedi
+ 3. elem
+ 4. roka
+ 5. ukde
+ 6. erce

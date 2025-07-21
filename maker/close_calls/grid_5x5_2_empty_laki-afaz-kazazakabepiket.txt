@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 l a k i ·
+ 1 a f a z ·
+ 2 k a z a z
+ 3 a k a b e
+ 4 p i k e t
+
+Placed words:
+ 1. 'kazaz' at (2,0) h
+ 2. 'piket' at (4,0) h
+ 3. 'akabe' at (3,0) h
+ 4. 'afaki' at (0,1) v
+ 5. 'kazak' at (0,2) v
+ 6. 'lakap' at (0,0) v
+ 7. 'izabe' at (0,3) v
+
+Unique words placed (7):
+ 1. afaki
+ 2. akabe
+ 3. izabe
+ 4. kazak
+ 5. kazaz
+ 6. lakap
+ 7. piket

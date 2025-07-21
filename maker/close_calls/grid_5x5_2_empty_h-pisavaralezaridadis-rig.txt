@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h · p i s
+ 1 a v a r a
+ 2 l e z a r
+ 3 i d a d i
+ 4 s · r i g
+
+Placed words:
+ 1. 'sarig' at (0,4) v
+ 2. 'lezar' at (2,0) h
+ 3. 'halis' at (0,0) v
+ 4. 'pazar' at (0,2) v
+ 5. 'avara' at (1,0) h
+ 6. 'iradi' at (0,3) v
+ 7. 'idadi' at (3,0) h
+
+Unique words placed (7):
+ 1. avara
+ 2. halis
+ 3. idadi
+ 4. iradi
+ 5. lezar
+ 6. pazar
+ 7. sarig

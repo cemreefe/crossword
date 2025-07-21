@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m e t i n
+ 1 a l i · e
+ 2 s e k i z
+ 3 i l e · i
+ 4 f e l a h
+
+Placed words:
+ 1. 'felah' at (4,0) h
+ 2. 'metin' at (0,0) h
+ 3. 'sekiz' at (2,0) h
+ 4. 'masif' at (0,0) v
+ 5. 'elele' at (0,1) v
+ 6. 'tikel' at (0,2) v
+ 7. 'nezih' at (0,4) v
+
+Unique words placed (7):
+ 1. elele
+ 2. felah
+ 3. masif
+ 4. metin
+ 5. nezih
+ 6. sekiz
+ 7. tikel

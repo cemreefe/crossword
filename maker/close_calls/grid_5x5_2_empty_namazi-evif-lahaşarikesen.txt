@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 n a m a z
+ 1 i · e v i
+ 2 f · l a h
+ 3 a ş a r i
+ 4 k e s e n
+
+Placed words:
+ 1. 'avare' at (0,3) v
+ 2. 'zihin' at (0,4) v
+ 3. 'kesen' at (4,0) h
+ 4. 'namaz' at (0,0) h
+ 5. 'nifak' at (0,0) v
+ 6. 'aşari' at (3,0) h
+ 7. 'melas' at (0,2) v
+
+Unique words placed (7):
+ 1. avare
+ 2. aşari
+ 3. kesen
+ 4. melas
+ 5. namaz
+ 6. nifak
+ 7. zihin

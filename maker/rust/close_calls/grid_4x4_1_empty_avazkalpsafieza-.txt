@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 a v a z 
+ 1 k a l p 
+ 2 s a f i 
+ 3 e z a · 
+
+Placed words:
+ 1. 'kalp' at (1,0) Horizontal
+ 2. 'vaaz' at (0,1) Vertical
+ 3. 'safi' at (2,0) Horizontal
+ 4. 'alfa' at (0,2) Vertical
+ 5. 'akse' at (0,0) Vertical
+ 6. 'avaz' at (0,0) Horizontal
+
+Unique words placed (6):
+ 1. avaz
+ 2. kalp
+ 3. safi
+ 4. alfa
+ 5. akse
+ 6. vaaz

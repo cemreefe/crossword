@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · s i r e
+ 1 y e ş i m
+ 2 u l e m a
+ 3 · e m e r
+ 4 a n e l e
+
+Placed words:
+ 1. 'yeşim' at (1,0) h
+ 2. 'ulema' at (2,0) h
+ 3. 'selen' at (0,1) v
+ 4. 'işeme' at (0,2) v
+ 5. 'anele' at (4,0) h
+ 6. 'emare' at (0,4) v
+ 7. 'rimel' at (0,3) v
+
+Unique words placed (7):
+ 1. anele
+ 2. emare
+ 3. işeme
+ 4. rimel
+ 5. selen
+ 6. ulema
+ 7. yeşim

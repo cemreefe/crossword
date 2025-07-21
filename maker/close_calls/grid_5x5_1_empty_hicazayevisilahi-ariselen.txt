@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 h i c a z
+ 1 a y e v i
+ 2 s i l a h
+ 3 i · a r i
+ 4 s e l e n
+
+Placed words:
+ 1. 'avare' at (0,3) v
+ 2. 'zihin' at (0,4) v
+ 3. 'ayevi' at (1,0) h
+ 4. 'selen' at (4,0) h
+ 5. 'silah' at (2,0) h
+ 6. 'celal' at (0,2) v
+ 7. 'hicaz' at (0,0) h
+ 8. 'hasis' at (0,0) v
+
+Unique words placed (8):
+ 1. avare
+ 2. ayevi
+ 3. celal
+ 4. hasis
+ 5. hicaz
+ 6. selen
+ 7. silah
+ 8. zihin

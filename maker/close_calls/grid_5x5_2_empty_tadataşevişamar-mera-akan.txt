@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 t a d a t
+ 1 a ş e v i
+ 2 ş a m a r
+ 3 · m e r a
+ 4 · a k a n
+
+Placed words:
+ 1. 'tiran' at (0,4) v
+ 2. 'demek' at (0,2) v
+ 3. 'mera' at (3,1) h
+ 4. 'şamar' at (2,0) h
+ 5. 'tadat' at (0,0) h
+ 6. 'aşama' at (0,1) v
+ 7. 'avar' at (0,3) v
+ 8. 'avara' at (0,3) v
+ 9. 'aşevi' at (1,0) h
+
+Unique words placed (9):
+ 1. avar
+ 2. avara
+ 3. aşama
+ 4. aşevi
+ 5. demek
+ 6. mera
+ 7. tadat
+ 8. tiran
+ 9. şamar

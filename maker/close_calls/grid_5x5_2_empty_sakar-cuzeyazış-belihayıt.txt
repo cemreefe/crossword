@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s a k a r
+ 1 · c u z e
+ 2 y a z ı ş
+ 3 · b e l i
+ 4 h a y ı t
+
+Placed words:
+ 1. 'hayıt' at (4,0) h
+ 2. 'yazış' at (2,0) h
+ 3. 'azılı' at (0,3) v
+ 4. 'sakar' at (0,0) h
+ 5. 'acaba' at (0,1) v
+ 6. 'reşit' at (0,4) v
+ 7. 'kuzey' at (0,2) v
+
+Unique words placed (7):
+ 1. acaba
+ 2. azılı
+ 3. hayıt
+ 4. kuzey
+ 5. reşit
+ 6. sakar
+ 7. yazış

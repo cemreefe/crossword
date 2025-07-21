@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i · · s i
+ 1 d ü r ü m
+ 2 a v a r a
+ 3 r e m e l
+ 4 i ç i ç e
+
+Placed words:
+ 1. 'süreç' at (0,3) v
+ 2. 'remel' at (3,0) h
+ 3. 'imale' at (0,4) v
+ 4. 'idari' at (0,0) v
+ 5. 'avara' at (2,0) h
+ 6. 'içiçe' at (4,0) h
+ 7. 'dürüm' at (1,0) h
+
+Unique words placed (7):
+ 1. avara
+ 2. dürüm
+ 3. idari
+ 4. imale
+ 5. içiçe
+ 6. remel
+ 7. süreç

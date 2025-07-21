@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 d a d a y
+ 1 i n ö n ·
+ 2 z e v a t
+ 3 e m i c i
+ 4 m i z a ·
+
+Placed words:
+ 1. 'döviz' at (0,2) v
+ 2. 'daday' at (0,0) h
+ 3. 'zevat' at (2,0) h
+ 4. 'anemi' at (0,1) v
+ 5. 'anaca' at (0,3) v
+ 6. 'dizem' at (0,0) v
+ 7. 'emici' at (3,0) h
+
+Unique words placed (7):
+ 1. anaca
+ 2. anemi
+ 3. daday
+ 4. dizem
+ 5. döviz
+ 6. emici
+ 7. zevat

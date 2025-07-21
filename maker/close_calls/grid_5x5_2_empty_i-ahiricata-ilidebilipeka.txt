@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i · a h i
+ 1 r i c a t
+ 2 a · i l i
+ 3 d e b i l
+ 4 i p e k a
+
+Placed words:
+ 1. 'acibe' at (0,2) v
+ 2. 'ipeka' at (4,0) h
+ 3. 'halik' at (0,3) v
+ 4. 'itila' at (0,4) v
+ 5. 'debil' at (3,0) h
+ 6. 'ricat' at (1,0) h
+ 7. 'iradi' at (0,0) v
+
+Unique words placed (7):
+ 1. acibe
+ 2. debil
+ 3. halik
+ 4. ipeka
+ 5. iradi
+ 6. itila
+ 7. ricat

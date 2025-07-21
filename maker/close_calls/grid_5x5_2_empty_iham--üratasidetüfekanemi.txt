@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 i h a m ·
+ 1 · ü r a t
+ 2 a s i d e
+ 3 t ü f e k
+ 4 a n e m i
+
+Placed words:
+ 1. 'hüsün' at (0,1) v
+ 2. 'tüfek' at (3,0) h
+ 3. 'arife' at (0,2) v
+ 4. 'aside' at (2,0) h
+ 5. 'ürat' at (1,1) h
+ 6. 'adem' at (1,3) v
+ 7. 'anemi' at (4,0) h
+ 8. 'iham' at (0,0) h
+
+Unique words placed (8):
+ 1. adem
+ 2. anemi
+ 3. arife
+ 4. aside
+ 5. hüsün
+ 6. iham
+ 7. tüfek
+ 8. ürat

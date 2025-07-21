@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · e b a p
+ 1 ü s e r a
+ 2 m i l a t
+ 3 ö r e k e
+ 4 · e ş a n
+
+Placed words:
+ 1. 'milat' at (2,0) h
+ 2. 'öreke' at (3,0) h
+ 3. 'beleş' at (0,2) v
+ 4. 'paten' at (0,4) v
+ 5. 'araka' at (0,3) v
+ 6. 'esire' at (0,1) v
+ 7. 'üsera' at (1,0) h
+
+Unique words placed (7):
+ 1. araka
+ 2. beleş
+ 3. esire
+ 4. milat
+ 5. paten
+ 6. öreke
+ 7. üsera

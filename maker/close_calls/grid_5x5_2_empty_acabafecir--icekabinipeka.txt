@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a c a b a
+ 1 f e c i r
+ 2 · · i c e
+ 3 k a b i n
+ 4 i p e k a
+
+Placed words:
+ 1. 'acibe' at (0,2) v
+ 2. 'ipeka' at (4,0) h
+ 3. 'bicik' at (0,3) v
+ 4. 'kabin' at (3,0) h
+ 5. 'fecir' at (1,0) h
+ 6. 'acaba' at (0,0) h
+ 7. 'arena' at (0,4) v
+
+Unique words placed (7):
+ 1. acaba
+ 2. acibe
+ 3. arena
+ 4. bicik
+ 5. fecir
+ 6. ipeka
+ 7. kabin

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i h a t a
+ 1 r a d o ·
+ 2 i l e r i
+ 3 c e s u r
+ 4 e l e l ·
+
+Placed words:
+ 1. 'torul' at (0,3) v
+ 2. 'cesur' at (3,0) h
+ 3. 'ihata' at (0,0) h
+ 4. 'irice' at (0,0) v
+ 5. 'halel' at (0,1) v
+ 6. 'adese' at (0,2) v
+ 7. 'ileri' at (2,0) h
+
+Unique words placed (7):
+ 1. adese
+ 2. cesur
+ 3. halel
+ 4. ihata
+ 5. ileri
+ 6. irice
+ 7. torul

@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 · · a h u
+ 1 d a d a y
+ 2 a c ı s u
+ 3 t a n ı m
+ 4 a r a m a
+
+Placed words:
+ 1. 'hasım' at (0,3) v
+ 2. 'tanım' at (3,0) h
+ 3. 'acısu' at (2,0) h
+ 4. 'yuma' at (1,4) v
+ 5. 'adına' at (0,2) v
+ 6. 'aday' at (1,1) h
+ 7. 'uyuma' at (0,4) v
+ 8. 'acar' at (1,1) v
+ 9. 'data' at (1,0) v
+
+Unique words placed (9):
+ 1. acar
+ 2. acısu
+ 3. aday
+ 4. adına
+ 5. data
+ 6. hasım
+ 7. tanım
+ 8. uyuma
+ 9. yuma

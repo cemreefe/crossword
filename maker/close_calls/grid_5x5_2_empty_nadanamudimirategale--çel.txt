@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 n a d a n
+ 1 a m u d i
+ 2 m i r a t
+ 3 e g a l e
+ 4 · · ç e l
+
+Placed words:
+ 1. 'duraç' at (0,2) v
+ 2. 'egale' at (3,0) h
+ 3. 'nadan' at (0,0) h
+ 4. 'adale' at (0,3) v
+ 5. 'nitel' at (0,4) v
+ 6. 'mudi' at (1,1) h
+ 7. 'irat' at (2,1) h
+ 8. 'name' at (0,0) v
+
+Unique words placed (8):
+ 1. adale
+ 2. duraç
+ 3. egale
+ 4. irat
+ 5. mudi
+ 6. nadan
+ 7. name
+ 8. nitel

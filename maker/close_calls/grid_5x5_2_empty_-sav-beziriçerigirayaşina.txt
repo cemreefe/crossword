@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · s a v ·
+ 1 b e z i r
+ 2 i ç e r i
+ 3 g i r a y
+ 4 a ş i n a
+
+Placed words:
+ 1. 'giray' at (3,0) h
+ 2. 'viran' at (0,3) v
+ 3. 'içeri' at (2,0) h
+ 4. 'riya' at (1,4) v
+ 5. 'seçiş' at (0,1) v
+ 6. 'azeri' at (0,2) v
+ 7. 'biga' at (1,0) v
+
+Unique words placed (7):
+ 1. azeri
+ 2. biga
+ 3. giray
+ 4. içeri
+ 5. riya
+ 6. seçiş
+ 7. viran

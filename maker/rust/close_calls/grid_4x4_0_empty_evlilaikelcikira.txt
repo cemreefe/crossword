@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e v l i 
+ 1 l a i k 
+ 2 e l c i 
+ 3 k i r a 
+
+Placed words:
+ 1. 'evli' at (0,0) Horizontal
+ 2. 'vali' at (0,1) Vertical
+ 3. 'elek' at (0,0) Vertical
+ 4. 'elci' at (2,0) Horizontal
+ 5. 'laik' at (1,0) Horizontal
+ 6. 'kira' at (3,0) Horizontal
+
+Unique words placed (6):
+ 1. elek
+ 2. vali
+ 3. elci
+ 4. evli
+ 5. laik
+ 6. kira

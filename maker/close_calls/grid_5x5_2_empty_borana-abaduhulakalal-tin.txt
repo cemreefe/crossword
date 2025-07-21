@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 b o r a n
+ 1 a · a b a
+ 2 d u h u l
+ 3 a k a l a
+ 4 l · t i n
+
+Placed words:
+ 1. 'boran' at (0,0) h
+ 2. 'duhul' at (2,0) h
+ 3. 'akala' at (3,0) h
+ 4. 'abuli' at (0,3) v
+ 5. 'badal' at (0,0) v
+ 6. 'rahat' at (0,2) v
+ 7. 'nalan' at (0,4) v
+
+Unique words placed (7):
+ 1. abuli
+ 2. akala
+ 3. badal
+ 4. boran
+ 5. duhul
+ 6. nalan
+ 7. rahat

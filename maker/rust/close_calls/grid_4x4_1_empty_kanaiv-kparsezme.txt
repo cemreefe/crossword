@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k a n a 
+ 1 i v · k 
+ 2 p a r s 
+ 3 e z m e 
+
+Placed words:
+ 1. 'kipe' at (0,0) Vertical
+ 2. 'ezme' at (3,0) Horizontal
+ 3. 'akse' at (0,3) Vertical
+ 4. 'pars' at (2,0) Horizontal
+ 5. 'kana' at (0,0) Horizontal
+ 6. 'avaz' at (0,1) Vertical
+
+Unique words placed (6):
+ 1. avaz
+ 2. ezme
+ 3. akse
+ 4. kipe
+ 5. pars
+ 6. kana

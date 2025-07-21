@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 p i r i t
+ 1 i r · d e
+ 2 k a z a z
+ 3 a d · m a
+ 4 p i k e t
+
+Placed words:
+ 1. 'kazaz' at (2,0) h
+ 2. 'piket' at (4,0) h
+ 3. 'pirit' at (0,0) h
+ 4. 'iradi' at (0,1) v
+ 5. 'pikap' at (0,0) v
+ 6. 'tezat' at (0,4) v
+ 7. 'idame' at (0,3) v
+
+Unique words placed (7):
+ 1. idame
+ 2. iradi
+ 3. kazaz
+ 4. pikap
+ 5. piket
+ 6. pirit
+ 7. tezat

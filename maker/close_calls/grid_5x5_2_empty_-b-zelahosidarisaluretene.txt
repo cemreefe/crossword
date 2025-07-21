@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 · b · z e
+ 1 l a h o s
+ 2 i d a r i
+ 3 s a l u r
+ 4 e t e n e
+
+Placed words:
+ 1. 'zorun' at (0,3) v
+ 2. 'badat' at (0,1) v
+ 3. 'salur' at (3,0) h
+ 4. 'lahos' at (1,0) h
+ 5. 'hale' at (1,2) v
+ 6. 'esir' at (0,4) v
+ 7. 'esire' at (0,4) v
+ 8. 'lise' at (1,0) v
+
+Unique words placed (8):
+ 1. badat
+ 2. esir
+ 3. esire
+ 4. hale
+ 5. lahos
+ 6. lise
+ 7. salur
+ 8. zorun

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a d a l e
+ 1 h o r o n
+ 2 a n a · e
+ 3 l ö k o z
+ 4 i r a · e
+
+Placed words:
+ 1. 'ahali' at (0,0) v
+ 2. 'donör' at (0,1) v
+ 3. 'araka' at (0,2) v
+ 4. 'eneze' at (0,4) v
+ 5. 'adale' at (0,0) h
+ 6. 'horon' at (1,0) h
+ 7. 'lökoz' at (3,0) h
+
+Unique words placed (7):
+ 1. adale
+ 2. ahali
+ 3. araka
+ 4. donör
+ 5. eneze
+ 6. horon
+ 7. lökoz

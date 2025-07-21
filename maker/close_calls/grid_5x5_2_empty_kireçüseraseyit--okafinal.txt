@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k i r e ç
+ 1 ü s e r a
+ 2 s e y i t
+ 3 · · o k a
+ 4 f i n a l
+
+Placed words:
+ 1. 'final' at (4,0) h
+ 2. 'kireç' at (0,0) h
+ 3. 'erika' at (0,3) v
+ 4. 'reyon' at (0,2) v
+ 5. 'seyit' at (2,0) h
+ 6. 'çatal' at (0,4) v
+ 7. 'üsera' at (1,0) h
+
+Unique words placed (7):
+ 1. erika
+ 2. final
+ 3. kireç
+ 4. reyon
+ 5. seyit
+ 6. çatal
+ 7. üsera

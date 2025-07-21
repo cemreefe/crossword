@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 a m m e 
+ 1 k a i l 
+ 2 u k d e 
+ 3 · i i m 
+
+Placed words:
+ 1. 'ukde' at (2,0) Horizontal
+ 2. 'elem' at (0,3) Vertical
+ 3. 'kail' at (1,0) Horizontal
+ 4. 'maki' at (0,1) Vertical
+ 5. 'amme' at (0,0) Horizontal
+ 6. 'midi' at (0,2) Vertical
+
+Unique words placed (6):
+ 1. midi
+ 2. elem
+ 3. kail
+ 4. maki
+ 5. ukde
+ 6. amme

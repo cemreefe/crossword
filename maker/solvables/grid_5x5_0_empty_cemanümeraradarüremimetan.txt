@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 c e m a n
+ 1 ü m e r a
+ 2 r a d a r
+ 3 ü r e m i
+ 4 m e t a n
+
+Placed words:
+ 1. 'ceman' at (0,0) h
+ 2. 'cürüm' at (0,0) v
+ 3. 'narin' at (0,4) v
+ 4. 'emare' at (0,1) v
+ 5. 'arama' at (0,3) v
+ 6. 'ümera' at (1,0) h
+ 7. 'medet' at (0,2) v
+
+Unique words placed (7):
+ 1. arama
+ 2. ceman
+ 3. cürüm
+ 4. emare
+ 5. medet
+ 6. narin
+ 7. ümera

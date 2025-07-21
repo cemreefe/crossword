@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 g r · k 
+ 1 r a t e 
+ 2 e c e l 
+ 3 n i n e 
+
+Placed words:
+ 1. 'gren' at (0,0) Vertical
+ 2. 'nine' at (3,0) Horizontal
+ 3. 'raci' at (0,1) Vertical
+ 4. 'kele' at (0,3) Vertical
+ 5. 'rate' at (1,0) Horizontal
+ 6. 'ecel' at (2,0) Horizontal
+
+Unique words placed (6):
+ 1. nine
+ 2. raci
+ 3. kele
+ 4. gren
+ 5. rate
+ 6. ecel

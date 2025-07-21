@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 y a n a z
+ 1 a · o n i
+ 2 l a t i f
+ 3 a · a d i
+ 4 n u m e n
+
+Placed words:
+ 1. 'yanaz' at (0,0) h
+ 2. 'numen' at (4,0) h
+ 3. 'zifin' at (0,4) v
+ 4. 'notam' at (0,2) v
+ 5. 'yalan' at (0,0) v
+ 6. 'anide' at (0,3) v
+ 7. 'latif' at (2,0) h
+
+Unique words placed (7):
+ 1. anide
+ 2. latif
+ 3. notam
+ 4. numen
+ 5. yalan
+ 6. yanaz
+ 7. zifin

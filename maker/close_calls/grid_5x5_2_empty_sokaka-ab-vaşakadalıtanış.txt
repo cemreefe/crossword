@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s o k a k
+ 1 a · a b ·
+ 2 v a ş a k
+ 3 a d a l ı
+ 4 t a n ı ş
+
+Placed words:
+ 1. 'sokak' at (0,0) h
+ 2. 'vaşak' at (2,0) h
+ 3. 'tanış' at (4,0) h
+ 4. 'kaşan' at (0,2) v
+ 5. 'adalı' at (3,0) h
+ 6. 'savat' at (0,0) v
+ 7. 'abalı' at (0,3) v
+
+Unique words placed (7):
+ 1. abalı
+ 2. adalı
+ 3. kaşan
+ 4. savat
+ 5. sokak
+ 6. tanış
+ 7. vaşak

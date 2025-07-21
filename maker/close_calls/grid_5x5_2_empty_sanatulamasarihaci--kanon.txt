@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s a n a t
+ 1 u l a m a
+ 2 s a r i h
+ 3 a c i · ·
+ 4 k a n o n
+
+Placed words:
+ 1. 'kanon' at (4,0) h
+ 2. 'sarih' at (2,0) h
+ 3. 'narin' at (0,2) v
+ 4. 'ulama' at (1,0) h
+ 5. 'sanat' at (0,0) h
+ 6. 'susak' at (0,0) v
+ 7. 'alaca' at (0,1) v
+
+Unique words placed (7):
+ 1. alaca
+ 2. kanon
+ 3. narin
+ 4. sanat
+ 5. sarih
+ 6. susak
+ 7. ulama

@@ -1,7 +1,7 @@
 use clap::Parser;
 use crossword_grapher::{CrosswordGraph, GRID_SIZE, MIN_WORD_LENGTH};
 use rand::prelude::*;
-use std::collections::HashSet;
+use std::collections::{HashSet, HashMap};
 use std::fs;
 use std::time::Instant;
 
@@ -63,6 +63,8 @@ struct CrosswordGrid {
     words_on_grid: HashSet<String>,
     filled_cells: usize,
     graph: CrosswordGraph,
+    // Cache for validation results
+    validation_cache: HashMap<String, bool>,
 }
 
 impl CrosswordGrid {
@@ -73,6 +75,7 @@ impl CrosswordGrid {
             words_on_grid: HashSet::new(),
             filled_cells: 0,
             graph,
+            validation_cache: HashMap::new(),
         }
     }
 
@@ -117,13 +120,7 @@ impl CrosswordGrid {
             return false;
         }
 
-        // Create backup
-        let old_grid = self.grid.clone();
-        let old_placements = self.word_placements.clone();
-        let old_words_on_grid = self.words_on_grid.clone();
-        let old_filled_cells = self.filled_cells;
-
-        // Place the word
+        // Store placement info for potential rollback
         let placement = WordPlacement {
             word: word.to_string(),
             row,
@@ -132,10 +129,17 @@ impl CrosswordGrid {
         };
 
         let positions = placement.get_positions();
+        let mut cells_to_restore = Vec::new();
+
+        // Place the word and track changes
         for (i, (r, c)) in positions.iter().enumerate() {
             let ch = word.chars().nth(i).unwrap();
-            if self.grid[*r][*c] == '.' {
+            let old_char = self.grid[*r][*c];
+            if old_char == '.' {
                 self.filled_cells += 1;
+                cells_to_restore.push((*r, *c, old_char));
+            } else if old_char != ch {
+                cells_to_restore.push((*r, *c, old_char));
             }
             self.grid[*r][*c] = ch;
         }
@@ -143,9 +147,9 @@ impl CrosswordGrid {
         self.word_placements.push(placement);
         self.words_on_grid.insert(word.to_string());
 
-        // Check if we're close to completion and save grid
+        // Check if we're close to completion and save grid (less frequent checks)
         let empty_cells = (GRID_SIZE * GRID_SIZE) - self.filled_cells;
-        if empty_cells <= (GRID_SIZE / 2) {
+        if empty_cells <= (GRID_SIZE / 2) && self.word_placements.len() % 2 == 0 {
             if self.is_solvable_grid() {
                 self.save_grid_to_file("solvables/");
             } else if empty_cells <= (GRID_SIZE / 2).saturating_sub(1) {
@@ -153,22 +157,66 @@ impl CrosswordGrid {
             }
         }
 
-        // Final validation of the grid state
-        if self.validate_grid_state(verbose) {
-            if verbose {
-                println!("      ✅ '{}' placed successfully and grid state validated", word);
+        // Fast validation - only check affected rows and columns
+        let mut affected_rows = std::collections::HashSet::new();
+        let mut affected_cols = std::collections::HashSet::new();
+        
+        for (r, c, _) in &cells_to_restore {
+            affected_rows.insert(*r);
+            affected_cols.insert(*c);
+        }
+
+        // Quick validation of affected rows and columns
+        let mut validation_failed = false;
+        
+        for &row in &affected_rows {
+            let row_state = self.get_row_state(row);
+            if !self.validate_row_column(&row_state) {
+                if verbose {
+                    println!("      ❌ '{}' invalidates row {} state: '{}'", word, row, row_state);
+                }
+                validation_failed = true;
+                break;
             }
-            true
-        } else {
-            if verbose {
-                println!("      ❌ '{}' placed but failed final grid state validation", word);
+        }
+
+        if !validation_failed {
+            for &col in &affected_cols {
+                let col_state = self.get_col_state(col);
+                if !self.validate_row_column(&col_state) {
+                    if verbose {
+                        println!("      ❌ '{}' invalidates column {} state: '{}'", word, col, col_state);
+                    }
+                    validation_failed = true;
+                    break;
+                }
             }
-            // Restore backup
-            self.grid = old_grid;
-            self.word_placements = old_placements;
-            self.words_on_grid = old_words_on_grid;
-            self.filled_cells = old_filled_cells;
-            false
+        }
+
+        if validation_failed {
+            // Rollback changes
+            self.rollback_placement(&cells_to_restore);
+            return false;
+        }
+
+        if verbose {
+            println!("      ✅ '{}' placed successfully", word);
+        }
+        true
+    }
+
+    fn rollback_placement(&mut self, cells_to_restore: &[(usize, usize, char)]) {
+        // Remove the last placement
+        if let Some(placement) = self.word_placements.pop() {
+            self.words_on_grid.remove(&placement.word);
+        }
+
+        // Restore cell states
+        for &(r, c, old_char) in cells_to_restore {
+            if self.grid[r][c] != '.' && old_char == '.' {
+                self.filled_cells -= 1;
+            }
+            self.grid[r][c] = old_char;
         }
     }
 
@@ -180,7 +228,7 @@ impl CrosswordGrid {
         (0..GRID_SIZE).map(|row| self.grid[row][col]).collect()
     }
 
-    fn validate_grid_state(&self, verbose: bool) -> bool {
+    fn validate_grid_state(&mut self, verbose: bool) -> bool {
         // Check all rows
         for row in 0..GRID_SIZE {
             let row_state = self.get_row_state(row);
@@ -207,25 +255,35 @@ impl CrosswordGrid {
         self.validate_cell_wordful_constraints(verbose)
     }
 
-    fn validate_cell_wordful_constraints(&self, verbose: bool) -> bool {
-        for row in 0..GRID_SIZE {
-            for col in 0..GRID_SIZE {
-                if self.grid[row][col] != '.' {
-                    let row_state = self.get_row_state(row);
-                    if !self.can_form_wordful_liner(&row_state, verbose) {
-                        if verbose {
-                            println!("      🔍 Cell ({},{}) cannot form wordful horizontal liner: '{}'", row, col, row_state);
-                        }
-                        return false;
-                    }
+    fn validate_cell_wordful_constraints(&mut self, verbose: bool) -> bool {
+        // Cache row and column states to avoid recomputing
+        let mut row_states = Vec::with_capacity(GRID_SIZE);
+        let mut col_states = Vec::with_capacity(GRID_SIZE);
+        
+        for i in 0..GRID_SIZE {
+            row_states.push(self.get_row_state(i));
+            col_states.push(self.get_col_state(i));
+        }
 
-                    let col_state = self.get_col_state(col);
-                    if !self.can_form_wordful_liner(&col_state, verbose) {
-                        if verbose {
-                            println!("      🔍 Cell ({},{}) cannot form wordful vertical liner: '{}'", row, col, col_state);
-                        }
-                        return false;
+        // Only validate rows and columns that have filled cells
+        for row in 0..GRID_SIZE {
+            if row_states[row].contains(|c: char| c != '.') {
+                if !self.can_form_wordful_liner(&row_states[row], verbose) {
+                    if verbose {
+                        println!("      🔍 Row {} cannot form wordful horizontal liner: '{}'", row, row_states[row]);
                     }
+                    return false;
+                }
+            }
+        }
+
+        for col in 0..GRID_SIZE {
+            if col_states[col].contains(|c: char| c != '.') {
+                if !self.can_form_wordful_liner(&col_states[col], verbose) {
+                    if verbose {
+                        println!("      🔍 Column {} cannot form wordful vertical liner: '{}'", col, col_states[col]);
+                    }
+                    return false;
                 }
             }
         }
@@ -250,28 +308,31 @@ impl CrosswordGrid {
             return true;
         }
 
-        // Try simple patterns
-        let mut pattern1 = current_state.chars().collect::<Vec<_>>();
-        for &pos in &empty_positions {
-            pattern1[pos] = '_';
+        // Early exit for too many empty positions
+        if empty_positions.len() > 3 {
+            // Only try the most common patterns for efficiency
+            let pattern1 = current_state.replace('.', "_");
+            if self.is_wordful_liner(&pattern1) {
+                return true;
+            }
+            let pattern2 = current_state.replace('.', "@");
+            return self.is_wordful_liner(&pattern2);
         }
-        let pattern1_str: String = pattern1.iter().collect();
-        if self.is_wordful_liner(&pattern1_str) {
+
+        // Try simple patterns first (most common cases)
+        let pattern1 = current_state.replace('.', "_");
+        if self.is_wordful_liner(&pattern1) {
             return true;
         }
 
-        let mut pattern2 = current_state.chars().collect::<Vec<_>>();
-        for &pos in &empty_positions {
-            pattern2[pos] = '@';
-        }
-        let pattern2_str: String = pattern2.iter().collect();
-        if self.is_wordful_liner(&pattern2_str) {
+        let pattern2 = current_state.replace('.', "@");
+        if self.is_wordful_liner(&pattern2) {
             return true;
         }
 
-        // Try more combinations if we have few empty positions
+        // For small number of empty positions, try combinations
         if empty_positions.len() <= 2 {
-            let replacements = vec!['_', '@'];
+            let replacements = ['_', '@'];
             for combo in (0..empty_positions.len()).map(|_| replacements.iter()).multi_cartesian_product() {
                 let mut candidate = current_state.chars().collect::<Vec<_>>();
                 for (pos, replacement) in empty_positions.iter().zip(combo) {
@@ -302,7 +363,12 @@ impl CrosswordGrid {
         false
     }
 
-    fn validate_row_column(&self, current_state: &str) -> bool {
+    fn validate_row_column(&mut self, current_state: &str) -> bool {
+        // Check cache first
+        if let Some(&cached_result) = self.validation_cache.get(current_state) {
+            return cached_result;
+        }
+
         let empty_positions: Vec<usize> = current_state
             .chars()
             .enumerate()
@@ -310,42 +376,57 @@ impl CrosswordGrid {
             .map(|(i, _)| i)
             .collect();
 
-        if empty_positions.is_empty() {
-            return self.graph.liners().contains(current_state) || self.graph.words().contains(current_state);
-        }
-
-        if empty_positions.len() == GRID_SIZE {
-            return true;
-        }
-
-        // Try common patterns
-        let test_patterns = vec![
-            current_state.replace('.', "_"),
-            current_state.replace('.', "@"),
-        ];
-
-        for pattern in test_patterns {
-            if self.is_achievable_liner(&pattern) {
-                return true;
+        let result = if empty_positions.is_empty() {
+            self.graph.liners().contains(current_state) || self.graph.words().contains(current_state)
+        } else if empty_positions.len() == GRID_SIZE {
+            true
+        } else if empty_positions.len() > 3 {
+            // Early exit for too many empty positions - only try common patterns
+            let pattern1 = current_state.replace('.', "_");
+            if self.is_achievable_liner(&pattern1) {
+                true
+            } else {
+                let pattern2 = current_state.replace('.', "@");
+                self.is_achievable_liner(&pattern2)
             }
-        }
-
-        // Try more combinations for small number of empty positions
-        if empty_positions.len() <= 3 {
-            let replacements = vec!['_', '@'];
-            for combo in (0..empty_positions.len()).map(|_| replacements.iter()).multi_cartesian_product() {
-                let mut candidate = current_state.chars().collect::<Vec<_>>();
-                for (pos, replacement) in empty_positions.iter().zip(combo) {
-                    candidate[*pos] = *replacement;
-                }
-                let candidate_str: String = candidate.iter().collect();
-                if self.is_achievable_liner(&candidate_str) {
-                    return true;
+        } else {
+            // Try common patterns first
+            let pattern1 = current_state.replace('.', "_");
+            if self.is_achievable_liner(&pattern1) {
+                true
+            } else {
+                let pattern2 = current_state.replace('.', "@");
+                if self.is_achievable_liner(&pattern2) {
+                    true
+                } else {
+                    // Try more combinations for small number of empty positions
+                    if empty_positions.len() <= 2 {
+                        let replacements = ['_', '@'];
+                        let mut found = false;
+                        for combo in (0..empty_positions.len()).map(|_| replacements.iter()).multi_cartesian_product() {
+                            let mut candidate = current_state.chars().collect::<Vec<_>>();
+                            for (pos, replacement) in empty_positions.iter().zip(combo) {
+                                candidate[*pos] = *replacement;
+                            }
+                            let candidate_str: String = candidate.iter().collect();
+                            if self.is_achievable_liner(&candidate_str) {
+                                found = true;
+                                break;
+                            }
+                        }
+                        found
+                    } else {
+                        false
+                    }
                 }
             }
-        }
+        };
 
-        false
+        // Cache the result (with size limit to prevent memory issues)
+        if self.validation_cache.len() < 10000 {
+            self.validation_cache.insert(current_state.to_string(), result);
+        }
+        result
     }
 
     fn is_achievable_liner(&self, liner_pattern: &str) -> bool {
@@ -355,41 +436,53 @@ impl CrosswordGrid {
     fn get_possible_placements(&self, rng: &mut StdRng) -> Vec<(String, usize, usize, Direction)> {
         let mut placements = Vec::new();
 
+        // Pre-compute all row and column states to avoid redundant computation
+        let mut row_states = Vec::with_capacity(GRID_SIZE);
+        let mut col_states = Vec::with_capacity(GRID_SIZE);
+        
+        for i in 0..GRID_SIZE {
+            row_states.push(self.get_row_state(i));
+            col_states.push(self.get_col_state(i));
+        }
+
         // Check each row for possible horizontal placements
         for row in 0..GRID_SIZE {
-            let row_state = self.get_row_state(row);
-            if row_state.contains('.') {
-                let row_placements = self.get_placements_for_line(&row_state, row, Direction::Horizontal);
+            if row_states[row].contains('.') {
+                let row_placements = self.get_placements_for_line(&row_states[row], row, Direction::Horizontal);
                 placements.extend(row_placements);
             }
         }
 
         // Check each column for possible vertical placements
         for col in 0..GRID_SIZE {
-            let col_state = self.get_col_state(col);
-            if col_state.contains('.') {
-                let col_placements = self.get_placements_for_line(&col_state, col, Direction::Vertical);
+            if col_states[col].contains('.') {
+                let col_placements = self.get_placements_for_line(&col_states[col], col, Direction::Vertical);
                 placements.extend(col_placements);
             }
         }
 
         // Filter out words already placed
-        let mut valid_placements: Vec<_> = placements
+        let valid_placements: Vec<_> = placements
             .into_iter()
             .filter(|(word, _, _, _)| !self.words_on_grid.contains(word))
             .collect();
 
+        // Early exit if no valid placements
+        if valid_placements.is_empty() {
+            return Vec::new();
+        }
+
         // Prioritize by word length (GRID_SIZE first) and randomize within each group
-        let mut grid_size_placements: Vec<_> = valid_placements
-            .iter()
-            .filter(|(word, _, _, _)| word.len() == GRID_SIZE)
-            .cloned()
-            .collect();
-        let mut shorter_placements: Vec<_> = valid_placements
-            .iter()
-            .filter(|(word, _, _, _)| word.len() < GRID_SIZE)
-            .cloned()
-            .collect();
+        let mut grid_size_placements = Vec::new();
+        let mut shorter_placements = Vec::new();
+        
+        for placement in valid_placements {
+            if placement.0.len() == GRID_SIZE {
+                grid_size_placements.push(placement);
+            } else {
+                shorter_placements.push(placement);
+            }
+        }
 
         grid_size_placements.shuffle(rng);
         shorter_placements.shuffle(rng);
@@ -458,8 +551,10 @@ impl CrosswordGrid {
 
         let mut patterns = Vec::new();
 
-        if empty_positions.len() <= 3 {
-            let replacements = vec!['_', '@'];
+        // For efficiency, limit the number of patterns we generate
+        if empty_positions.len() <= 2 {
+            // Small number of empty positions - generate all combinations
+            let replacements = ['_', '@'];
             for combo in (0..empty_positions.len()).map(|_| replacements.iter()).multi_cartesian_product() {
                 let mut pattern = line_state.chars().collect::<Vec<_>>();
                 for (pos, replacement) in empty_positions.iter().zip(combo) {
@@ -467,23 +562,39 @@ impl CrosswordGrid {
                 }
                 patterns.push(pattern.iter().collect());
             }
+        } else if empty_positions.len() == 3 {
+            // For 3 empty positions, try most common patterns
+            patterns.push(line_state.replace('.', "_"));
+            patterns.push(line_state.replace('.', "@"));
+            
+            // Try some mixed patterns
+            let mut pattern3 = line_state.chars().collect::<Vec<_>>();
+            let mut pattern4 = line_state.chars().collect::<Vec<_>>();
+            
+            for (i, &pos) in empty_positions.iter().enumerate() {
+                pattern3[pos] = if i == 0 { '_' } else { '@' };
+                pattern4[pos] = if i == 0 { '@' } else { '_' };
+            }
+            
+            patterns.push(pattern3.iter().collect());
+            patterns.push(pattern4.iter().collect());
         } else {
-            // For larger number of empty positions, try only common patterns
+            // For larger number of empty positions, only try the most common patterns
             patterns.push(line_state.replace('.', "_"));
             patterns.push(line_state.replace('.', "@"));
 
-            if empty_positions.len() >= 2 {
+            // Try split patterns for very large empty position counts
+            if empty_positions.len() >= 4 {
                 let mid = empty_positions.len() / 2;
                 let mut pattern3 = line_state.chars().collect::<Vec<_>>();
+                let mut pattern4 = line_state.chars().collect::<Vec<_>>();
+                
                 for (i, &pos) in empty_positions.iter().enumerate() {
                     pattern3[pos] = if i < mid { '_' } else { '@' };
-                }
-                patterns.push(pattern3.iter().collect());
-
-                let mut pattern4 = line_state.chars().collect::<Vec<_>>();
-                for (i, &pos) in empty_positions.iter().enumerate() {
                     pattern4[pos] = if i < mid { '@' } else { '_' };
                 }
+                
+                patterns.push(pattern3.iter().collect());
                 patterns.push(pattern4.iter().collect());
             }
         }
@@ -713,11 +824,13 @@ impl CrosswordSolver {
             return None;
         }
 
-        // Show progress
-        if self.attempts <= 3 || self.attempts % 25 == 0 {
+        // Show progress less frequently for better performance
+        if self.attempts <= 3 || (self.attempts <= 100 && self.attempts % 10 == 0) || self.attempts % 100 == 0 {
             if verbose {
                 println!("\n🔄 Attempt {} - {} words placed", self.attempts, grid.word_placements.len());
-                grid.print_grid();
+                if self.attempts <= 3 {
+                    grid.print_grid();
+                }
             }
         }
 
@@ -727,6 +840,7 @@ impl CrosswordSolver {
                 println!("\n🎉 SOLUTION FOUND! Grid is complete after {} attempts!", self.attempts);
                 println!("Final grid:");
                 grid.print_grid();
+                grid.save_grid_to_file("solvables/");
             }
             return Some(grid.clone());
         }
@@ -735,7 +849,7 @@ impl CrosswordSolver {
         let placements = grid.get_possible_placements(&mut self.rng);
 
         if placements.is_empty() {
-            if verbose {
+            if verbose && self.attempts <= 10 {
                 println!("❌ No valid placements found at attempt {}. Backtracking...", self.attempts);
             }
             return None;
@@ -745,10 +859,11 @@ impl CrosswordSolver {
         let new_placements: Vec<_> = placements
             .into_iter()
             .filter(|placement| !placement_history.contains(placement))
+            .take(20) // Limit the number of placements to try for efficiency
             .collect();
 
         if new_placements.is_empty() {
-            if verbose {
+            if verbose && self.attempts <= 10 {
                 println!("❌ No new placements available at attempt {}. Backtracking...", self.attempts);
             }
             return None;
@@ -769,11 +884,8 @@ impl CrosswordSolver {
 
             // Try the new placement
             if new_grid.place_word(word, *row, *col, *direction, false) {  // Don't use verbose for individual validations
-                if verbose {
+                if verbose && self.attempts <= 10 {
                     println!("    ✅ Successfully placed '{}' at attempt {}", word, self.attempts);
-                    // Show the grid state after successful placement
-                    println!("      📋 Current grid state after placing '{}':", word);
-                    new_grid.print_grid();
                 }
 
                 // Add this placement to history

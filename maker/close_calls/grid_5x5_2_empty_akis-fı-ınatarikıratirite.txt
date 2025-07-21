@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 a k i s ·
+ 1 f ı · ı n
+ 2 a t a r i
+ 3 k ı r a t
+ 4 i r i t e
+
+Placed words:
+ 1. 'kırat' at (3,0) h
+ 2. 'sırat' at (0,3) v
+ 3. 'irite' at (4,0) h
+ 4. 'atari' at (2,0) h
+ 5. 'afaki' at (0,0) v
+ 6. 'nite' at (1,4) v
+ 7. 'ıtır' at (1,1) v
+ 8. 'akis' at (0,0) h
+
+Unique words placed (8):
+ 1. afaki
+ 2. akis
+ 3. atari
+ 4. irite
+ 5. kırat
+ 6. nite
+ 7. sırat
+ 8. ıtır

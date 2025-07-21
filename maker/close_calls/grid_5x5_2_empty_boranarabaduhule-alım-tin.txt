@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 b o r a n
+ 1 a r a b a
+ 2 d u h u l
+ 3 e · a l ı
+ 4 m · t i n
+
+Placed words:
+ 1. 'boran' at (0,0) h
+ 2. 'duhul' at (2,0) h
+ 3. 'bade' at (0,0) v
+ 4. 'abuli' at (0,3) v
+ 5. 'nalın' at (0,4) v
+ 6. 'badem' at (0,0) v
+ 7. 'rahat' at (0,2) v
+ 8. 'araba' at (1,0) h
+
+Unique words placed (8):
+ 1. abuli
+ 2. araba
+ 3. bade
+ 4. badem
+ 5. boran
+ 6. duhul
+ 7. nalın
+ 8. rahat

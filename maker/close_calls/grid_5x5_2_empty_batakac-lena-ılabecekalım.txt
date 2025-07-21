@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 b a t a k
+ 1 a c · l e
+ 2 n a · ı l
+ 3 a b e c e
+ 4 k a l ı m
+
+Placed words:
+ 1. 'kelem' at (0,4) v
+ 2. 'alıcı' at (0,3) v
+ 3. 'batak' at (0,0) h
+ 4. 'kalım' at (4,0) h
+ 5. 'abece' at (3,0) h
+ 6. 'acaba' at (0,1) v
+ 7. 'banak' at (0,0) v
+
+Unique words placed (7):
+ 1. abece
+ 2. acaba
+ 3. alıcı
+ 4. banak
+ 5. batak
+ 6. kalım
+ 7. kelem

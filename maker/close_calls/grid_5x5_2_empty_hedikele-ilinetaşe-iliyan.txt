@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h e d i k
+ 1 e l e · i
+ 2 l i n e t
+ 3 a ş e · i
+ 4 l i y a n
+
+Placed words:
+ 1. 'helal' at (0,0) v
+ 2. 'deney' at (0,2) v
+ 3. 'liyan' at (4,0) h
+ 4. 'kitin' at (0,4) v
+ 5. 'linet' at (2,0) h
+ 6. 'hedik' at (0,0) h
+ 7. 'elişi' at (0,1) v
+
+Unique words placed (7):
+ 1. deney
+ 2. elişi
+ 3. hedik
+ 4. helal
+ 5. kitin
+ 6. linet
+ 7. liyan

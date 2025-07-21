@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 p i p · t 
+ 1 o k a p i 
+ 2 t o s u n 
+ 3 a n i d e 
+ 4 s a f e r 
+
+Placed words:
+ 1. 'pasif' at (0,2) Vertical
+ 2. 'tosun' at (2,0) Horizontal
+ 3. 'ikona' at (0,1) Vertical
+ 4. 'safer' at (4,0) Horizontal
+ 5. 'anide' at (3,0) Horizontal
+ 6. 'potas' at (0,0) Vertical
+ 7. 'tiner' at (0,4) Vertical
+ 8. 'okapi' at (1,0) Horizontal
+
+Unique words placed (8):
+ 1. safer
+ 2. tiner
+ 3. ikona
+ 4. anide
+ 5. tosun
+ 6. okapi
+ 7. potas
+ 8. pasif

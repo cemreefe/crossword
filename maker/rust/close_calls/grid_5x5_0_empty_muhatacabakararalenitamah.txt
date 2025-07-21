@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 m u h a t 
+ 1 a c a b a 
+ 2 k a r a r 
+ 3 a l e n i 
+ 4 t a m a h 
+
+Placed words:
+ 1. 'karar' at (2,0) Horizontal
+ 2. 'abana' at (0,3) Vertical
+ 3. 'tarih' at (0,4) Vertical
+ 4. 'muhat' at (0,0) Horizontal
+ 5. 'harem' at (0,2) Vertical
+ 6. 'tamah' at (4,0) Horizontal
+ 7. 'aleni' at (3,0) Horizontal
+ 8. 'acaba' at (1,0) Horizontal
+
+Unique words placed (8):
+ 1. harem
+ 2. acaba
+ 3. muhat
+ 4. abana
+ 5. tamah
+ 6. karar
+ 7. aleni
+ 8. tarih

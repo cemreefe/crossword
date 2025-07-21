@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 o k a p i
+ 1 r e c e p
+ 2 i b a t e
+ 3 · i b e k
+ 4 · r a k a
+
+Placed words:
+ 1. 'recep' at (1,0) h
+ 2. 'petek' at (0,3) v
+ 3. 'ibate' at (2,0) h
+ 4. 'ipeka' at (0,4) v
+ 5. 'kebir' at (0,1) v
+ 6. 'acaba' at (0,2) v
+ 7. 'okapi' at (0,0) h
+
+Unique words placed (7):
+ 1. acaba
+ 2. ibate
+ 3. ipeka
+ 4. kebir
+ 5. okapi
+ 6. petek
+ 7. recep

@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 a k a b e 
+ 1 l a p o n 
+ 2 m e t r o 
+ 3 a m a d e 
+ 4 k e l a m 
+
+Placed words:
+ 1. 'almak' at (0,0) Vertical
+ 2. 'amade' at (3,0) Horizontal
+ 3. 'borda' at (0,3) Vertical
+ 4. 'kelam' at (4,0) Horizontal
+ 5. 'lapon' at (1,0) Horizontal
+ 6. 'aptal' at (0,2) Vertical
+ 7. 'akabe' at (0,0) Horizontal
+ 8. 'metro' at (2,0) Horizontal
+
+Unique words placed (8):
+ 1. lapon
+ 2. kelam
+ 3. almak
+ 4. metro
+ 5. aptal
+ 6. borda
+ 7. amade
+ 8. akabe

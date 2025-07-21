@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 d a d a y
+ 1 e · ö · e
+ 2 s a v a t
+ 3 e k i l i
+ 4 n a z i k
+
+Placed words:
+ 1. 'döviz' at (0,2) v
+ 2. 'daday' at (0,0) h
+ 3. 'savat' at (2,0) h
+ 4. 'ekili' at (3,0) h
+ 5. 'desen' at (0,0) v
+ 6. 'nazik' at (4,0) h
+ 7. 'yetik' at (0,4) v
+
+Unique words placed (7):
+ 1. daday
+ 2. desen
+ 3. döviz
+ 4. ekili
+ 5. nazik
+ 6. savat
+ 7. yetik

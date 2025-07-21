@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 e g a l e
+ 1 · e d i z
+ 2 o n a m a
+ 3 p e l i n
+ 4 · l e t i
+
+Placed words:
+ 1. 'pelin' at (3,0) h
+ 2. 'limit' at (0,3) v
+ 3. 'ezani' at (0,4) v
+ 4. 'onama' at (2,0) h
+ 5. 'genel' at (0,1) v
+ 6. 'egale' at (0,0) h
+ 7. 'adale' at (0,2) v
+
+Unique words placed (7):
+ 1. adale
+ 2. egale
+ 3. ezani
+ 4. genel
+ 5. limit
+ 6. onama
+ 7. pelin

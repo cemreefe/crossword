@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h a s a t
+ 1 a b o s a
+ 2 n a k i l
+ 3 ı ş · · a
+ 4 m o r e n
+
+Placed words:
+ 1. 'hanım' at (0,0) v
+ 2. 'abosa' at (1,0) h
+ 3. 'nakil' at (2,0) h
+ 4. 'moren' at (4,0) h
+ 5. 'abaşo' at (0,1) v
+ 6. 'alan' at (1,4) v
+ 7. 'hasat' at (0,0) h
+
+Unique words placed (7):
+ 1. abaşo
+ 2. abosa
+ 3. alan
+ 4. hanım
+ 5. hasat
+ 6. moren
+ 7. nakil

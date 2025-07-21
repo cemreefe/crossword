@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 p · d o k
+ 1 a · u r e
+ 2 p a r a f
+ 3 e g a l e
+ 4 l a ç ı n
+
+Placed words:
+ 1. 'duraç' at (0,2) v
+ 2. 'egale' at (3,0) h
+ 3. 'papel' at (0,0) v
+ 4. 'kefen' at (0,4) v
+ 5. 'laçın' at (4,0) h
+ 6. 'paraf' at (2,0) h
+ 7. 'oralı' at (0,3) v
+
+Unique words placed (7):
+ 1. duraç
+ 2. egale
+ 3. kefen
+ 4. laçın
+ 5. oralı
+ 6. papel
+ 7. paraf

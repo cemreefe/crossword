@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a d a r
+ 1 a · u d e
+ 2 m i r a ç
+ 3 e g a l e
+ 4 r · ç e l
+
+Placed words:
+ 1. 'duraç' at (0,2) v
+ 2. 'egale' at (3,0) h
+ 3. 'kadar' at (0,0) h
+ 4. 'miraç' at (2,0) h
+ 5. 'reçel' at (0,4) v
+ 6. 'adale' at (0,3) v
+ 7. 'kamer' at (0,0) v
+
+Unique words placed (7):
+ 1. adale
+ 2. duraç
+ 3. egale
+ 4. kadar
+ 5. kamer
+ 6. miraç
+ 7. reçel

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 n a k i l
+ 1 a r ı z a
+ 2 k a z a z
+ 3 i · a l ·
+ 4 p i k e t
+
+Placed words:
+ 1. 'kazaz' at (2,0) h
+ 2. 'piket' at (4,0) h
+ 3. 'izale' at (0,3) v
+ 4. 'nakil' at (0,0) h
+ 5. 'nakip' at (0,0) v
+ 6. 'arıza' at (1,0) h
+ 7. 'kızak' at (0,2) v
+
+Unique words placed (7):
+ 1. arıza
+ 2. izale
+ 3. kazaz
+ 4. kızak
+ 5. nakil
+ 6. nakip
+ 7. piket

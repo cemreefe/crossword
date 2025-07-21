@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 · c a b a
+ 1 ş a v u l
+ 2 a m a d e
+ 3 s ı n a v
+ 4 · z e k i
+
+Placed words:
+ 1. 'şavul' at (1,0) h
+ 2. 'camız' at (0,1) v
+ 3. 'amade' at (2,0) h
+ 4. 'alev' at (0,4) v
+ 5. 'sınav' at (3,0) h
+ 6. 'caba' at (0,1) h
+ 7. 'avane' at (0,2) v
+ 8. 'zeki' at (4,1) h
+
+Unique words placed (8):
+ 1. alev
+ 2. amade
+ 3. avane
+ 4. caba
+ 5. camız
+ 6. sınav
+ 7. zeki
+ 8. şavul

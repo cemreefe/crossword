@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a ç ı k
+ 1 i · ö · ü
+ 2 l a ğ ı v
+ 3 ü r ü m e
+ 4 s a r a t
+
+Placed words:
+ 1. 'çöğür' at (0,2) v
+ 2. 'sarat' at (4,0) h
+ 3. 'kilüs' at (0,0) v
+ 4. 'ürüme' at (3,0) h
+ 5. 'küvet' at (0,4) v
+ 6. 'lağıv' at (2,0) h
+ 7. 'kaçık' at (0,0) h
+
+Unique words placed (7):
+ 1. kaçık
+ 2. kilüs
+ 3. küvet
+ 4. lağıv
+ 5. sarat
+ 6. çöğür
+ 7. ürüme

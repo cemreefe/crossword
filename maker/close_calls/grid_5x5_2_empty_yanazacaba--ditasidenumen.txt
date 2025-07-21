@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 y a n a z
+ 1 a c a b a
+ 2 · · d i t
+ 3 a s i d e
+ 4 n u m e n
+
+Placed words:
+ 1. 'yanaz' at (0,0) h
+ 2. 'numen' at (4,0) h
+ 3. 'zaten' at (0,4) v
+ 4. 'nadim' at (0,2) v
+ 5. 'caba' at (1,1) h
+ 6. 'abide' at (0,3) v
+ 7. 'acaba' at (1,0) h
+ 8. 'aside' at (3,0) h
+
+Unique words placed (8):
+ 1. abide
+ 2. acaba
+ 3. aside
+ 4. caba
+ 5. nadim
+ 6. numen
+ 7. yanaz
+ 8. zaten

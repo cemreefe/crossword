@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 y a m a ç
+ 1 i r o n i
+ 2 · · t a ç
+ 3 i m e c e
+ 4 m a l a k
+
+Placed words:
+ 1. 'çiçek' at (0,4) v
+ 2. 'motel' at (0,2) v
+ 3. 'malak' at (4,0) h
+ 4. 'anaca' at (0,3) v
+ 5. 'imece' at (3,0) h
+ 6. 'yamaç' at (0,0) h
+ 7. 'ironi' at (1,0) h
+
+Unique words placed (7):
+ 1. anaca
+ 2. imece
+ 3. ironi
+ 4. malak
+ 5. motel
+ 6. yamaç
+ 7. çiçek

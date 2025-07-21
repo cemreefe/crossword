@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 i k m a l 
+ 1 f a y d a 
+ 2 l i y a n 
+ 3 a d a l e 
+ 4 s e n e t 
+
+Placed words:
+ 1. 'kaide' at (0,1) Vertical
+ 2. 'senet' at (4,0) Horizontal
+ 3. 'ikmal' at (0,0) Horizontal
+ 4. 'iflas' at (0,0) Vertical
+ 5. 'adale' at (3,0) Horizontal
+ 6. 'liyan' at (2,0) Horizontal
+ 7. 'lanet' at (0,4) Vertical
+ 8. 'fayda' at (1,0) Horizontal
+
+Unique words placed (8):
+ 1. fayda
+ 2. kaide
+ 3. senet
+ 4. lanet
+ 5. iflas
+ 6. liyan
+ 7. ikmal
+ 8. adale

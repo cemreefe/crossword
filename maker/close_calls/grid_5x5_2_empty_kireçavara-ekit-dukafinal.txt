@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k i r e ç
+ 1 a v a r a
+ 2 · e k i t
+ 3 · d u k a
+ 4 f i n a l
+
+Placed words:
+ 1. 'final' at (4,0) h
+ 2. 'kireç' at (0,0) h
+ 3. 'avara' at (1,0) h
+ 4. 'rakun' at (0,2) v
+ 5. 'çatal' at (0,4) v
+ 6. 'ekit' at (2,1) h
+ 7. 'duka' at (3,1) h
+
+Unique words placed (7):
+ 1. avara
+ 2. duka
+ 3. ekit
+ 4. final
+ 5. kireç
+ 6. rakun
+ 7. çatal

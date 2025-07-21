@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 z a l i m 
+ 1 i d · r e 
+ 2 f a k i h 
+ 3 i l e t i 
+ 4 r e m e l 
+
+Placed words:
+ 1. 'zalim' at (0,0) Horizontal
+ 2. 'remel' at (4,0) Horizontal
+ 3. 'mehil' at (0,4) Vertical
+ 4. 'adale' at (0,1) Vertical
+ 5. 'zifir' at (0,0) Vertical
+ 6. 'irite' at (0,3) Vertical
+ 7. 'fakih' at (2,0) Horizontal
+ 8. 'ileti' at (3,0) Horizontal
+
+Unique words placed (8):
+ 1. zalim
+ 2. remel
+ 3. irite
+ 4. ileti
+ 5. zifir
+ 6. fakih
+ 7. mehil
+ 8. adale

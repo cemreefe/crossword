@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 s a k a k
+ 1 · t u z ·
+ 2 y a z ı ş
+ 3 a m e l e
+ 4 h a y ı t
+
+Placed words:
+ 1. 'hayıt' at (4,0) h
+ 2. 'yazış' at (2,0) h
+ 3. 'azılı' at (0,3) v
+ 4. 'kuzey' at (0,2) v
+ 5. 'atama' at (0,1) v
+ 6. 'saka' at (0,0) h
+ 7. 'sakak' at (0,0) h
+ 8. 'amele' at (3,0) h
+
+Unique words placed (8):
+ 1. amele
+ 2. atama
+ 3. azılı
+ 4. hayıt
+ 5. kuzey
+ 6. saka
+ 7. sakak
+ 8. yazış

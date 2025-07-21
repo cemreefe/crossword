@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 o k a p i
+ 1 y u n a k
+ 2 a r i y a
+ 3 c u d a m
+ 4 · t e n e
+
+Placed words:
+ 1. 'yunak' at (1,0) h
+ 2. 'kurut' at (0,1) v
+ 3. 'ikame' at (0,4) v
+ 4. 'cudam' at (3,0) h
+ 5. 'anide' at (0,2) v
+ 6. 'okapi' at (0,0) h
+ 7. 'ariya' at (2,0) h
+ 8. 'payan' at (0,3) v
+
+Unique words placed (8):
+ 1. anide
+ 2. ariya
+ 3. cudam
+ 4. ikame
+ 5. kurut
+ 6. okapi
+ 7. payan
+ 8. yunak

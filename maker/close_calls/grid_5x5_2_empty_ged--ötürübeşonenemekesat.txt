@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 g e d · ·
+ 1 ö t ü r ü
+ 2 b e ş o n
+ 3 e n e m e
+ 4 k e s a t
+
+Placed words:
+ 1. 'beşon' at (2,0) h
+ 2. 'ötürü' at (1,0) h
+ 3. 'düşes' at (0,2) v
+ 4. 'göbek' at (0,0) v
+ 5. 'kesat' at (4,0) h
+ 6. 'etene' at (0,1) v
+ 7. 'eneme' at (3,0) h
+
+Unique words placed (7):
+ 1. beşon
+ 2. düşes
+ 3. eneme
+ 4. etene
+ 5. göbek
+ 6. kesat
+ 7. ötürü

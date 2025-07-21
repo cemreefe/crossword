@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 a b e s 
+ 1 p a r s 
+ 2 a d e · 
+ 3 k e n e 
+
+Placed words:
+ 1. 'pars' at (1,0) Horizontal
+ 2. 'eren' at (0,2) Vertical
+ 3. 'bade' at (0,1) Vertical
+ 4. 'apak' at (0,0) Vertical
+ 5. 'kene' at (3,0) Horizontal
+ 6. 'abes' at (0,0) Horizontal
+
+Unique words placed (6):
+ 1. kene
+ 2. abes
+ 3. apak
+ 4. eren
+ 5. pars
+ 6. bade

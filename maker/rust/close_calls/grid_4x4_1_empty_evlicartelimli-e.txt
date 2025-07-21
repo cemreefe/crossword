@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e v l i 
+ 1 c a r t 
+ 2 e l i m 
+ 3 l i · e 
+
+Placed words:
+ 1. 'evli' at (0,0) Horizontal
+ 2. 'vali' at (0,1) Vertical
+ 3. 'ecel' at (0,0) Vertical
+ 4. 'elim' at (2,0) Horizontal
+ 5. 'itme' at (0,3) Vertical
+ 6. 'cart' at (1,0) Horizontal
+
+Unique words placed (6):
+ 1. itme
+ 2. vali
+ 3. elim
+ 4. evli
+ 5. ecel
+ 6. cart

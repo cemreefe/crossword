@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i l a h i
+ 1 b · · a m
+ 2 a b o s a
+ 3 t a n ı m
+ 4 e s e m e
+
+Placed words:
+ 1. 'hasım' at (0,3) v
+ 2. 'tanım' at (3,0) h
+ 3. 'abosa' at (2,0) h
+ 4. 'eseme' at (4,0) h
+ 5. 'ilahi' at (0,0) h
+ 6. 'imame' at (0,4) v
+ 7. 'ibate' at (0,0) v
+
+Unique words placed (7):
+ 1. abosa
+ 2. eseme
+ 3. hasım
+ 4. ibate
+ 5. ilahi
+ 6. imame
+ 7. tanım

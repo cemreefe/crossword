@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a v a n e
+ 1 z a · e n
+ 2 a r i f e
+ 3 d i z e m
+ 4 e s · r e
+
+Placed words:
+ 1. 'nefer' at (0,3) v
+ 2. 'eneme' at (0,4) v
+ 3. 'azade' at (0,0) v
+ 4. 'avane' at (0,0) h
+ 5. 'varis' at (0,1) v
+ 6. 'dizem' at (3,0) h
+ 7. 'arife' at (2,0) h
+
+Unique words placed (7):
+ 1. arife
+ 2. avane
+ 3. azade
+ 4. dizem
+ 5. eneme
+ 6. nefer
+ 7. varis

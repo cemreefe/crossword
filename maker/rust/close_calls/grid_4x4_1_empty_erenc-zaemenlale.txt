@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e r e n 
+ 1 c · z a 
+ 2 e m e n 
+ 3 l a l e 
+
+Placed words:
+ 1. 'eren' at (0,0) Horizontal
+ 2. 'ezel' at (0,2) Vertical
+ 3. 'nane' at (0,3) Vertical
+ 4. 'lale' at (3,0) Horizontal
+ 5. 'ecel' at (0,0) Vertical
+ 6. 'emen' at (2,0) Horizontal
+
+Unique words placed (6):
+ 1. ezel
+ 2. eren
+ 3. ecel
+ 4. lale
+ 5. emen
+ 6. nane

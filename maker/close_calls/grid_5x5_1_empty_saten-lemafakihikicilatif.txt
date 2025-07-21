@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 s a t e n
+ 1 · l e m a
+ 2 f a k i h
+ 3 i k i c i
+ 4 l a t i f
+
+Placed words:
+ 1. 'tekit' at (0,2) v
+ 2. 'nahif' at (0,4) v
+ 3. 'fakih' at (2,0) h
+ 4. 'saten' at (0,0) h
+ 5. 'alaka' at (0,1) v
+ 6. 'latif' at (4,0) h
+ 7. 'ikici' at (3,0) h
+ 8. 'emici' at (0,3) v
+
+Unique words placed (8):
+ 1. alaka
+ 2. emici
+ 3. fakih
+ 4. ikici
+ 5. latif
+ 6. nahif
+ 7. saten
+ 8. tekit

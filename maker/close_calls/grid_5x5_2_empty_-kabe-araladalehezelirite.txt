@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · k a b e
+ 1 · a r a l
+ 2 a d a l e
+ 3 h e z e l
+ 4 i r i t e
+
+Placed words:
+ 1. 'hezel' at (3,0) h
+ 2. 'kader' at (0,1) v
+ 3. 'adale' at (2,0) h
+ 4. 'arazi' at (0,2) v
+ 5. 'balet' at (0,3) v
+ 6. 'irite' at (4,0) h
+ 7. 'elele' at (0,4) v
+
+Unique words placed (7):
+ 1. adale
+ 2. arazi
+ 3. balet
+ 4. elele
+ 5. hezel
+ 6. irite
+ 7. kader

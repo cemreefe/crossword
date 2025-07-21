@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k i r e ç
+ 1 e d · r ·
+ 2 n a h i v
+ 3 e r i k a
+ 4 f i n a l
+
+Placed words:
+ 1. 'final' at (4,0) h
+ 2. 'kireç' at (0,0) h
+ 3. 'erika' at (0,3) v
+ 4. 'nahiv' at (2,0) h
+ 5. 'idari' at (0,1) v
+ 6. 'rika' at (3,1) h
+ 7. 'kenef' at (0,0) v
+
+Unique words placed (7):
+ 1. erika
+ 2. final
+ 3. idari
+ 4. kenef
+ 5. kireç
+ 6. nahiv
+ 7. rika

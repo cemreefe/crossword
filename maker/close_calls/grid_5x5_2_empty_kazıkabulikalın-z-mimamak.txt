@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k a z ı k
+ 1 a b u l i
+ 2 k a l ı n
+ 3 · z · m i
+ 4 m a m a k
+
+Placed words:
+ 1. 'kinik' at (0,4) v
+ 2. 'kazık' at (0,0) h
+ 3. 'mamak' at (4,0) h
+ 4. 'ılıma' at (0,3) v
+ 5. 'abaza' at (0,1) v
+ 6. 'kalın' at (2,0) h
+ 7. 'abuli' at (1,0) h
+
+Unique words placed (7):
+ 1. abaza
+ 2. abuli
+ 3. kalın
+ 4. kazık
+ 5. kinik
+ 6. mamak
+ 7. ılıma

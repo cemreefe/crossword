@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 o y a l ·
+ 1 k a d i ·
+ 2 a d a m a
+ 3 p e l i n
+ 4 i l e t i
+
+Placed words:
+ 1. 'pelin' at (3,0) h
+ 2. 'limit' at (0,3) v
+ 3. 'adale' at (0,2) v
+ 4. 'ileti' at (4,0) h
+ 5. 'adama' at (2,0) h
+ 6. 'yadel' at (0,1) v
+ 7. 'okapi' at (0,0) v
+
+Unique words placed (7):
+ 1. adale
+ 2. adama
+ 3. ileti
+ 4. limit
+ 5. okapi
+ 6. pelin
+ 7. yadel

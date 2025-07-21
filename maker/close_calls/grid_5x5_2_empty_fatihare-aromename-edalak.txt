@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f a t i h
+ 1 a r e · a
+ 2 r o m e n
+ 3 a m e · e
+ 4 d a l a k
+
+Placed words:
+ 1. 'dalak' at (4,0) h
+ 2. 'romen' at (2,0) h
+ 3. 'hanek' at (0,4) v
+ 4. 'aroma' at (0,1) v
+ 5. 'farad' at (0,0) v
+ 6. 'fatih' at (0,0) h
+ 7. 'temel' at (0,2) v
+
+Unique words placed (7):
+ 1. aroma
+ 2. dalak
+ 3. farad
+ 4. fatih
+ 5. hanek
+ 6. romen
+ 7. temel

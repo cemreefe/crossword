@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 n e s i l 
+ 1 a f a z i 
+ 2 d e k o r 
+ 3 i k i l i 
+ 4 r t l e · 
+
+Placed words:
+ 1. 'dekor' at (2,0) Horizontal
+ 2. 'nadir' at (0,0) Vertical
+ 3. 'ikili' at (3,0) Horizontal
+ 4. 'sakil' at (0,2) Vertical
+ 5. 'nesil' at (0,0) Horizontal
+ 6. 'izole' at (0,3) Vertical
+ 7. 'afazi' at (1,0) Horizontal
+ 8. 'efekt' at (0,1) Vertical
+
+Unique words placed (8):
+ 1. nadir
+ 2. dekor
+ 3. afazi
+ 4. ikili
+ 5. efekt
+ 6. sakil
+ 7. nesil
+ 8. izole

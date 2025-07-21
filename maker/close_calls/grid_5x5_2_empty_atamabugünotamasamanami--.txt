@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a t a m a
+ 1 b u g ü n
+ 2 o t a m a
+ 3 s a m a n
+ 4 a m i · ·
+
+Placed words:
+ 1. 'tutam' at (0,1) v
+ 2. 'bugün' at (1,0) h
+ 3. 'abosa' at (0,0) v
+ 4. 'atama' at (0,0) h
+ 5. 'otama' at (2,0) h
+ 6. 'saman' at (3,0) h
+ 7. 'agami' at (0,2) v
+
+Unique words placed (7):
+ 1. abosa
+ 2. agami
+ 3. atama
+ 4. bugün
+ 5. otama
+ 6. saman
+ 7. tutam

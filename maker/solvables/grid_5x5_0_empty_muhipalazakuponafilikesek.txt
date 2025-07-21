@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 25/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 m u h i p
+ 1 a l a z a
+ 2 k u p o n
+ 3 a f i l i
+ 4 k e s e k
+
+Placed words:
+ 1. 'kupon' at (2,0) h
+ 2. 'muhip' at (0,0) h
+ 3. 'kesek' at (4,0) h
+ 4. 'alaza' at (1,0) h
+ 5. 'hapis' at (0,2) v
+ 6. 'panik' at (0,4) v
+ 7. 'izole' at (0,3) v
+ 8. 'ulufe' at (0,1) v
+ 9. 'makak' at (0,0) v
+
+Unique words placed (9):
+ 1. alaza
+ 2. hapis
+ 3. izole
+ 4. kesek
+ 5. kupon
+ 6. makak
+ 7. muhip
+ 8. panik
+ 9. ulufe

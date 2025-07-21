@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 a k a b ·
+ 1 r e s i f
+ 2 a f i l i
+ 3 k a d e r
+ 4 a l e t ·
+
+Placed words:
+ 1. 'kader' at (3,0) h
+ 2. 'afili' at (2,0) h
+ 3. 'resif' at (1,0) h
+ 4. 'kefal' at (0,1) v
+ 5. 'arak' at (0,0) v
+ 6. 'aside' at (0,2) v
+ 7. 'bile' at (0,3) v
+ 8. 'alet' at (4,0) h
+
+Unique words placed (8):
+ 1. afili
+ 2. alet
+ 3. arak
+ 4. aside
+ 5. bile
+ 6. kader
+ 7. kefal
+ 8. resif

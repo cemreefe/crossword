@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 f e s i h
+ 1 e n ö t e
+ 2 l e z · r
+ 3 a m e l e
+ 4 h e l a k
+
+Placed words:
+ 1. 'felah' at (0,0) v
+ 2. 'helak' at (4,0) h
+ 3. 'amele' at (3,0) h
+ 4. 'herek' at (0,4) v
+ 5. 'fesih' at (0,0) h
+ 6. 'sözel' at (0,2) v
+ 7. 'eneme' at (0,1) v
+ 8. 'enöte' at (1,0) h
+
+Unique words placed (8):
+ 1. amele
+ 2. eneme
+ 3. enöte
+ 4. felah
+ 5. fesih
+ 6. helak
+ 7. herek
+ 8. sözel

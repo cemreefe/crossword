@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k i r e ç
+ 1 a z a · i
+ 2 v a c i p
+ 3 a f o · i
+ 4 f i n a l
+
+Placed words:
+ 1. 'final' at (4,0) h
+ 2. 'kireç' at (0,0) h
+ 3. 'racon' at (0,2) v
+ 4. 'izafi' at (0,1) v
+ 5. 'kavaf' at (0,0) v
+ 6. 'vacip' at (2,0) h
+ 7. 'çipil' at (0,4) v
+
+Unique words placed (7):
+ 1. final
+ 2. izafi
+ 3. kavaf
+ 4. kireç
+ 5. racon
+ 6. vacip
+ 7. çipil

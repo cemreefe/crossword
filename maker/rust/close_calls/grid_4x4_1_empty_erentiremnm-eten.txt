@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e r e n 
+ 1 t i r e 
+ 2 m n m · 
+ 3 e t e n 
+
+Placed words:
+ 1. 'eren' at (0,0) Horizontal
+ 2. 'erme' at (0,2) Vertical
+ 3. 'rint' at (0,1) Vertical
+ 4. 'eten' at (3,0) Horizontal
+ 5. 'tire' at (1,0) Horizontal
+ 6. 'etme' at (0,0) Vertical
+
+Unique words placed (6):
+ 1. etme
+ 2. rint
+ 3. erme
+ 4. eren
+ 5. eten
+ 6. tire

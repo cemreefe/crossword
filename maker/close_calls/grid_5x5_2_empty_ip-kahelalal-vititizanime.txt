@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i p · k a
+ 1 h e l a l
+ 2 a l · v i
+ 3 t i t i z
+ 4 a n i m e
+
+Placed words:
+ 1. 'pelin' at (0,1) v
+ 2. 'ihata' at (0,0) v
+ 3. 'titiz' at (3,0) h
+ 4. 'kavim' at (0,3) v
+ 5. 'alize' at (0,4) v
+ 6. 'helal' at (1,0) h
+ 7. 'anime' at (4,0) h
+
+Unique words placed (7):
+ 1. alize
+ 2. anime
+ 3. helal
+ 4. ihata
+ 5. kavim
+ 6. pelin
+ 7. titiz

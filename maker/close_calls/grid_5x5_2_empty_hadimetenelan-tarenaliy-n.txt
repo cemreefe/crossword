@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h a d i m
+ 1 e t e n e
+ 2 l a n · t
+ 3 a r e n a
+ 4 l i y · n
+
+Placed words:
+ 1. 'helal' at (0,0) v
+ 2. 'deney' at (0,2) v
+ 3. 'atari' at (0,1) v
+ 4. 'etene' at (1,0) h
+ 5. 'metan' at (0,4) v
+ 6. 'hadim' at (0,0) h
+ 7. 'arena' at (3,0) h
+
+Unique words placed (7):
+ 1. arena
+ 2. atari
+ 3. deney
+ 4. etene
+ 5. hadim
+ 6. helal
+ 7. metan

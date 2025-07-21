@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 o · a s ·
+ 1 k a l a s
+ 2 a z e r i
+ 3 p ı n a r
+ 4 i r i t e
+
+Placed words:
+ 1. 'pınar' at (3,0) h
+ 2. 'sarat' at (0,3) v
+ 3. 'azeri' at (2,0) h
+ 4. 'irite' at (4,0) h
+ 5. 'kalas' at (1,0) h
+ 6. 'okapi' at (0,0) v
+ 7. 'aleni' at (0,2) v
+
+Unique words placed (7):
+ 1. aleni
+ 2. azeri
+ 3. irite
+ 4. kalas
+ 5. okapi
+ 6. pınar
+ 7. sarat

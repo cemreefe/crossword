@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 s a d a k
+ 1 · d i z ·
+ 2 y a z ı ş
+ 3 a m e l e
+ 4 h a y ı t
+
+Placed words:
+ 1. 'hayıt' at (4,0) h
+ 2. 'yazış' at (2,0) h
+ 3. 'azılı' at (0,3) v
+ 4. 'dizey' at (0,2) v
+ 5. 'dama' at (1,1) v
+ 6. 'adama' at (0,1) v
+ 7. 'sadak' at (0,0) h
+ 8. 'amele' at (3,0) h
+
+Unique words placed (8):
+ 1. adama
+ 2. amele
+ 3. azılı
+ 4. dama
+ 5. dizey
+ 6. hayıt
+ 7. sadak
+ 8. yazış

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s e ç i m
+ 1 e l e l e
+ 2 f e n e r
+ 3 i · e · a
+ 4 r i t i m
+
+Placed words:
+ 1. 'ritim' at (4,0) h
+ 2. 'seçim' at (0,0) h
+ 3. 'fener' at (2,0) h
+ 4. 'sefir' at (0,0) v
+ 5. 'meram' at (0,4) v
+ 6. 'elele' at (1,0) h
+ 7. 'çenet' at (0,2) v
+
+Unique words placed (7):
+ 1. elele
+ 2. fener
+ 3. meram
+ 4. ritim
+ 5. sefir
+ 6. seçim
+ 7. çenet

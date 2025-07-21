@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a h a · ·
+ 1 s i c i m
+ 2 a z i z e
+ 3 b i b e r
+ 4 i p e k a
+
+Placed words:
+ 1. 'acibe' at (0,2) v
+ 2. 'ipeka' at (4,0) h
+ 3. 'hizip' at (0,1) v
+ 4. 'asabi' at (0,0) v
+ 5. 'sicim' at (1,0) h
+ 6. 'azize' at (2,0) h
+ 7. 'biber' at (3,0) h
+
+Unique words placed (7):
+ 1. acibe
+ 2. asabi
+ 3. azize
+ 4. biber
+ 5. hizip
+ 6. ipeka
+ 7. sicim

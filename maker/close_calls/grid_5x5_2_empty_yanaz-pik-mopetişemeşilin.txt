@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 y a n a z
+ 1 · p i k ·
+ 2 m o p e t
+ 3 i ş e m e
+ 4 ş i l i n
+
+Placed words:
+ 1. 'yanaz' at (0,0) h
+ 2. 'mopet' at (2,0) h
+ 3. 'nipel' at (0,2) v
+ 4. 'akemi' at (0,3) v
+ 5. 'işeme' at (3,0) h
+ 6. 'apoşi' at (0,1) v
+ 7. 'şilin' at (4,0) h
+
+Unique words placed (7):
+ 1. akemi
+ 2. apoşi
+ 3. işeme
+ 4. mopet
+ 5. nipel
+ 6. yanaz
+ 7. şilin

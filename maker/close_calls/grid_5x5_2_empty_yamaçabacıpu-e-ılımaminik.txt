@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 y a m a ç
+ 1 a b a c ı
+ 2 p u · e ·
+ 3 ı l ı m a
+ 4 m i n i k
+
+Placed words:
+ 1. 'minik' at (4,0) h
+ 2. 'yamaç' at (0,0) h
+ 3. 'abacı' at (1,0) h
+ 4. 'acemi' at (0,3) v
+ 5. 'ılıma' at (3,0) h
+ 6. 'yapım' at (0,0) v
+ 7. 'abuli' at (0,1) v
+
+Unique words placed (7):
+ 1. abacı
+ 2. abuli
+ 3. acemi
+ 4. minik
+ 5. yamaç
+ 6. yapım
+ 7. ılıma

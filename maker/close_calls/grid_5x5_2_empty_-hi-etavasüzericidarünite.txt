@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · h i · e
+ 1 t a v a s
+ 2 ü z e r i
+ 3 c i d a r
+ 4 ü n i t e
+
+Placed words:
+ 1. 'hazin' at (0,1) v
+ 2. 'ivedi' at (0,2) v
+ 3. 'cidar' at (3,0) h
+ 4. 'ünite' at (4,0) h
+ 5. 'tavas' at (1,0) h
+ 6. 'üzeri' at (2,0) h
+ 7. 'esire' at (0,4) v
+
+Unique words placed (7):
+ 1. cidar
+ 2. esire
+ 3. hazin
+ 4. ivedi
+ 5. tavas
+ 6. ünite
+ 7. üzeri

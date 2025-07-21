@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 f a s · k
+ 1 a t ı c ı
+ 2 s a n · t
+ 3 ı ş ı m a
+ 4 k e f a l
+
+Placed words:
+ 1. 'fasık' at (0,0) v
+ 2. 'sınıf' at (0,2) v
+ 3. 'kefal' at (4,0) h
+ 4. 'atıcı' at (1,0) h
+ 5. 'ışıma' at (3,0) h
+ 6. 'kıtal' at (0,4) v
+ 7. 'ataşe' at (0,1) v
+
+Unique words placed (7):
+ 1. ataşe
+ 2. atıcı
+ 3. fasık
+ 4. kefal
+ 5. kıtal
+ 6. sınıf
+ 7. ışıma

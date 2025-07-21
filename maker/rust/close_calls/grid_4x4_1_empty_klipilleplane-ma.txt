@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k l i p 
+ 1 i l l e 
+ 2 p l a n 
+ 3 e · m a 
+
+Placed words:
+ 1. 'kipe' at (0,0) Vertical
+ 2. 'klip' at (0,0) Horizontal
+ 3. 'ilam' at (0,2) Vertical
+ 4. 'pena' at (0,3) Vertical
+ 5. 'plan' at (2,0) Horizontal
+ 6. 'ille' at (1,0) Horizontal
+
+Unique words placed (6):
+ 1. plan
+ 2. ille
+ 3. kipe
+ 4. klip
+ 5. ilam
+ 6. pena

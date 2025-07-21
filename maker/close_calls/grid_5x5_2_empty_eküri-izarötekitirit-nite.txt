@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 e k ü r i
+ 1 · i z a r
+ 2 ö t e k i
+ 3 t i r i t
+ 4 · n i t e
+
+Placed words:
+ 1. 'tirit' at (3,0) h
+ 2. 'rakit' at (0,3) v
+ 3. 'öteki' at (2,0) h
+ 4. 'üzeri' at (0,2) v
+ 5. 'eküri' at (0,0) h
+ 6. 'irite' at (0,4) v
+ 7. 'kitin' at (0,1) v
+
+Unique words placed (7):
+ 1. eküri
+ 2. irite
+ 3. kitin
+ 4. rakit
+ 5. tirit
+ 6. öteki
+ 7. üzeri

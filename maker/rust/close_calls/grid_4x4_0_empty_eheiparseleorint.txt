@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 16/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e h e i 
+ 1 p a r s 
+ 2 e l e o 
+ 3 r i n t 
+
+Placed words:
+ 1. 'pars' at (1,0) Horizontal
+ 2. 'eren' at (0,2) Vertical
+ 3. 'hali' at (0,1) Vertical
+ 4. 'rint' at (3,0) Horizontal
+ 5. 'eper' at (0,0) Vertical
+ 6. 'isot' at (0,3) Vertical
+
+Unique words placed (6):
+ 1. rint
+ 2. hali
+ 3. eren
+ 4. eper
+ 5. pars
+ 6. isot

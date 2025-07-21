@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 ş · y a k
+ 1 u s a r e
+ 2 b a s ı n
+ 3 a l a z a
+ 4 t e k i r
+
+Placed words:
+ 1. 'şubat' at (0,0) v
+ 2. 'tekir' at (4,0) h
+ 3. 'basın' at (2,0) h
+ 4. 'kenar' at (0,4) v
+ 5. 'usare' at (1,0) h
+ 6. 'arızi' at (0,3) v
+ 7. 'alaza' at (3,0) h
+ 8. 'yasak' at (0,2) v
+
+Unique words placed (8):
+ 1. alaza
+ 2. arızi
+ 3. basın
+ 4. kenar
+ 5. tekir
+ 6. usare
+ 7. yasak
+ 8. şubat

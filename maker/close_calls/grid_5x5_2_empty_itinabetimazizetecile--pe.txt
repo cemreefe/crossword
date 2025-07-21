@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 i t i n a
+ 1 b e t i m
+ 2 a z i z e
+ 3 t e c i l
+ 4 e · · p e
+
+Placed words:
+ 1. 'betim' at (1,0) h
+ 2. 'tecil' at (3,0) h
+ 3. 'ibate' at (0,0) v
+ 4. 'itina' at (0,0) h
+ 5. 'amele' at (0,4) v
+ 6. 'nizip' at (0,3) v
+ 7. 'azize' at (2,0) h
+
+Unique words placed (7):
+ 1. amele
+ 2. azize
+ 3. betim
+ 4. ibate
+ 5. itina
+ 6. nizip
+ 7. tecil

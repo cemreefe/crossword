@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s a b a n
+ 1 · · a p i
+ 2 s a r i h
+ 3 a r a k a
+ 4 k a n o n
+
+Placed words:
+ 1. 'kanon' at (4,0) h
+ 2. 'sarih' at (2,0) h
+ 3. 'apiko' at (0,3) v
+ 4. 'baran' at (0,2) v
+ 5. 'saban' at (0,0) h
+ 6. 'nihan' at (0,4) v
+ 7. 'araka' at (3,0) h
+
+Unique words placed (7):
+ 1. apiko
+ 2. araka
+ 3. baran
+ 4. kanon
+ 5. nihan
+ 6. saban
+ 7. sarih

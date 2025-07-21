@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 d e m o 
+ 1 a k ı r 
+ 2 t o h t 
+ 3 a l · a 
+
+Placed words:
+ 1. 'toht' at (2,0) Horizontal
+ 2. 'ekol' at (0,1) Vertical
+ 3. 'demo' at (0,0) Horizontal
+ 4. 'orta' at (0,3) Vertical
+ 5. 'data' at (0,0) Vertical
+ 6. 'mıh' at (0,2) Vertical
+
+Unique words placed (6):
+ 1. data
+ 2. mıh
+ 3. toht
+ 4. demo
+ 5. orta
+ 6. ekol

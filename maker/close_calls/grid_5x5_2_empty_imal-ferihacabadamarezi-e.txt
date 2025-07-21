@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 i m a l ·
+ 1 f e r i h
+ 2 a c a b a
+ 3 d a m a r
+ 4 e z i · e
+
+Placed words:
+ 1. 'ferih' at (1,0) h
+ 2. 'mecaz' at (0,1) v
+ 3. 'acaba' at (2,0) h
+ 4. 'rami' at (1,2) v
+ 5. 'ifade' at (0,0) v
+ 6. 'dama' at (3,0) h
+ 7. 'arami' at (0,2) v
+ 8. 'imal' at (0,0) h
+ 9. 'hare' at (1,4) v
+
+Unique words placed (9):
+ 1. acaba
+ 2. arami
+ 3. dama
+ 4. ferih
+ 5. hare
+ 6. ifade
+ 7. imal
+ 8. mecaz
+ 9. rami

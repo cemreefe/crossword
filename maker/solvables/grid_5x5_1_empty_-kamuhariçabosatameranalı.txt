@@ -1,0 +1,33 @@
+Grid saved at attempt unknown
+Filled cells: 24/25
+Words placed: 9
+
+Grid:
+   0 1 2 3 4
+ 0 · k a m u
+ 1 h a r i ç
+ 2 a b o s a
+ 3 t a m e r
+ 4 a n a l ı
+
+Placed words:
+ 1. 'uçarı' at (0,4) v
+ 2. 'tamer' at (3,0) h
+ 3. 'hariç' at (1,0) h
+ 4. 'kaba' at (0,1) v
+ 5. 'kaban' at (0,1) v
+ 6. 'abosa' at (2,0) h
+ 7. 'hata' at (1,0) v
+ 8. 'analı' at (4,0) h
+ 9. 'kamu' at (0,1) h
+
+Unique words placed (9):
+ 1. abosa
+ 2. analı
+ 3. hariç
+ 4. hata
+ 5. kaba
+ 6. kaban
+ 7. kamu
+ 8. tamer
+ 9. uçarı

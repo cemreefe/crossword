@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h a ş · ş
+ 1 a m a d e
+ 2 s e f e r
+ 3 u l u · e
+ 4 t e l e f
+
+Placed words:
+ 1. 'sefer' at (2,0) h
+ 2. 'amade' at (1,0) h
+ 3. 'şeref' at (0,4) v
+ 4. 'hasut' at (0,0) v
+ 5. 'amele' at (0,1) v
+ 6. 'şaful' at (0,2) v
+ 7. 'telef' at (4,0) h
+
+Unique words placed (7):
+ 1. amade
+ 2. amele
+ 3. hasut
+ 4. sefer
+ 5. telef
+ 6. şaful
+ 7. şeref

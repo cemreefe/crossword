@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 t · d a t
+ 1 i l e t i
+ 2 m · m a r
+ 3 ü m e r a
+ 4 s a k i n
+
+Placed words:
+ 1. 'tiran' at (0,4) v
+ 2. 'demek' at (0,2) v
+ 3. 'mera' at (3,1) h
+ 4. 'sakin' at (4,0) h
+ 5. 'atari' at (0,3) v
+ 6. 'ümera' at (3,0) h
+ 7. 'timüs' at (0,0) v
+ 8. 'ileti' at (1,0) h
+
+Unique words placed (8):
+ 1. atari
+ 2. demek
+ 3. ileti
+ 4. mera
+ 5. sakin
+ 6. timüs
+ 7. tiran
+ 8. ümera

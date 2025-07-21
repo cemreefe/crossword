@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 k i t i n
+ 1 · h e · a
+ 2 f a k i h
+ 3 i t i c i
+ 4 l a t i f
+
+Placed words:
+ 1. 'tekit' at (0,2) v
+ 2. 'nahif' at (0,4) v
+ 3. 'fakih' at (2,0) h
+ 4. 'latif' at (4,0) h
+ 5. 'itici' at (3,0) h
+ 6. 'hata' at (1,1) v
+ 7. 'kitin' at (0,0) h
+
+Unique words placed (7):
+ 1. fakih
+ 2. hata
+ 3. itici
+ 4. kitin
+ 5. latif
+ 6. nahif
+ 7. tekit

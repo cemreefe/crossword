@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h i l a t
+ 1 a n a n e
+ 2 l e g a l
+ 3 u k a l a
+ 4 k · r · ş
+
+Placed words:
+ 1. 'hilat' at (0,0) h
+ 2. 'haluk' at (0,0) v
+ 3. 'anane' at (1,0) h
+ 4. 'lagar' at (0,2) v
+ 5. 'telaş' at (0,4) v
+ 6. 'anal' at (0,3) v
+ 7. 'inek' at (0,1) v
+
+Unique words placed (7):
+ 1. anal
+ 2. anane
+ 3. haluk
+ 4. hilat
+ 5. inek
+ 6. lagar
+ 7. telaş

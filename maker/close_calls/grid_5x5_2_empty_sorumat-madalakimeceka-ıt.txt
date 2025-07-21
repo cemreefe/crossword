@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 s o r u m
+ 1 a t · m a
+ 2 d a l a k
+ 3 i m e c e
+ 4 k a · ı t
+
+Placed words:
+ 1. 'sorum' at (0,0) h
+ 2. 'dalak' at (2,0) h
+ 3. 'maket' at (0,4) v
+ 4. 'umacı' at (0,3) v
+ 5. 'otama' at (0,1) v
+ 6. 'sadik' at (0,0) v
+ 7. 'imece' at (3,0) h
+
+Unique words placed (7):
+ 1. dalak
+ 2. imece
+ 3. maket
+ 4. otama
+ 5. sadik
+ 6. sorum
+ 7. umacı

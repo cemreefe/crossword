@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a t a m a
+ 1 b u g ü n
+ 2 a t a ş e
+ 3 ş a m i l
+ 4 · m · r e
+
+Placed words:
+ 1. 'tutam' at (0,1) v
+ 2. 'bugün' at (1,0) h
+ 3. 'ataşe' at (2,0) h
+ 4. 'anele' at (0,4) v
+ 5. 'şamil' at (3,0) h
+ 6. 'atama' at (0,0) h
+ 7. 'müşir' at (0,3) v
+
+Unique words placed (7):
+ 1. anele
+ 2. atama
+ 3. ataşe
+ 4. bugün
+ 5. müşir
+ 6. tutam
+ 7. şamil

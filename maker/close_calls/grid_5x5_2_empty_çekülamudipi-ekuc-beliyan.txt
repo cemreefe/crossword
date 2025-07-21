@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 ç e k ü l
+ 1 a m u d i
+ 2 p i · e k
+ 3 u c · b e
+ 4 l i y a n
+
+Placed words:
+ 1. 'liyan' at (4,0) h
+ 2. 'çekül' at (0,0) h
+ 3. 'amudi' at (1,0) h
+ 4. 'çapul' at (0,0) v
+ 5. 'üdeba' at (0,3) v
+ 6. 'emici' at (0,1) v
+ 7. 'liken' at (0,4) v
+
+Unique words placed (7):
+ 1. amudi
+ 2. emici
+ 3. liken
+ 4. liyan
+ 5. çapul
+ 6. çekül
+ 7. üdeba

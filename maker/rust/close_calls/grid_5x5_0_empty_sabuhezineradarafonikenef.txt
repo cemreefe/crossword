@@ -1,0 +1,31 @@
+Grid saved
+Filled cells: 25/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4 
+ 0 s a b u h 
+ 1 e z i n e 
+ 2 r a d a r 
+ 3 a f o n i 
+ 4 k e n e f 
+
+Placed words:
+ 1. 'bidon' at (0,2) Vertical
+ 2. 'ezine' at (1,0) Horizontal
+ 3. 'herif' at (0,4) Vertical
+ 4. 'kenef' at (4,0) Horizontal
+ 5. 'radar' at (2,0) Horizontal
+ 6. 'serak' at (0,0) Vertical
+ 7. 'afoni' at (3,0) Horizontal
+ 8. 'sabuh' at (0,0) Horizontal
+
+Unique words placed (8):
+ 1. afoni
+ 2. herif
+ 3. radar
+ 4. serak
+ 5. ezine
+ 6. kenef
+ 7. sabuh
+ 8. bidon

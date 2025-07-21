@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 d a d a y
+ 1 e n ö t e
+ 2 s a v a t
+ 3 e · i r ·
+ 4 n e z i r
+
+Placed words:
+ 1. 'döviz' at (0,2) v
+ 2. 'daday' at (0,0) h
+ 3. 'savat' at (2,0) h
+ 4. 'desen' at (0,0) v
+ 5. 'nezir' at (4,0) h
+ 6. 'enöte' at (1,0) h
+ 7. 'atari' at (0,3) v
+
+Unique words placed (7):
+ 1. atari
+ 2. daday
+ 3. desen
+ 4. döviz
+ 5. enöte
+ 6. nezir
+ 7. savat

@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 k l i k 
+ 1 a · n u 
+ 2 t r a p 
+ 3 i p k a 
+
+Placed words:
+ 1. 'kati' at (0,0) Vertical
+ 2. 'trap' at (2,0) Horizontal
+ 3. 'kupa' at (0,3) Vertical
+ 4. 'ipka' at (3,0) Horizontal
+ 5. 'klik' at (0,0) Horizontal
+ 6. 'inak' at (0,2) Vertical
+
+Unique words placed (6):
+ 1. inak
+ 2. kupa
+ 3. klik
+ 4. trap
+ 5. kati
+ 6. ipka

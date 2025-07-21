@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 u k a l a
+ 1 ç ı n a r
+ 2 u l · f ·
+ 3 c ı l ı z
+ 4 a r ı z a
+
+Placed words:
+ 1. 'lafız' at (0,3) v
+ 2. 'kılır' at (0,1) v
+ 3. 'ukala' at (0,0) h
+ 4. 'çınar' at (1,0) h
+ 5. 'cılız' at (3,0) h
+ 6. 'uçuca' at (0,0) v
+ 7. 'arıza' at (4,0) h
+
+Unique words placed (7):
+ 1. arıza
+ 2. cılız
+ 3. kılır
+ 4. lafız
+ 5. ukala
+ 6. uçuca
+ 7. çınar

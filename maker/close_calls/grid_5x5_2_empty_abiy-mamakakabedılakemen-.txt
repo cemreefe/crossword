@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 a b i y ·
+ 1 m a m a k
+ 2 a k a b e
+ 3 d ı l a k
+ 4 e m e n ·
+
+Placed words:
+ 1. 'bakım' at (0,1) v
+ 2. 'mamak' at (1,0) h
+ 3. 'amade' at (0,0) v
+ 4. 'akabe' at (2,0) h
+ 5. 'yaba' at (0,3) v
+ 6. 'imal' at (0,2) v
+ 7. 'dılak' at (3,0) h
+ 8. 'emen' at (4,0) h
+
+Unique words placed (8):
+ 1. akabe
+ 2. amade
+ 3. bakım
+ 4. dılak
+ 5. emen
+ 6. imal
+ 7. mamak
+ 8. yaba

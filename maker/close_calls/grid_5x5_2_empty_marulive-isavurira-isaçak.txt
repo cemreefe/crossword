@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m a r u l
+ 1 i v e · i
+ 2 s a v u r
+ 3 i r a · i
+ 4 s a ç a k
+
+Placed words:
+ 1. 'marul' at (0,0) h
+ 2. 'saçak' at (4,0) h
+ 3. 'avara' at (0,1) v
+ 4. 'misis' at (0,0) v
+ 5. 'lirik' at (0,4) v
+ 6. 'revaç' at (0,2) v
+ 7. 'savur' at (2,0) h
+
+Unique words placed (7):
+ 1. avara
+ 2. lirik
+ 3. marul
+ 4. misis
+ 5. revaç
+ 6. savur
+ 7. saçak

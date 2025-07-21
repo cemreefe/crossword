@@ -1,0 +1,31 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 8
+
+Grid:
+   0 1 2 3 4
+ 0 i · · h i
+ 1 h a r a m
+ 2 a b o s a
+ 3 t a n ı m
+ 4 a n i m e
+
+Placed words:
+ 1. 'hasım' at (0,3) v
+ 2. 'tanım' at (3,0) h
+ 3. 'abosa' at (2,0) h
+ 4. 'hata' at (1,0) v
+ 5. 'haram' at (1,0) h
+ 6. 'imam' at (0,4) v
+ 7. 'ihata' at (0,0) v
+ 8. 'anime' at (4,0) h
+
+Unique words placed (8):
+ 1. abosa
+ 2. anime
+ 3. haram
+ 4. hasım
+ 5. hata
+ 6. ihata
+ 7. imam
+ 8. tanım

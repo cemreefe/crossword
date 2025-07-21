@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 a h a · i
+ 1 s a l i k
+ 2 i z a · i
+ 3 d i k e l
+ 4 e n a y i
+
+Placed words:
+ 1. 'hazin' at (0,1) v
+ 2. 'salik' at (1,0) h
+ 3. 'aside' at (0,0) v
+ 4. 'ikili' at (0,4) v
+ 5. 'dikel' at (3,0) h
+ 6. 'enayi' at (4,0) h
+ 7. 'alaka' at (0,2) v
+
+Unique words placed (7):
+ 1. alaka
+ 2. aside
+ 3. dikel
+ 4. enayi
+ 5. hazin
+ 6. ikili
+ 7. salik

@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 h i l a t
+ 1 a n a n e
+ 2 l e h i m
+ 3 u · u m i
+ 4 k · t e n
+
+Placed words:
+ 1. 'hilat' at (0,0) h
+ 2. 'haluk' at (0,0) v
+ 3. 'anane' at (1,0) h
+ 4. 'lehim' at (2,0) h
+ 5. 'anime' at (0,3) v
+ 6. 'lahut' at (0,2) v
+ 7. 'temin' at (0,4) v
+
+Unique words placed (7):
+ 1. anane
+ 2. anime
+ 3. haluk
+ 4. hilat
+ 5. lahut
+ 6. lehim
+ 7. temin

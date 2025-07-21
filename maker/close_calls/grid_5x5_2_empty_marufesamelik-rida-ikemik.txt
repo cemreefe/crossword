@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 m a r u f
+ 1 e s a m e
+ 2 l i k · r
+ 3 i d a · i
+ 4 k e m i k
+
+Placed words:
+ 1. 'maruf' at (0,0) h
+ 2. 'kemik' at (4,0) h
+ 3. 'ferik' at (0,4) v
+ 4. 'esame' at (1,0) h
+ 5. 'aside' at (0,1) v
+ 6. 'rakam' at (0,2) v
+ 7. 'melik' at (0,0) v
+
+Unique words placed (7):
+ 1. aside
+ 2. esame
+ 3. ferik
+ 4. kemik
+ 5. maruf
+ 6. melik
+ 7. rakam

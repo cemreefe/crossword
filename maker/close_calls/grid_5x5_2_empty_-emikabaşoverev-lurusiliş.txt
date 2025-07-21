@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 · e m i k
+ 1 a b a ş o
+ 2 v e r e v
+ 3 · l u r u
+ 4 s i l i ş
+
+Placed words:
+ 1. 'kovuş' at (0,4) v
+ 2. 'siliş' at (4,0) h
+ 3. 'abaşo' at (1,0) h
+ 4. 'marul' at (0,2) v
+ 5. 'işeri' at (0,3) v
+ 6. 'ebeli' at (0,1) v
+ 7. 'verev' at (2,0) h
+
+Unique words placed (7):
+ 1. abaşo
+ 2. ebeli
+ 3. işeri
+ 4. kovuş
+ 5. marul
+ 6. siliş
+ 7. verev

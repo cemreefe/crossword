@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 e r e n 
+ 1 n a z i 
+ 2 · m a z 
+ 3 z i n a 
+
+Placed words:
+ 1. 'eren' at (0,0) Horizontal
+ 2. 'zina' at (3,0) Horizontal
+ 3. 'rami' at (0,1) Vertical
+ 4. 'nazi' at (1,0) Horizontal
+ 5. 'ezan' at (0,2) Vertical
+ 6. 'niza' at (0,3) Vertical
+
+Unique words placed (6):
+ 1. ezan
+ 2. rami
+ 3. eren
+ 4. zina
+ 5. nazi
+ 6. niza

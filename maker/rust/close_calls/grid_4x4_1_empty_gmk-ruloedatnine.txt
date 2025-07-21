@@ -1,0 +1,26 @@
+Grid saved
+Filled cells: 15/16
+Words placed: 6
+
+Grid:
+   0 1 2 3 
+ 0 g m k · 
+ 1 r u l o 
+ 2 e d a t 
+ 3 n i n e 
+
+Placed words:
+ 1. 'gren' at (0,0) Vertical
+ 2. 'nine' at (3,0) Horizontal
+ 3. 'klan' at (0,2) Vertical
+ 4. 'rulo' at (1,0) Horizontal
+ 5. 'edat' at (2,0) Horizontal
+ 6. 'mudi' at (0,1) Vertical
+
+Unique words placed (6):
+ 1. mudi
+ 2. nine
+ 3. klan
+ 4. rulo
+ 5. gren
+ 6. edat

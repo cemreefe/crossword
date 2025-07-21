@@ -1,0 +1,29 @@
+Grid saved at attempt unknown
+Filled cells: 23/25
+Words placed: 7
+
+Grid:
+   0 1 2 3 4
+ 0 d i k i t
+ 1 e m a y e
+ 2 n a ç i z
+ 3 · l ı c a
+ 4 · e k e t
+
+Placed words:
+ 1. 'kaçık' at (0,2) v
+ 2. 'imale' at (0,1) v
+ 3. 'tezat' at (0,4) v
+ 4. 'iyice' at (0,3) v
+ 5. 'dikit' at (0,0) h
+ 6. 'naçiz' at (2,0) h
+ 7. 'emaye' at (1,0) h
+
+Unique words placed (7):
+ 1. dikit
+ 2. emaye
+ 3. imale
+ 4. iyice
+ 5. kaçık
+ 6. naçiz
+ 7. tezat
