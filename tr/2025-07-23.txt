@@ -1,0 +1,18 @@
+AUTHOR: Cemre
+GRID: 5
+SAÇAK
+ILICA
+LIKIR
+ACILI
+-IŞIN
+
+H1.1: Çatının yanlara çıkıntı yapan kısmı
+H2.1: Acun'un ata memleketi
+H3.1: Su içme ikilemelerinden biri
+H4.1: Bir şalgam türü
+H5.1: Hüzmenin yapıtaşı
+V1.1: Aidiyet, özlem ve hasret duyulan yer
+V2.1: Verici değil
+V3.1: Mekandan ayrılma yolunu belirten tabeladaki yazı
+V4.1: Cenazede rastlanabilen bir aile türü
+V5.1: Ağrısıyla ünlü organımız
