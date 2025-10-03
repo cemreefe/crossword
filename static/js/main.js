@@ -1,28 +1,45 @@
 // Main initialization and game setup
 
-// Get localization json and load puzzle
+// Show spinner in start modal while loading
+// Immediately set modal to loading state to prevent flash of default text
+const startModal = document.getElementById("startModal");
+const startModalSpinner = document.getElementById("startModalSpinner");
+const startButton = document.getElementById("startButton");
+const startModalTitle = document.getElementById("startModalTitle");
+const startModalMessage = document.getElementById("startModalMessage");
+if (startModal && startModalSpinner && startButton && startModalTitle && startModalMessage) {
+  startModal.style.display = "flex";
+  startModalTitle.textContent = "";
+  startButton.style.display = "none";
+  startModalMessage.style.display = "none";
+  startModalSpinner.style.display = "flex";
+}
+document.getElementById("startModalTitle").textContent = "";
 Promise.all([
   fetch(`localization/${lang}.json`).then(res => res.json()),
   getOrFindPuzzleData()
 ]).then(([localizationData, puzzleData]) => {
+  // Hide spinner, show modal title and button
+  document.getElementById("startModalSpinner").style.display = "none";
+  var startModalTitle = document.getElementById("startModalTitle");
+  startModalTitle.style.display = "block";
+  document.getElementById("startButton").style.display = "inline-block";
+  document.getElementById("startModalMessage").style.display = "none";
+
   // Store localization data globally for share function
   window.localizationData = localizationData;
-  
   // Call the function and update the indicator when the result is available
   findAvailableDaysInFuture().then(days => {
     updateBacklogIndicator(days);
   });
-  
   // Set the global puzzleDate variable for use in completion checking
   puzzleDate = puzzleData.date;
-  
   // Handle localization
   document.title = localizationData.title;
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   const formattedDate = new Date(puzzleData.date).toLocaleDateString(lang, options);
   document.getElementById("title").textContent = `${localizationData.title}`;
   document.getElementById("today").textContent = formattedDate;
-  document.getElementById("startModal").querySelector("h2").textContent = localizationData.readyToPlay;
   document.getElementById("successModal").querySelector("h2").textContent = localizationData.successTitle;
   document.getElementById("errorModal").querySelector("h2").textContent = localizationData.errorTitle;
   document.getElementById("errorModal").querySelector("p").textContent = localizationData.errorMessage;
@@ -36,14 +53,12 @@ Promise.all([
   document.getElementById("youFinishedIn").textContent = localizationData.youFinishedIn;
   document.getElementById("successOk").textContent = localizationData.successOk;
   document.getElementById("shareButton").textContent = `📱 ${localizationData.share || 'Share'}`;
-  
   // Set print clues titles
   document.getElementById("acrossTitle").textContent = localizationData.across;
   document.getElementById("downTitle").textContent = localizationData.down;
-  
   console.log("Localization loaded:", localizationData);
-
   // Use override data if available, otherwise fetch from file
+
   if (puzzleData.isOverride) {
     return Promise.resolve(puzzleData.content);
   } else {
@@ -61,6 +76,7 @@ Promise.all([
     if (!dataOrResponse.ok) {
       throw new Error(`HTTP error! status: ${dataOrResponse.status}`);
     }
+    document.getElementById("startModalTitle").textContent = localizationData.readyToPlay;
     puzzleTextPromise = dataOrResponse.text();
   }
   
@@ -120,7 +136,13 @@ Promise.all([
   }
 }).catch(error => {
   console.error("Error loading crossword data:", error);
-  alert("Failed to load crossword puzzle. Make sure the puzzle file exists and is correctly formatted.");
+  // Show error in start modal, hide start button, hide spinner
+  document.getElementById("startModalSpinner").style.display = "none";
+  // Use translation for no puzzle available
+  var msg = (window.localizationData && window.localizationData.noPuzzleAvailable) ? window.localizationData.noPuzzleAvailable : "sorry no puzzle available at this time";
+  document.getElementById("startModalMessage").textContent = msg;
+  document.getElementById("startModalMessage").style.display = "block";
+  document.getElementById("startButton").style.display = "none";
 });
 
 console.log("Main initialization script loaded.");

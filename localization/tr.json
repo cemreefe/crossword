@@ -23,5 +23,6 @@
   "shareTextCopied": "Paylaşım metni panoya kopyalandı!",
   "close": "Kapat",
   "backlogSingular": "Gelecekte {count} mini var!",
-  "backlogPlural": "Gelecekte {count} mini var!"
+  "backlogPlural": "Gelecekte {count} mini var!",
+  "noPuzzleAvailable": "Malesef bugün bulmaca yok :("
 }

@@ -1,0 +1,19 @@
+AUTHOR: Cemre
+GRID: 5
+SISKA
+USTAM
+ALAYA
+RATA-
+EKÜRİ
+
+H1.1: Naşişman
+H2.1: Eve gelen badanacıya samimi hitap şekli
+H3.1: Günlük bir deyişimizde kullanılan "tiye" kelimesine alternatif
+H4.1: (Sağdan sola) Halk arasında sinirlenmek, çıkışmak; ____ yapmak.
+H5.1: Genelde hep beraber takılan dostlar için kullanılan, gerçekte ahırdaş atların her biri
+V1.1: Akşam eğlencesi
+V2.1: Kekin bir türü
+V3.1: Kişinin toplumdaki yeri; saygınlık, makam
+V4.1: 2'nci sütundaki yere basan ne yapar?
+V5.1: Fakat
+V5.2: I'nın kardeşi

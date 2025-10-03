@@ -22,5 +22,6 @@
   "shareTextCopied": "Share text copied to clipboard!",
   "close": "Close",
   "backlogSingular": "There is {count} mini in the backlog!",
-  "backlogPlural": "There are {count} minis in the backlog!"
+  "backlogPlural": "There are {count} minis in the backlog!",
+  "noPuzzleAvailable": "Sorry, no puzzle available at this time."
 }

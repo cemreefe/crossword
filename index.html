@@ -19,9 +19,16 @@
 <body>
   <div id="startModal" class="modal">
     <div class="modal-content">
-      <h2>Ready to play?</h2>
-      <button id="startButton" onclick="startGame()">Start Crossword</button>
+      <h2 id="startModalTitle" style="display:none;"></h2>
+      <div id="startModalSpinner" style="display:flex; justify-content:center; align-items:center; margin: 1rem 0;">
+        <div class="spinner" style="width:32px;height:32px;border:4px solid #ccc;border-top:4px solid #007AFF;border-radius:50%;animation:spin 1s linear infinite;"></div>
+      </div>
+      <div id="startModalMessage" style="color:#c00; font-size:1.1rem; margin:1rem 0; display:none;"></div>
+      <button id="startButton" onclick="startGame()" style="display:none;">Start Crossword</button>
     </div>
+    <style>
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
   </div>
 
   <div id="successModal" class="modal" style="display:none">
